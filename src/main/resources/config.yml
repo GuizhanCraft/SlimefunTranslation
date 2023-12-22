@@ -1,1 +1,7 @@
+# Whether to enable auto update
 auto-update: true
+
+# Language mappings
+# Format: <provided language code>: <slimefun language code>
+language-mappings:
+  en-US: en

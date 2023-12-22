@@ -1,8 +1,17 @@
-name: GuizhanSlimefunAddon
+name: SlimefunTranslation
 version: '${project.version}'
-main: net.guizhanss.guizhanslimefunaddon.GuizhanSlimefunAddon
-api-version: 1.14
-depend: [ Slimefun ]
-softdepend: [ GuizhanLibPlugin ]
+main: net.guizhanss.slimefuntranslation.SlimefunTranslation
+api-version: 1.16
+depend:
+  - Slimefun
+  - ProtocolLib
+softdepend:
+  - GuizhanLibPlugin
+  - PlaceholderAPI
 authors: [ ybw0014 ]
-description: A Slimefun Addon
+description: A Slimefun Addon that translates items without actually modifying the items.
+commands:
+  sftranslation:
+    description: SlimefunTranslation Command
+    usage: /<command> <subcommand>
+    aliases: [ slimefuntranslation, sft, sftr ]
