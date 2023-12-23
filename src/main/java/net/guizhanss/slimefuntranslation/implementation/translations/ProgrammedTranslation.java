@@ -1,14 +1,15 @@
-package net.guizhanss.slimefuntranslation.api.translations;
+package net.guizhanss.slimefuntranslation.implementation.translations;
 
-import lombok.RequiredArgsConstructor;
-
-import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
-import net.guizhanss.slimefuntranslation.api.interfaces.Translatable;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import java.util.List;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+
+import net.guizhanss.slimefuntranslation.api.interfaces.Translatable;
+import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
+
+import lombok.RequiredArgsConstructor;
 
 /**
  * This {@link Translation} is applied by {@link SlimefunItem}s which implemented {@link Translatable}.

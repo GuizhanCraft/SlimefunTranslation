@@ -1,0 +1,48 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Weapons
+author: Slimefun
+lang: en
+dependencies:
+  - Slimefun
+translations:
+  GRANDMAS_WALKING_STICK:
+    name: "&7Grandmas Walking Stick"
+  GRANDPAS_WALKING_STICK:
+    name: "&7Grandpas Walking Stick"
+  SWORD_OF_BEHEADING:
+    name: "&6Sword of Beheading"
+    lore:
+      - "&7Beheading II"
+      - ""
+      - "&fHas a chance to behead Mobs"
+      - "&f(even a higher chance for Wither Skeletons)"
+  BLADE_OF_VAMPIRES:
+    check-name: true
+    name: "&4Blade of Vampires"
+    lore:
+      - "&7Life Steal I"
+      - ""
+      - "&fEverytime you attack something"
+      - "&fyou have a 45% chance to"
+      - "&frecover 2 Hearts of your Health"
+  SEISMIC_AXE:
+    name: "&aSeismic Axe"
+    lore-replacements:
+      2: "&7&oA portable Earthquake..."
+  SOULDBOUND_SWORD:
+    name: "&cSoulbound Sword"
+  SOULBOUND_TRIDENT:
+    name: "&cSoulbound Trident"
+  SOULBOUND_BOW:
+    name: "&cSoulbound Bow"
+  EXPLOSIVE_BOW:
+    name: "&cExplosive Bow"
+    lore:
+      - "&fAny Arrows fired using this Bow"
+      - "&fwill launch hit enemies into the air"
+  ICY_BOW:
+    name: "&bIcy Bow"
+    lore:
+      - "&fAny Arrows fired using this Bow"
+      - "&fwill prevent hit enemies from moving"
+      - "&ffor 2 seconds"

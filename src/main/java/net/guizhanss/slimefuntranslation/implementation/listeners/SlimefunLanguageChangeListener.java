@@ -1,0 +1,22 @@
+package net.guizhanss.slimefuntranslation.implementation.listeners;
+
+import io.github.thebusybiscuit.slimefun4.api.events.PlayerLanguageChangeEvent;
+
+import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+
+import net.guizhanss.slimefuntranslation.core.users.User;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class SlimefunLanguageChangeListener implements Listener {
+    public SlimefunLanguageChangeListener(SlimefunTranslation plugin) {
+        plugin.getServer().getPluginManager().registerEvents(this, plugin);
+    }
+
+    @EventHandler
+    public void onJoin(PlayerLanguageChangeEvent e) {
+        User user = SlimefunTranslation.getUserManager().getUser(e.getPlayer());
+        user.updateLocale(e.getNewLanguage().getId());
+    }
+}
