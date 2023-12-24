@@ -1,6 +1,6 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefunの武器
-author: Slimefun
+author: SchnTgaiSpock
 lang: ja
 dependencies:
   - Slimefun
@@ -30,11 +30,11 @@ translations:
     lore-replacements:
       2: "&7&oポータブル地震..."
   SOULDBOUND_SWORD:
-    name: "&cSoulbound Sword"
+    name: "&cソウルバウンドの剣"
   SOULBOUND_TRIDENT:
-    name: "&cSoulbound Trident"
+    name: "&cソウルバウンドのトライデント"
   SOULBOUND_BOW:
-    name: "&cSoulbound Bow"
+    name: "&cソウルバウンドの弓"
   EXPLOSIVE_BOW:
     name: "&c爆発の弓"
     lore:
