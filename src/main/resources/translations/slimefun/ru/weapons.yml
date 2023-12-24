@@ -1,48 +1,48 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Weapons
 author: Slimefun
-lang: en
+lang: ru
 dependencies:
   - Slimefun
 translations:
   GRANDMAS_WALKING_STICK:
-    name: "&7Grandmas Walking Stick"
+    name: "&7Бабушкина трость для ходьбы"
   GRANDPAS_WALKING_STICK:
-    name: "&7Grandpas Walking Stick"
+    name: "&7Дедушкина трость для ходьбы"
   SWORD_OF_BEHEADING:
-    name: "&6Sword of Beheading"
+    name: "&6Меч обезглавливания"
     lore:
-      - "&7Beheading II"
+      - "&7Обезглавливание II"
       - ""
-      - "&fHas a chance to behead Mobs"
-      - "&f(even a higher chance for Wither Skeletons)"
+      - "&fИмеет шанс обезглавить мобов"
+      - "&f(даже более высокий шанс для скелетов-убийц)"
   BLADE_OF_VAMPIRES:
     check-name: true
-    name: "&4Blade of Vampires"
+    name: "&4Клинок вампиров"
     lore:
-      - "&7Life Steal I"
+      - "&7Кража жизни I"
       - ""
-      - "&fEverytime you attack something"
-      - "&fyou have a 45% chance to"
-      - "&frecover 2 Hearts of your Health"
+      - "&fКаждый раз когда вы нападаете на что-то"
+      - "&fу вас есть шанс 45%"
+      - "&fвосстанавливает 2 сердца здоровья"
   SEISMIC_AXE:
-    name: "&aSeismic Axe"
+    name: "&aСейсмический топор"
     lore-replacements:
-      2: "&7&oA portable Earthquake..."
+      2: "&7&oПортативное землетрясение..."
   SOULDBOUND_SWORD:
-    name: "&cSoulbound Sword"
+    name: "&cДушераздирающий меч"
   SOULBOUND_TRIDENT:
-    name: "&cSoulbound Trident"
+    name: "&cПрикованный тризубец"
   SOULBOUND_BOW:
-    name: "&cSoulbound Bow"
+    name: "&cДушераздирающий лук"
   EXPLOSIVE_BOW:
-    name: "&cExplosive Bow"
+    name: "&cВзрывной лук"
     lore:
-      - "&fAny Arrows fired using this Bow"
-      - "&fwill launch hit enemies into the air"
+      - "&fВсе стрелы выпущенные из этого лука"
+      - "&fподнимет пораженных врагов в воздух"
   ICY_BOW:
-    name: "&bIcy Bow"
+    name: "&Милосердный лук"
     lore:
-      - "&fAny Arrows fired using this Bow"
-      - "&fwill prevent hit enemies from moving"
-      - "&ffor 2 seconds"
+      - "&fВсе стрелы выпущенные из этого лука"
+      - "&fпредотвратит перемещение пораженных врагов"
+      - "&fв течение 2 секунд"
