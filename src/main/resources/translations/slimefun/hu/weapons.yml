@@ -1,48 +1,48 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
-name: Slimefun Weapons
+name: Slimefun Fegyverek
 author: Slimefun
 lang: en
 dependencies:
   - Slimefun
 translations:
   GRANDMAS_WALKING_STICK:
-    name: "&7Grandmas Walking Stick"
+    name: "&7Nagymama Sétapálcája"
   GRANDPAS_WALKING_STICK:
-    name: "&7Grandpas Walking Stick"
+    name: "&7Nagyapa Sétapálcája"
   SWORD_OF_BEHEADING:
-    name: "&6Sword of Beheading"
+    name: "&6Lefejezés Kardja"
     lore:
-      - "&7Beheading II"
+      - "&7Lefejezés II"
       - ""
-      - "&fHas a chance to behead Mobs"
-      - "&f(even a higher chance for Wither Skeletons)"
+      - "&fLe tudja fejezni a Szörnyeket"
+      - "&f(mégmagasabb esély a Wither Csontvázakon)"
   BLADE_OF_VAMPIRES:
     check-name: true
-    name: "&4Blade of Vampires"
+    name: "&4Vámpírok Pengéje"
     lore:
       - "&7Life Steal I"
       - ""
-      - "&fEverytime you attack something"
-      - "&fyou have a 45% chance to"
-      - "&frecover 2 Hearts of your Health"
+      - "&fAmikor megtámadsz valamit"
+      - "&f45% esélyed van arra, hogy"
+      - "&fvisszatölts 2 szívet"
   SEISMIC_AXE:
-    name: "&aSeismic Axe"
+    name: "&aSzeizmikus Balta"
     lore-replacements:
-      2: "&7&oA portable Earthquake..."
+      2: "&7&oEgy kézi Földrengés..."
   SOULDBOUND_SWORD:
-    name: "&cSoulbound Sword"
+    name: "&cSoulbound Kard"
   SOULBOUND_TRIDENT:
-    name: "&cSoulbound Trident"
+    name: "&cSoulbound Szigony"
   SOULBOUND_BOW:
-    name: "&cSoulbound Bow"
+    name: "&cSoulbound Íj"
   EXPLOSIVE_BOW:
-    name: "&cExplosive Bow"
+    name: "&cRobbanó Íj"
     lore:
-      - "&fAny Arrows fired using this Bow"
-      - "&fwill launch hit enemies into the air"
+      - "&fBármilyen az Íjjal kilőtt nyíl"
+      - "&ffelrepíti az ellenségeket a levegőbe"
   ICY_BOW:
-    name: "&bIcy Bow"
+    name: "&bJeges Íj"
     lore:
-      - "&fAny Arrows fired using this Bow"
-      - "&fwill prevent hit enemies from moving"
-      - "&ffor 2 seconds"
+      - "&fBármilyen az Íjjal kilőtt nyíl"
+      - "&fmegakadályozza az ellenségeket a mozgásban"
+      - "&f2 másodpercig"
