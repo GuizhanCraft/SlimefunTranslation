@@ -1,34 +1,34 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
-name: Slimefun Weapons
+name: Slimefunの武器
 author: Slimefun
-lang: en
+lang: ja
 dependencies:
   - Slimefun
 translations:
   GRANDMAS_WALKING_STICK:
-    name: "&7Grandmas Walking Stick"
+    name: "&7おばあさんの杖"
   GRANDPAS_WALKING_STICK:
-    name: "&7Grandpas Walking Stick"
+    name: "&7おじいさんの杖"
   SWORD_OF_BEHEADING:
-    name: "&6Sword of Beheading"
+    name: "&6斬首の剣"
     lore:
-      - "&7Beheading II"
+      - "&7斬首 II"
       - ""
-      - "&fHas a chance to behead Mobs"
-      - "&f(even a higher chance for Wither Skeletons)"
+      - "&fMobの頭を断絶するチャンスがあります。"
+      - "&f(ウィザースケルトンの場合はより高い確率で)"
   BLADE_OF_VAMPIRES:
     check-name: true
-    name: "&4Blade of Vampires"
+    name: "&4吸血鬼の刃"
     lore:
-      - "&7Life Steal I"
+      - "&7ライフスティール I"
       - ""
-      - "&fEverytime you attack something"
-      - "&fyou have a 45% chance to"
-      - "&frecover 2 Hearts of your Health"
+      - "&f何かを攻撃したら、45%の"
+      - "&f確率でハート2個を"
+      - "&f回復します。"
   SEISMIC_AXE:
-    name: "&aSeismic Axe"
+    name: "&a地震の斧"
     lore-replacements:
-      2: "&7&oA portable Earthquake..."
+      2: "&7&oポータブル地震..."
   SOULDBOUND_SWORD:
     name: "&cSoulbound Sword"
   SOULBOUND_TRIDENT:
@@ -36,13 +36,13 @@ translations:
   SOULBOUND_BOW:
     name: "&cSoulbound Bow"
   EXPLOSIVE_BOW:
-    name: "&cExplosive Bow"
+    name: "&c爆発の弓"
     lore:
-      - "&fAny Arrows fired using this Bow"
-      - "&fwill launch hit enemies into the air"
+      - "&fこの弓から発射された矢は"
+      - "&f当たった敵を空に飛ばします"
   ICY_BOW:
-    name: "&bIcy Bow"
+    name: "&b氷の弓"
     lore:
-      - "&fAny Arrows fired using this Bow"
-      - "&fwill prevent hit enemies from moving"
-      - "&ffor 2 seconds"
+      - "&fこの弓から発射された矢は"
+      - "&f当たった敵の動きを2秒間"
+      - "&f封じます"
