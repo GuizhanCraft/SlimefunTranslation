@@ -10,9 +10,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
-import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
-
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -20,12 +17,12 @@ import org.bukkit.inventory.meta.ItemMeta;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
-import net.guizhanss.guizhanlib.slimefun.addon.AddonConfig;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.TranslationConfiguration;
 import net.guizhanss.slimefuntranslation.api.interfaces.Translatable;
 import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
 import net.guizhanss.slimefuntranslation.core.users.User;
+import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 import net.guizhanss.slimefuntranslation.utils.FileUtils;
 
 public final class TranslationManager {
@@ -112,9 +109,9 @@ public final class TranslationManager {
 
         final ItemMeta meta = item.getItemMeta();
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
-        meta.setDisplayName(ChatUtil.color(translation.getDisplayName(originalDisplayName)));
+        meta.setDisplayName(ColorUtils.color(translation.getDisplayName(originalDisplayName)));
         List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
-        meta.setLore(ChatUtil.color(translation.getLore(originalLore)));
+        meta.setLore(ColorUtils.color(translation.getLore(originalLore)));
         item.setItemMeta(meta);
         return true;
     }

@@ -7,13 +7,13 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
 
 import lombok.RequiredArgsConstructor;
-
-import org.bukkit.inventory.ItemStack;
 
 /**
  * A fixed translation is defined from config file, or from other plugins.

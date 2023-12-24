@@ -10,19 +10,16 @@ import javax.annotation.Nonnull;
 
 import com.google.common.base.Preconditions;
 
-import net.guizhanss.slimefuntranslation.implementation.translations.FixedTranslation;
-import net.guizhanss.slimefuntranslation.utils.ConfigUtils;
-
 import org.bukkit.configuration.file.FileConfiguration;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
+import net.guizhanss.slimefuntranslation.implementation.translations.FixedTranslation;
+import net.guizhanss.slimefuntranslation.utils.ConfigUtils;
 
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

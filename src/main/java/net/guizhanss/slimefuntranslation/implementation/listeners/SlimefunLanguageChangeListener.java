@@ -1,13 +1,12 @@
 package net.guizhanss.slimefuntranslation.implementation.listeners;
 
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerLanguageChangeEvent;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-
 import net.guizhanss.slimefuntranslation.core.users.User;
-
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
 
 public class SlimefunLanguageChangeListener implements Listener {
     public SlimefunLanguageChangeListener(SlimefunTranslation plugin) {
