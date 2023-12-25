@@ -1,0 +1,48 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Weapons
+author: Slimefun
+lang: ru
+dependencies:
+  - Slimefun
+translations:
+  GRANDMAS_WALKING_STICK:
+    name: "&7Бабушкина трость для ходьбы"
+  GRANDPAS_WALKING_STICK:
+    name: "&7Дедушкина трость для ходьбы"
+  SWORD_OF_BEHEADING:
+    name: "&6Меч обезглавливания"
+    lore:
+      - "&7Обезглавливание II"
+      - ""
+      - "&fИмеет шанс обезглавить мобов"
+      - "&f(даже более высокий шанс для скелетов-убийц)"
+  BLADE_OF_VAMPIRES:
+    check-name: true
+    name: "&4Клинок вампиров"
+    lore:
+      - "&7Кража жизни I"
+      - ""
+      - "&fКаждый раз когда вы нападаете на что-то"
+      - "&fу вас есть шанс 45%"
+      - "&fвосстанавливает 2 сердца здоровья"
+  SEISMIC_AXE:
+    name: "&aСейсмический топор"
+    lore-replacements:
+      2: "&7&oПортативное землетрясение..."
+  SOULDBOUND_SWORD:
+    name: "&cДушераздирающий меч"
+  SOULBOUND_TRIDENT:
+    name: "&cПрикованный трезубец"
+  SOULBOUND_BOW:
+    name: "&cДушераздирающий лук"
+  EXPLOSIVE_BOW:
+    name: "&cВзрывной лук"
+    lore:
+      - "&fВсе стрелы выпущенные из этого лука"
+      - "&fподнимет пораженных врагов в воздух"
+  ICY_BOW:
+    name: "&Милосердный лук"
+    lore:
+      - "&fВсе стрелы выпущенные из этого лука"
+      - "&fпредотвратит перемещение пораженных врагов"
+      - "&fв течение 2 секунд"
