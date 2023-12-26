@@ -21,6 +21,6 @@ public class WindowClickListener extends AClientListener {
             return;
         }
         ItemStack item = event.getPacket().getItemModifier().read(0);
-        SlimefunTranslation.getTranslationManager().translateItem(user, item);
+        SlimefunTranslation.getTranslationService().translateItem(user, item);
     }
 }

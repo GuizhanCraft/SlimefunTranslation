@@ -1,4 +1,4 @@
-package net.guizhanss.slimefuntranslation.implementation.managers;
+package net.guizhanss.slimefuntranslation.core.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +9,9 @@ import net.guizhanss.slimefuntranslation.implementation.packetlisteners.client.i
 import net.guizhanss.slimefuntranslation.implementation.packetlisteners.server.items.SetSlotListener;
 import net.guizhanss.slimefuntranslation.implementation.packetlisteners.server.items.WindowItemListener;
 
-public final class PacketListenerManager {
+public final class PacketListenerService {
 
-    public PacketListenerManager() {
+    public PacketListenerService() {
         List<AListener> packetListeners = new ArrayList<>();
 
         packetListeners.add(new SetSlotListener());

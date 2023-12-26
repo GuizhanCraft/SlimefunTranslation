@@ -27,7 +27,7 @@ public class SetSlotListener extends AServerListener {
         StructureModifier<ItemStack> modifier = packet.getItemModifier();
         for (int i = 0; i < modifier.size(); i++) {
             ItemStack item = modifier.read(i);
-            if (SlimefunTranslation.getTranslationManager().translateItem(user, item)) {
+            if (SlimefunTranslation.getTranslationService().translateItem(user, item)) {
                 modifier.write(i, item);
             }
         }

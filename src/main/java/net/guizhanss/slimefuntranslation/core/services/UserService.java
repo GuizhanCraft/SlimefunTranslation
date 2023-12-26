@@ -1,4 +1,4 @@
-package net.guizhanss.slimefuntranslation.implementation.managers;
+package net.guizhanss.slimefuntranslation.core.services;
 
 import java.util.UUID;
 
@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
-public final class UserManager {
+public final class UserService {
 
     @Nonnull
     public User getUser(@Nonnull UUID uuid) {

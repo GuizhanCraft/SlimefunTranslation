@@ -12,5 +12,6 @@ import lombok.Getter;
 @Getter
 public final class Registry {
     private final Map<UUID, User> users = new HashMap<>();
-    private final Map<String, Map<String, Translation>> translations = new HashMap<>();
+    private final Map<String, Map<String, Translation>> itemTranslations = new HashMap<>();
+    private final Map<String, Map<String, String>> loreTranslations = new HashMap<>();
 }

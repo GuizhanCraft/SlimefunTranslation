@@ -34,7 +34,7 @@ public abstract class AListener {
                 p.getAddress(), packetType.name());
             return null;
         } else {
-            return SlimefunTranslation.getUserManager().getUser(p);
+            return SlimefunTranslation.getUserService().getUser(p);
         }
     }
 

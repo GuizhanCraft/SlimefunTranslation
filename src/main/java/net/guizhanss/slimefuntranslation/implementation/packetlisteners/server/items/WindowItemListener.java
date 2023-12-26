@@ -29,7 +29,7 @@ public class WindowItemListener extends AServerListener {
         StructureModifier<List<ItemStack>> modifier = packet.getItemListModifier();
         List<ItemStack> items = modifier.read(0);
         for (ItemStack item : items) {
-            SlimefunTranslation.getTranslationManager().translateItem(user, item);
+            SlimefunTranslation.getTranslationService().translateItem(user, item);
         }
         modifier.write(0, items);
     }

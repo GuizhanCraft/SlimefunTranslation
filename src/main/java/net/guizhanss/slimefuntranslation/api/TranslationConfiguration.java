@@ -32,14 +32,15 @@ import lombok.Setter;
 @SuppressWarnings("ConstantConditions")
 @RequiredArgsConstructor
 @Getter
+@Setter(AccessLevel.PROTECTED)
 public class TranslationConfiguration {
     private final String name;
     private final String author;
     private final String lang;
     private final List<String> dependencies;
-    private final Map<String, Translation> translations;
+    private final Map<String, Translation> itemTranslations;
+    private final Map<String, String> loreTranslations;
 
-    @Setter(AccessLevel.PRIVATE)
     private State state = State.UNREGISTERED;
     private SlimefunAddon addon = null;
 
@@ -67,46 +68,61 @@ public class TranslationConfiguration {
             }
         }
 
-        var section = config.getConfigurationSection("translations");
-        if (section == null) {
+        var itemsSection = config.getConfigurationSection("translations");
+        var loreSection = config.getConfigurationSection("lore");
+        if (itemsSection == null && loreSection == null) {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name + " by " + author);
             return Optional.empty();
         }
+        Map<String, Translation> itemTranslations = new HashMap<>();
+        Map<String, String> loreTranslations = new HashMap<>();
+
         SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\" by {1}, language: {2}", name, author, lang);
-        Map<String, Translation> translations = new HashMap<>();
-        for (var itemId : section.getKeys(false)) {
-            SlimefunTranslation.debug("Loading translation {0}", itemId);
-            var itemSection = section.getConfigurationSection(itemId);
-            // name
-            String displayName = "";
-            if (itemSection.contains("name")) {
-                displayName = itemSection.getString("name", "");
-            }
 
-            // lore
-            var lore = itemSection.getStringList("lore");
-
-            // lore replacements
-            Map<Integer, String> replacementMap = new HashMap<>();
-            if (itemSection.contains("lore-replacements")) {
-                try {
-                    Map<String, String> replacements = ConfigUtils.getMap(itemSection.getConfigurationSection("lore-replacements"));
-                    for (var entry : replacements.entrySet()) {
-                        replacementMap.put(Integer.parseInt(entry.getKey()), entry.getValue());
-                    }
-                } catch (NumberFormatException | NullPointerException ex) {
-                    SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
-                    return Optional.empty();
+        if (itemsSection != null) {
+            for (var itemId : itemsSection.getKeys(false)) {
+                SlimefunTranslation.debug("Loading item translation {0}", itemId);
+                var itemSection = itemsSection.getConfigurationSection(itemId);
+                // name
+                String displayName = "";
+                if (itemSection.contains("name")) {
+                    displayName = itemSection.getString("name", "");
                 }
+
+                // lore
+                var lore = itemSection.getStringList("lore");
+
+                // lore replacements
+                Map<Integer, String> replacementMap = new HashMap<>();
+                if (itemSection.contains("lore-replacements")) {
+                    try {
+                        Map<String, String> replacements = ConfigUtils.getMap(itemSection.getConfigurationSection("lore-replacements"));
+                        for (var entry : replacements.entrySet()) {
+                            replacementMap.put(Integer.parseInt(entry.getKey()), entry.getValue());
+                        }
+                    } catch (NumberFormatException | NullPointerException ex) {
+                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
+                        return Optional.empty();
+                    }
+                }
+
+                // check name
+                boolean checkName = itemSection.getBoolean("check-name", false);
+
+                var translation = new FixedTranslation(displayName, lore, replacementMap, checkName);
+                itemTranslations.put(itemId, translation);
             }
-
-            // check name
-            boolean checkName = itemSection.getBoolean("check-name", false);
-
-            var translation = new FixedTranslation(displayName, lore, replacementMap, checkName);
-            translations.put(itemId, translation);
         }
-        return Optional.of(new TranslationConfiguration(name, author, lang, dependencies, translations));
+
+        if (loreSection != null) {
+            for (var loreId : loreSection.getKeys(false)) {
+                SlimefunTranslation.debug("Loading lore translation {0}", loreId);
+                var lore = loreSection.getString(loreId);
+                loreTranslations.put(loreId, lore);
+            }
+        }
+
+        return Optional.of(new TranslationConfiguration(name, author, lang, dependencies, itemTranslations, loreTranslations));
     }
 
     public void register(@Nonnull SlimefunAddon addon) {
@@ -114,10 +130,15 @@ public class TranslationConfiguration {
             throw new IllegalStateException("TranslationConfiguration is already registered");
         }
 
-        var allTranslations = SlimefunTranslation.getRegistry().getTranslations();
-        allTranslations.putIfAbsent(lang, new HashMap<>());
-        var currentTranslations = allTranslations.get(lang);
-        currentTranslations.putAll(translations);
+        var allItemTranslations = SlimefunTranslation.getRegistry().getItemTranslations();
+        allItemTranslations.putIfAbsent(lang, new HashMap<>());
+        var currentTranslations = allItemTranslations.get(lang);
+        currentTranslations.putAll(itemTranslations);
+
+        var allLoreTranslations = SlimefunTranslation.getRegistry().getLoreTranslations();
+        allLoreTranslations.putIfAbsent(lang, new HashMap<>());
+        var currentLoreTranslations = allLoreTranslations.get(lang);
+        currentLoreTranslations.putAll(loreTranslations);
 
         this.addon = addon;
         setState(State.REGISTERED);

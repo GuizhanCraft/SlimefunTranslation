@@ -1,4 +1,4 @@
-package net.guizhanss.slimefuntranslation.implementation.managers;
+package net.guizhanss.slimefuntranslation.core.services;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -20,18 +20,16 @@ import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.TranslationConfiguration;
 import net.guizhanss.slimefuntranslation.api.interfaces.Translatable;
-import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
 import net.guizhanss.slimefuntranslation.core.users.User;
-import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 import net.guizhanss.slimefuntranslation.utils.FileUtils;
+import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 
-public final class TranslationManager {
+public final class TranslationService {
     private static final String FOLDER_NAME = "translations";
-    private static final String DEFAULT_LANGUAGE = "en";
     private final File translationsFolder;
 
     @ParametersAreNonnullByDefault
-    public TranslationManager(SlimefunTranslation plugin, File jarFile) {
+    public TranslationService(SlimefunTranslation plugin, File jarFile) {
         translationsFolder = new File(plugin.getDataFolder(), FOLDER_NAME);
         if (!translationsFolder.exists()) {
             translationsFolder.mkdirs();
@@ -98,64 +96,35 @@ public final class TranslationManager {
 
     @ParametersAreNonnullByDefault
     private boolean translateItem(User user, ItemStack item, SlimefunItem sfItem) {
-        final Translation translation = findItemTranslation(user, item, sfItem.getId());
-        if (translation == null) {
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
+        if (transl.isEmpty()) {
             return false;
         }
+        var translation = transl.get();
 
         if (!translation.canTranslate(item, sfItem)) {
             return false;
         }
 
+        var integrationService = SlimefunTranslation.getIntegrationService();
         final ItemMeta meta = item.getItemMeta();
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
-        meta.setDisplayName(ColorUtils.color(translation.getDisplayName(originalDisplayName)));
+        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(originalDisplayName)));
         List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
-        meta.setLore(ColorUtils.color(translation.getLore(originalLore)));
+        meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
         item.setItemMeta(meta);
         return true;
     }
 
-    @Nullable
+    @Nonnull
     @ParametersAreNonnullByDefault
-    private Translation findItemTranslation(User user, ItemStack item, String id) {
-        SlimefunTranslation.debug("Attempting to find the translation for item {0} for user {1}", id, user.getPlayer().getName());
-        var allTranslations = SlimefunTranslation.getRegistry().getTranslations();
-        // find the translations for user's current locale
-        var translations = allTranslations.get(user.getLocale());
-        if (translations != null) {
-            // then find the translation for the item
-            var translation = translations.get(id);
-            if (translation != null) {
-                return translation;
-            }
+    public String translateLore(User user, String id) {
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
+        if (transl.isEmpty()) {
+            return "";
         }
-
-        SlimefunTranslation.debug("User's locale {0} does not have translation for item.", user.getLocale());
-
-        // user's current locale does not have translation for the given item,
-        // try server default locale
-        var serverDefault = Slimefun.getLocalization().getDefaultLanguage();
-        if (serverDefault != null) {
-            translations = allTranslations.get(serverDefault.getId());
-            if (translations != null) {
-                var translation = translations.get(id);
-                if (translation != null) {
-                    return translation;
-                }
-            }
-        }
-
-        SlimefunTranslation.debug("Server default locale {0} does not have translation for item.", serverDefault);
-
-        // try english at last
-        translations = allTranslations.get(DEFAULT_LANGUAGE);
-        if (translations != null) {
-            return translations.get(id);
-        }
-
-        SlimefunTranslation.debug("English does not have translation for item.");
-
-        return null;
+        return transl.get();
     }
 }

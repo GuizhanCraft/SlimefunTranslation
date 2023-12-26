@@ -12,18 +12,23 @@ import org.bukkit.inventory.ItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
-
-import lombok.RequiredArgsConstructor;
+import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 
 /**
  * A fixed translation is defined from config file, or from other plugins.
  */
-@RequiredArgsConstructor
 public class FixedTranslation implements Translation {
     private final String displayName;
     private final List<String> lore;
     private final Map<Integer, String> replacements;
     private final boolean checkName;
+
+    public FixedTranslation(String displayName, List<String> lore, Map<Integer, String> replacements, boolean checkName) {
+        this.displayName = ColorUtils.color(displayName);
+        this.lore = ColorUtils.color(lore);
+        this.replacements = replacements;
+        this.checkName = checkName;
+    }
 
     /**
      * Get the display name of the item.
@@ -56,7 +61,7 @@ public class FixedTranslation implements Translation {
             var newLore = new ArrayList<>(original);
             for (var entry : replacements.entrySet()) {
                 try {
-                    newLore.set(entry.getKey() - 1, entry.getValue());
+                    newLore.set(entry.getKey() - 1, ColorUtils.color(entry.getValue()));
                 } catch (IndexOutOfBoundsException e) {
                     // ignore
                 }

@@ -13,6 +13,6 @@ public class PlayerJoinListener implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
-        SlimefunTranslation.getUserManager().addUser(e.getPlayer());
+        SlimefunTranslation.getUserService().addUser(e.getPlayer());
     }
 }

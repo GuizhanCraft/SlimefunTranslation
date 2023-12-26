@@ -13,6 +13,6 @@ public class PlayerQuitListener implements Listener {
 
     @EventHandler
     public void onJoin(PlayerQuitEvent e) {
-        SlimefunTranslation.getUserManager().removeUser(e.getPlayer());
+        SlimefunTranslation.getUserService().removeUser(e.getPlayer());
     }
 }

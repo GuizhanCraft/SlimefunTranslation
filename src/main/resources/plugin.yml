@@ -5,13 +5,13 @@ api-version: 1.16
 depend:
   - Slimefun
   - ProtocolLib
+  - PlaceholderAPI
 softdepend:
   - GuizhanLibPlugin
-  - PlaceholderAPI
 authors: [ ybw0014 ]
 description: A Slimefun Addon that translates items without actually modifying the items.
 commands:
   sftranslation:
     description: SlimefunTranslation Command
     usage: /<command> <subcommand>
-    aliases: [ slimefuntranslation, sft, sftr ]
+    aliases: [ slimefuntranslation, sft, sftr, sftransl ]

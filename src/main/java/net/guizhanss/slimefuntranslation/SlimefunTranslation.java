@@ -8,6 +8,8 @@ import javax.annotation.Nonnull;
 
 import com.google.common.base.Preconditions;
 
+import net.guizhanss.slimefuntranslation.core.services.IntegrationService;
+
 import org.bukkit.plugin.Plugin;
 
 import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.BlobBuildUpdater;
@@ -15,12 +17,12 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.BlobBuildUpdat
 import net.guizhanss.guizhanlib.slimefun.addon.AbstractAddon;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import net.guizhanss.slimefuntranslation.core.Registry;
+import net.guizhanss.slimefuntranslation.core.services.CommandService;
 import net.guizhanss.slimefuntranslation.core.services.ConfigurationService;
-import net.guizhanss.slimefuntranslation.implementation.managers.CommandManager;
-import net.guizhanss.slimefuntranslation.implementation.managers.ListenerManager;
-import net.guizhanss.slimefuntranslation.implementation.managers.PacketListenerManager;
-import net.guizhanss.slimefuntranslation.implementation.managers.TranslationManager;
-import net.guizhanss.slimefuntranslation.implementation.managers.UserManager;
+import net.guizhanss.slimefuntranslation.core.services.ListenerService;
+import net.guizhanss.slimefuntranslation.core.services.PacketListenerService;
+import net.guizhanss.slimefuntranslation.core.services.TranslationService;
+import net.guizhanss.slimefuntranslation.core.services.UserService;
 
 import org.bstats.bukkit.Metrics;
 
@@ -28,8 +30,9 @@ public final class SlimefunTranslation extends AbstractAddon {
 
     private ConfigurationService configService;
     private Registry registry;
-    private UserManager userManager;
-    private TranslationManager translationManager;
+    private UserService userService;
+    private TranslationService translationService;
+    private IntegrationService integrationService;
     private boolean debugEnabled = false;
 
     public SlimefunTranslation() {
@@ -51,13 +54,18 @@ public final class SlimefunTranslation extends AbstractAddon {
     }
 
     @Nonnull
-    public static UserManager getUserManager() {
-        return inst().userManager;
+    public static UserService getUserService() {
+        return inst().userService;
     }
 
     @Nonnull
-    public static TranslationManager getTranslationManager() {
-        return inst().translationManager;
+    public static TranslationService getTranslationService() {
+        return inst().translationService;
+    }
+
+    @Nonnull
+    public static IntegrationService getIntegrationService() {
+        return inst().integrationService;
     }
 
     public static void debug(@Nonnull String message, @Nonnull Object... args) {
@@ -84,18 +92,18 @@ public final class SlimefunTranslation extends AbstractAddon {
         // debug
         debugEnabled = configService.isDebug();
 
-        // managers
-        userManager = new UserManager();
-        translationManager = new TranslationManager(this, getFile());
-        new CommandManager(this);
-        new ListenerManager(this);
-        new PacketListenerManager();
+        // other services
+        userService = new UserService();
+        translationService = new TranslationService(this, getFile());
+        new CommandService(this);
+        new ListenerService(this);
+        integrationService = new IntegrationService(this);
 
         // metrics
         setupMetrics();
 
         // delayed tasks
-        getScheduler().runAsync(() -> translationManager.loadTranslations());
+        getScheduler().runAsync(() -> translationService.loadTranslations());
     }
 
     @Override
