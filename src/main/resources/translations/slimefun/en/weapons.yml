@@ -27,8 +27,11 @@ translations:
       - "&frecover 2 Hearts of your Health"
   SEISMIC_AXE:
     name: "&aSeismic Axe"
-    lore-replacements:
-      2: "&7&oA portable Earthquake..."
+    lore:
+      - ""
+      - "&7&oA portable Earthquake..."
+      - ""
+      - "{sftrlore_RightClickToUse}"
   SOULDBOUND_SWORD:
     name: "&cSoulbound Sword"
   SOULBOUND_TRIDENT:

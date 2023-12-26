@@ -1,0 +1,102 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Useful Items
+author: Slimefun
+lang: en
+dependencies:
+  - Slimefun
+translations:
+  PORTABLE_CRAFTER:
+    name: "&6Portable Crafter"
+    lore-replacements:
+      1: "&a&oA portable Crafting Table"
+  PORTABLE_DUSTBIN:
+    name: "&6Portable Dustbin"
+    lore-replacements:
+      1: "&fYour portable Item-Destroyer"
+  RAG:
+    name: "&cRag"
+    lore:
+      - ""
+      - "&aLevel I - Medical Supply"
+      - ""
+      - "&fRestores 2 Hearts"
+      - "&fExtinguishes Fire"
+      - ""
+      - "{sftrlore_RightClickToUse}"
+  BANDAGE:
+    name: "&cBandage"
+    lore:
+      - ""
+      - "&aLevel II - Medical Supply"
+      - ""
+      - "&fRestores 4 Hearts"
+      - "&fExtinguishes Fire"
+      - ""
+      - "{sftrlore_RightClickToUse}"
+  SPLINT:
+    name: "&cSplint"
+    lore:
+      - ""
+      - "&aLevel I - Medical Supply"
+      - ""
+      - "&fRestores 2 Hearts"
+      - ""
+      - "{sftrlore_RightClickToUse}"
+  VITAMINS:
+    name: "&cVitamins"
+    lore:
+      - ""
+      - "&aLevel III - Medical Supply"
+      - ""
+      - "&fRestores 4 Hearts"
+      - "&fExtinguishes Fire"
+      - "&fCures Poison/Wither/Radiation"
+      - ""
+      - "{sftrlore_RightClickToUse}"
+  MEDICINE:
+    name: "&cMedicine"
+    lore:
+      - ""
+      - "&aLevel III - Medical Supply"
+      - ""
+      - "&fRestores 4 Hearts"
+      - "&fExtinguishes Fire"
+      - "&fCures Poison/Wither/Radiation"
+  SMALL_BACKPACK:
+    name: "&eSmall Backpack"
+    lore-replacements:
+      2: "&7Size: &e9"
+      5: "{sftrlore_RightClickToOpen}"
+  MEDIUM_BACKPACK:
+    name: "&eBackpack"
+    lore-replacements:
+      2: "&7Size: &e18"
+      5: "{sftrlore_RightClickToOpen}"
+  LARGE_BACKPACK:
+    name: "&eLarge Backpack"
+    lore-replacements:
+      2: "&7Size: &e27"
+      5: "{sftrlore_RightClickToOpen}"
+  WOVEN_BACKPACK:
+    name: "&eWoven Backpack"
+    lore-replacements:
+      2: "&7Size: &e36"
+      5: "{sftrlore_RightClickToOpen}"
+  GILDED_BACKPACK:
+    name: "&eGilded Backpack"
+    lore-replacements:
+      2: "&7Size: &e45"
+      5: "{sftrlore_RightClickToOpen}"
+  RADIANT_BACKPACK:
+    name: "&eRadiant Backpack"
+    lore-replacements:
+      2: "&7Size: &e54 (Double chest)"
+      5: "{sftrlore_RightClickToOpen}"
+  COOLER:
+    name: "&bCooler"
+    lore-replacements:
+      1: "&fAllows you to store Juices/Smoothies"
+      2: "&fand automatically consumes them when you are hungry"
+      3: "&fand you have this in your Inventory"
+      5: "&7Size: &e27"
+      8: "{sftrlore_RightClickToOpen}"
