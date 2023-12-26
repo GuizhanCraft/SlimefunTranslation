@@ -1,4 +1,4 @@
 files:
   - source: /src/main/resources/translations/slimefun/en/*.yml
-    translation: /src/main/resources/translations/slimefun/%osx_locale%/%original_file_name%
+    translation: /src/main/resources/translations/slimefun/%locale%/%original_file_name%
 pull_request_title: "chore(i18n): update crowdin translations"
