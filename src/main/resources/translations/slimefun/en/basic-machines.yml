@@ -13,6 +13,7 @@ translations:
       - "&citems in this chest if it's placed"
       - "&cadjacent to the dispenser."
   ENHANCED_CRAFTING_TABLE:
+    check-name: true
     name: "&eEnhanced Crafting Table"
     lore:
       - ""

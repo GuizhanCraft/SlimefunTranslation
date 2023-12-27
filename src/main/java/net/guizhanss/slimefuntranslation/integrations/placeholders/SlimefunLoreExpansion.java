@@ -7,6 +7,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 
 import org.bukkit.entity.Player;
@@ -57,6 +58,8 @@ public class SlimefunLoreExpansion extends PlaceholderExpansion {
         }
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
-        return transl.map(translation -> MessageFormat.format(translation, (Object[]) args)).orElse(null);
+        return transl.map(translation ->
+            ColorUtils.color(MessageFormat.format(translation, (Object[]) args))
+        ).orElse(null);
     }
 }

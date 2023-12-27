@@ -22,7 +22,7 @@ translations:
       - "&fRestores 2 Hearts"
       - "&fExtinguishes Fire"
       - ""
-      - "{sftrlore_RightClickToUse}"
+      - "%sftrlore_RightClickToUse%"
   BANDAGE:
     name: "&cBandage"
     lore:
@@ -32,7 +32,7 @@ translations:
       - "&fRestores 4 Hearts"
       - "&fExtinguishes Fire"
       - ""
-      - "{sftrlore_RightClickToUse}"
+      - "%sftrlore_RightClickToUse%"
   SPLINT:
     name: "&cSplint"
     lore:
@@ -41,7 +41,7 @@ translations:
       - ""
       - "&fRestores 2 Hearts"
       - ""
-      - "{sftrlore_RightClickToUse}"
+      - "%sftrlore_RightClickToUse%"
   VITAMINS:
     name: "&cVitamins"
     lore:
@@ -52,7 +52,7 @@ translations:
       - "&fExtinguishes Fire"
       - "&fCures Poison/Wither/Radiation"
       - ""
-      - "{sftrlore_RightClickToUse}"
+      - "%sftrlore_RightClickToUse%"
   MEDICINE:
     name: "&cMedicine"
     lore:
@@ -66,32 +66,33 @@ translations:
     name: "&eSmall Backpack"
     lore-replacements:
       2: "&7Size: &e9"
-      5: "{sftrlore_RightClickToOpen}"
+      5: "%sftrlore_RightClickToOpen%"
   MEDIUM_BACKPACK:
+    check-name: true
     name: "&eBackpack"
     lore-replacements:
       2: "&7Size: &e18"
-      5: "{sftrlore_RightClickToOpen}"
+      5: "%sftrlore_RightClickToOpen%"
   LARGE_BACKPACK:
     name: "&eLarge Backpack"
     lore-replacements:
       2: "&7Size: &e27"
-      5: "{sftrlore_RightClickToOpen}"
+      5: "%sftrlore_RightClickToOpen%"
   WOVEN_BACKPACK:
     name: "&eWoven Backpack"
     lore-replacements:
       2: "&7Size: &e36"
-      5: "{sftrlore_RightClickToOpen}"
+      5: "%sftrlore_RightClickToOpen%"
   GILDED_BACKPACK:
     name: "&eGilded Backpack"
     lore-replacements:
       2: "&7Size: &e45"
-      5: "{sftrlore_RightClickToOpen}"
+      5: "%sftrlore_RightClickToOpen%"
   RADIANT_BACKPACK:
     name: "&eRadiant Backpack"
     lore-replacements:
       2: "&7Size: &e54 (Double chest)"
-      5: "{sftrlore_RightClickToOpen}"
+      5: "%sftrlore_RightClickToOpen%"
   COOLER:
     name: "&bCooler"
     lore-replacements:
@@ -99,7 +100,7 @@ translations:
       2: "&fand automatically consumes them when you are hungry"
       3: "&fand you have this in your Inventory"
       5: "&7Size: &e27"
-      8: "{sftrlore_RightClickToOpen}"
+      8: "%sftrlore_RightClickToOpen%"
   TAPE_MEASURE:
     name: "&6Tape Measure"
     lore:

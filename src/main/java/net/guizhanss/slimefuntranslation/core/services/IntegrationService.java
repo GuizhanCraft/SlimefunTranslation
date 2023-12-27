@@ -34,11 +34,15 @@ public final class IntegrationService {
         if (protocolLibEnabled) {
             SlimefunTranslation.log(Level.INFO, "ProtocolLib found, enabling packet listener...");
             new PacketListenerService();
+        } else {
+            SlimefunTranslation.log(Level.SEVERE, "ProtocolLib not found, this plugin will not be fully functional...");
         }
 
         if (placeholderAPIEnabled) {
             SlimefunTranslation.log(Level.INFO, "PlaceholderAPI found, enabling placeholders...");
             new SlimefunLoreExpansion().register();
+        } else {
+            SlimefunTranslation.log(Level.SEVERE, "PlaceholderAPI not found, this plugin will not be fully functional...");
         }
     }
 
