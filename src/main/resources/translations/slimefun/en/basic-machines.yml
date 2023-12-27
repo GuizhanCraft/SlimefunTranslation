@@ -1,0 +1,220 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Basic Machines
+author: Slimefun
+lang: en
+dependencies:
+  - Slimefun
+translations:
+  OUTPUT_CHEST:
+    name: "&4Output Chest"
+    lore:
+      - ""
+      - "&cA basic machine will try to put"
+      - "&citems in this chest if it's placed"
+      - "&cadjacent to the dispenser."
+  ENHANCED_CRAFTING_TABLE:
+    name: "&eEnhanced Crafting Table"
+    lore:
+      - ""
+      - "&aA regular Crafting Table cannot"
+      - "&ahold this massive Amount of Power..."
+  GRIND_STONE:
+    name: "&bGrind Stone"
+    lore:
+      - ""
+      - "&aGrinds items down into other items"
+  ARMOR_FORGE:
+    name: "&6Armor Forge"
+    lore:
+      - ""
+      - "&aGives you the ability to create powerful armor"
+  ORE_CRUSHER:
+    name: "&bOre Crusher"
+    lore:
+      - ""
+      - "&aCrushes ores to double them"
+  COMPRESSOR:
+    name: "&bCompressor"
+    lore:
+      - ""
+      - "&aCompresses Items"
+  MAKESHIFT_SMELTERY:
+    name: "&eMakeshift Smeltery"
+    lore:
+      - ""
+      - "&fImprovised version of the Smeltery"
+      - "&fthat only allows you to"
+      - "&fsmelt dusts into ingots"
+  SMELTERY:
+    name: "&6Smeltery"
+    lore:
+      - ""
+      - "&fA high-temperature furnace"
+      - "&fthat allows you to smelt dusts"
+      - "&finto ingots and create alloys."
+  IGNITION_CHAMBER:
+    name: "&4Automatic Ignition Chamber"
+    lore:
+      - ""
+      - "&fPrevents the Smeltery from using up fire."
+      - "&fJust fill it up with \"Flint and Steel\""
+      - "&fand place it adjacent to the Smeltery's dispenser"
+  PRESSURE_CHAMBER:
+    name: "&bPressure Chamber"
+    lore:
+      - ""
+      - "&aCompresses Items even further"
+  MAGIC_WORKBENCH:
+    name: "&6Magic Workbench"
+    lore:
+      - ""
+      - "&dInfuses Items with magical Energy"
+  ORE_WASHER:
+    name: "&6Ore Washer"
+    lore:
+      - ""
+      - "&aWashes Sifted Ore to filter Ores"
+      - "&aand gives you small Stone Chunks"
+  TABLE_SAW:
+    name: "&6Table Saw"
+    lore:
+      - ""
+      - "&aAllows you to get 8 planks from 1 Log"
+      - "&a(Works with all log types)"
+  COMPOSTER:
+    name: "&aComposter"
+    lore:
+      - ""
+      - "&aCan convert various Materials over Time..."
+  AUTOMATED_PANNING_MACHINE:
+    name: "&eAutomated Panning Machine"
+    lore:
+      - ""
+      - "&fA MultiBlock Version of the Gold Pan"
+      - "&fand Nether Gold Pan combined in one machine."
+  INDUSTRIAL_MINER:
+    name: "&bIndustrial Miner"
+    lore:
+      - ""
+      - "&fThis Multiblock will mine any Ores"
+      - "&fin a 7x7 area underneath it."
+      - "&fPlace coal or similar in its chest"
+      - "&fto fuel this machine."
+  ADVANCED_INDUSTRIAL_MINER:
+    name: "&cAdvanced Industrial Miner"
+    lore:
+      - ""
+      - "&fThis Multiblock will mine any Ores"
+      - "&fin a 11x11 area underneath it."
+      - "&fPlace a bucket of fuel or lava in"
+      - "&fits chest to fuel this machine."
+      - ""
+      - "&a+ Silk Touch"
+  CRUCIBLE:
+    name: "&cCrucible"
+    lore:
+      - ""
+      - "&aUsed to smelt Items into Liquids"
+  JUICER:
+    name: "&aJuicer"
+    lore:
+      - ""
+      - "&aAllows you to create delicious Juice"
+  ENHANCED_FURNACE:
+    name: "&7Enhanced Furnace - &eI"
+    lore:
+      - ""
+      - "&7Processing Speed: &e1x"
+      - "&7Fuel Efficiency: &e1x"
+      - "&7Luck Multiplier: &e1x"
+  ENHANCED_FURNACE_2:
+    name: "&7Enhanced Furnace - &eII"
+    lore:
+      - ""
+      - "&7Processing Speed: &e2x"
+      - "&7Fuel Efficiency: &e1x"
+      - "&7Luck Multiplier: &e1x"
+  ENHANCED_FURNACE_3:
+    name: "&7Enhanced Furnace - &eIII"
+    lore:
+      - ""
+      - "&7Processing Speed: &e2x"
+      - "&7Fuel Efficiency: &e2x"
+      - "&7Luck Multiplier: &e1x"
+  ENHANCED_FURNACE_4:
+    name: "&7Enhanced Furnace - &eIV"
+    lore:
+      - ""
+      - "&7Processing Speed: &e3x"
+      - "&7Fuel Efficiency: &e2x"
+      - "&7Luck Multiplier: &e1x"
+  ENHANCED_FURNACE_5:
+    name: "&7Enhanced Furnace - &eV"
+    lore:
+      - ""
+      - "&7Processing Speed: &e3x"
+      - "&7Fuel Efficiency: &e2x"
+      - "&7Luck Multiplier: &e2x"
+  ENHANCED_FURNACE_6:
+    name: "&7Enhanced Furnace - &eVI"
+    lore:
+      - ""
+      - "&7Processing Speed: &e3x"
+      - "&7Fuel Efficiency: &e3x"
+      - "&7Luck Multiplier: &e2x"
+  ENHANCED_FURNACE_7:
+    name: "&7Enhanced Furnace - &eVII"
+    lore:
+      - ""
+      - "&7Processing Speed: &e4x"
+      - "&7Fuel Efficiency: &e3x"
+      - "&7Luck Multiplier: &e2x"
+  ENHANCED_FURNACE_8:
+    name: "&7Enhanced Furnace - &eVIII"
+    lore:
+      - ""
+      - "&7Processing Speed: &e4x"
+      - "&7Fuel Efficiency: &e4x"
+      - "&7Luck Multiplier: &e2x"
+  ENHANCED_FURNACE_9:
+    name: "&7Enhanced Furnace - &eIX"
+    lore:
+      - ""
+      - "&7Processing Speed: &e5x"
+      - "&7Fuel Efficiency: &e4x"
+      - "&7Luck Multiplier: &e2x"
+  ENHANCED_FURNACE_10:
+    name: "&7Enhanced Furnace - &eX"
+    lore:
+      - ""
+      - "&7Processing Speed: &e5x"
+      - "&7Fuel Efficiency: &e5x"
+      - "&7Luck Multiplier: &e2x"
+  ENHANCED_FURNACE_11:
+    name: "&7Enhanced Furnace - &eXI"
+    lore:
+      - ""
+      - "&7Processing Speed: &e5x"
+      - "&7Fuel Efficiency: &e5x"
+      - "&7Luck Multiplier: &e3x"
+  REINFORCED_FURNACE:
+    name: "&7Reinforced Furnace"
+    lore:
+      - ""
+      - "&7Processing Speed: &e10x"
+      - "&7Fuel Efficiency: &e10x"
+      - "&7Luck Multiplier: &e3x"
+  CARBONADO_EDGED_FURNACE:
+    name: "&7Carbonado Edged Furnace"
+    lore:
+      - ""
+      - "&7Processing Speed: &e20x"
+      - "&7Fuel Efficiency: &e10x"
+      - "&7Luck Multiplier: &e3x"
+  BLOCK_PLACER:
+    name: "&aBlock Placer"
+    lore:
+      - ""
+      - "&fAll Blocks in this Dispenser"
+      - "&fwill automatically get placed"
+

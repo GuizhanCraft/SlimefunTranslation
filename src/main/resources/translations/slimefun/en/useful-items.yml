@@ -100,3 +100,9 @@ translations:
       3: "&fand you have this in your Inventory"
       5: "&7Size: &e27"
       8: "{sftrlore_RightClickToOpen}"
+  TAPE_MEASURE:
+    name: "&6Tape Measure"
+    lore:
+      - ""
+      - "&eCrouch & Right Clck &7to set an anchor"
+      - "&eRight Click &7to measure"
