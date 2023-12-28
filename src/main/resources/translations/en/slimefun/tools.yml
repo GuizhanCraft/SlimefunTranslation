@@ -1,0 +1,82 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Tools
+author: SlimefunTranslation contributors
+translations:
+  GOLD_PAN:
+    name: "&6Gold Pan"
+    lore:
+      - ""
+      - "&eRight Click&7 to collect resources"
+      - "&7from Gravel"
+  NETHER_GOLD_PAN:
+    name: "&4Nether Gold Pan"
+    lore:
+      - ""
+      - "&eRight Click&7 to collect resources"
+      - "&7from Soul Sand"
+  GRAPPLING_HOOK:
+    name: "&6Grappling Hook"
+    lore:
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SMELTERS_PICKAXE:
+    check-name: true
+    name: "&6Smelter's Pickaxe"
+    lore:
+      - "&c&lAuto-Smelting"
+      - ""
+      - "&9Works with Fortune"
+  LUMBER_AXE:
+    name: "&6Lumber Axe"
+    lore:
+      - "&a&oCuts down the whole Tree..."
+  PICKAXE_OF_CONTAINMENT:
+    name: "&cPickaxe of Containment"
+    lore:
+      - ""
+      - "&9Can pickup Spawners"
+  EXPLOSIVE_PICKAXE:
+    name: "&eExplosive Pickaxe"
+    lore:
+      - ""
+      - "&fAllows you to mine a good bit"
+      - "&fof Blocks at once..."
+      - ""
+      - "&9Works with Fortune"
+  EXPLOSIVE_SHOVEL:
+    name: "&eExplosive Shovel"
+    lore:
+      - ""
+      - "&fAllows you to mine a good bit"
+      - "&fof diggable Blocks at once..."
+  PICKAXE_OF_THE_SEEKER:
+    name: "&aPickaxe of the Seeker"
+    lore:
+      - "&fWill always point you to the nearest Ore"
+      - "&fbut might get damaged when doing it"
+      - ""
+      - "&7&eRight Click&7 to be pointed to the nearest Ore"
+  COBALT_PICKAXE:
+    name: "&9Cobalt Pickaxe"
+  PICKAXE_OF_VEIN_MINING:
+    name: "&ePickaxe of Vein Mining"
+    lore:
+      - ""
+      - "&fThis Pickaxe will dig out"
+      - "&fwhole Veins of Ores..."
+  CLIMBING_PICK:
+    name: "&bClimbing Pick"
+    lore:
+      - ""
+      - "&fAllows you to climb certain surfaces"
+      - "&fby right-clicking."
+      - "&fEnchant this pick with Efficiency to"
+      - "&fclimb even faster!"
+  SOULBOUND_PICKAXE:
+    name: "&cSoulbound Pickaxe"
+  SOULBOUND_AXE:
+    name: "&cSoulbound Axe"
+  SOULBOUND_SHOVEL:
+    name: "&cSoulbound Shovel"
+  SOULBOUND_HOE:
+    name: "&cSoulbound Hoe"

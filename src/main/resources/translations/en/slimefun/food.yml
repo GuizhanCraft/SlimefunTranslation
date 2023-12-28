@@ -1,0 +1,91 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Food
+author: SlimefunTranslation contributors
+translations:
+  FORTUNE_COOKIE:
+    name: "&6Fortune Cookie"
+    lore:
+      - ""
+      - "&a&oTells you stuff about your Future :o"
+  DIET_COOKIE:
+    name: "&6Diet Cookie"
+    lore:
+      - ""
+      - "&aA very &a&olightweight &acookie."
+  BEEF_JERKY:
+    name: "&6Beef Jerky"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  PORK_JERKY:
+    name: "&6Pork Jerky"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  CHICKEN_JERKY:
+    name: "&6Chicken Jerky"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  MUTTON_JERKY:
+    name: "&6Mutton Jerky"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  RABBIT_JERKY:
+    name: "&6Rabbit Jerky"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  FISH_JERKY:
+    name: "&6Fish Jerky"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  KELP_COOKIE:
+    name: "&2Kelp Cookie"
+    lore:
+      - ""
+      - "&fExtra saturating!"
+  MAGIC_SUGAR:
+    name: "&6Magic Sugar"
+    lore:
+      - ""
+      - "&a&oFeel the Power of Hermes!"
+  MONSTER_JERKY:
+    name: "&6Monster Jerky"
+    lore:
+      - ""
+      - "&a&oNo longer hungry"
+  APPLE_JUICE:
+    name: "&cApple Juice"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  CARROT_JUICE:
+    name: "&6Carrot Juice"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  MELON_JUICE:
+    name: "&cMelon Juice"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  PUMPKIN_JUICE:
+    name: "&6Pumpkin Juice"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  SWEET_BERRY_JUICE:
+    name: "&cSweet Berry Juice"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  GOLDEN_APPLE_JUICE:
+    name: "&bGolden Apple Juice"
+  GLOW_BERRY_JUICE:
+    name: "&6Glow Berry Juice"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"

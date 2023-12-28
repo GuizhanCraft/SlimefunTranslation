@@ -1,0 +1,192 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Resources
+author: SlimefunTranslation contributors
+translations:
+  REINFORCED_ALLOY_INGOT:
+    name: "&b&lReinforced Alloy Ingot"
+  HARDENED_METAL_INGOT:
+    name: "&b&lHardened Metal"
+  DAMASCUS_STEEL_INGOT:
+    name: "&bDamascus Steel Ingot"
+  STEEL_INGOT:
+    name: "&bSteel Ingot"
+  BRONZE_INGOT:
+    name: "&bBronze Ingot"
+  DURALUMIN_INGOT:
+    name: "&bDuralumin Ingot"
+  BILLON_INGOT:
+    name: "&bBillon Ingot"
+  BRASS_INGOT:
+    name: "&bBrass Ingot"
+  ALUMINUM_BRASS_INGOT:
+    name: "&bAluminum Brass Ingot"
+  ALUMINUM_BRONZE_INGOT:
+    name: "&bAluminum Bronze Ingot"
+  CORINTHIAN_BRONZE_INGOT:
+    name: "&bCorinthian Bronze Ingot"
+  SOLDER_INGOT:
+    name: "&bSolder Ingot"
+  SYNTHETIC_SAPPHIRE:
+    check-name: true
+    name: "&bSynthetic Sapphire"
+    lore:
+      - ""
+      - "&fThis item can be used in a"
+      - "&fworkbench and acts like Lapis Lazuli"
+  SYNTHETIC_DIAMOND:
+    name: "&bSynthetic Diamond"
+    lore:
+      - ""
+      - "&fThis item can be used in a"
+      - "&fworkbench and acts like a normal Diamond"
+  RAW_CARBONADO:
+    name: "&bRaw Carbonado"
+  NICKEL_INGOT:
+    name: "&bNickel Ingot"
+  COBALT_INGOT:
+    name: "&9Cobalt Ingot"
+  CARBONADO:
+    name: "&b&lCarbonado"
+    lore:
+      - ""
+      - "&7&o\"Black Diamond\""
+  FERROSILICON:
+    name: "&bFerrosilicon"
+  IRON_DUST:
+    name: "&6Iron Dust"
+  GOLD_DUST:
+    name: "&6Gold Dust"
+  COPPER_DUST:
+    name: "&6Copper Dust"
+  TIN_DUST:
+    name: "&6Tin Dust"
+  SILVER_DUST:
+    name: "&6Silver Dust"
+  LEAD_DUST:
+    name: "&6Lead Dust"
+  ALUMINUM_DUST:
+    name: "&6Aluminum Dust"
+  ZINC_DUST:
+    name: "&6Zinc Dust"
+  MAGNESIUM_DUST:
+    name: "&6Magnesium Dust"
+  COPPER_INGOT:
+    name: "&bCopper Ingot"
+  TIN_INGOT:
+    name: "&bTin Ingot"
+  SILVER_INGOT:
+    name: "&bSilver Ingot"
+  LEAD_INGOT:
+    name: "&bLead Ingot"
+  ALUMINUM_INGOT:
+    name: "&bAluminum Ingot"
+  ZINC_INGOT:
+    name: "&bZinc Ingot"
+  MAGNESIUM_INGOT:
+    name: "&bMagnesium Ingot"
+  SULFATE:
+    name: "&bSulfate"
+  CARBON:
+    name: "&eCarbon"
+  COMPRESSED_CARBON:
+    name: "&cCompressed Carbon"
+  CARBON_CHUNK:
+    name: "&4Carbon Chunk"
+  GOLD_24K:
+    name: "&fGold Ingot &7(24-Carat)"
+  GOLD_22K:
+    name: "&fGold Ingot &7(22-Carat)"
+  GOLD_20K:
+    name: "&fGold Ingot &7(20-Carat)"
+  GOLD_18K:
+    name: "&fGold Ingot &7(18-Carat)"
+  GOLD_16K:
+    name: "&fGold Ingot &7(16-Carat)"
+  GOLD_14K:
+    name: "&fGold Ingot &7(14-Carat)"
+  GOLD_12K:
+    name: "&fGold Ingot &7(12-Carat)"
+  GOLD_10K:
+    name: "&fGold Ingot &7(10-Carat)"
+  GOLD_8K:
+    name: "&fGold Ingot &7(8-Carat)"
+  GOLD_6K:
+    name: "&fGold Ingot &7(6-Carat)"
+  GOLD_4K:
+    name: "&fGold Ingot &7(4-Carat)"
+  SILICON:
+    name: "&6Silicon"
+  GILDED_IRON:
+    name: "&6&lGilded Iron"
+  SYNTHETIC_EMERALD:
+    name: "&bSynthetic Emerald"
+    lore:
+      - ""
+      - "&fThis item can be used to"
+      - "&ftrade with Villagers"
+  URANIUM:
+    name: "&4Uranium"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  REDSTONE_ALLOY_INGOT:
+    name: "&cRedstone Alloy Ingot"
+  MAGNESIUM_SALT:
+    name: "&cMagnesium Salt"
+    lore:
+      - ""
+      - "&7A special type of fuel that can be"
+      - "&7used in a Magnesium-powered Generator"
+  BUCKET_OF_OIL:
+    name: "&fBucket of Oil"
+  BUCKET_OF_FUEL:
+    name: "&fBucket of Fuel"
+  NETHER_ICE:
+    name: "&eNether Ice"
+    lore:
+        - ""
+        - "%sftrlore_Radioactive_&eModerate%"
+        - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT:
+    name: "&6Blistering Ingot &7(33%)"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT_2:
+    name: "&6Blistering Ingot &7(66%)"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT_3:
+    name: "&6Blistering Ingot"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  ENRICHED_NETHER_ICE:
+    name: "&eEnriched Nether Ice"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  NEPTUNIUM:
+    name: "&aNeptunium"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  PLUTONIUM:
+    name: "&7Plutonium"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BOOSTED_URANIUM:
+    name: "&2Boosted Uranium"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_HazmatSuitRequired%"
