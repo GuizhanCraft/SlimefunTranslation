@@ -139,9 +139,6 @@ public final class TranslationService {
     public String translateLore(User user, String id) {
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
-        if (transl.isEmpty()) {
-            return "";
-        }
-        return transl.get();
+        return transl.orElse("");
     }
 }

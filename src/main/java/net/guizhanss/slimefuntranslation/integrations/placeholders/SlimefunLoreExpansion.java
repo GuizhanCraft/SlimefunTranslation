@@ -55,10 +55,7 @@ public class SlimefunLoreExpansion extends PlaceholderExpansion {
         } else {
             args = Arrays.copyOfRange(s, 1, s.length);
         }
-        var transl = TranslationUtils.findTranslation(
-            SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
-        return transl.map(translation ->
-            ColorUtils.color(MessageFormat.format(translation, (Object[]) args))
-        ).orElse(null);
+        var translation = SlimefunTranslation.getTranslationService().translateLore(user, id);
+        return ColorUtils.color(MessageFormat.format(translation, (Object[]) args));
     }
 }
