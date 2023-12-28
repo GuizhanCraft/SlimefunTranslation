@@ -7,15 +7,14 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import net.guizhanss.slimefuntranslation.utils.ColorUtils;
-import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
-
 import org.bukkit.entity.Player;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
+import net.guizhanss.slimefuntranslation.utils.ColorUtils;
+import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 
 public class SlimefunLoreExpansion extends PlaceholderExpansion {
     @Override

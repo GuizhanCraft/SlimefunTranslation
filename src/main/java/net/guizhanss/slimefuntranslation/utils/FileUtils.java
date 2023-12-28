@@ -21,6 +21,33 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public final class FileUtils {
     /**
+     * List all the folders (excluding sub folders) in the given folder.
+     *
+     * @param folder
+     *     the folder to search in
+     *
+     * @return a list of all folders in the given folder
+     */
+    @Nonnull
+    public static List<String> listFolders(@Nonnull File folder) {
+        if (folder == null || !folder.isDirectory()) {
+            return Collections.emptyList();
+        }
+        var files = folder.listFiles();
+        if (files == null) {
+            return Collections.emptyList();
+        }
+
+        List<String> result = new ArrayList<>();
+        for (File file : files) {
+            if (file.isDirectory()) {
+                result.add(file.getName());
+            }
+        }
+        return result;
+    }
+
+    /**
      * Lists all YAML files in the given folder.
      * The folder or files starts with a dot (.) or an underscore(_) will be ignored.
      *

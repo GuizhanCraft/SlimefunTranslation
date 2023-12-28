@@ -9,14 +9,14 @@ import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
-import net.guizhanss.slimefuntranslation.implementation.translations.FixedTranslation;
+import net.guizhanss.slimefuntranslation.implementation.translations.FixedItemTranslation;
 
 /**
- * This interface represents a translation.
+ * This interface represents an item translation.
  *
- * @see FixedTranslation
+ * @see FixedItemTranslation
  */
-public interface Translation {
+public interface ItemTranslation {
     @Nonnull
     String getDisplayName(@Nonnull String original);
 

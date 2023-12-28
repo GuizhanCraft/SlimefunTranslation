@@ -1,12 +1,12 @@
-package net.guizhanss.slimefuntranslation.api;
+package net.guizhanss.slimefuntranslation.api.config;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.logging.Level;
 
 import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
@@ -15,8 +15,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
-import net.guizhanss.slimefuntranslation.implementation.translations.FixedTranslation;
+import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.implementation.translations.FixedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ConfigUtils;
 
 import lombok.AccessLevel;
@@ -37,8 +37,7 @@ public class TranslationConfiguration {
     private final String name;
     private final String author;
     private final String lang;
-    private final List<String> dependencies;
-    private final Map<String, Translation> itemTranslations;
+    private final Map<String, ItemTranslation> itemTranslations;
     private final Map<String, String> loreTranslations;
 
     private State state = State.UNREGISTERED;
@@ -47,26 +46,21 @@ public class TranslationConfiguration {
     /**
      * Creates a {@link TranslationConfiguration} from a {@link FileConfiguration}.
      *
+     * @param language
+     *     the language of the translation.
      * @param config
      *     the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
      *
      * @return an {@link Optional} of {@link TranslationConfiguration} if the config is valid, otherwise {@code null}.
      */
     @Nonnull
-    public static Optional<TranslationConfiguration> fromFileConfiguration(@Nonnull FileConfiguration config) {
+    @ParametersAreNonnullByDefault
+    public static Optional<TranslationConfiguration> fromFileConfiguration(String language, FileConfiguration config) {
         Preconditions.checkArgument(config != null, "config cannot be null");
 
         String name = config.getString("name", "Unnamed Translation");
         String author = config.getString("author", "SlimefunTranslation");
-        String lang = SlimefunTranslation.getConfigService().getMappedLanguage(config.getString("lang", "en"));
-        List<String> dependencies = config.getStringList("dependencies");
-
-        for (var dependency : dependencies) {
-            if (!SlimefunTranslation.getInstance().getServer().getPluginManager().isPluginEnabled(dependency)) {
-                SlimefunTranslation.log(Level.SEVERE, "Translation config \"{0}\" by {1} is missing dependency {2}.", name, author, dependency);
-                return Optional.empty();
-            }
-        }
+        String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
 
         var itemsSection = config.getConfigurationSection("translations");
         var loreSection = config.getConfigurationSection("lore");
@@ -74,7 +68,7 @@ public class TranslationConfiguration {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name + " by " + author);
             return Optional.empty();
         }
-        Map<String, Translation> itemTranslations = new HashMap<>();
+        Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
 
         SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\" by {1}, language: {2}", name, author, lang);
@@ -109,7 +103,7 @@ public class TranslationConfiguration {
                 // check name
                 boolean checkName = itemSection.getBoolean("check-name", false);
 
-                var translation = new FixedTranslation(displayName, lore, replacementMap, checkName);
+                var translation = new FixedItemTranslation(displayName, lore, replacementMap, checkName);
                 itemTranslations.put(itemId, translation);
             }
         }
@@ -122,7 +116,7 @@ public class TranslationConfiguration {
             }
         }
 
-        return Optional.of(new TranslationConfiguration(name, author, lang, dependencies, itemTranslations, loreTranslations));
+        return Optional.of(new TranslationConfiguration(name, author, lang, itemTranslations, loreTranslations));
     }
 
     public void register(@Nonnull SlimefunAddon addon) {

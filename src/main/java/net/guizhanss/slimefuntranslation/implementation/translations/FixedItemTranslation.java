@@ -11,19 +11,19 @@ import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
-import net.guizhanss.slimefuntranslation.api.interfaces.Translation;
+import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 
 /**
  * A fixed translation is defined from config file, or from other plugins.
  */
-public class FixedTranslation implements Translation {
+public class FixedItemTranslation implements ItemTranslation {
     private final String displayName;
     private final List<String> lore;
     private final Map<Integer, String> replacements;
     private final boolean checkName;
 
-    public FixedTranslation(String displayName, List<String> lore, Map<Integer, String> replacements, boolean checkName) {
+    public FixedItemTranslation(String displayName, List<String> lore, Map<Integer, String> replacements, boolean checkName) {
         this.displayName = ColorUtils.color(displayName);
         this.lore = ColorUtils.color(lore);
         this.replacements = replacements;
