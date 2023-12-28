@@ -3,6 +3,7 @@ name: Slimefun Food
 author: SlimefunTranslation contributors
 translations:
   FORTUNE_COOKIE:
+    check-name: true
     name: "&6Fortune Cookie"
     lore:
       - ""

@@ -1,0 +1,67 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Technical Components
+author: SlimefunTranslation contributors
+translations:
+  BASIC_CIRCUIT_BOARD:
+    name: "&bBasic Circuit Board"
+  ADVANCED_CIRCUIT_BOARD:
+    name: "&bAdvanced Circuit Board"
+  BATTERY:
+    name: "&6Battery"
+  STEEL_THRUSTER:
+    name: "&7&lSteel Thruster"
+  POWER_CRYSTAL:
+    name: "&c&lPower Crystal"
+  SOLAR_PANEL:
+    name: "&9Photovoltaic Cell"
+    lore:
+      - ""
+      - "&7Important component for"
+      - "&7crafting a &bSolar Generator"
+  REINFORCED_CLOTH:
+    name: "&bReinforced Cloth"
+    lore:
+      - ""
+      - "&fThis cloth has been reinforced"
+      - "&fwith &bLead &fto protect against"
+      - "&fradioactive substances"
+  MAGNET:
+    name: "&cMagnet"
+  ELECTRO_MAGNET:
+    name: "&cElectromagnet"
+  ELECTRIC_MOTOR:
+    name: "&cElectric Motor"
+  HEATING_COIL:
+    name: "&cHeating Coil"
+  COPPER_WIRE:
+    name: "&6Copper Wire"
+    lore:
+      - ""
+      - "&6Crucial component in electric modules"
+  HARDENED_GLASS:
+    name: "&7Hardened Glass"
+    lore:
+      - ""
+      - "&fWithstands Explosions"
+  COOLING_UNIT:
+    name: "&bCooling Unit"
+  WITHER_PROOF_OBSIDIAN:
+    name: "&5Wither-Proof Obsidian"
+    lore:
+      - ""
+      - "&fWithstands Explosions"
+      - "&fWithstands Wither Bosses"
+  PLASTIC_SHEET:
+    name: "&fPlastic Sheet"
+  ANDROID_MEMORY_CORE:
+    name: "&bAndroid Memory Core"
+  WITHER_PROOF_GLASS:
+    name: "&5Wither-Proof Glass"
+    lore:
+      - ""
+      - "&fWithstands Explosions"
+      - "&fWithstands Wither Bosses"
+  REACTOR_COLLANT_CELL:
+    name: "&bReactor Coolant Cell"
+  NETHER_ICE_COOLANT_CELL:
+    name: "&6Nether Ice Coolant Cell"
