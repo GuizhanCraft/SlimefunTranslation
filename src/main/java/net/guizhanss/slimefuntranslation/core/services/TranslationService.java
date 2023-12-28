@@ -2,6 +2,7 @@ package net.guizhanss.slimefuntranslation.core.services;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Nonnull;
@@ -18,12 +19,14 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-import net.guizhanss.slimefuntranslation.api.TranslationConfiguration;
-import net.guizhanss.slimefuntranslation.api.interfaces.Translatable;
+import net.guizhanss.slimefuntranslation.api.config.TranslationConfiguration;
+import net.guizhanss.slimefuntranslation.api.interfaces.TranslatableItem;
 import net.guizhanss.slimefuntranslation.core.users.User;
+import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.FileUtils;
 import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 
+@SuppressWarnings("ConstantConditions")
 public final class TranslationService {
     private static final String FOLDER_NAME = "translations";
     private final File translationsFolder;
@@ -43,30 +46,44 @@ public final class TranslationService {
     }
 
     public void loadTranslations() {
+        loadLanguages();
         loadFixedTranslations();
         loadProgrammedTranslations();
     }
 
-    private void loadFixedTranslations() {
-        List<String> translationFiles = FileUtils.listYamlFiles(translationsFolder);
-        for (String translationFile : translationFiles) {
-            var config = YamlConfiguration.loadConfiguration(new File(translationsFolder, translationFile));
-            var translationConfig = TranslationConfiguration.fromFileConfiguration(config);
-            if (translationConfig.isEmpty()) {
-                continue;
-            }
-            translationConfig.get().register(SlimefunTranslation.getInstance());
-        }
+    private void loadLanguages() {
+        List<String> languages = FileUtils.listFolders(translationsFolder);
+        SlimefunTranslation.getRegistry().getLanguages().addAll(languages);
+    }
 
+    private void loadFixedTranslations() {
+        for (String lang : SlimefunTranslation.getRegistry().getLanguages()) {
+            File languageFolder = new File(translationsFolder, lang);
+            List<String> translationFiles = FileUtils.listYamlFiles(languageFolder);
+            for (String translationFile : translationFiles) {
+                var config = YamlConfiguration.loadConfiguration(new File(languageFolder, translationFile));
+                var translationConfig = TranslationConfiguration.fromFileConfiguration(lang, config);
+                if (translationConfig.isEmpty()) {
+                    continue;
+                }
+                translationConfig.get().register(SlimefunTranslation.getInstance());
+            }
+        }
     }
 
     private void loadProgrammedTranslations() {
+        var languages = SlimefunTranslation.getRegistry().getLanguages();
         for (SlimefunItem sfItem : Slimefun.getRegistry().getAllSlimefunItems()) {
-            if (!(sfItem instanceof Translatable translatable)) {
+            if (!(sfItem instanceof TranslatableItem translatableItem)) {
                 continue;
             }
-            // TODO: complete this
-
+            for (String lang : languages) {
+                var translation = new ProgrammedItemTranslation(lang, translatableItem);
+                var allItemTranslations = SlimefunTranslation.getRegistry().getItemTranslations();
+                allItemTranslations.putIfAbsent(lang, new HashMap<>());
+                var currentTranslations = allItemTranslations.get(lang);
+                currentTranslations.put(sfItem.getId(), translation);
+            }
         }
     }
 
