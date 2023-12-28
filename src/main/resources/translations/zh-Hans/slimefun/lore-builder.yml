@@ -1,0 +1,7 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 说明构建器
+author: StarWishsama
+lore:
+  RightClickToUse: "&e右键点击&7以使用"
+  RightClickToOpen: "&e右键点击&7以打开"
+  Power: "&8\u21E8 &e\u26A1 &7{0} J {1}"
