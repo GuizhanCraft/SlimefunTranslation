@@ -1,9 +1,6 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Weapons
 author: Slimefun
-lang: en
-dependencies:
-  - Slimefun
 translations:
   GRANDMAS_WALKING_STICK:
     name: "&7Grandmas Walking Stick"

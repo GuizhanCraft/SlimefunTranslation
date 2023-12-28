@@ -1,9 +1,7 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Lore Builder
 author: Slimefun
-lang: en
-dependencies:
-  - Slimefun
 lore:
   RightClickToUse: "&eRight Click &7to use"
   RightClickToOpen: "&eRight Click &7to open"
+  Power: "&8\u21E8 &e\u26A1 &7{0} J {1}"
