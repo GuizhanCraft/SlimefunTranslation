@@ -1,0 +1,106 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 有用的物品
+author: StarWishsama
+translations:
+  PORTABLE_CRAFTER:
+    name: "&6便携工作台"
+    lore-replacements:
+      1: "&a&o一个便携式的工作台"
+  PORTABLE_DUSTBIN:
+    name: "&6一个便携式的工作台"
+    lore-replacements:
+      1: "&f轻松的消除多余的物品"
+  RAG:
+    name: "&c破布"
+    lore:
+      - ""
+      - "&a1级医疗供给"
+      - ""
+      - "&f恢复2点血量"
+      - "&f可以熄灭身上的火"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  BANDAGE:
+    name: "&c绷带"
+    lore:
+      - ""
+      - "&a2级医疗供给"
+      - ""
+      - "&f恢复4点血量"
+      - "&f可以熄灭身上的火"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SPLINT:
+    name: "&c夹板"
+    lore:
+      - ""
+      - "&a1级医疗供给"
+      - ""
+      - "&f恢复2点血量"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  VITAMINS:
+    name: "&c维他命"
+    lore:
+      - ""
+      - "&a3级医疗供给"
+      - ""
+      - "&f恢复4点血量"
+      - "&f可以熄灭身上的火"
+      - "&f治愈中毒/凋零/辐射的负面效果"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  MEDICINE:
+    name: "&c药物"
+    lore:
+      - ""
+      - "&a3级医疗供给"
+      - ""
+      - "&f恢复4点血量"
+      - "&f可以熄灭身上的火"
+      - "&f治愈中毒/凋零/辐射的负面效果"
+  SMALL_BACKPACK:
+    name: "&e小型背包"
+    lore-replacements:
+      2: "&7大小: &e9"
+      5: "%sftrlore_RightClickToOpen%"
+  MEDIUM_BACKPACK:
+    check-name: true
+    name: "&e普通背包"
+    lore-replacements:
+      2: "&7大小: &e18"
+      5: "%sftrlore_RightClickToOpen%"
+  LARGE_BACKPACK:
+    name: "&e中型背包"
+    lore-replacements:
+      2: "&7大小: &e27"
+      5: "%sftrlore_RightClickToOpen%"
+  WOVEN_BACKPACK:
+    name: "&e编织背包"
+    lore-replacements:
+      2: "&7大小: &e36"
+      5: "%sftrlore_RightClickToOpen%"
+  GILDED_BACKPACK:
+    name: "&e镀金背包"
+    lore-replacements:
+      2: "&7大小: &e45"
+      5: "%sftrlore_RightClickToOpen%"
+  RADIANT_BACKPACK:
+    name: "&e金光闪闪的背包"
+    lore-replacements:
+      2: "&7大小: &e54（大箱子）"
+      5: "%sftrlore_RightClickToOpen%"
+  COOLER:
+    name: "&b小冰柜"
+    lore-replacements:
+      1: "&f可以储存果汁和冰沙"
+      2: "&f当小冰柜在你的物品栏里时"
+      3: "&f在你饥饿时将会自动消耗里面的食物"
+      5: "&7大小: &e27"
+      8: "%sftrlore_RightClickToOpen%"
+  TAPE_MEASURE:
+    name: "&6卷尺"
+    lore:
+      - ""
+      - "&eShift + 右键 &7设置测量起点"
+      - "&e右键 &7测量距离"
