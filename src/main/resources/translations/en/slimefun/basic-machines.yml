@@ -6,9 +6,9 @@ translations:
     name: "&4Output Chest"
     lore:
       - ""
-      - "&cA basic machine will try to put"
-      - "&citems in this chest if it's placed"
-      - "&cadjacent to the dispenser."
+      - "&c&oA basic machine will try to put"
+      - "&c&oitems in this chest if it's placed"
+      - "&c&oadjacent to the dispenser."
   ENHANCED_CRAFTING_TABLE:
     check-name: true
     name: "&eEnhanced Crafting Table"
@@ -215,4 +215,3 @@ translations:
       - ""
       - "&fAll Blocks in this Dispenser"
       - "&fwill automatically get placed"
-

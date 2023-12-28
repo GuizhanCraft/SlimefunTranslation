@@ -8,3 +8,5 @@ debug: false
 # Format: <provided language code>: <slimefun language code>
 language-mappings:
   en-US: en
+  zh-Hans: zh-CN
+  zh-Hant: zh-TW
