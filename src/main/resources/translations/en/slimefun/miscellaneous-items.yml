@@ -41,7 +41,8 @@ translations:
       - "%sftrlore_HazmatSuitRequired%"
   CLOTH:
     name: "&bCloth"
-  TIN_CAN:
+  CAN:
+    check-name: true
     name: "&fTin Can"
   GOLD_24K_BLOCK:
     name: "&fGold Block &7(24-Carat)"

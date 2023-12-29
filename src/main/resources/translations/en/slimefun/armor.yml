@@ -5,6 +5,7 @@ translations:
   DAMASCUS_STEEL_HELMET:
     name: "&7Damascus Steel Helmet"
   DAMASCUS_STEEL_CHESTPLATE:
+    check-name: true
     name: "&7Damascus Steel Chestplate"
   DAMASCUS_STEEL_LEGGINGS:
     name: "&7Damascus Steel Leggings"

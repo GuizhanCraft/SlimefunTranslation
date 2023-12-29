@@ -45,6 +45,7 @@ translations:
   LAVA_CRYSTAL:
     name: "&4Lava Crystal"
   COMMON_TALISMAN:
+    check-name: true
     name: "&6Common Talisman"
   NECROTIC_SKULL:
     name: "&cNecrotic Skull"
