@@ -16,6 +16,8 @@ import net.guizhanss.slimefuntranslation.integrations.placeholders.SlimefunLoreE
 import lombok.AccessLevel;
 import lombok.Getter;
 
+import net.guizhanss.slimefuntranslation.integrations.placeholders.SlimefunLoreMachineExpansion;
+
 @Getter
 public final class IntegrationService {
 
@@ -41,6 +43,7 @@ public final class IntegrationService {
         if (placeholderAPIEnabled) {
             SlimefunTranslation.log(Level.INFO, "PlaceholderAPI found, enabling placeholders...");
             new SlimefunLoreExpansion().register();
+            new SlimefunLoreMachineExpansion().register();
         } else {
             SlimefunTranslation.log(Level.SEVERE, "PlaceholderAPI not found, this plugin will not be fully functional...");
         }

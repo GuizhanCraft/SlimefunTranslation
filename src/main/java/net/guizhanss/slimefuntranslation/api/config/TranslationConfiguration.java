@@ -127,7 +127,7 @@ public class TranslationConfiguration {
         }
 
         if (loreSection != null) {
-            for (var loreId : loreSection.getKeys(false)) {
+            for (var loreId : loreSection.getKeys(true)) {
                 SlimefunTranslation.debug("Loading lore translation {0}", loreId);
                 var lore = loreSection.getString(loreId);
                 loreTranslations.put(loreId, lore);
