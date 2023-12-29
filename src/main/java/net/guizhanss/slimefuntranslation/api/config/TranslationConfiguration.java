@@ -104,25 +104,19 @@ public class TranslationConfiguration {
                 }
 
                 // lore replacements
-//                Map<Integer, Pair<String, String>> replacements = new HashMap<>();
-//                if (itemSection.contains("lore-replacements")) {
-//                    try {
-//                        for (String idx : itemSection.getConfigurationSection("lore-replacements").getKeys(false)) {
-//                            int i = Integer.parseInt(idx);
-//
-//
-//                            var split = entry.getValue().split("->");
-//                            if (split.length != 2) {
-//                                SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
-//                                return Optional.empty();
-//                            }
-//                            replacements.put(Integer.parseInt(entry.getKey()), new Pair<>(split[0], split[1]));
-//                        }
-//                    } catch (NumberFormatException | NullPointerException ex) {
-//                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
-//                        return Optional.empty();
-//                    }
-//                }
+                Map<Integer, Pair<String, String>> replacements = new HashMap<>();
+                if (itemSection.contains("lore-replacements")) {
+                    try {
+                        for (String idx : itemSection.getConfigurationSection("lore-replacements").getKeys(false)) {
+                            int i = Integer.parseInt(idx);
+                            var section = itemSection.getConfigurationSection("lore-replacements." + idx);
+                            replacements.put(i, new Pair<>(section.getString("original"), section.getString("replaced")));
+                        }
+                    } catch (NumberFormatException | NullPointerException ex) {
+                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
+                        return Optional.empty();
+                    }
+                }
 
                 // check name
                 boolean checkName = itemSection.getBoolean("check-name", false);
