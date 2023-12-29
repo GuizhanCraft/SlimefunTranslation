@@ -1,0 +1,151 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Miscellaneous Items
+author: SlimefunTranslation contributors
+translations:
+  SIFTED_ORE:
+    name: "&6Sifted Ore"
+  WHEAT_FLOUR:
+    name: "&fWheat Flour"
+  STEEL_PLATE:
+    name: "&7&lSteel Plate"
+  CHAIN:
+    name: "&bChain"
+  HOOK:
+    name: "&bHook"
+  STONE_CHUNK:
+    name: "&6Stone Chunk"
+  SALT:
+    name: "&fSalt"
+  HEAVY_CREAM:
+    name: "&fHeavy Cream"
+  CHEESE:
+    name: "&fCheese"
+  BUTTER:
+    name: "&fButter"
+  CRUSHED_ORE:
+    name: "&6Crushed Ore"
+  PULVERIZED_ORE:
+    name: "&6Pulverized Ore"
+  PURE_ORE_CLUSTER:
+    name: "&6Pure Ore Cluster"
+  TINY_URANIUM:
+    name: "&cTiny Pile of Uranium"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&eLow%"
+  SMALL_URANIUM:
+    name: "&cSmall Chunk of Uranium"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_&eModerate%"
+      - "%sftrlore_HazmatSuitRequired%"
+  CLOTH:
+    name: "&bCloth"
+  TIN_CAN:
+    name: "&fTin Can"
+  GOLD_24K_BLOCK:
+    name: "&fGold Block &7(24-Carat)"
+  REINFORCED_PLATE:
+    name: "&7Reinforced Plate"
+  DUCT_TAPE:
+    name: "&8Duct Tape"
+    lore:
+      - ""
+      - "&fYou can repair Items using this"
+      - "&fin an Auto-Anvil"
+  ORGANIC_FOOD:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9???"
+  ORGANIC_FOOD_WHEAT:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Wheat"
+  ORGANIC_FOOD_CARROT:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Carrots"
+  ORGANIC_FOOD_POTATO:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Potatoes"
+  ORGANIC_FOOD_SEEDS:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Seeds"
+  ORGANIC_FOOD_BEETROOT:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Beetroot"
+  ORGANIC_FOOD_MELON:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Melon"
+  ORGANIC_FOOD_APPLE:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Apple"
+  ORGANIC_FOOD_SWEET_BERRIES:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Sweet Berries"
+  ORGANIC_FOOD_KELP:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Dried Kelp"
+  ORGANIC_FOOD_COCOA:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Cocoa Beans"
+  ORGANIC_FOOD_SEAGRASS:
+    name: "&aOrganic Food"
+    lore:
+      - "&7Content: &9Seagrass"
+  FERTILIZER:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9???"
+  FERTILIZER_WHEAT:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Wheat"
+  FERTILIZER_CARROT:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Carrots"
+  FERTILIZER_POTATO:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Potatoes"
+  FERTILIZER_SEEDS:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Seeds"
+  FERTILIZER_BEETROOT:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Beetroot"
+  FERTILIZER_MELON:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Melon"
+  FERTILIZER_APPLE:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Apple"
+  FERTILIZER_SWEET_BERRIES:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Sweet Berries"
+  FERTILIZER_KELP:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Dried Kelp"
+  FERTILIZER_COCOA:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Cocoa beans"
+  FERTILIZER_SEAGRASS:
+    name: "&aOrganic Fertilizer"
+    lore:
+      - "&7Content: &9Seagrass"

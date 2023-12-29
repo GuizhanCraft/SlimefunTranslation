@@ -32,6 +32,7 @@ translations:
   ELECTRIC_MOTOR:
     name: "&cElectric Motor"
   HEATING_COIL:
+    check-name: true
     name: "&cHeating Coil"
   COPPER_WIRE:
     name: "&6Copper Wire"
