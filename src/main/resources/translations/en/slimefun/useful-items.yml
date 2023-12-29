@@ -4,11 +4,11 @@ author: SlimefunTranslation contributors
 translations:
   PORTABLE_CRAFTER:
     name: "&6Portable Crafter"
-    lore-replacements:
+    lore-overrides:
       1: "&a&oA portable Crafting Table"
   PORTABLE_DUSTBIN:
     name: "&6Portable Dustbin"
-    lore-replacements:
+    lore-overrides:
       1: "&fYour portable Item-Destroyer"
   RAG:
     name: "&cRag"
@@ -61,38 +61,38 @@ translations:
       - "&fCures Poison/Wither/Radiation"
   SMALL_BACKPACK:
     name: "&eSmall Backpack"
-    lore-replacements:
+    lore-overrides:
       2: "&7Size: &e9"
       5: "%sftrlore_RightClickToOpen%"
   MEDIUM_BACKPACK:
     check-name: true
     name: "&eBackpack"
-    lore-replacements:
+    lore-overrides:
       2: "&7Size: &e18"
       5: "%sftrlore_RightClickToOpen%"
   LARGE_BACKPACK:
     name: "&eLarge Backpack"
-    lore-replacements:
+    lore-overrides:
       2: "&7Size: &e27"
       5: "%sftrlore_RightClickToOpen%"
   WOVEN_BACKPACK:
     name: "&eWoven Backpack"
-    lore-replacements:
+    lore-overrides:
       2: "&7Size: &e36"
       5: "%sftrlore_RightClickToOpen%"
   GILDED_BACKPACK:
     name: "&eGilded Backpack"
-    lore-replacements:
+    lore-overrides:
       2: "&7Size: &e45"
       5: "%sftrlore_RightClickToOpen%"
   RADIANT_BACKPACK:
     name: "&eRadiant Backpack"
-    lore-replacements:
+    lore-overrides:
       2: "&7Size: &e54 (Double chest)"
       5: "%sftrlore_RightClickToOpen%"
   COOLER:
     name: "&bCooler"
-    lore-replacements:
+    lore-overrides:
       1: "&fAllows you to store Juices/Smoothies"
       2: "&fand automatically consumes them when you are hungry"
       3: "&fand you have this in your Inventory"

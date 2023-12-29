@@ -1,0 +1,159 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Ender Talismans (Tier II)
+author: SlimefunTranslation contributors
+translations:
+  ENDER_ANVIL_TALISMAN:
+    name: "&5Ender Talisman of the Anvil"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fEach Talisman can prevent"
+      - "&f1 Tool from breaking, but will then"
+      - "&fbe consumed"
+      - ""
+      - "&4&lWARNING:"
+      - "&4This Talisman does not work on"
+      - "&4Tools which are too powerful"
+      - "&4due to their complexity"
+  ENDER_MINER_TALISMAN:
+    name: "&5Ender Talisman of the Miner"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has"
+      - "&fa 20% chance of doubling"
+      - "&fall Ores you mine"
+  ENDER_FARMER_TALISMAN:
+    name: "&5Ender Talisman of the Farmer"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has"
+      - "&fa 20% chance of doubling"
+      - "&fall crops you harvest"
+  ENDER_HUNTER_TALISMAN:
+    name: "&5Ender Talisman of the Hunter"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has"
+      - "&fa 20% chance of doubling"
+      - "&fall Drops from Mobs you kill"
+  ENDER_LAVA_TALISMAN:
+    name: "&5Ender Talisman of the Lava Walker"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it will"
+      - "&fgive you Fire Resistance"
+      - "&fas soon as you touch Lava"
+      - "&fbut will then be consumed"
+  ENDER_WATER_TALISMAN:
+    name: "&5Ender Talisman of the Water Breather"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it will"
+      - "&fgive you the ability"
+      - "&fto breath underwater as"
+      - "&fsoon as you start drowning"
+      - "&fbut will then be consumed"
+  ENDER_ANGEL_TALISMAN:
+    name: "&5Ender Talisman of the Angel"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has a"
+      - "&f75% chance to prevent you"
+      - "&ffrom taking Fall Damage"
+  ENDER_FIRE_TALISMAN:
+    name: "&5Ender Talisman of the Firefighter"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it will"
+      - "&fgive you Fire Resistance"
+      - "&fas soon as you start burning"
+      - "&fbut will then be consumed"
+  ENDER_MAGICIAN_TALISMAN:
+    name: "&5Ender Talisman of the Magician"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou a 80% Luck Bonus on Enchanting"
+      - "&fYou will sometimes get an Extra Enchantment"
+  ENDER_TRAVELLER_TALISMAN:
+    name: "&5Ender Talisman of the Traveller"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou a 60% Chance for a decent"
+      - "&fSpeed Buff when you start sprinting"
+  ENDER_WARRIOR_TALISMAN:
+    name: "&5Ender Talisman of the Warrior"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou Strength III whenever you get hit"
+      - "&fbut will then be consumed"
+  ENDER_KNIGHT_TALISMAN:
+    name: "&5Ender Talisman of the Knight"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou a 30% Chance for 5 Seconds of Regeneration"
+      - "&fwhenever You get hit"
+      - "&fbut will then be consumed"
+  ENDER_CAVEMAN_TALISMAN:
+    name: "&5Ender Talisman of the Caveman"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your inventory it gives"
+      - "&fyou a 50% chance for a decent"
+      - "&fHaste buff when you mine any ore"
+  ENDER_WISE_TALISMAN:
+    name: "&5Ender Talisman of the Wise"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your inventory it gives"
+      - "&fyou a 20% chance of doubling"
+      - "&fany experience you obtain"
+  ENDER_WHIRLWIND_TALISMAN:
+    name: "&5Ender Talisman of the Whirlwind"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fHaving this Talisman"
+      - "&fin your Inventory will reflect"
+      - "&f60% of any projectiles fired at you."
+      - "&e&oOnly a thrown Trident can pierce"
+      - "&e&othrough this layer of protection"
+  ENDER_WIZARD_TALISMAN:
+    name: "&5Ender Talisman of the Wizard"
+    lore:
+      - "&7&oEnder Infused"
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it allows you to"
+      - "&fobtain Fortune Level 4/5 however"
+      - "&fit also has a chance to lower the"
+      - "&fLevel of some Enchantments on your Item"

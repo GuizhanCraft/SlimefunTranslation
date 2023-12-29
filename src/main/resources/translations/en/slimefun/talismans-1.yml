@@ -1,0 +1,143 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Talismans (Tier I)
+author: SlimefunTranslation contributors
+translations:
+  ANVIL_TALISMAN:
+    name: "&aTalisman of the Anvil"
+    lore:
+      - ""
+      - "&fEach Talisman can prevent"
+      - "&f1 Tool from breaking, but will then"
+      - "&fbe consumed"
+      - ""
+      - "&4&lWARNING:"
+      - "&4This Talisman does not work on"
+      - "&4Tools which are too powerful"
+      - "&4due to their complexity"
+  MINER_TALISMAN:
+    name: "&aTalisman of the Miner"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has"
+      - "&fa 20% chance of doubling"
+      - "&fall Ores you mine"
+  FARMER_TALISMAN:
+    name: "&aTalisman of the Farmer"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has"
+      - "&fa 20% chance of doubling"
+      - "&fall crops you harvest"
+  HUNTER_TALISMAN:
+    name: "&aTalisman of the Hunter"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has"
+      - "&fa 20% chance of doubling"
+      - "&fall Drops from Mobs you kill"
+  LAVA_TALISMAN:
+    name: "&aTalisman of the Lava Walker"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it will"
+      - "&fgive you Fire Resistance"
+      - "&fas soon as you touch Lava"
+      - "&fbut will then be consumed"
+  WATER_TALISMAN:
+    name: "&aTalisman of the Water Breather"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it will"
+      - "&fgive you the ability"
+      - "&fto breath underwater as"
+      - "&fsoon as you start drowning"
+      - "&fbut will then be consumed"
+  ANGEL_TALISMAN:
+    name: "&aTalisman of the Angel"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it has a"
+      - "&f75% chance to prevent you"
+      - "&ffrom taking Fall Damage"
+  FIRE_TALISMAN:
+    name: "&aTalisman of the Firefighter"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it will"
+      - "&fgive you Fire Resistance"
+      - "&fas soon as you start burning"
+      - "&fbut will then be consumed"
+  MAGICIAN_TALISMAN:
+    name: "&aTalisman of the Magician"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou a 80% Luck Bonus on Enchanting"
+      - "&fYou will sometimes get an Extra Enchantment"
+  TRAVELLER_TALISMAN:
+    name: "&aTalisman of the Traveller"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou a 60% Chance for a decent"
+      - "&fSpeed Buff when you start sprinting"
+  WARRIOR_TALISMAN:
+    name: "&aTalisman of the Warrior"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou Strength III whenever you get hit"
+      - "&fbut will then be consumed"
+  KNIGHT_TALISMAN:
+    name: "&aTalisman of the Knight"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it gives"
+      - "&fyou a 30% Chance for 5 Seconds of Regeneration"
+      - "&fwhenever You get hit"
+      - "&fbut will then be consumed"
+  CAVEMAN_TALISMAN:
+    name: "&aTalisman of the Caveman"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your inventory it gives"
+      - "&fyou a 50% chance for a decent"
+      - "&fHaste buff when you mine any ore"
+  WISE_TALISMAN:
+    name: "&aTalisman of the Wise"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your inventory it gives"
+      - "&fyou a 20% chance of doubling"
+      - "&fany experience you obtain"
+  WHIRLWIND_TALISMAN:
+    name: "&aTalisman of the Whirlwind"
+    lore:
+      - ""
+      - "&fHaving this Talisman"
+      - "&fin your Inventory will reflect"
+      - "&f60% of any projectiles fired at you."
+      - "&e&oOnly a thrown Trident can pierce"
+      - "&e&othrough this layer of protection"
+  WIZARD_TALISMAN:
+    name: "&aTalisman of the Wizard"
+    lore:
+      - ""
+      - "&fWhile you have this Talisman"
+      - "&fin your Inventory it allows you to"
+      - "&fobtain Fortune Level 4/5 however"
+      - "&fit also has a chance to lower the"
+      - "&fLevel of some Enchantments on your Item"

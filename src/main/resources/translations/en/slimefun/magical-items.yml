@@ -59,7 +59,7 @@ translations:
       - "&fworkbench like a normal Shulker Shell"
   BROKEN_SPAWNER:
     name: "&cBroken Spawner"
-    lore-replacements:
+    lore-overrides:
       3: "&cFractured, must be repaired in an Ancient Altar"
   BLANK_RUNE:
     name: "&8Blank Rune"
@@ -72,6 +72,7 @@ translations:
   ANCIENT_RUNE_WATER:
     name: "&7Ancient Rune &8&l[&1&lWater&8&l]"
   ANCIENT_RUNE_ENDER:
+    check-name: true
     name: "&7Ancient Rune &8&l[&5&lEnder&8&l]"
   ANCIENT_RUNE_LIGHTNING:
     name: "&7Ancient Rune &8&l[&e&lLightning&8&l]"
