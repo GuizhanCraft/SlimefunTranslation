@@ -1,0 +1,151 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Magical Gadgets
+author: SlimefunTranslation contributors
+translations:
+  ENDER_BACKPACK:
+    name: "&6Ender Backpack"
+    lore:
+      - "&a&oA portable Ender Chest"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  MAGIC_EYE_OF_ENDER:
+    name: "&6&lMagic Eye of Ender"
+    lore:
+      - "&4&lRequires full Ender Armor"
+      - ""
+      - "&eRight Click &7to shoot an Ender Pearl"
+  STAFF_ELEMENTAL:
+    name: "&6Elemental Staff"
+  STAFF_ELEMENTAL_WIND:
+    name: "&6Elemental Staff &7- &b&oWind"
+    lore:
+      - ""
+      - "&7Element: &b&oWind"
+      - ""
+      - "&eRight Click &7to launch yourself forward"
+  STAFF_ELEMENTAL_WATER:
+    name: "&6Elemental Staff &7- &1&oWater"
+    lore:
+      - ""
+      - "&7Element: &1&oWater"
+      - ""
+      - "&eRight Click &7to extinguish yourself"
+  STAFF_ELEMENTAL_FIRE:
+    name: "&6Elemental Staff &7- &c&oFire"
+    lore:
+      - ""
+      - "&7Element: &c&oFire"
+  STAFF_ELEMENTAL_STORM:
+    name: "&6Elemental Staff &7- &8&oStorm"
+    lore-overrides:
+      2: "&7Element: &8&oStorm"
+      4: "&eRight Click &7to summon a lightning"
+  MAGICAL_ZOMBIE_PILLS:
+    name: "&6Magical Zombie Pills"
+    lore:
+      - "&eRight Click &7a Zombified Villager"
+      - "&eor &7a Zombified Piglin to"
+      - "&7instantly cure it from its curse"
+  INFUSED_MAGNET:
+    name: "&aInfused Magnet"
+    lore:
+      - ""
+      - "&fMagical infused Magnets"
+      - "&fattract nearby Items"
+      - "&fas long as it is somewhere in"
+      - "&fyour Inventory"
+      - ""
+      - "&7Hold &eShift &7to pick up nearby Items"
+  BOUND_BACKPACK:
+    name: "&cSoulbound Backpack"
+    lore-overrides:
+      2: "&7Size: &e36"
+      5: "%sftrlore_RightClickToOpen%"
+  REINFORCED_SPAWNER:
+    name: "&bReinforced Spawner"
+  SCROLL_OF_DIMENSIONAL_TELEPOSITION:
+    name: "&6Scroll of Dimensional Teleposition"
+    lore:
+      - ""
+      - "&cThis Scroll is capable of creating"
+      - "&ca temporary black Hole which pulls"
+      - "&cnearby Entities into itself and sends"
+      - "&cthem into another Dimension where"
+      - "&ceverything is turned around"
+      - ""
+      - "&fIn other words: Makes Entities turn by 180 Degrees"
+  TOME_OF_KNOWLEDGE_SHARING:
+    name: "&6Tome of Knowledge Sharing"
+    lore-overrides:
+      3: "&eRight Click&7 to bind this Tome to yourself"
+      6: "&eRight Click&7 to obtain all Researches by"
+      7: "&7the previously assigned Owner"
+  FLASK_OF_KNOWLEDGE:
+    name: "&cFlask of Knowledge"
+    lore:
+      - ""
+      - "&fAllows you to store some of"
+      - "&fyour Experience in a Bottle"
+      - "&7Cost: &a1 Level"
+  FILLED_FLASK_OF_KNOWLEDGE:
+    name: "&aFlask of Knowledge"
+  ANCIENT_PEDESTAL:
+    name: "&dAncient Pedestal"
+    lore:
+      - ""
+      - "&5Part of the Ancient Altar"
+  ANCIENT_ALTAR:
+    name: "&dAncient Altar"
+    lore:
+      - ""
+      - "&5Multi-Block Altar for"
+      - "&5magical Crafting Processes"
+  INFERNAL_BONEMEAL:
+    name: "&4Infernal Bonemeal"
+    lore:
+      - ""
+      - "&cSpeeds up the Growth of"
+      - "&cNether Warts as well"
+  ELYTRA_SCALE:
+    name: "&bElytra Scale"
+  INFUSED_ELYTRA:
+    check-name: true
+    name: "&5Infused Elytra"
+  SOULBOUND_ELYTRA:
+    name: "&cSoulbound Elytra"
+  RAINBOW_WOOL:
+    name: "&5Rainbow Wool"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS:
+    name: "&5Rainbow Glass"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS_PANE:
+    name: "&5Rainbow Glass Pane"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CLAY:
+    name: "&5Rainbow Clay"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CONCRETE:
+    name: "&5Rainbow Concrete"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLAZED_TERRACOTTA:
+    name: "&5Rainbow Glazed Terracotta"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  INFUSED_HOPPER:
+    name: "&5Infused Hopper"
+    lore:
+      - ""
+      - "&fAutomatically picks up nearby Items in a 7x7x7"
+      - "&fRadius when placed."

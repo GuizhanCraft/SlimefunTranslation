@@ -4,6 +4,11 @@ auto-update: true
 # Print debug messages in console.
 debug: false
 
+# Whether to enable lore line overrides instead of whole lore overrides.
+# When enabled, the lore defined by `lore` will override the respective lines in the item's lore.
+# When disabled, the lore defined by `lore` will override the whole item's lore.
+lore-whole-override: false
+
 # Language mappings
 # Format: <provided language code>: <slimefun language code>
 language-mappings:
