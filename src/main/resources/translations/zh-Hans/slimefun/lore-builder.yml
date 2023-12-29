@@ -1,7 +1,29 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun 说明构建器
-author: StarWishsama
+author: SlimefunTranslation 贡献者
 lore:
+  HazmatSuitRequired: "&8\u21E8 &4需要防化服套装！"
+  Rainbow: "&d循环彩虹的所有颜色！"
   RightClickToUse: "&e右键点击&7以使用"
   RightClickToOpen: "&e右键点击&7以打开"
-  Power: "&8\u21E8 &e\u26A1 &7{0} J {1}"
+  CrouchToUse: "&e蹲下&7以使用"
+  Radioactive: "&a\u2622&7 辐射等级：&r{0}"
+  Speed: "&8\u21E8 &b\u26A1 &7速度：&b{0}x"
+  Power: "&8\u21E8 &e\u26A1 &7{0} J{1}"
+  PowerBuffer: "%sftrlore_Power_{0}_ 可存储%"
+  PowerPerSecond: "%sftrlore_Power_{0}_/s%"
+  PowerPerTick: "%sftrlore_Power_{0}_/t%"
+  Hunger: "&7&o恢复 &b&o{0} &7&o饱食度"
+  Range: "&7范围：&c{0} 个方块"
+  Machine:
+    Tier:
+      Basic: "&e基础"
+      Average: "&6普通"
+      Medium: "&a中型"
+      Good: "&2优秀"
+      Advanced: "&6高级"
+      EndGame: "&4终极"
+    Type:
+      Capacitor: "电容"
+      Generator: "发电机"
+      Machine: "机器"
