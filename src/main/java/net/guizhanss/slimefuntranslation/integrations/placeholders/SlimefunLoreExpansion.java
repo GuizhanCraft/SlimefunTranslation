@@ -1,6 +1,5 @@
 package net.guizhanss.slimefuntranslation.integrations.placeholders;
 
-import java.text.MessageFormat;
 import java.util.Arrays;
 
 import javax.annotation.Nonnull;
@@ -9,14 +8,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.bukkit.entity.Player;
 
-import me.clip.placeholderapi.expansion.PlaceholderExpansion;
-
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
-import net.guizhanss.slimefuntranslation.utils.ColorUtils;
-import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 
-public class SlimefunLoreExpansion extends PlaceholderExpansion {
+public class SlimefunLoreExpansion extends AExpansion {
     @Override
     @Nonnull
     public String getName() {
@@ -25,20 +20,8 @@ public class SlimefunLoreExpansion extends PlaceholderExpansion {
 
     @Override
     @Nonnull
-    public String getAuthor() {
-        return "SlimefunTranslation";
-    }
-
-    @Override
-    @Nonnull
     public String getIdentifier() {
         return "sftrlore";
-    }
-
-    @Override
-    @Nonnull
-    public String getVersion() {
-        return SlimefunTranslation.getInstance().getPluginVersion();
     }
 
     @Override
@@ -49,13 +32,10 @@ public class SlimefunLoreExpansion extends PlaceholderExpansion {
         String[] s = identifier.split("_");
 
         String id = s[0];
-        String[] args;
-        if (s.length < 2) {
-            args = new String[0];
-        } else {
+        String[] args = new String[0];
+        if (s.length >= 2) {
             args = Arrays.copyOfRange(s, 1, s.length);
         }
-        var translation = SlimefunTranslation.getTranslationService().translateLore(user, id);
-        return ColorUtils.color(MessageFormat.format(translation, (Object[]) args));
+        return getResult(user, id, args);
     }
 }
