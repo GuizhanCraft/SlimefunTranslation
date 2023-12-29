@@ -10,6 +10,9 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
+
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
@@ -86,24 +89,45 @@ public class TranslationConfiguration {
                 // lore
                 var lore = itemSection.getStringList("lore");
 
-                // lore replacements
-                Map<Integer, String> replacementMap = new HashMap<>();
-                if (itemSection.contains("lore-replacements")) {
+                // lore overrides
+                Map<Integer, String> overrides = new HashMap<>();
+                if (itemSection.contains("lore-overrides")) {
                     try {
-                        Map<String, String> replacements = ConfigUtils.getMap(itemSection.getConfigurationSection("lore-replacements"));
+                        Map<String, String> replacements = ConfigUtils.getMap(itemSection.getConfigurationSection("lore-overrides"));
                         for (var entry : replacements.entrySet()) {
-                            replacementMap.put(Integer.parseInt(entry.getKey()), entry.getValue());
+                            overrides.put(Integer.parseInt(entry.getKey()), entry.getValue());
                         }
                     } catch (NumberFormatException | NullPointerException ex) {
-                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
+                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore overrides of item {0} in translation {1} by {2}", itemId, name, author);
                         return Optional.empty();
                     }
                 }
 
+                // lore replacements
+//                Map<Integer, Pair<String, String>> replacements = new HashMap<>();
+//                if (itemSection.contains("lore-replacements")) {
+//                    try {
+//                        for (String idx : itemSection.getConfigurationSection("lore-replacements").getKeys(false)) {
+//                            int i = Integer.parseInt(idx);
+//
+//
+//                            var split = entry.getValue().split("->");
+//                            if (split.length != 2) {
+//                                SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
+//                                return Optional.empty();
+//                            }
+//                            replacements.put(Integer.parseInt(entry.getKey()), new Pair<>(split[0], split[1]));
+//                        }
+//                    } catch (NumberFormatException | NullPointerException ex) {
+//                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
+//                        return Optional.empty();
+//                    }
+//                }
+
                 // check name
                 boolean checkName = itemSection.getBoolean("check-name", false);
 
-                var translation = new FixedItemTranslation(displayName, lore, replacementMap, checkName);
+                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, checkName);
                 itemTranslations.put(itemId, translation);
             }
         }

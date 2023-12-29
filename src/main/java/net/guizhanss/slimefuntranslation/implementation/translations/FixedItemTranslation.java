@@ -7,6 +7,8 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
+
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -20,12 +22,14 @@ import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 public class FixedItemTranslation implements ItemTranslation {
     private final String displayName;
     private final List<String> lore;
-    private final Map<Integer, String> replacements;
+    private final Map<Integer, String> overrides;
+    private final Map<Integer, Pair<String, String>> replacements;
     private final boolean checkName;
 
-    public FixedItemTranslation(String displayName, List<String> lore, Map<Integer, String> replacements, boolean checkName) {
+    public FixedItemTranslation(String displayName, List<String> lore, Map<Integer, String> overrides, Map<Integer, Pair<String, String>> replacements, boolean checkName) {
         this.displayName = ColorUtils.color(displayName);
         this.lore = ColorUtils.color(lore);
+        this.overrides = overrides;
         this.replacements = replacements;
         this.checkName = checkName;
     }
@@ -59,9 +63,17 @@ public class FixedItemTranslation implements ItemTranslation {
     public List<String> getLore(@Nonnull List<String> original) {
         if (lore.isEmpty()) {
             var newLore = new ArrayList<>(original);
-            for (var entry : replacements.entrySet()) {
+            for (var entry : overrides.entrySet()) {
                 try {
                     newLore.set(entry.getKey() - 1, ColorUtils.color(entry.getValue()));
+                } catch (IndexOutOfBoundsException e) {
+                    // ignore
+                }
+            }
+            for (var entry : replacements.entrySet()) {
+                try {
+                    var line = newLore.get(entry.getKey() - 1);
+                    newLore.set(entry.getKey() - 1, ColorUtils.color(line.replace(entry.getValue().getFirstValue(), entry.getValue().getSecondValue())));
                 } catch (IndexOutOfBoundsException e) {
                     // ignore
                 }
