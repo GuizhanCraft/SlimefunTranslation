@@ -1,0 +1,120 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun GPS-based Machines
+author: SlimefunTranslation contributors
+translations:
+  GPS_TRANSMITTER:
+    check-name: true
+    name: "&bGPS Transmitter"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_16%"
+      - "%sftrlore_PowerPerSecond_2%"
+  GPS_TRANSMITTER_2:
+    name: "&cAdvanced GPS Transmitter"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_6%"
+  GPS_TRANSMITTER_3:
+    name: "&4Carbonado GPS Transmitter"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_22%"
+  GPS_TRANSMITTER_4:
+    name: "&eEnergized GPS Transmitter"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_92%"
+  GPS_CONTROL_PANEL:
+    name: "&bGPS Control Panel"
+    lore:
+      - ""
+      - "&fAllows you to track your Satellites"
+      - "&fand manage your Waypoints"
+  GPS_MARKER_TOOL:
+    name: "&bGPS Marker Tool"
+    lore:
+      - "&fAllows you to set a Waypoint at"
+      - "&fthe Location you place this"
+  GPS_EMERGENCY_TRANSMITTER:
+    name: "&cGPS Emergency Transmitter"
+    lore:
+      - "&fCarrying this in your Inventory"
+      - "&fautomatically sets a Waypoint"
+      - "&fat your Location when you die."
+  GPS_GEO_SCANNER:
+    name: "&bGPS Geo-Scanner"
+    lore:
+      - "&fScans a Chunk for natural Resources"
+      - "&fsuch as &8Oil"
+  PORTABLE_GEO_SCANNER:
+    name: "&bPortable Geo-Scanner"
+    lore:
+      - ""
+      - "&fScans a Chunk for natural Resources"
+      - ""
+      - "&eRight Click&7 to scan"
+  OIL_PUMP:
+    name: "&4Oil Pump"
+    lore:
+      - "&7Pumps up Oil and fills it into Buckets"
+      - ""
+      - "&c&l! &cMake sure to Geo-Scan the Chunk first"
+  GEO_MINER:
+    name: "&6GEO Miner"
+    lore:
+      - ""
+      - "&eMines up resources from the chunk"
+      - "&eThese Resources cannot be mined with a pickaxe"
+      - ""
+      - "%sftrloremachine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+      - ""
+      - "&c&l! &cMake sure to Geo-Scan the Chunk first"
+  GPS_TELEPORTER_PYLON:
+    name: "&5GPS Teleporter Pylon"
+    lore:
+      - ""
+      - "&7Teleporter Component"
+  GPS_TELEPORTATION_MATRIX:
+    name: "&bGPS Teleporter Matrix"
+    lore:
+      - ""
+      - "&fThis is your Teleporter's Main Component"
+      - "&fThis Matrix allows Players to choose from all"
+      - "&fWaypoints made by the Player who has placed"
+      - "&fthis Device."
+  PORTABLE_TELEPORTER:
+    name: "&bPortable Teleporter"
+    lore-overrides:
+      2: "&fThis device allows you to teleport"
+      3: "&fto your waypoints from anywhere"
+      7: "%sftrlore_RightClickToUse%"
+  GPS_ACTIVATION_DEVICE_SHARED:
+    name: "&fGPS Activation Device &3(Shared)"
+    lore:
+      - ""
+      - "&fPlace this onto a Teleportation Matrix"
+      - "&fand step onto this Plate to activate"
+      - "&fthe Teleportation Process"
+  GPS_ACTIVATION_DEVICE_PERSONAL:
+    name: "&fGPS Activation Device &a(Personal)"
+    lore:
+      - ""
+      - "&fPlace this onto a Teleportation Matrix"
+      - "&fand step onto this Plate to activate"
+      - "&fthe Teleportation Process"
+      - ""
+      - "&fThis Version only allows the Person who"
+      - "&fplaced this Device to use it"
+  ELEVATOR_PLATE:
+    name: "&bElevator Plate"
+    lore:
+      - ""
+      - "&fPlace an Elevator Plate on every floor"
+      - "&fand you will be able to teleport between them."
+      - ""
+      - "&eRight Click this Block &7to name it"
