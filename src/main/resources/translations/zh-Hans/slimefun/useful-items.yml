@@ -1,14 +1,14 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun 有用的物品
-author: StarWishsama
+author: SlimefunTranslation 贡献者
 translations:
   PORTABLE_CRAFTER:
     name: "&6便携工作台"
-    lore-replacements:
+    lore-overrides:
       1: "&a&o一个便携式的工作台"
   PORTABLE_DUSTBIN:
     name: "&6一个便携式的工作台"
-    lore-replacements:
+    lore-overrides:
       1: "&f轻松的消除多余的物品"
   RAG:
     name: "&c破布"
@@ -61,38 +61,38 @@ translations:
       - "&f治愈中毒/凋零/辐射的负面效果"
   SMALL_BACKPACK:
     name: "&e小型背包"
-    lore-replacements:
+    lore-overrides:
       2: "&7大小: &e9"
       5: "%sftrlore_RightClickToOpen%"
   MEDIUM_BACKPACK:
     check-name: true
     name: "&e普通背包"
-    lore-replacements:
+    lore-overrides:
       2: "&7大小: &e18"
       5: "%sftrlore_RightClickToOpen%"
   LARGE_BACKPACK:
     name: "&e中型背包"
-    lore-replacements:
+    lore-overrides:
       2: "&7大小: &e27"
       5: "%sftrlore_RightClickToOpen%"
   WOVEN_BACKPACK:
     name: "&e编织背包"
-    lore-replacements:
+    lore-overrides:
       2: "&7大小: &e36"
       5: "%sftrlore_RightClickToOpen%"
   GILDED_BACKPACK:
     name: "&e镀金背包"
-    lore-replacements:
+    lore-overrides:
       2: "&7大小: &e45"
       5: "%sftrlore_RightClickToOpen%"
   RADIANT_BACKPACK:
     name: "&e金光闪闪的背包"
-    lore-replacements:
+    lore-overrides:
       2: "&7大小: &e54（大箱子）"
       5: "%sftrlore_RightClickToOpen%"
   COOLER:
     name: "&b小冰柜"
-    lore-replacements:
+    lore-overrides:
       1: "&f可以储存果汁和冰沙"
       2: "&f当小冰柜在你的物品栏里时"
       3: "&f在你饥饿时将会自动消耗里面的食物"
