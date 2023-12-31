@@ -4,12 +4,16 @@ author: SlimefunTranslation contributors
 translations:
   PORTABLE_CRAFTER:
     name: "&6Portable Crafter"
-    lore-overrides:
-      1: "&a&oA portable Crafting Table"
+    lore:
+      - "&a&oA portable Crafting Table"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
   PORTABLE_DUSTBIN:
     name: "&6Portable Dustbin"
-    lore-overrides:
-      1: "&fYour portable Item-Destroyer"
+    lore:
+      - "&fYour portable Item-Destroyer"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
   RAG:
     name: "&cRag"
     lore:
@@ -102,5 +106,5 @@ translations:
     name: "&6Tape Measure"
     lore:
       - ""
-      - "&eCrouch & Right Clck &7to set an anchor"
+      - "&eCrouch & Right Click &7to set an anchor"
       - "&eRight Click &7to measure"

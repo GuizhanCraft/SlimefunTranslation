@@ -145,9 +145,9 @@ translations:
   NETHER_ICE:
     name: "&eNether Ice"
     lore:
-        - ""
-        - "%sftrlore_Radioactive_&eModerate%"
-        - "%sftrlore_HazmatSuitRequired%"
+      - ""
+      - "%sftrlore_Radioactive_&eModerate%"
+      - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT:
     name: "&6Blistering Ingot &7(33%)"
     lore:

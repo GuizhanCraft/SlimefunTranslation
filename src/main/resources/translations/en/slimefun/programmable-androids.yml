@@ -1,0 +1,103 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Programmable Androids
+author: SlimefunTranslation contributors
+translations:
+  ANDROID_INTERFACE_ITEMS:
+    name: "&7Android Interface &9(Items)"
+    lore:
+      - ""
+      - "&fItems stored in an Android's Inventory"
+      - "&fwill be inserted into this Interface"
+      - "&fwhen its Script tells them to do so"
+  ANDROID_INTERFACE_FUEL:
+    name: "&7Android Interface &c(Fuel)"
+    lore:
+      - ""
+      - "&fItems stored in this Interface"
+      - "&fwill be inserted into an Android's Fuel Slot"
+      - "&fwhen its Script tells them to do so"
+  PROGRAMMABLE_ANDROID:
+    name: "&cProgrammable Android &7(Normal)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: None"
+      - "&8\u21E8 &7Fuel Efficiency: 1.0x"
+  PROGRAMMABLE_ANDROID_MINER:
+    name: "&cProgrammable Android &7(Miner)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Mining"
+      - "&8\u21E8 &7Fuel Efficiency: 1.0x"
+  PROGRAMMABLE_ANDROID_FARMER:
+    name: "&cProgrammable Android &7(Farmer)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Farming"
+      - "&8\u21E8 &7Fuel Efficiency: 1.0x"
+  PROGRAMMABLE_ANDROID_WOODCUTTER:
+    name: "&cProgrammable Android &7(Woodcutter)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Woodcutting"
+      - "&8\u21E8 &7Fuel Efficiency: 1.0x"
+  PROGRAMMABLE_ANDRIOD_FISHERMAN:
+    name: "&cProgrammable Android &7(Fisherman)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Fishing"
+      - "&8\u21E8 &7Success Rate: 10%"
+      - "&8\u21E8 &7Fuel Efficiency: 1.0x"
+  PROGRAMMABLE_ANDROID_BUTCHER:
+    name: "&cProgrammable Android &7(Butcher)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Slaughtering"
+      - "&8\u21E8 &7Damage: 4"
+      - "&8\u21E8 &7Fuel Efficiency: 1.0x"
+  PROGRAMMABLE_ANDROID_2:
+    name: "&cAdvanced Programmable Android &7(Normal)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: None"
+      - "&8\u21E8 &7Fuel Efficiency: 1.5x"
+  PROGRAMMABLE_ANDROID_2_FISHERMAN:
+    name: "&cAdvanced Programmable Android &7(Fisherman)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Fishing"
+      - "&8\u21E8 &7Success Rate: 20%"
+      - "&8\u21E8 &7Fuel Efficiency: 1.5x"
+  PROGRAMMABLE_ANDROID_2_BUTCHER:
+    name: "&cAdvanced Programmable Android &7(Butcher)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Slaughtering"
+      - "&8\u21E8 &7Damage: 8"
+      - "&8\u21E8 &7Fuel Efficiency: 1.5x"
+  PROGRAMMABLE_ANDROID_2_FARMER:
+    name: "&cAdvanced Programmable Android &7(Farmer)"
+    lore:
+        - ""
+        - "&8\u21E8 &7Function: Farming"
+        - "&8\u21E8 &7Fuel Efficiency: 1.5x"
+        - "&8\u21E8 &7Can also harvest Plants from ExoticGarden"
+  PROGRAMMABLE_ANDROID_3:
+    name: "&eEmpowered Programmable Android &7(Normal)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: None"
+      - "&8\u21E8 &7Fuel Efficiency: 3.0x"
+  PROGRAMMABLE_ANDROID_3_FISHERMAN:
+    name: "&eEmpowered Programmable Android &7(Fisherman)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Fishing"
+      - "&8\u21E8 &7Success Rate: 30%"
+      - "&8\u21E8 &7Fuel Efficiency: 8.0x"
+  PROGRAMMABLE_ANDROID_3_BUTCHER:
+    name: "&eEmpowered Programmable Android &7(Butcher)"
+    lore:
+      - ""
+      - "&8\u21E8 &7Function: Slaughtering"
+      - "&8\u21E8 &7Damage: 20"
+      - "&8\u21E8 &7Fuel Efficiency: 8.0x"

@@ -9,124 +9,124 @@ translations:
       - ""
       - "&a&oSometimes its here, sometimes there!"
   ENDER_CHESTPLATE:
-      name: "&5&lEnder Chestplate"
-      lore:
-          - ""
-          - "&a&oSometimes its here, sometimes there!"
+    name: "&5&lEnder Chestplate"
+    lore:
+      - ""
+      - "&a&oSometimes its here, sometimes there!"
   ENDER_LEGGINGS:
-      name: "&5&lEnder Leggings"
-      lore:
-          - ""
-          - "&a&oSometimes its here, sometimes there!"
+    name: "&5&lEnder Leggings"
+    lore:
+      - ""
+      - "&a&oSometimes its here, sometimes there!"
   ENDER_BOOTS:
-      name: "&5&lEnder Boots"
-      lore:
-          - ""
-          - "&a&oSometimes its here, sometimes there!"
-          - ""
-          - "&9+ No Enderpearl Damage"
+    name: "&5&lEnder Boots"
+    lore:
+      - ""
+      - "&a&oSometimes its here, sometimes there!"
+      - ""
+      - "&9+ No Enderpearl Damage"
   SLIME_HELMET:
-      name: "&a&lSlime Helmet"
-      lore:
-          - ""
-          - "&a&oBouncy Feeling"
+    name: "&a&lSlime Helmet"
+    lore:
+      - ""
+      - "&a&oBouncy Feeling"
   SLIME_CHESTPLATE:
-      name: "&a&lSlime Chestplate"
-      lore:
-          - ""
-          - "&a&oBouncy Feeling"
+    name: "&a&lSlime Chestplate"
+    lore:
+      - ""
+      - "&a&oBouncy Feeling"
   SLIME_LEGGINGS:
-      name: "&a&lSlime Leggings"
-      lore:
-          - ""
-          - "&a&oBouncy Feeling"
-          - ""
-          - "&9+ Speed"
+    name: "&a&lSlime Leggings"
+    lore:
+      - ""
+      - "&a&oBouncy Feeling"
+      - ""
+      - "&9+ Speed"
   SLIME_BOOTS:
-      name: "&a&lSlime Boots"
-      lore:
-          - ""
-          - "&a&oBouncy Feeling"
-          - ""
-          - "&9+ Jump Boost"
-          - "&9+ No Fall Damage"
+    name: "&a&lSlime Boots"
+    lore:
+      - ""
+      - "&a&oBouncy Feeling"
+      - ""
+      - "&9+ Jump Boost"
+      - "&9+ No Fall Damage"
   GLOWSTONE_HELMET:
-      name: "&e&lGlowstone Helmet"
-      lore:
-          - ""
-          - "&a&oShining like the sun!"
-          - ""
-          - "&9+ Night Vision"
+    name: "&e&lGlowstone Helmet"
+    lore:
+      - ""
+      - "&a&oShining like the sun!"
+      - ""
+      - "&9+ Night Vision"
   GLOWSTONE_CHESTPLATE:
-        name: "&e&lGlowstone Chestplate"
-        lore:
-            - ""
-            - "&a&oShining like the sun!"
-            - ""
-            - "&9+ Night Vision"
+    name: "&e&lGlowstone Chestplate"
+    lore:
+      - ""
+      - "&a&oShining like the sun!"
+      - ""
+      - "&9+ Night Vision"
   GLOWSTONE_LEGGINGS:
-      name: "&e&lGlowstone Leggings"
-      lore:
-          - ""
-          - "&a&oShining like the sun!"
-          - ""
-          - "&9+ Night Vision"
+    name: "&e&lGlowstone Leggings"
+    lore:
+      - ""
+      - "&a&oShining like the sun!"
+      - ""
+      - "&9+ Night Vision"
   GLOWSTONE_BOOTS:
-      name: "&e&lGlowstone Boots"
-      lore:
-          - ""
-          - "&a&oShining like the sun!"
-          - ""
-          - "&9+ Night Vision"
+    name: "&e&lGlowstone Boots"
+    lore:
+      - ""
+      - "&a&oShining like the sun!"
+      - ""
+      - "&9+ Night Vision"
   RAINBOW_HELMET:
-      name: "&d&lRainbow Helmet"
-      lore:
-          - ""
-          - "&fCycles through all Colors of the Rainbow!"
+    name: "&d&lRainbow Helmet"
+    lore:
+      - ""
+      - "&fCycles through all Colors of the Rainbow!"
   RAINBOW_CHESTPLATE:
-        name: "&d&lRainbow Chestplate"
-        lore:
-            - ""
-            - "&fCycles through all Colors of the Rainbow!"
+    name: "&d&lRainbow Chestplate"
+    lore:
+      - ""
+      - "&fCycles through all Colors of the Rainbow!"
   RAINBOW_LEGGINGS:
-        name: "&d&lRainbow Leggings"
-        lore:
-            - ""
-            - "&fCycles through all Colors of the Rainbow!"
+    name: "&d&lRainbow Leggings"
+    lore:
+      - ""
+      - "&fCycles through all Colors of the Rainbow!"
   RAINBOW_BOOTS:
-        name: "&d&lRainbow Boots"
-        lore:
-            - ""
-            - "&fCycles through all Colors of the Rainbow!"
+    name: "&d&lRainbow Boots"
+    lore:
+      - ""
+      - "&fCycles through all Colors of the Rainbow!"
   SLIME_STEEL_HELMET:
-      name: "&a&lSlime Helmet"
-      lore:
-          - "&7&oReinforced"
-          - ""
-          - "&a&oBouncy Feeling"
+    name: "&a&lSlime Helmet"
+    lore:
+      - "&7&oReinforced"
+      - ""
+      - "&a&oBouncy Feeling"
   SLIME_STEEL_CHESTPLATE:
-      name: "&a&lSlime Chestplate"
-      lore:
-          - "&7&oReinforced"
-          - ""
-          - "&a&oBouncy Feeling"
+    name: "&a&lSlime Chestplate"
+    lore:
+      - "&7&oReinforced"
+      - ""
+      - "&a&oBouncy Feeling"
   SLIME_STEEL_LEGGINGS:
-      name: "&a&lSlime Leggings"
-      lore:
-          - "&7&oReinforced"
-          - ""
-          - "&a&oBouncy Feeling"
-          - ""
-          - "&9+ Speed"
+    name: "&a&lSlime Leggings"
+    lore:
+      - "&7&oReinforced"
+      - ""
+      - "&a&oBouncy Feeling"
+      - ""
+      - "&9+ Speed"
   SLIME_STEEL_BOOTS:
-        name: "&a&lSlime Boots"
-        lore:
-            - "&7&oReinforced"
-            - ""
-            - "&a&oBouncy Feeling"
-            - ""
-            - "&9+ Jump Boost"
-            - "&9+ No Fall Damage"
+    name: "&a&lSlime Boots"
+    lore:
+      - "&7&oReinforced"
+      - ""
+      - "&a&oBouncy Feeling"
+      - ""
+      - "&9+ Jump Boost"
+      - "&9+ No Fall Damage"
   FARMER_SHOES:
     name: "&eFarmer Shoes"
     lore:
@@ -135,11 +135,11 @@ translations:
   BOOTS_OF_THE_STOMPER:
     name: "&eBoots of the Stomper"
     lore:
-        - ""
-        - "&9All Fall Damage you receive"
-        - "&9will be applied to nearby Mobs/Players"
-        - ""
-        - "&9+ No Fall Damage"
+      - ""
+      - "&9All Fall Damage you receive"
+      - "&9will be applied to nearby Mobs/Players"
+      - ""
+      - "&9+ No Fall Damage"
   SOULBOUND_HELMET:
     name: "&cSoulbound Helmet"
   SOULBOUND_CHESTPLATE:
@@ -151,32 +151,32 @@ translations:
   BEE_HELMET:
     name: "&e&lBee Helmet"
     lore:
-        - ""
-        - "&fBzzzzzzz"
+      - ""
+      - "&fBzzzzzzz"
   BEE_WINGS:
     name: "&e&lBee Wings"
     lore:
-        - ""
-        - "&fBzzzzzzz"
-        - ""
-        - "&9Activates Slow falling"
-        - "&9when approaching the ground"
+      - ""
+      - "&fBzzzzzzz"
+      - ""
+      - "&9Activates Slow falling"
+      - "&9when approaching the ground"
   BEE_LEGGINGS:
     name: "&e&lBee Leggings"
     lore:
-        - ""
-        - "&fBzzzzzzz"
+      - ""
+      - "&fBzzzzzzz"
   BEE_BOOTS:
     name: "&e&lBee Boots"
     lore:
-        - ""
-        - "&fBzzzzzzz"
-        - ""
-        - "&9+ Jump Boost"
-        - "&9+ No Fall Damage"
+      - ""
+      - "&fBzzzzzzz"
+      - ""
+      - "&9+ Jump Boost"
+      - "&9+ No Fall Damage"
   ELYTRA_CAP:
     name: "&5Elytra Cap"
     lore:
-        - ""
-        - "&7This helmet will protect you from"
-        - "&7crashing while flying with an elytra."
+      - ""
+      - "&7This helmet will protect you from"
+      - "&7crashing while flying with an elytra."
