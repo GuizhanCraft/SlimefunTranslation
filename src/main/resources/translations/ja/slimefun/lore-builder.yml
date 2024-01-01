@@ -1,0 +1,29 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Lore Builder
+author: SchnTgaiSpock
+lore:
+  HazmatSuitRequired: "&8\u21E8 &4化学防護服が必要です！"
+  Rainbow: "&d虹のすべての色を循環する！"
+  RightClickToUse: "&e右クリック&7して使用する"
+  RightClickToOpen: "&e右クリック&7して開ける"
+  CrouchToUse: "&eスニーク&7して使用する"
+  Radioactive: "&a\u2622&7 被ばくレベル：&r{0}"
+  Speed: "&8\u21E8 &b\u26A1 &7速度：&b{0}x"
+  Power: "&8\u21E8 &e\u26A1 &7{0} J{1}"
+  PowerBuffer: "%sftrlore_Power_{0}_ Buffer%"
+  PowerPerSecond: "%sftrlore_Power_{0}_/s%"
+  PowerPerTick: "%sftrlore_Power_{0}_/t%"
+  Hunger: "&7&o満腹度を&b&o{0}&7&o回復する"
+  Range: "&7範囲：&c{0}ブロック"
+  Machine:
+    Tier:
+      Basic: "&e基本"
+      Average: "&6普通"
+      Medium: "&a中型"
+      Good: "&2優良"
+      Advanced: "&6先進"
+      EndGame: "&4究極"
+    Type:
+      Capacitor: "コンデンサ"
+      Generator: "発電機"
+      Machine: "機械"
