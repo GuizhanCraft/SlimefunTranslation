@@ -1,6 +1,5 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun 武器
-author: SlimefunTranslation 贡献者
 translations:
   GRANDMAS_WALKING_STICK:
     name: "&7奶奶的拐杖"
