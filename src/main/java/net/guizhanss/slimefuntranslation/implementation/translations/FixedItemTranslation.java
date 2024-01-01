@@ -7,11 +7,10 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
-
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;

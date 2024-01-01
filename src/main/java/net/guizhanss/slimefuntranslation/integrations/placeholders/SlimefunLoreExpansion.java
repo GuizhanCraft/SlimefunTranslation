@@ -36,6 +36,16 @@ public class SlimefunLoreExpansion extends AExpansion {
         if (s.length >= 2) {
             args = Arrays.copyOfRange(s, 1, s.length);
         }
-        return getResult(user, id, args);
+        return switch (id) {
+            case "Machine" -> {
+                if (args.length != 2) yield null;
+                yield getResult(user, "Machine.Tier." + args[0]) + " " + getResult(user, "Machine.Type." + args[1]);
+            }
+            case "Radioactive" -> {
+                if (args.length != 1) yield null;
+                yield getResult(user, "Radioactive", getResult(user, "Radioactivity." + args[0]));
+            }
+            default -> getResult(user, id, args);
+        };
     }
 }
