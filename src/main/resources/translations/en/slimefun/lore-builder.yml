@@ -8,6 +8,12 @@ lore:
   RightClickToOpen: "&eRight Click &7to open"
   CrouchToUse: "&eCrouch&7 to use"
   Radioactive: "&a\u2622&7 Radiation level: &r{0}"
+  Radioactivity:
+    Low: "&eLow"
+    Moderate: "&eModerate"
+    High: "&6High"
+    VeryHigh: "&cVery High"
+    VeryDeadly: "&4Very Deadly"
   Speed: "&8\u21E8 &b\u26A1 &7Speed: &b{0}x"
   Power: "&8\u21E8 &e\u26A1 &7{0} J{1}"
   PowerBuffer: "%sftrlore_Power_{0}_ Buffer%"

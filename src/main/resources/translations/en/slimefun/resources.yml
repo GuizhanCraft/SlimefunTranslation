@@ -128,7 +128,7 @@ translations:
     name: "&4Uranium"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   REDSTONE_ALLOY_INGOT:
     name: "&cRedstone Alloy Ingot"
@@ -146,47 +146,47 @@ translations:
     name: "&eNether Ice"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&eModerate%"
+      - "%sftrlore_Radioactive_Moderate%"
       - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT:
     name: "&6Blistering Ingot &7(33%)"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT_2:
     name: "&6Blistering Ingot &7(66%)"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT_3:
     name: "&6Blistering Ingot"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   ENRICHED_NETHER_ICE:
     name: "&eEnriched Nether Ice"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   NEPTUNIUM:
     name: "&aNeptunium"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   PLUTONIUM:
     name: "&7Plutonium"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   BOOSTED_URANIUM:
     name: "&2Boosted Uranium"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"

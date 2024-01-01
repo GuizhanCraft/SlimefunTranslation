@@ -32,12 +32,12 @@ translations:
     name: "&cTiny Pile of Uranium"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&eLow%"
+      - "%sftrlore_Radioactive_Low%"
   SMALL_URANIUM:
     name: "&cSmall Chunk of Uranium"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&eModerate%"
+      - "%sftrlore_Radioactive_Moderate%"
       - "%sftrlore_HazmatSuitRequired%"
   CLOTH:
     name: "&bCloth"

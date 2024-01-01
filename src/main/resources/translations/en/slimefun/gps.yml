@@ -69,7 +69,7 @@ translations:
       - "&eMines up resources from the chunk"
       - "&eThese Resources cannot be mined with a pickaxe"
       - ""
-      - "%sftrloremachine_Advanced_Machine%"
+      - "%sftrlore_Machine_Advanced_Machine%"
       - "%sftrlore_Speed_1%"
       - "%sftrlore_PowerPerSecond_48%"
       - ""
