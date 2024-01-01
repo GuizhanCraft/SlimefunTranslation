@@ -1,6 +1,5 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefunの食べ物
-author: SchnTgaiSpock
 translations:
   FORTUNE_COOKIE:
     check-name: true
