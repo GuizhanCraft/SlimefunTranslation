@@ -1,6 +1,5 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefunの材料
-author: SchnTgaiSpock
 translations:
   REINFORCED_ALLOY_INGOT:
     name: "&b&l強化合金インゴット"
@@ -128,7 +127,7 @@ translations:
     name: "&4ウラン"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   REDSTONE_ALLOY_INGOT:
     name: "&cレッドストーン合金インゴット"
@@ -146,47 +145,47 @@ translations:
     name: "&eネザー氷"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&eModerate%"
+      - "%sftrlore_Radioactive_Moderate%"
       - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT:
     name: "&6猛烈なインゴット &7(33%)"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT_2:
     name: "&6猛烈なインゴット &7(66%)"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   BLISTERING_INGOT_3:
     name: "&6猛烈なインゴット"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   ENRICHED_NETHER_ICE:
     name: "&e濃縮ネザー氷"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   NEPTUNIUM:
     name: "&aネプツニウム"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&6High%"
+      - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   PLUTONIUM:
     name: "&7プルトニウム"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   BOOSTED_URANIUM:
     name: "&2濃縮ウラン"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&cVery High%"
+      - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
