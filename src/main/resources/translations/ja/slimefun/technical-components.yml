@@ -1,0 +1,68 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefunの技術的なパーツ
+author: SchnTgaiSpock
+translations:
+  BASIC_CIRCUIT_BOARD:
+    name: "&b基板"
+  ADVANCED_CIRCUIT_BOARD:
+    name: "&b拡張基板"
+  BATTERY:
+    name: "&6電池"
+  STEEL_THRUSTER:
+    name: "&7&l鋼のスラスター"
+  POWER_CRYSTAL:
+    name: "&c&lパワー結晶"
+  SOLAR_PANEL:
+    name: "&9太陽電池"
+    lore:
+      - ""
+      - "&7ソーラーパネルをクラフトする"
+      - "&7ための重要なパーツ"
+  REINFORCED_CLOTH:
+    name: "&b強化布"
+    lore:
+      - ""
+      - "&fこの布は放射性アイテムを"
+      - "&f防ぐため、鉛で"
+      - "&f強化された"
+  MAGNET:
+    name: "&c磁石"
+  ELECTRO_MAGNET:
+    name: "&c電磁石"
+  ELECTRIC_MOTOR:
+    name: "&c電動機"
+  HEATING_COIL:
+    check-name: true
+    name: "&c加熱コイル"
+  COPPER_WIRE:
+    name: "&6銅線"
+    lore:
+      - ""
+      - "&6電気製品に含まれる重要なパーツ"
+  HARDENED_GLASS:
+    name: "&7硬質ガラス"
+    lore:
+      - ""
+      - "&f爆発に耐える"
+  COOLING_UNIT:
+    name: "&b冷却機"
+  WITHER_PROOF_OBSIDIAN:
+    name: "&5ウィザープルーフ黒曜石"
+    lore:
+      - ""
+      - "&f爆発に耐える"
+      - "&fウィザーに耐える"
+  PLASTIC_SHEET:
+    name: "&fプラスチック板"
+  ANDROID_MEMORY_CORE:
+    name: "&bアンドロイド記憶コア"
+  WITHER_PROOF_GLASS:
+    name: "&5ウィザープルーフガラス"
+    lore:
+      - ""
+      - "&f爆発に耐える"
+      - "&fウィザーに耐える"
+  REACTOR_COLLANT_CELL:
+    name: "&b原子炉冷却材"
+  NETHER_ICE_COOLANT_CELL:
+    name: "&6ネザー氷冷却材"
