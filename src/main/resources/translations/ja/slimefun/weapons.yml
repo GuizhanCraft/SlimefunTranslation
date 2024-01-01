@@ -1,0 +1,48 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefunの武器
+author: SchnTgaiSpock
+translations:
+  GRANDMAS_WALKING_STICK:
+    name: "&7おばあさんの杖"
+  GRANDPAS_WALKING_STICK:
+    name: "&7おじいさんの杖"
+  SWORD_OF_BEHEADING:
+    name: "&6斬首の剣"
+    lore:
+      - "&7斬首 II"
+      - ""
+      - "&fMobの頭を断絶するチャンスがある。"
+      - "&f(ウィザースケルトンの場合はより高い確率で)"
+  BLADE_OF_VAMPIRES:
+    check-name: true
+    name: "&4吸血鬼の刃"
+    lore:
+      - "&7ライフスティール I"
+      - ""
+      - "&f何かを攻撃したら、45%の"
+      - "&f確率でハートを"
+      - "&f2個回復する"
+  SEISMIC_AXE:
+    name: "&a地震の斧"
+    lore:
+      - ""
+      - "&7&oポータブル地震..."
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SOULDBOUND_SWORD:
+    name: "&cソウルバウンド剣"
+  SOULBOUND_TRIDENT:
+    name: "&cソウルバウンドトライデント"
+  SOULBOUND_BOW:
+    name: "&cソウルバウンド弓"
+  EXPLOSIVE_BOW:
+    name: "&c爆発の弓"
+    lore:
+      - "&fこの弓から発射された矢は"
+      - "&f当たった敵を空に飛ばす"
+  ICY_BOW:
+    name: "&b氷の弓"
+    lore:
+      - "&fこの弓から発射された矢は"
+      - "&f当たった敵の動きを2秒間"
+      - "&f封じる"
