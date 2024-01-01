@@ -1,0 +1,77 @@
+#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefunの防具
+author: SchnTgaiSpock
+translations:
+  DAMASCUS_STEEL_HELMET:
+    name: "&7ダマスカス鋼のヘルメット"
+  DAMASCUS_STEEL_CHESTPLATE:
+    check-name: true
+    name: "&7ダマスカス鋼のチェストプレート"
+  DAMASCUS_STEEL_LEGGINGS:
+    name: "&7ダマスカス鋼のレギンス"
+  DAMASCUS_STEEL_BOOTS:
+    name: "&7ダマスカス鋼のブーツ"
+  REINFORCED_ALLOY_HELMET:
+    name: "&b強化ヘルメット"
+  REINFORCED_ALLOY_CHESTPLATE:
+    name: "&b強化チェストプレート"
+  REINFORCED_ALLOY_LEGGINGS:
+    name: "&b強化レギンス"
+  REINFORCED_ALLOY_BOOTS:
+    name: "&b強化ブーツ"
+  CACTUS_HELMET:
+    name: "&2サボテンのヘルメット"
+  CACTUS_CHESTPLATE:
+    name: "&2サボテンのチェストプレート"
+  CACTUS_LEGGINGS:
+    name: "&2サボテンのレギンス"
+  CACTUS_BOOTS:
+    name: "&2サボテンのブーツ"
+  GILDED_IRON_HELMET:
+    name: "&6金メッキ鉄のヘルメット"
+  GILDED_IRON_CHESTPLATE:
+    name: "&6金メッキ鉄のチェストプレート"
+  GILDED_IRON_LEGGINGS:
+    name: "&6金メッキ鉄のレギンス"
+  GILDED_IRON_BOOTS:
+    name: "&6金メッキ鉄のブーツ"
+  SCUBA_HELMET:
+    name: "&cスクーバヘルメット"
+    lore:
+      - ""
+      - "&7水中呼吸ができるようになる"
+      - ""
+      - "&6フルセット効果："
+      - "&e- 被ばく耐性"
+      - "&e- ミツバチに刺される耐性"
+  HAZMAT_CHESTPLATE:
+    name: "&c化学防護服のスーツ"
+    lore:
+      - ""
+      - "&7火と溶岩の中に歩けるようになる"
+      - ""
+      - "&6フルセット効果："
+      - "&e- 被ばく耐性"
+      - "&e- ミツバチに刺される耐性"
+  HAZMAT_LEGGINGS:
+    name: "&c化学防護服のレギンス"
+    lore:
+      - ""
+      - "&6フルセット効果："
+      - "&e- 被ばく耐性"
+      - "&e- ミツバチに刺される耐性"
+  HAZMAT_BOOTS:
+    name: "&c化学防護服のブーツ"
+    lore:
+      - ""
+      - "&6フルセット効果："
+      - "&e- 被ばく耐性"
+      - "&e- ミツバチに刺される耐性"
+  GOLDEN_HELMET_12K:
+    name: "&6金のヘルメット &7(12カラット)"
+  GOLDEN_CHESTPLATE_12K:
+    name: "&6金のチェストプレート &7(12カラット)"
+  GOLDEN_LEGGINGS_12K:
+    name: "&6金のレギンス &7(12カラット)"
+  GOLDEN_BOOTS_12K:
+    name: "&6金のブーツ &7(12カラット)"
