@@ -1,6 +1,5 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Magical Items
-author: SlimefunTranslation contributors
 translations:
   MAGIC_LUMP_1:
     name: "&6Magical Lump &7- &eI"

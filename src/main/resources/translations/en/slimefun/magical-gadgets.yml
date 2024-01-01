@@ -1,6 +1,5 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Magical Gadgets
-author: SlimefunTranslation contributors
 translations:
   ENDER_BACKPACK:
     name: "&6Ender Backpack"

@@ -1,6 +1,5 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Lore Builder
-author: SlimefunTranslation contributors
 lore:
   HazmatSuitRequired: "&8\u21E8 &4Hazmat Suit required!"
   Rainbow: "&dCycles through all Colors of the Rainbow!"

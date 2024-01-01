@@ -1,6 +1,5 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Programmable Androids
-author: SlimefunTranslation contributors
 translations:
   ANDROID_INTERFACE_ITEMS:
     name: "&7Android Interface &9(Items)"

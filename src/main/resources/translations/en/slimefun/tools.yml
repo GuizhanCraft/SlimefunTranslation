@@ -1,6 +1,5 @@
 # These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun Tools
-author: SlimefunTranslation contributors
 translations:
   GOLD_PAN:
     name: "&6Gold Pan"
