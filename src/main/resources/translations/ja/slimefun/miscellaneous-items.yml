@@ -1,6 +1,5 @@
 #These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefunの雑貨
-author: SchnTgaiSpock
 translations:
   SIFTED_ORE:
     name: "&6選鉱した鉱石"
@@ -32,12 +31,12 @@ translations:
     name: "&cウランの細かな塊"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&eLow%"
+      - "%sftrlore_Radioactive_Low%"
   SMALL_URANIUM:
     name: "&cウランの小さな塊"
     lore:
       - ""
-      - "%sftrlore_Radioactive_&eModerate%"
+      - "%sftrlore_Radioactive_Moderate%"
       - "%sftrlore_HazmatSuitRequired%"
   CLOTH:
     name: "&b布"
