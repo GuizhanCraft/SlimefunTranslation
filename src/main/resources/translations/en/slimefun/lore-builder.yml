@@ -16,6 +16,7 @@ lore:
   Speed: "&8\u21E8 &b\u26A1 &7Speed: &b{0}x"
   Power: "&8\u21E8 &e\u26A1 &7{0} J{1}"
   PowerBuffer: "%sftrlore_Power_{0}_ Buffer%"
+  PowerCapacity: "%sftrlore_Power_{0}_ Capacity%"
   PowerPerSecond: "%sftrlore_Power_{0}_/s%"
   PowerPerTick: "%sftrlore_Power_{0}_/t%"
   Hunger: "&7&oRestores &b&o{0} &7&oHunger"
