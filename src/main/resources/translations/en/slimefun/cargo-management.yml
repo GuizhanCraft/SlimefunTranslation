@@ -1,0 +1,87 @@
+# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun Cargo Management
+author: SlimefunTranslation contributors
+translations:
+  CARGO_MOTOR:
+    name: "&3Cargo Motor"
+    lore:
+      - ""
+      - "&7Important ingredient for items"
+      - "&7related to Cargo Management"
+  CARGO_MANAGER:
+    name: "&6Cargo Manager"
+    lore:
+      - ""
+      - "&fCore Component of an Item Transport Network"
+  CARGO_NODE:
+    name: "&7Cargo Node &c(Connector)"
+    lore:
+      - ""
+      - "&fCargo Connector Pipe"
+  CARGO_NODE_INPUT:
+    name: "&7Cargo Node &c(Input)"
+    lore:
+      - ""
+      - "&fCargo Input Pipe"
+  CARGO_NODE_OUTPUT:
+    name: "&7Cargo Node &c(Output)"
+    lore:
+      - ""
+      - "&fCargo Output Pipe"
+  CARGO_NODE_OUTPUT_ADVANCED:
+    name: "&6Advanced Cargo Node &c(Output)"
+    lore:
+      - ""
+      - "&fCargo Output Pipe"
+  REACTOR_ACCESS_PORT:
+    name: "&2Reactor Access Port"
+    lore:
+      - ""
+      - "&fAllows you to interact with a Reactor"
+      - "&fvia Cargo Nodes, can also be used"
+      - "&fas a Buffer"
+      - ""
+      - "&8\u21E8 &eMust be placed &a3 Blocks &eabove the Reactor"
+  TRASH_CAN_BLOCK:
+    name: "&3Trash Can"
+    lore:
+      - ""
+      - "&fWill destroy all Items put into it"
+  CRAFTING_MOTOR:
+    name: "&6Crafting Motor"
+    lore:
+      - ""
+      - "&7Important component of Auto-Crafters"
+  VANILLA_AUTO_CRAFTER:
+    name: "&2Auto-Crafter &8(Vanilla)"
+    lore:
+      - ""
+      - "&fPlace this machine on top of a"
+      - "&fchest or similar and make it craft"
+      - "&fanything that can be crafted using a"
+      - "&fnormal &eCrafting Table"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/Item"
+  ENHANCED_AUTO_CRAFTER:
+    name: "&2Auto-Crafter &8(Enhanced)"
+    lore:
+      - ""
+      - "&fPlace this machine on top of a"
+      - "&fchest or similar and make it craft"
+      - "&fanything that can be crafted using an"
+      - "&eEnhanced Crafting Table"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/Item"
+  ARMOR_AUTO_CRAFTER:
+    name: "&2Auto-Crafter &8(Armor Forge)"
+    lore:
+      - ""
+      - "&fPlace this machine on top of a"
+      - "&fchest or similar and make it craft"
+      - "&fanything that can be crafted using an"
+      - "&eArmor Forge"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_32_/Item"
