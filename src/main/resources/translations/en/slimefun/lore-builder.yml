@@ -1,4 +1,5 @@
-# These files are used by Crowdin to translate them into other languages, and will be provided by default.
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+
 name: Slimefun Lore Builder
 lore:
   HazmatSuitRequired: "&8\u21E8 &4Hazmat Suit required!"
@@ -19,6 +20,7 @@ lore:
   PowerCapacity: "%sftrlore_Power_{0}_ Capacity%"
   PowerPerSecond: "%sftrlore_Power_{0}_/s%"
   PowerPerTick: "%sftrlore_Power_{0}_/t%"
+  Material: "&8\u21E8 &7Material: &b{0}"
   Hunger: "&7&oRestores &b&o{0} &7&oHunger"
   Range: "&7Range: &c{0} blocks"
   Machine:
@@ -33,3 +35,4 @@ lore:
       Capacitor: "Capacitor"
       Generator: "Generator"
       Machine: "Machine"
+  MultiTool: "&eCrouch & Right Click&7 to switch modes"
