@@ -414,7 +414,7 @@ translations:
       - "&fRuns on &aOrganic Food"
       - ""
       - "%sftrlore_Machine_EndGame_Machine%"
-      - "%sftrlore_PowerBuffer_1024"
+      - "%sftrlore_PowerBuffer_1024%"
       - "%sftrlore_Power_60_/Animal%"
   ANIMAL_GROWTH_ACCELERATOR:
     name: "&bAnimal Growth Accelerator"
