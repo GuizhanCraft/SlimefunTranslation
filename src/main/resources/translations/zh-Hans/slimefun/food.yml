@@ -1,4 +1,4 @@
-#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun 食物
 translations:
   FORTUNE_COOKIE:
