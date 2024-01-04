@@ -1,13 +1,13 @@
 package net.guizhanss.slimefuntranslation.utils;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Enumeration;
 import java.util.List;
 import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
+import java.util.jar.JarInputStream;
 import java.util.logging.Level;
 
 import javax.annotation.Nonnull;
@@ -90,16 +90,16 @@ public final class FileUtils {
         return result;
     }
 
+    @Nonnull
     @ParametersAreNonnullByDefault
     public List<String> listYamlFilesInJar(File jarFile, String folderPath) {
         if (jarFile == null || !jarFile.isFile()) {
             return Collections.emptyList();
         }
         List<String> result = new ArrayList<>();
-        try (JarFile jar = new JarFile(jarFile)) {
-            Enumeration<JarEntry> entries = jar.entries();
-            while (entries.hasMoreElements()) {
-                JarEntry entry = entries.nextElement();
+        try (JarInputStream stream = new JarInputStream(new FileInputStream(jarFile))) {
+            JarEntry entry;
+            while ((entry = stream.getNextJarEntry()) != null) {
                 String entryName = entry.getName();
                 String filename = entryName.substring(entryName.lastIndexOf("/") + 1);
                 // Check if it's a .yml file and is under the "translations" folder

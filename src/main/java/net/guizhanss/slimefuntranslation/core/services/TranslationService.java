@@ -38,7 +38,8 @@ public final class TranslationService {
             translationsFolder.mkdirs();
 
             // also unzip the example translations
-            List<String> translationFiles = FileUtils.listYamlFilesInJar(jarFile, FOLDER_NAME + File.separator);
+            SlimefunTranslation.debug("translations folder not exist, extracting default translations");
+            List<String> translationFiles = FileUtils.listYamlFilesInJar(jarFile, FOLDER_NAME + "/");
             for (String translationFile : translationFiles) {
                 plugin.saveResource(FOLDER_NAME + File.separator + translationFile, false);
             }
