@@ -58,17 +58,26 @@ public final class TranslationService {
     }
 
     private void loadFixedTranslations() {
+        // standard translations
         for (String lang : SlimefunTranslation.getRegistry().getLanguages()) {
-            File languageFolder = new File(translationsFolder, lang);
-            List<String> translationFiles = FileUtils.listYamlFiles(languageFolder);
-            for (String translationFile : translationFiles) {
-                var config = YamlConfiguration.loadConfiguration(new File(languageFolder, translationFile));
-                var translationConfig = TranslationConfiguration.fromFileConfiguration(lang, config);
-                if (translationConfig.isEmpty()) {
-                    continue;
-                }
-                translationConfig.get().register(SlimefunTranslation.getInstance());
+            loadFixedTranslations(lang);
+        }
+        // language mappings
+        for (String lang : SlimefunTranslation.getConfigService().getLanguageMappings().keySet()) {
+            loadFixedTranslations(lang);
+        }
+    }
+
+    private void loadFixedTranslations(String language) {
+        File languageFolder = new File(translationsFolder, language);
+        List<String> translationFiles = FileUtils.listYamlFiles(languageFolder);
+        for (String translationFile : translationFiles) {
+            var config = YamlConfiguration.loadConfiguration(new File(languageFolder, translationFile));
+            var translationConfig = TranslationConfiguration.fromFileConfiguration(language, config);
+            if (translationConfig.isEmpty()) {
+                continue;
             }
+            translationConfig.get().register(SlimefunTranslation.getInstance());
         }
     }
 
