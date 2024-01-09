@@ -62,7 +62,7 @@ translations:
       - "&fnormal &eCrafting Table"
       - ""
       - "%sftrlore_Machine_Advanced_Machine%"
-      - "%sftrlore_Power_16_/Item"
+      - "%sftrlore_Power_16_/Item%"
   ENHANCED_AUTO_CRAFTER:
     name: "&2Auto-Crafter &8(Enhanced)"
     lore:
@@ -73,7 +73,7 @@ translations:
       - "&eEnhanced Crafting Table"
       - ""
       - "%sftrlore_Machine_Advanced_Machine%"
-      - "%sftrlore_Power_16_/Item"
+      - "%sftrlore_Power_16_/Item%"
   ARMOR_AUTO_CRAFTER:
     name: "&2Auto-Crafter &8(Armor Forge)"
     lore:
@@ -84,4 +84,4 @@ translations:
       - "&eArmor Forge"
       - ""
       - "%sftrlore_Machine_Advanced_Machine%"
-      - "%sftrlore_Power_32_/Item"
+      - "%sftrlore_Power_32_/Item%"
