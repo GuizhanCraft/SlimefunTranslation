@@ -147,8 +147,14 @@ public final class TranslationService {
     @Nonnull
     @ParametersAreNonnullByDefault
     public String translateLore(User user, String id) {
+        return translateLore(user, id, false);
+    }
+
+    @Nonnull
+    @ParametersAreNonnullByDefault
+    public String translateLore(User user, String id, boolean defaultToId) {
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
-        return transl.orElse("");
+        return transl.orElse(defaultToId ? id : "");
     }
 }

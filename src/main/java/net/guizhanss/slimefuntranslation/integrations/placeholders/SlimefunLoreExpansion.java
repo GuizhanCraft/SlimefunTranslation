@@ -45,6 +45,10 @@ public class SlimefunLoreExpansion extends AExpansion {
                 if (args.length != 1) yield null;
                 yield getResult(user, "Radioactive", getResult(user, "Radioactivity." + args[0]));
             }
+            case "Material" -> {
+                if (args.length != 1) yield null;
+                yield getResult(user, "Material", getResult(user, "Materials." + args[0]));
+            }
             default -> getResult(user, id, args);
         };
     }

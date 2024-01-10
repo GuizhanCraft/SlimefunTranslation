@@ -22,6 +22,14 @@ lore:
   PowerPerTick: "%sftrlore_Power_{0}_/t%"
   Material: "&8\u21E8 &7Material: &b{0}"
   Hunger: "&7&oRestores &b&o{0} &7&oHunger"
+  Materials:
+    Duralumin: "Duralumin"
+    Solder: "Solder"
+    Billon: "Billon"
+    Steel: "Steel"
+    DamascusSteel: "Damascus Steel"
+    ReinforcedAlloy: "Reinforced Alloy"
+    Carbonado: "Carbonado"
   Range: "&7Range: &c{0} blocks"
   Machine:
     Tier:
@@ -36,3 +44,4 @@ lore:
       Generator: "Generator"
       Machine: "Machine"
   MultiTool: "&eCrouch & Right Click&7 to switch modes"
+

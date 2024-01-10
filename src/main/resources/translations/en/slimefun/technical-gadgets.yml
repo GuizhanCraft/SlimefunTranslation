@@ -29,13 +29,13 @@ translations:
   DAMASCUS_STEEL_JETPACK:
     name: "&9Electric Jetpack &7- &eV"
     lore-overrides:
-      2: "%sftrlore_Material_Damascus Steel%"
+      2: "%sftrlore_Material_DamascusSteel%"
       4: "&8\u21E8 &7Thrust: &c0.55"
       6: "%sftrlore_CrouchToUse%"
   REINFORCED_ALLOY_JETPACK:
     name: "&9Electric Jetpack &7- &eVI"
     lore-overrides:
-      2: "%sftrlore_Material_Reinforced Alloy%"
+      2: "%sftrlore_Material_ReinforcedAlloy%"
       4: "&8\u21E8 &7Thrust: &c0.6"
       6: "%sftrlore_CrouchToUse%"
   CARBONADO_JETPACK:
@@ -88,13 +88,13 @@ translations:
   DAMASCUS_STEEL_MULTI_TOOL:
     name: "&9Multi Tool &7- &eV"
     lore-overrides:
-      2: "%sftrlore_Material_Damascus Steel%"
+      2: "%sftrlore_Material_DamascusSteel%"
       4: "%sftrlore_RightClickToUse%"
       5: "%sftrlore_MultiTool%"
   REINFORCED_ALLOY_MULTI_TOOL:
     name: "&9Multi Tool &7- &eVI"
     lore-overrides:
-      2: "%sftrlore_Material_Reinforced Alloy%"
+      2: "%sftrlore_Material_ReinforcedAlloy%"
       4: "%sftrlore_RightClickToUse%"
       5: "%sftrlore_MultiTool%"
   CARBONADO_MULTI_TOOL:
@@ -144,14 +144,14 @@ translations:
   DAMASCUS_STEEL_JETBOOTS:
     name: "&9Jet Boots &7- &eV"
     lore-overrides:
-      2: "%sftrlore_Material_Damascus Steel%"
+      2: "%sftrlore_Material_DamascusSteel%"
       4: "%sftrlore_Speed_0.55%"
       5: "&8\u21E8 &7Accuracy: &a75%"
       7: "%sftrlore_CrouchToUse%"
   REINFORCED_ALLOY_JETBOOTS:
     name: "&9Jet Boots &7- &eVI"
     lore-overrides:
-      2: "%sftrlore_Material_Reinforced Alloy%"
+      2: "%sftrlore_Material_ReinforcedAlloy%"
       4: "%sftrlore_Speed_0.6%"
       5: "&8\u21E8 &7Accuracy: &c80%"
       7: "%sftrlore_CrouchToUse%"
