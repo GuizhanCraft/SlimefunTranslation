@@ -1,0 +1,114 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 魔法物品
+translations:
+  MAGIC_LUMP_1:
+    name: "&6魔法结晶 &7- &eI"
+    lore:
+      - ""
+      - "&c&o等级：I"
+  MAGIC_LUMP_2:
+    name: "&6魔法结晶 &7- &eII"
+    lore:
+      - ""
+      - "&c&o等级：II"
+  MAGIC_LUMP_3:
+    name: "&6魔法结晶 &7- &eIII"
+    lore:
+      - ""
+      - "&c&o等级：III"
+  ENDER_LUMP_1:
+    name: "&5末影结晶 &7- &eI"
+    lore:
+      - ""
+      - "&c&o等级：I"
+  ENDER_LUMP_2:
+    name: "&5末影结晶 &7- &eII"
+    lore:
+      - ""
+      - "&c&o等级：II"
+  ENDER_LUMP_3:
+    name: "&5末影结晶 &7- &eIII"
+    lore:
+      - ""
+      - "&c&o等级：III"
+  MAGICAL_BOOK_COVER:
+    name: "&6魔术书皮"
+    lore:
+      - ""
+      - "&a&o用于各种魔法书"
+  MAGICAL_GLASS:
+    name: "&6魔法玻璃"
+    lore:
+      - ""
+      - "&a&o用于各种魔法物品"
+  LAVA_CRYSTAL:
+    name: "&4岩浆水晶"
+  COMMON_TALISMAN:
+    check-name: true
+    name: "&6通用护身符"
+  NECROTIC_SKULL:
+    name: "&c坏死颅骨"
+  ESSENCE_OF_AFTERLIFE:
+    name: "&4来世精华"
+  SYNTHETIC_SHULKER_SHELL:
+    name: "&d人造潜影壳"
+    lore:
+      - ""
+      - "&f该物品可在工作台中"
+      - "&f作为潜影壳使用"
+  BROKEN_SPAWNER:
+    name: "&c损坏的刷怪笼"
+    lore-overrides:
+      3: "&c已损坏，必须在古代祭坛中修复"
+  BLANK_RUNE:
+    name: "&8空白符文"
+  ANCIENT_RUNE_AIR:
+    name: "&7古代符文 &8&l[&b&l气&8&l]"
+  ANCIENT_RUNE_EARTH:
+    name: "&7古代符文 &8&l[&c&l地&8&l]"
+  ANCIENT_RUNE_FIRE:
+    name: "&7古代符文 &8&l[&4&l火&8&l]"
+  ANCIENT_RUNE_WATER:
+    name: "&7古代符文 &8&l[&1&l水&8&l]"
+  ANCIENT_RUNE_ENDER:
+    check-name: true
+    name: "&7古代符文 &8&l[&5&l末影&8&l]"
+  ANCIENT_RUNE_LIGHTNING:
+    name: "&7古代符文 &8&l[&e&l雷&8&l]"
+  ANCIENT_RUNE_RAINBOW:
+    name: "&7古代符文 &8&l[&d&l彩虹&8&l]"
+  ANCIENT_RUNE_SOULBOUND:
+    name: "&7古代符文 &8&l[&5&l灵魂绑定&8&l]"
+    lore:
+      - "&e将该物品丢向地上的物品"
+      - "&e使其与你的灵魂&5绑定"
+      - ""
+      - "&e建议仅将该符文"
+      - "&e用于&6重要&e物品"
+      - ""
+      - "&e灵魂绑定的物品在死亡时不会掉落。"
+  ANCIENT_RUNE_ENCHANTMENT:
+    name: "&7古代符文 &8&l[&e&l附魔&8&l]"
+    lore:
+      - "&e将该物品丢向地上的物品"
+      - "&e使其获得一个随机&6附魔"
+  ANCIENT_RUNE_VILLAGERS:
+    name: "&7古代符文 &8&l[&4&l村民&8&l]"
+    lore:
+      - "&e右键点击一位村民"
+      - "&e来清除当前的工作与交易"
+      - "&e村民将在一段时间后"
+      - "&e重新寻找工作"
+      - "&e寻找一份工作"
+  STRANGE_NETHER_GOO:
+    name: "&5奇怪的下界粘液"
+    lore:
+      - ""
+      - "&f可通过与猪灵"
+      - "&f以物换物获取的"
+      - "&f奇怪的生物质"
+  RAINBOW_LEATHER:
+    name: "&d彩虹皮革"
+    lore:
+      - ""
+      - "&f可用于合成彩虹护甲"
