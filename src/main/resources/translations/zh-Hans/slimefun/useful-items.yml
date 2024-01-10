@@ -1,15 +1,18 @@
-#These files are used by Crowdin to translate them into other languages, and will be provided by default.
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun 有用的物品
-author: SlimefunTranslation 贡献者
 translations:
   PORTABLE_CRAFTER:
     name: "&6便携工作台"
-    lore-overrides:
-      1: "&a&o一个便携式的工作台"
+    lore:
+      - "&a&o一个便携式的工作台"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
   PORTABLE_DUSTBIN:
     name: "&6一个便携式的工作台"
-    lore-overrides:
-      1: "&f轻松的消除多余的物品"
+    lore:
+      - "&f轻松的消除多余的物品"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
   RAG:
     name: "&c破布"
     lore:
