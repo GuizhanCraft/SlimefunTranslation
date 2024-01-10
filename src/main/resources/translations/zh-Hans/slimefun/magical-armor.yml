@@ -1,0 +1,181 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 魔法护甲
+translations:
+  ENDER_HELMET:
+    check-name: true
+    name: "&5&l末影头盔"
+    lore:
+      - ""
+      - "&a&o有时在这儿，有时在那儿！"
+  ENDER_CHESTPLATE:
+    name: "&5&l末影胸甲"
+    lore:
+      - ""
+      - "&a&o有时在这儿，有时在那儿！"
+  ENDER_LEGGINGS:
+    name: "&5&l末影护腿"
+    lore:
+      - ""
+      - "&a&o有时在这儿，有时在那儿！"
+  ENDER_BOOTS:
+    name: "&5&l末影靴子"
+    lore:
+      - ""
+      - "&a&o有时在这儿，有时在那儿！"
+      - ""
+      - "&9+ 无末影珍珠伤害"
+  SLIME_HELMET:
+    name: "&a&l粘液头盔"
+    lore:
+      - ""
+      - "&a&o弹性的感觉"
+  SLIME_CHESTPLATE:
+    name: "&a&l粘液胸甲"
+    lore:
+      - ""
+      - "&a&o弹性的感觉"
+  SLIME_LEGGINGS:
+    name: "&a&l粘液护腿"
+    lore:
+      - ""
+      - "&a&o弹性的感觉"
+      - ""
+      - "&9+ 速度"
+  SLIME_BOOTS:
+    name: "&a&l粘液靴子"
+    lore:
+      - ""
+      - "&a&o弹性的感觉"
+      - ""
+      - "&9+ 跳跃提升"
+      - "&9+ 无摔落伤害"
+  GLOWSTONE_HELMET:
+    name: "&e&l萤石头盔"
+    lore:
+      - ""
+      - "&a&o像太阳一样闪耀！"
+      - ""
+      - "&9+ 夜视"
+  GLOWSTONE_CHESTPLATE:
+    name: "&e&l萤石胸甲"
+    lore:
+      - ""
+      - "&a&o像太阳一样闪耀！"
+      - ""
+      - "&9+ 夜视"
+  GLOWSTONE_LEGGINGS:
+    name: "&e&l萤石护腿"
+    lore:
+      - ""
+      - "&a&o像太阳一样闪耀！"
+      - ""
+      - "&9+ 夜视"
+  GLOWSTONE_BOOTS:
+    name: "&e&l萤石靴子"
+    lore:
+      - ""
+      - "&a&o像太阳一样闪耀！"
+      - ""
+      - "&9+ 夜视"
+  RAINBOW_HELMET:
+    name: "&d&l彩虹头盔"
+    lore:
+      - ""
+      - "&f循环彩虹的所有颜色！"
+  RAINBOW_CHESTPLATE:
+    name: "&d&l彩虹胸甲"
+    lore:
+      - ""
+      - "&f循环彩虹的所有颜色！"
+  RAINBOW_LEGGINGS:
+    name: "&d&l彩虹护腿"
+    lore:
+      - ""
+      - "&f循环彩虹的所有颜色！"
+  RAINBOW_BOOTS:
+    name: "&d&l彩虹靴子"
+    lore:
+      - ""
+      - "&f循环彩虹的所有颜色！"
+  SLIME_STEEL_HELMET:
+    name: "&a&l粘液头盔"
+    lore:
+      - "&7&o已强化"
+      - ""
+      - "&a&o弹性的感觉"
+  SLIME_STEEL_CHESTPLATE:
+    name: "&a&l粘液胸甲"
+    lore:
+      - "&7&o已强化"
+      - ""
+      - "&a&o弹性的感觉"
+  SLIME_STEEL_LEGGINGS:
+    name: "&a&l粘液护腿"
+    lore:
+      - "&7&o已强化"
+      - ""
+      - "&a&o弹性的感觉"
+      - ""
+      - "&9+ 速度"
+  SLIME_STEEL_BOOTS:
+    name: "&a&l粘液靴子"
+    lore:
+      - "&7&o已强化"
+      - ""
+      - "&a&o弹性的感觉"
+      - ""
+      - "&9+ 跳跃提升"
+      - "&9+ 无摔落伤害"
+  FARMER_SHOES:
+    name: "&e农夫靴子"
+    lore:
+      - ""
+      - "&6&o让你不会再踩踏作物"
+  BOOTS_OF_THE_STOMPER:
+    name: "&e践踏者之靴"
+    lore:
+      - ""
+      - "&9你受到的任何摔落伤害"
+      - "&9会被转移到周围的生物/玩家"
+      - ""
+      - "&9+ 无摔落伤害"
+  SOULBOUND_HELMET:
+    name: "&c灵魂绑定头盔"
+  SOULBOUND_CHESTPLATE:
+    name: "&c灵魂绑定胸甲"
+  SOULBOUND_LEGGINGS:
+    name: "&c灵魂绑定护腿"
+  SOULBOUND_BOOTS:
+    name: "&c灵魂绑定靴子"
+  BEE_HELMET:
+    name: "&e&l蜜蜂头盔"
+    lore:
+      - ""
+      - "&f嗡嗡嗡"
+  BEE_WINGS:
+    name: "&e&l蜜蜂翅膀"
+    lore:
+      - ""
+      - "&f嗡嗡嗡"
+      - ""
+      - "&9接近地面时"
+      - "&9会激活缓降"
+  BEE_LEGGINGS:
+    name: "&e&l蜜蜂护腿"
+    lore:
+      - ""
+      - "&f嗡嗡嗡"
+  BEE_BOOTS:
+    name: "&e&l蜜蜂靴子"
+    lore:
+      - ""
+      - "&f嗡嗡嗡"
+      - ""
+      - "&9+ 跳跃提升"
+      - "&9+ 无摔落伤害"
+  ELYTRA_CAP:
+    name: "&5鞘翅帽"
+    lore:
+      - ""
+      - "&7该头盔可避免你"
+      - "&7使用鞘翅飞翔时摔成肉酱。"
