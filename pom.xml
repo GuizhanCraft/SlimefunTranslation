@@ -6,7 +6,7 @@
 
     <groupId>net.guizhanss</groupId>
     <artifactId>SlimefunTranslation</artifactId>
-    <version>0.3.0-alpha</version>
+    <version>0.4.0-alpha</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -99,7 +99,7 @@
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>bbfb9734b9</version>
+            <version>7c917c396f</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>

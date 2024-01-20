@@ -99,9 +99,6 @@ public final class SlimefunTranslation extends AbstractAddon {
 
         // metrics
         setupMetrics();
-
-        // delayed tasks
-        getScheduler().runAsync(() -> translationService.loadTranslations());
     }
 
     @Override
