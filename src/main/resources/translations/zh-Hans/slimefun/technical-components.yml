@@ -1,0 +1,67 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 科技零件
+translations:
+  BASIC_CIRCUIT_BOARD:
+    name: "&b基础电路板"
+  ADVANCED_CIRCUIT_BOARD:
+    name: "&b高级电路板"
+  BATTERY:
+    name: "&6电池"
+  STEEL_THRUSTER:
+    name: "&7&l钢推进器"
+  POWER_CRYSTAL:
+    name: "&c&l能量水晶"
+  SOLAR_PANEL:
+    name: "&9光伏电池"
+    lore:
+      - ""
+      - "&7用于合成&b太阳能发电机"
+      - "&7的重要组件"
+  REINFORCED_CLOTH:
+    name: "&b强化布"
+    lore:
+      - ""
+      - "&f这种布经过&b铅"
+      - "&f的强化后可防止"
+      - "&f辐射带来的效果"
+  MAGNET:
+    name: "&c磁铁"
+  ELECTRO_MAGNET:
+    name: "&c电磁铁"
+  ELECTRIC_MOTOR:
+    name: "&c电动马达"
+  HEATING_COIL:
+    check-name: true
+    name: "&c加热线圈"
+  COPPER_WIRE:
+    name: "&6铜线"
+    lore:
+      - ""
+      - "&6电力模块的关键部件"
+  HARDENED_GLASS:
+    name: "&7硬化玻璃"
+    lore:
+      - ""
+      - "&f可承受爆炸"
+  COOLING_UNIT:
+    name: "&b冷却单元"
+  WITHER_PROOF_OBSIDIAN:
+    name: "&5防凋零黑曜石"
+    lore:
+      - ""
+      - "&f可承受爆炸"
+      - "&f可承受凋零爆炸"
+  PLASTIC_SHEET:
+    name: "&f塑料纸"
+  ANDROID_MEMORY_CORE:
+    name: "&b机器人内存核心"
+  WITHER_PROOF_GLASS:
+    name: "&5防凋零玻璃"
+    lore:
+      - ""
+      - "&f可承受爆炸"
+      - "&f可承受凋零爆炸"
+  REACTOR_COLLANT_CELL:
+    name: "&b反应堆冷却剂"
+  NETHER_ICE_COOLANT_CELL:
+    name: "&6下界冰冷却剂"
