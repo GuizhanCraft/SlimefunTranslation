@@ -75,14 +75,17 @@ public class TranslationConfiguration {
         if (itemsSection != null) {
             for (var itemId : itemsSection.getKeys(false)) {
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
+
+                var itemSection = itemsSection.getConfigurationSection(itemId);
+                boolean forceLoad = itemSection.getBoolean("force", false);
+
                 // sfItem
                 SlimefunItem sfItem = SlimefunItem.getById(itemId);
-                if (sfItem == null) {
+                if (sfItem == null && !forceLoad) {
                     SlimefunTranslation.log(Level.SEVERE, "Invalid item {0}", itemId);
                     continue;
                 }
 
-                var itemSection = itemsSection.getConfigurationSection(itemId);
                 // name
                 String displayName = "";
                 if (itemSection.contains("name")) {
@@ -122,7 +125,7 @@ public class TranslationConfiguration {
                 }
 
                 boolean checkName = itemSection.getBoolean("check-name", false);
-                boolean partialOverride = SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType());
+                boolean partialOverride = forceLoad || SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType());
 
                 var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, checkName, partialOverride);
                 itemTranslations.put(itemId, translation);
