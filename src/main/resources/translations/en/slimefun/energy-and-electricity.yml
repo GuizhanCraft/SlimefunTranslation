@@ -436,7 +436,7 @@ translations:
       - "&8\u21E8 &7Speed: &a4/time"
       - "%sftrlore_PowerBuffer_1024%"
       - "%sftrlore_PowerPerSecond_48%"
-  EXP_COLLECTOR:
+  XP_COLLECTOR:
     name: "&aEXP Collector"
     lore:
       - ""
@@ -523,7 +523,7 @@ translations:
       - "%sftrlore_Machine_EndGame_Generator%"
       - "%sftrlore_PowerBuffer_16384%"
       - "%sftrlore_PowerPerSecond_500%"
-  NETHER_STAR_REACTOR:
+  NETHERSTAR_REACTOR:
     name: "&fNether Star Reactor"
     lore:
       - ""

@@ -54,10 +54,6 @@ translations:
       - ""
       - "&fYou can repair Items using this"
       - "&fin an Auto-Anvil"
-  ORGANIC_FOOD:
-    name: "&aOrganic Food"
-    lore:
-      - "&7Content: &9???"
   ORGANIC_FOOD_WHEAT:
     name: "&aOrganic Food"
     lore:
@@ -102,10 +98,6 @@ translations:
     name: "&aOrganic Food"
     lore:
       - "&7Content: &9Seagrass"
-  FERTILIZER:
-    name: "&aOrganic Fertilizer"
-    lore:
-      - "&7Content: &9???"
   FERTILIZER_WHEAT:
     name: "&aOrganic Fertilizer"
     lore:

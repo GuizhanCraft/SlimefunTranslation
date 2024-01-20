@@ -61,18 +61,18 @@ translations:
       - "&6Full set effects:"
       - "&e- Radiation immunity"
       - "&e- Bee Sting protection"
-  HAZMAT_BOOTS:
+  RUBBER_BOOTS:
     name: "&cHazmat Boots"
     lore:
       - ""
       - "&6Full set effects:"
       - "&e- Radiation immunity"
       - "&e- Bee Sting protection"
-  GOLDEN_HELMET_12K:
+  GOLDEN_12K_HELMET:
     name: "&6Golden Helmet &7(12-Carat)"
-  GOLDEN_CHESTPLATE_12K:
+  GOLDEN_12K_CHESTPLATE:
     name: "&6Golden Chestplate &7(12-Carat)"
-  GOLDEN_LEGGINGS_12K:
+  GOLDEN_12K_LEGGINGS:
     name: "&6Golden Leggings &7(12-Carat)"
-  GOLDEN_BOOTS_12K:
+  GOLDEN_12K_BOOTS:
     name: "&6Golden Boots &7(12-Carat)"

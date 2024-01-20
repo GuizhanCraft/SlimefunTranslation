@@ -40,7 +40,7 @@ translations:
       - ""
       - "&8\u21E8 &7Function: Woodcutting"
       - "&8\u21E8 &7Fuel Efficiency: 1.0x"
-  PROGRAMMABLE_ANDRIOD_FISHERMAN:
+  PROGRAMMABLE_ANDROID_FISHERMAN:
     name: "&cProgrammable Android &7(Fisherman)"
     lore:
       - ""
