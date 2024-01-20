@@ -53,10 +53,6 @@ translations:
       - ""
       - "&f你可以在自动铁砧中"
       - "&f用此物来修理物品"
-  ORGANIC_FOOD:
-    name: "&a有机食物"
-    lore:
-      - "&7内含 &9???"
   ORGANIC_FOOD_WHEAT:
     name: "&a有机食物"
     lore:
@@ -101,10 +97,6 @@ translations:
     name: "&a有机食物"
     lore:
       - "&7内含 &9海草"
-  FERTILIZER:
-    name: "&a有机肥料"
-    lore:
-      - "&7内含 &9???"
   FERTILIZER_WHEAT:
     name: "&a有机肥料"
     lore:
