@@ -130,7 +130,7 @@ translations:
       - ""
       - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
-  REDSTONE_ALLOY_INGOT:
+  REDSTONE_ALLOY:
     name: "&cRedstone Alloy Ingot"
   MAGNESIUM_SALT:
     name: "&cMagnesium Salt"
