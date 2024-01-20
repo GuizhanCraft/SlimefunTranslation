@@ -4,14 +4,22 @@ auto-update: true
 # Print debug messages in console.
 debug: false
 
-# Whether to enable lore line overrides instead of whole lore overrides.
-# When enabled, the lore defined by `lore` will override the respective lines in the item's lore.
-# When disabled, the lore defined by `lore` will override the whole item's lore.
-lore-whole-override: false
-
 # Language mappings
 # Format: <provided language code>: <slimefun language code>
 language-mappings:
   en-US: en
   zh-Hans: zh-CN
   zh-Hant: zh-TW
+
+# Some items (such as swords, armor, tools) may hae extra lore that is added by other plugins.
+# SlimefunTranslation overrides all lore by default, but you can add the materials here to only override the covered lines.
+# For example, an item with the lore:
+#   - "Line 1"
+#   - "Line 2"
+#   - "Line 3 added by another plugin"
+# And the item translation only covers the first 2 lines.
+# If the item's material is not covered in this list, you will not be able to see the third line in translation.
+# If the item's material is covered in this list, you can see only the first 2 lines are translated, and the third line is kept.
+# -----
+#
+partial-override-items: [ ]

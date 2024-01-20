@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:trident",
+    "#sft:sword",
+    "#sft:pickaxe",
+    "#sft:axe",
+    "#sft:shovel",
+    "#sft:hoe",
+    "#sft:fishing_rod"
+  ]
+}
