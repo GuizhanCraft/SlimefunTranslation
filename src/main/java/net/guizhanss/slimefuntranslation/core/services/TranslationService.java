@@ -101,11 +101,8 @@ public final class TranslationService {
      * Translate the given {@link ItemStack} for the given {@link User}.
      * The given {@link ItemStack} must have a Slimefun item, or the translation will not be applied.
      *
-     * @param user
-     *     The {@link User}.
-     * @param item
-     *     The {@link ItemStack}.
-     *
+     * @param user The {@link User}.
+     * @param item The {@link ItemStack}.
      * @return Whether the item was translated.
      */
     public boolean translateItem(@Nonnull User user, @Nullable ItemStack item) {

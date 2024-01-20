@@ -47,11 +47,8 @@ public class TranslationConfiguration {
     /**
      * Creates a {@link TranslationConfiguration} from a {@link FileConfiguration}.
      *
-     * @param language
-     *     the language of the translation.
-     * @param config
-     *     the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
-     *
+     * @param language the language of the translation.
+     * @param config   the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
      * @return an {@link Optional} of {@link TranslationConfiguration} if the config is valid, otherwise {@code null}.
      */
     @Nonnull

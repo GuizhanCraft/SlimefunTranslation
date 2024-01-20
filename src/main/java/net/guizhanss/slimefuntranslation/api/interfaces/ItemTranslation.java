@@ -26,9 +26,7 @@ public interface ItemTranslation {
     /**
      * Override this method if you need extra check to make sure item can be translated.
      *
-     * @param item
-     *     The {@link ItemStack} to check.
-     *
+     * @param item The {@link ItemStack} to check.
      * @return Whether the item can be translated.
      */
     @ParametersAreNonnullByDefault

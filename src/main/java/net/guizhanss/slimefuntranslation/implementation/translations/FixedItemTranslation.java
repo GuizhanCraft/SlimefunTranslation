@@ -37,9 +37,7 @@ public class FixedItemTranslation implements ItemTranslation {
      * Get the display name of the item.
      * If the defined translated display name is empty, the original display name will be returned.
      *
-     * @param original
-     *     The original display name.
-     *
+     * @param original The original display name.
      * @return The translated display name.
      */
     @Override
@@ -52,9 +50,7 @@ public class FixedItemTranslation implements ItemTranslation {
      * Get the lore of the item.
      * If the defined translated lore is empty, it will start replacing the lore lines.
      *
-     * @param original
-     *     The original lore.
-     *
+     * @param original The original lore.
      * @return The translated lore.
      */
     @Override

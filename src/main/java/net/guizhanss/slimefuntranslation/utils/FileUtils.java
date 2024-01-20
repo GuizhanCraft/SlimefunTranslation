@@ -23,9 +23,7 @@ public final class FileUtils {
     /**
      * List all the folders (excluding sub folders) in the given folder.
      *
-     * @param folder
-     *     the folder to search in
-     *
+     * @param folder the folder to search in
      * @return a list of all folders in the given folder
      */
     @Nonnull
@@ -51,9 +49,7 @@ public final class FileUtils {
      * Lists all YAML files in the given folder.
      * The folder or files starts with a dot (.) or an underscore(_) will be ignored.
      *
-     * @param folder
-     *     the folder to search in
-     *
+     * @param folder the folder to search in
      * @return a list of all YAML files in the given folder
      */
     @Nonnull
