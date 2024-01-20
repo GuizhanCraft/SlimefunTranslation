@@ -1,0 +1,150 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 魔法工具
+translations:
+  ENDER_BACKPACK:
+    name: "&6末影背包"
+    lore:
+      - "&a&o便携式末影箱"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  MAGIC_EYE_OF_ENDER:
+    name: "&6&l魔法末影之眼"
+    lore:
+      - "&4&l需要全套末影护甲"
+      - ""
+      - "&e右键点击&7射出末影珍珠"
+  STAFF_ELEMENTAL:
+    name: "&6元素法杖"
+  STAFF_ELEMENTAL_WIND:
+    name: "&6元素法杖 &7- &b&o风"
+    lore:
+      - ""
+      - "&7元素：&b&o风"
+      - ""
+      - "&e右键点击&7将自己发射出去"
+  STAFF_ELEMENTAL_WATER:
+    name: "&6元素法杖 &7- &1&o水"
+    lore:
+      - ""
+      - "&7元素：&1&o水"
+      - ""
+      - "&e右键点击&7扑灭身上的火焰"
+  STAFF_ELEMENTAL_FIRE:
+    name: "&6元素法杖 &7- &c&o火"
+    lore:
+      - ""
+      - "&7元素：&c&o火"
+  STAFF_ELEMENTAL_STORM:
+    name: "&6元素法杖 &7- &8&o雷"
+    lore-overrides:
+      2: "&7元素：&8&o雷"
+      4: "&e右键点击&7召唤一道闪电"
+  MAGICAL_ZOMBIE_PILLS:
+    name: "&6还魂丹"
+    lore:
+      - "&e右键点击&7一名僵尸村民"
+      - "&e或&7一个僵尸猪灵"
+      - "&7可立即治愈"
+  INFUSED_MAGNET:
+    name: "&a注入磁铁"
+    lore:
+      - ""
+      - "&f魔法注入的磁铁"
+      - "&f可以吸收周围的物品"
+      - "&f到你的物品栏中"
+      - "&f只要你的物品栏还有空位"
+      - ""
+      - "&7按住&eShift&7来拾取周围的物品"
+  BOUND_BACKPACK:
+    name: "&c灵魂绑定背包"
+    lore-overrides:
+      2: "&7大小: &e36"
+      5: "%sftrlore_RightClickToOpen%"
+  REINFORCED_SPAWNER:
+    name: "&b修复的刷怪笼"
+  SCROLL_OF_DIMENSIONAL_TELEPOSITION:
+    name: "&6纬度传送卷轴"
+    lore:
+      - ""
+      - "&c这个卷轴可以创建"
+      - "&c一个临时黑洞"
+      - "&c并将周围的实体吸入其中"
+      - "&c以传送到一个所有实体"
+      - "&c都被反转的维度"
+      - ""
+      - "&f换句话来说：让实体旋转180度"
+  TOME_OF_KNOWLEDGE_SHARING:
+    name: "&6知识共享图腾"
+    lore-overrides:
+      3: "&e右键点击&7将该图腾与自己绑定"
+      6: "&e右键点击&7学习所有绑定者已解锁"
+      7: "&7而你未解锁的研究"
+  FLASK_OF_KNOWLEDGE:
+    name: "&c学识之瓶"
+    lore:
+      - ""
+      - "&f允许你在瓶中"
+      - "&f存储一些经验"
+      - "&7花费：&a1级"
+  FILLED_FLASK_OF_KNOWLEDGE:
+    name: "&a学识之瓶"
+  ANCIENT_PEDESTAL:
+    name: "&d古代基座"
+    lore:
+      - ""
+      - "&5古代祭坛的一部分"
+  ANCIENT_ALTAR:
+    name: "&d古代祭坛"
+    lore:
+      - ""
+      - "&5多方块结构祭坛"
+      - "&5可用于魔法合成"
+  INFERNAL_BONEMEAL:
+    name: "&4火焰骨粉"
+    lore:
+      - ""
+      - "&c可同时加速"
+      - "&c下界疣的生长速度"
+  ELYTRA_SCALE:
+    name: "&b鞘翅鳞片"
+  INFUSED_ELYTRA:
+    check-name: true
+    name: "&5注入鞘翅"
+  SOULBOUND_ELYTRA:
+    name: "&c灵魂绑定鞘翅"
+  RAINBOW_WOOL:
+    name: "&5彩虹羊毛"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS:
+    name: "&5彩虹玻璃"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS_PANE:
+    name: "&5彩虹玻璃板"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CLAY:
+    name: "&5彩虹粘土"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CONCRETE:
+    name: "&5彩虹混凝土"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLAZED_TERRACOTTA:
+    name: "&5彩虹带釉陶瓦"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  INFUSED_HOPPER:
+    name: "&5注入漏斗"
+    lore:
+      - ""
+      - "&f自动拾取周围 7x7x7"
+      - "&f范围内的物品"
