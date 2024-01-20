@@ -37,7 +37,6 @@ import lombok.Setter;
 @Setter(AccessLevel.PROTECTED)
 public class TranslationConfiguration {
     private final String name;
-    private final String author;
     private final String lang;
     private final Map<String, ItemTranslation> itemTranslations;
     private final Map<String, String> loreTranslations;
@@ -58,19 +57,18 @@ public class TranslationConfiguration {
         Preconditions.checkArgument(config != null, "config cannot be null");
 
         String name = config.getString("name", "Unnamed Translation");
-        String author = config.getString("author", "SlimefunTranslation");
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
 
         var itemsSection = config.getConfigurationSection("translations");
         var loreSection = config.getConfigurationSection("lore");
         if (itemsSection == null && loreSection == null) {
-            SlimefunTranslation.log(Level.WARNING, "No translations found in " + name + " by " + author);
+            SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
         }
         Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
 
-        SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\" by {1}, language: {2}", name, author, lang);
+        SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\", language: {2}", name, lang);
 
         if (itemsSection != null) {
             for (var itemId : itemsSection.getKeys(false)) {
@@ -104,7 +102,7 @@ public class TranslationConfiguration {
                             overrides.put(Integer.parseInt(entry.getKey()), entry.getValue());
                         }
                     } catch (NumberFormatException | NullPointerException ex) {
-                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore overrides of item {0} in translation {1} by {2}", itemId, name, author);
+                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore overrides of item {0} in translation {1}", itemId, name);
                         return Optional.empty();
                     }
                 }
@@ -119,7 +117,7 @@ public class TranslationConfiguration {
                             replacements.put(i, new Pair<>(section.getString("original"), section.getString("replaced")));
                         }
                     } catch (NumberFormatException | NullPointerException ex) {
-                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1} by {2}", itemId, name, author);
+                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1}", itemId, name);
                         return Optional.empty();
                     }
                 }
@@ -140,7 +138,7 @@ public class TranslationConfiguration {
             }
         }
 
-        return Optional.of(new TranslationConfiguration(name, author, lang, itemTranslations, loreTranslations));
+        return Optional.of(new TranslationConfiguration(name, lang, itemTranslations, loreTranslations));
     }
 
     public void register(@Nonnull SlimefunAddon addon) {
