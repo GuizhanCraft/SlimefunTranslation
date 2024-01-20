@@ -77,10 +77,10 @@ translations:
   PROGRAMMABLE_ANDROID_2_FARMER:
     name: "&cAdvanced Programmable Android &7(Farmer)"
     lore:
-        - ""
-        - "&8\u21E8 &7Function: Farming"
-        - "&8\u21E8 &7Fuel Efficiency: 1.5x"
-        - "&8\u21E8 &7Can also harvest Plants from ExoticGarden"
+      - ""
+      - "&8\u21E8 &7Function: Farming"
+      - "&8\u21E8 &7Fuel Efficiency: 1.5x"
+      - "&8\u21E8 &7Can also harvest Plants from ExoticGarden"
   PROGRAMMABLE_ANDROID_3:
     name: "&eEmpowered Programmable Android &7(Normal)"
     lore:
