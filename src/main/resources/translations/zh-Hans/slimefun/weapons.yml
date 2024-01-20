@@ -28,7 +28,7 @@ translations:
       - "&7&o制造一场地震…"
       - ""
       - "%sftrlore_RightClickToUse%"
-  SOULDBOUND_SWORD:
+  SOULBOUND_SWORD:
     name: "&c灵魂绑定剑"
   SOULBOUND_TRIDENT:
     name: "&c灵魂绑定三叉戟"
