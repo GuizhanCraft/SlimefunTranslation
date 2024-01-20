@@ -21,5 +21,13 @@ language-mappings:
 # If the item's material is not covered in this list, you will not be able to see the third line in translation.
 # If the item's material is covered in this list, you can see only the first 2 lines are translated, and the third line is kept.
 # -----
-#
-partial-override-items: [ ]
+# For minecraft MATERIAL, write in "minecraft:material", e.g. "minecraft:stone".
+# You can also use our tag system, in "sft:tag", e.g. "sft:pickaxe".
+# A tag is a set of materials, so you do not need to write every material in the tag, just the tag.
+# Check all the available tags here: https://github.com/ybw0014/SlimefunTranslation/tree/master/src/main/resources/tags
+partial-override-materials:
+  - "sft:helmet"
+  - "sft:chestplate"
+  - "sft:leggings"
+  - "sft:boots"
+  - "sft:hand_slot"

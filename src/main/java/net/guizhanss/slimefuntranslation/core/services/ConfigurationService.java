@@ -1,10 +1,13 @@
 package net.guizhanss.slimefuntranslation.core.services;
 
 import java.util.Map;
+import java.util.Set;
 
 import javax.annotation.Nonnull;
 
 import com.google.common.base.Preconditions;
+
+import org.bukkit.Material;
 
 import net.guizhanss.guizhanlib.slimefun.addon.AddonConfig;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
@@ -21,6 +24,7 @@ public final class ConfigurationService {
     private Map<String, String> languageMappings;
     private boolean autoUpdate;
     private boolean debug;
+    private Set<Material> partialOverrideMaterials;
 
     public ConfigurationService(SlimefunTranslation plugin) {
         config = new AddonConfig(plugin, "config.yml");
@@ -33,6 +37,7 @@ public final class ConfigurationService {
         autoUpdate = config.getBoolean("auto-update", true);
         debug = config.getBoolean("debug", false);
         languageMappings = ConfigUtils.getMap(config.getConfigurationSection("language-mappings"));
+        partialOverrideMaterials = ConfigUtils.parseMaterials(config.getStringList("partial-override-materials"));
 
         config.save();
     }

@@ -13,6 +13,7 @@ import com.google.common.base.Preconditions;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
@@ -74,6 +75,13 @@ public class TranslationConfiguration {
         if (itemsSection != null) {
             for (var itemId : itemsSection.getKeys(false)) {
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
+                // sfItem
+                SlimefunItem sfItem = SlimefunItem.getById(itemId);
+                if (sfItem == null) {
+                    SlimefunTranslation.log(Level.SEVERE, "Invalid item {0}", itemId);
+                    continue;
+                }
+
                 var itemSection = itemsSection.getConfigurationSection(itemId);
                 // name
                 String displayName = "";
@@ -113,10 +121,10 @@ public class TranslationConfiguration {
                     }
                 }
 
-                // check name
                 boolean checkName = itemSection.getBoolean("check-name", false);
+                boolean partialOverride = SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType());
 
-                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, checkName);
+                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, checkName, partialOverride);
                 itemTranslations.put(itemId, translation);
             }
         }

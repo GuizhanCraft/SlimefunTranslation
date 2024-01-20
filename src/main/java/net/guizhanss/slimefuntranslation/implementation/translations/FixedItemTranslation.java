@@ -24,13 +24,23 @@ public class FixedItemTranslation implements ItemTranslation {
     private final Map<Integer, String> overrides;
     private final Map<Integer, Pair<String, String>> replacements;
     private final boolean checkName;
+    private final boolean partialOverride;
 
-    public FixedItemTranslation(String displayName, List<String> lore, Map<Integer, String> overrides, Map<Integer, Pair<String, String>> replacements, boolean checkName) {
+    @ParametersAreNonnullByDefault
+    public FixedItemTranslation(
+        String displayName,
+        List<String> lore,
+        Map<Integer, String> overrides,
+        Map<Integer, Pair<String, String>> replacements,
+        boolean checkName,
+        boolean partialOverride
+    ) {
         this.displayName = ColorUtils.color(displayName);
         this.lore = ColorUtils.color(lore);
         this.overrides = overrides;
         this.replacements = replacements;
         this.checkName = checkName;
+        this.partialOverride = partialOverride;
     }
 
     /**
@@ -57,6 +67,7 @@ public class FixedItemTranslation implements ItemTranslation {
     @Nonnull
     public List<String> getLore(@Nonnull List<String> original) {
         if (lore.isEmpty()) {
+            // only line override exists
             var newLore = new ArrayList<>(original);
             for (var entry : overrides.entrySet()) {
                 try {
@@ -69,6 +80,17 @@ public class FixedItemTranslation implements ItemTranslation {
                 try {
                     var line = newLore.get(entry.getKey() - 1);
                     newLore.set(entry.getKey() - 1, ColorUtils.color(line.replace(entry.getValue().getFirstValue(), entry.getValue().getSecondValue())));
+                } catch (IndexOutOfBoundsException e) {
+                    // ignore
+                }
+            }
+            return newLore;
+        } else if (partialOverride) {
+            List<String> newLore = new ArrayList<>(original);
+            for (int i = 0; i < lore.size(); i++) {
+                try {
+                    var line = lore.get(i);
+                    newLore.set(i, ColorUtils.color(line));
                 } catch (IndexOutOfBoundsException e) {
                     // ignore
                 }

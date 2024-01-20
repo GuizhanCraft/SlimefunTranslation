@@ -120,6 +120,7 @@ public final class TranslationService {
 
     @ParametersAreNonnullByDefault
     private boolean translateItem(User user, ItemStack item, SlimefunItem sfItem) {
+        // find the translation
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
         if (transl.isEmpty()) {
@@ -127,16 +128,20 @@ public final class TranslationService {
         }
         var translation = transl.get();
 
+        // check whether the translation can be applied
         if (!translation.canTranslate(item, sfItem)) {
             return false;
         }
 
         var integrationService = SlimefunTranslation.getIntegrationService();
         final ItemMeta meta = item.getItemMeta();
+        // display name
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
         meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(originalDisplayName)));
+        // lore
         List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
         meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
+
         item.setItemMeta(meta);
         return true;
     }
