@@ -53,10 +53,6 @@ translations:
       - ""
       - "&fこれを使って、自動金床で"
       - "&fアイテムの修理ができる"
-  ORGANIC_FOOD:
-    name: "&a有機食品"
-    lore:
-      - "&7内容：&9???"
   ORGANIC_FOOD_WHEAT:
     name: "&a有機食品"
     lore:
@@ -101,10 +97,6 @@ translations:
     name: "&a有機食品"
     lore:
       - "&7内容：&9海草"
-  FERTILIZER:
-    name: "&a有機肥料"
-    lore:
-      - "&7内容：&9???"
   FERTILIZER_WHEAT:
     name: "&a有機肥料"
     lore:
