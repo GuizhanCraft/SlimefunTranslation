@@ -29,7 +29,7 @@ translations:
       - "&7&oA portable Earthquake..."
       - ""
       - "%sftrlore_RightClickToUse%"
-  SOULDBOUND_SWORD:
+  SOULBOUND_SWORD:
     name: "&cSoulbound Sword"
   SOULBOUND_TRIDENT:
     name: "&cSoulbound Trident"
