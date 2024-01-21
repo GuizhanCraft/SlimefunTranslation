@@ -68,11 +68,11 @@ translations:
       - "&6Full set effects:"
       - "&e- Radiation immunity"
       - "&e- Bee Sting protection"
-  GOLDEN_12K_HELMET:
+  GOLD_12K_HELMET:
     name: "&6Golden Helmet &7(12-Carat)"
-  GOLDEN_12K_CHESTPLATE:
+  GOLD_12K_CHESTPLATE:
     name: "&6Golden Chestplate &7(12-Carat)"
-  GOLDEN_12K_LEGGINGS:
+  GOLD_12K_LEGGINGS:
     name: "&6Golden Leggings &7(12-Carat)"
-  GOLDEN_12K_BOOTS:
+  GOLD_12K_BOOTS:
     name: "&6Golden Boots &7(12-Carat)"
