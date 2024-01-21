@@ -8,6 +8,7 @@ translations:
       - "&7货运网络相关物品的"
       - "&7重要材料"
   CARGO_MANAGER:
+    check-name: true
     name: "&6货运管理器"
     lore:
       - ""
