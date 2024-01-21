@@ -1,0 +1,177 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 科技工具
+translations:
+  DURALUMIN_JETPACK:
+    name: "&9电力喷气背包 &7- &eI"
+    lore-overrides:
+      2: "%sftrlore_Material_Duralumin%"
+      4: "&8\u21E8 &7推力：&c0.35"
+      6: "%sftrlore_CrouchToUse%"
+  SOLDER_JETPACK:
+    name: "&9电力喷气背包 &7- &eII"
+    lore-overrides:
+      2: "%sftrlore_Material_Solder%"
+      4: "&8\u21E8 &7推力：&c0.4"
+      6: "%sftrlore_CrouchToUse%"
+  BILLON_JETPACK:
+    name: "&9电力喷气背包 &7- &eIII"
+    lore-overrides:
+      2: "%sftrlore_Material_Billon%"
+      4: "&8\u21E8 &7推力：&c0.45"
+      6: "%sftrlore_CrouchToUse%"
+  STEEL_JETPACK:
+    check-name: true
+    name: "&9电力喷气背包 &7- &eIV"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "&8\u21E8 &7推力：&c0.5"
+      6: "%sftrlore_CrouchToUse%"
+  DAMASCUS_STEEL_JETPACK:
+    name: "&9电力喷气背包 &7- &eV"
+    lore-overrides:
+      2: "%sftrlore_Material_DamascusSteel%"
+      4: "&8\u21E8 &7推力：&c0.55"
+      6: "%sftrlore_CrouchToUse%"
+  REINFORCED_ALLOY_JETPACK:
+    name: "&9电力喷气背包 &7- &eVI"
+    lore-overrides:
+      2: "%sftrlore_Material_ReinforcedAlloy%"
+      4: "&8\u21E8 &7推力：&c0.6"
+      6: "%sftrlore_CrouchToUse%"
+  CARBONADO_JETPACK:
+    name: "&9电力喷气背包 &7- &eVII"
+    lore-overrides:
+      2: "%sftrlore_Material_Carbonado%"
+      4: "&8\u21E8 &7推力：&c0.7"
+      6: "%sftrlore_CrouchToUse%"
+  ARMORED_JETPACK:
+    name: "&9装甲喷气背包"
+    lore-overrides:
+      1: ""
+      2: "%sftrlore_Material_Steel%"
+      4: "&8\u21E8 &7推力：&c0.5"
+      6: "%sftrlore_CrouchToUse%"
+  PARACHUTE:
+    name: "&f&l降落伞"
+    lore:
+      - ""
+      - "%sftrlore_CrouchToUse%"
+  HOLOGRAM_PROJECTOR:
+    name: "&b全息投影仪"
+    lore:
+      - ""
+      - "&7投射出一道可编辑的全息投影"
+  DURALUMIN_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eI"
+    lore-overrides:
+      2: "%sftrlore_Material_Duralumin%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  SOLDER_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eII"
+    lore-overrides:
+      2: "%sftrlore_Material_Solder%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  BILLON_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eIII"
+    lore-overrides:
+      2: "%sftrlore_Material_Billon%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  STEEL_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eIV"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  DAMASCUS_STEEL_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eV"
+    lore-overrides:
+      2: "%sftrlore_Material_DamascusSteel%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  REINFORCED_ALLOY_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eVI"
+    lore-overrides:
+      2: "%sftrlore_Material_ReinforcedAlloy%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  CARBONADO_MULTI_TOOL:
+    name: "&9多功能工具 &7- &eVII"
+    lore-overrides:
+      2: "%sftrlore_Material_Carbonado%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  SOLAR_HELMET:
+    name: "&b太阳能头盔"
+    lore:
+      - ""
+      - "&a&o为手持物品与护甲充电"
+  NIGHT_VISION_GOGGLES:
+    name: "&a夜视镜"
+    lore:
+      - ""
+      - "&9+ 夜视"
+  DURALUMIN_JETBOOTS:
+    name: "&9喷气靴 &7- &eI"
+    lore-overrides:
+      2: "%sftrlore_Material_Duralumin%"
+      4: "%sftrlore_Speed_0.35%"
+      5: "&8\u21E8 &7准确度：&c50%"
+      7: "%sftrlore_CrouchToUse%"
+  SOLDER_JETBOOTS:
+    name: "&9喷气靴 &7- &eII"
+    lore-overrides:
+      2: "%sftrlore_Material_Solder%"
+      4: "%sftrlore_Speed_0.4%"
+      5: "&8\u21E8 &7准确度：&660%"
+      7: "%sftrlore_CrouchToUse%"
+  BILLON_JETBOOTS:
+    name: "&9喷气靴 &7- &eIII"
+    lore-overrides:
+      2: "%sftrlore_Material_Billon%"
+      4: "%sftrlore_Speed_0.45%"
+      5: "&8\u21E8 &7准确度：&665%"
+      7: "%sftrlore_CrouchToUse%"
+  STEEL_JETBOOTS:
+    name: "&9喷气靴 &7- &eIV"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "%sftrlore_Speed_0.5%"
+      5: "&8\u21E8 &7准确度：&e70%"
+      7: "%sftrlore_CrouchToUse%"
+  DAMASCUS_STEEL_JETBOOTS:
+    name: "&9喷气靴 &7- &eV"
+    lore-overrides:
+      2: "%sftrlore_Material_DamascusSteel%"
+      4: "%sftrlore_Speed_0.55%"
+      5: "&8\u21E8 &7准确度：&a75%"
+      7: "%sftrlore_CrouchToUse%"
+  REINFORCED_ALLOY_JETBOOTS:
+    name: "&9喷气靴 &7- &eVI"
+    lore-overrides:
+      2: "%sftrlore_Material_ReinforcedAlloy%"
+      4: "%sftrlore_Speed_0.6%"
+      5: "&8\u21E8 &7准确度：&c80%"
+      7: "%sftrlore_CrouchToUse%"
+  CARBONADO_JETBOOTS:
+    name: "&9喷气靴 &7- &eVII"
+    lore-overrides:
+      2: "%sftrlore_Material_Carbonado%"
+      4: "%sftrlore_Speed_0.7%"
+      5: "&8\u21E8 &7准确度：&c99.9%"
+      7: "%sftrlore_CrouchToUse%"
+  ARMORED_JETBOOTS:
+    name: "&9装甲喷气靴"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "%sftrlore_Speed_0.45%"
+      5: "&8\u21E8 &7准确度：&e70%"
+      7: "%sftrlore_CrouchToUse%"
+  MULTIMETER:
+    name: "&e万用表"
+    lore:
+      - ""
+      - "&f可以查看机器中"
+      - "&f可存储的能量"

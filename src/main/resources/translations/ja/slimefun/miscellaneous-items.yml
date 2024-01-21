@@ -1,0 +1,143 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefunの雑貨
+translations:
+  SIFTED_ORE:
+    name: "&6選鉱した鉱石"
+  WHEAT_FLOUR:
+    name: "&f小麦粉"
+  STEEL_PLATE:
+    name: "&7&l鋼板"
+  CHAIN:
+    name: "&b鎖"
+  HOOK:
+    name: "&b鉤"
+  STONE_CHUNK:
+    name: "&6石の塊"
+  SALT:
+    name: "&f塩"
+  HEAVY_CREAM:
+    name: "&fヘビークリーム"
+  CHEESE:
+    name: "&fチーズ"
+  BUTTER:
+    name: "&fバター"
+  CRUSHED_ORE:
+    name: "&6粉砕した鉱石"
+  PULVERIZED_ORE:
+    name: "&6撃砕した鉱石"
+  PURE_ORE_CLUSTER:
+    name: "&6純粋鉱石の塊"
+  TINY_URANIUM:
+    name: "&cウランの細かな塊"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Low%"
+  SMALL_URANIUM:
+    name: "&cウランの小さな塊"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Moderate%"
+      - "%sftrlore_HazmatSuitRequired%"
+  CLOTH:
+    name: "&b布"
+  CAN:
+    check-name: true
+    name: "&fブリキ缶"
+  GOLD_24K_BLOCK:
+    name: "&f金ブロック &7(24カラット)"
+  REINFORCED_PLATE:
+    name: "&7強化合金板"
+  DUCT_TAPE:
+    name: "&8ダクトテープ"
+    lore:
+      - ""
+      - "&fこれを使って、自動金床で"
+      - "&fアイテムの修理ができる"
+  ORGANIC_FOOD_WHEAT:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9小麦"
+  ORGANIC_FOOD_CARROT:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9ニンジン"
+  ORGANIC_FOOD_POTATO:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9ジャガイモ"
+  ORGANIC_FOOD_SEEDS:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9種"
+  ORGANIC_FOOD_BEETROOT:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9ビートルート"
+  ORGANIC_FOOD_MELON:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9スイカ"
+  ORGANIC_FOOD_APPLE:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9リンゴ"
+  ORGANIC_FOOD_SWEET_BERRIES:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9スイートベリー"
+  ORGANIC_FOOD_KELP:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9乾燥した昆布"
+  ORGANIC_FOOD_COCOA:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9カカオの実"
+  ORGANIC_FOOD_SEAGRASS:
+    name: "&a有機食品"
+    lore:
+      - "&7内容：&9海草"
+  FERTILIZER_WHEAT:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9小麦"
+  FERTILIZER_CARROT:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9ニンジン"
+  FERTILIZER_POTATO:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9ジャガイモ"
+  FERTILIZER_SEEDS:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9種"
+  FERTILIZER_BEETROOT:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9ビートルート"
+  FERTILIZER_MELON:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9スイカ"
+  FERTILIZER_APPLE:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9リンゴ"
+  FERTILIZER_SWEET_BERRIES:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9スイートベリー"
+  FERTILIZER_KELP:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9乾燥した昆布"
+  FERTILIZER_COCOA:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9カカオの実"
+  FERTILIZER_SEAGRASS:
+    name: "&a有機肥料"
+    lore:
+      - "&7内容：&9海草"
