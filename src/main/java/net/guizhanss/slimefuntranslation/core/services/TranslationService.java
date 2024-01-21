@@ -98,8 +98,30 @@ public final class TranslationService {
     }
 
     /**
+     * Get the translated item name of {@link SlimefunItem} for the given {@link User}.
+     *
+     * @param user   The {@link User}.
+     * @param sfItem The {@link SlimefunItem}.
+     * @return The translated name. Will be an empty string if the item is invalid.
+     * Or be the original name if there is no available translation.
+     */
+    @Nonnull
+    public String getTranslatedItemName(@Nonnull User user, @Nullable SlimefunItem sfItem) {
+        Preconditions.checkArgument(user != null, "user cannot be null");
+        if (sfItem == null) {
+            return "";
+        }
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
+        return transl.map(itemTranslation -> SlimefunTranslation.getIntegrationService().applyPlaceholders(
+            user,
+            itemTranslation.getDisplayName(sfItem.getItemName())
+        )).orElseGet(sfItem::getItemName);
+    }
+
+    /**
      * Translate the given {@link ItemStack} for the given {@link User}.
-     * The given {@link ItemStack} must have a Slimefun item, or the translation will not be applied.
+     * The given {@link ItemStack} must be a Slimefun item, or the translation will not be applied.
      *
      * @param user The {@link User}.
      * @param item The {@link ItemStack}.
