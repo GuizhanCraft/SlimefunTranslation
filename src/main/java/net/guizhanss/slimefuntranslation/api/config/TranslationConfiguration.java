@@ -68,9 +68,10 @@ public class TranslationConfiguration {
         Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
 
-        SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\", language: {2}", name, lang);
+        SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\", language: {1}", name, lang);
 
         if (itemsSection != null) {
+            int count = 0;
             for (var itemId : itemsSection.getKeys(false)) {
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
 
@@ -127,7 +128,9 @@ public class TranslationConfiguration {
 
                 var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, checkName, partialOverride);
                 itemTranslations.put(itemId, translation);
+                count++;
             }
+            SlimefunTranslation.log(Level.INFO, "Loaded {0} item translations.", count);
         }
 
         if (loreSection != null) {
