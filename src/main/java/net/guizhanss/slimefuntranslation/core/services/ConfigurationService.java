@@ -1,5 +1,6 @@
 package net.guizhanss.slimefuntranslation.core.services;
 
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -25,6 +26,7 @@ public final class ConfigurationService {
     private boolean autoUpdate;
     private boolean debug;
     private Set<Material> partialOverrideMaterials;
+    private Set<String> disabledItems;
 
     public ConfigurationService(SlimefunTranslation plugin) {
         config = new AddonConfig(plugin, "config.yml");
@@ -33,11 +35,13 @@ public final class ConfigurationService {
 
     public void reload() {
         config.reload();
+        config.addMissingKeys();
 
         autoUpdate = config.getBoolean("auto-update", true);
         debug = config.getBoolean("debug", false);
         languageMappings = ConfigUtils.getMap(config.getConfigurationSection("language-mappings"));
         partialOverrideMaterials = ConfigUtils.parseMaterials(config.getStringList("partial-override-materials"));
+        disabledItems = new HashSet<>(config.getStringList("disabled-items"));
 
         config.save();
     }

@@ -7,6 +7,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
+import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
 import lombok.experimental.UtilityClass;
@@ -17,6 +18,11 @@ public final class TranslationUtils {
 
     @ParametersAreNonnullByDefault
     public static <V> Optional<V> findTranslation(Map<String, Map<String, V>> map, User user, String key) {
+        // if the item is disabled, return no translation directly
+        if (SlimefunTranslation.getConfigService().getDisabledItems().contains(key)) {
+            return Optional.empty();
+        }
+
         // find the translations for user's current locale
         var translations = map.get(user.getLocale());
         if (translations != null) {

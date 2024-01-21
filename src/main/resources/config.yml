@@ -31,3 +31,6 @@ partial-override-materials:
   - "sft:leggings"
   - "sft:boots"
   - "sft:hand_slot"
+
+# The list of Slimefun item IDs that should not be translated.
+disabled-items: []
