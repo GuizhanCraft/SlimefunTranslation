@@ -21,6 +21,7 @@ import net.guizhanss.slimefuntranslation.core.services.IntegrationService;
 import net.guizhanss.slimefuntranslation.core.services.ListenerService;
 import net.guizhanss.slimefuntranslation.core.services.TranslationService;
 import net.guizhanss.slimefuntranslation.core.services.UserService;
+import net.guizhanss.slimefuntranslation.utils.tags.SlimefunTranslationTag;
 
 import org.bstats.bukkit.Metrics;
 
@@ -80,6 +81,9 @@ public final class SlimefunTranslation extends AbstractAddon {
         log(Level.INFO, "Slimefun Translation");
         log(Level.INFO, "     by ybw0014     ");
         log(Level.INFO, "====================");
+
+        // tags
+        SlimefunTranslationTag.reloadAll();
 
         // config
         configService = new ConfigurationService(this);
