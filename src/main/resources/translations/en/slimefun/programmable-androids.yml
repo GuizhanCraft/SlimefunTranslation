@@ -17,6 +17,7 @@ translations:
       - "&fwill be inserted into an Android's Fuel Slot"
       - "&fwhen its Script tells them to do so"
   PROGRAMMABLE_ANDROID:
+    check-name: true
     name: "&cProgrammable Android &7(Normal)"
     lore:
       - ""
