@@ -66,11 +66,11 @@ translations:
       - "&6套装效果："
       - "&e- 免疫辐射"
       - "&e- 免疫蜜蜂蜇咬"
-  GOLDEN_12K_HELMET:
+  GOLD_12K_HELMET:
     name: "&6金头盔 &7(12克拉)"
-  GOLDEN_12K_CHESTPLATE:
+  GOLD_12K_CHESTPLATE:
     name: "&6金胸甲 &7(12克拉)"
-  GOLDEN_12K_LEGGINGS:
+  GOLD_12K_LEGGINGS:
     name: "&6金护腿 &7(12克拉)"
-  GOLDEN_12K_BOOTS:
+  GOLD_12K_BOOTS:
     name: "&6金靴子 &7(12克拉)"
