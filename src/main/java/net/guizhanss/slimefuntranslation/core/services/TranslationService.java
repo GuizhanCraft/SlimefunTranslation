@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -11,7 +12,15 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
+
+import net.md_5.bungee.api.ChatMessageType;
+
+import net.md_5.bungee.api.chat.TextComponent;
+
+import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -111,6 +120,10 @@ public final class TranslationService {
         if (sfItem == null) {
             return "";
         }
+        // if the item is disabled, return the original name
+        if (SlimefunTranslation.getConfigService().getDisabledItems().contains(sfItem.getId())) {
+            return sfItem.getItemName();
+        }
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
         return transl.map(itemTranslation -> SlimefunTranslation.getIntegrationService().applyPlaceholders(
@@ -142,6 +155,10 @@ public final class TranslationService {
 
     @ParametersAreNonnullByDefault
     private boolean translateItem(User user, ItemStack item, SlimefunItem sfItem) {
+        // check if the item is disabled
+        if (SlimefunTranslation.getConfigService().getDisabledItems().contains(sfItem.getId())) {
+            return false;
+        }
         // find the translation
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
@@ -180,5 +197,39 @@ public final class TranslationService {
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
         return transl.orElse(defaultToId ? id : "");
+    }
+
+    @ParametersAreNonnullByDefault
+    public void sendMessage(CommandSender sender, String key) {
+        Preconditions.checkArgument(sender != null, "sender cannot be null");
+        Preconditions.checkArgument(key != null, "key cannot be null");
+        User user = null;
+        if (sender instanceof Player p) {
+            user = SlimefunTranslation.getUserService().getUser(p);
+        }
+        sender.sendMessage(getMessage(key, user));
+    }
+
+    @ParametersAreNonnullByDefault
+    public void sendActionbarMessage(User user, String key) {
+        Preconditions.checkArgument(user != null, "user cannot be null");
+        Preconditions.checkArgument(key != null, "key cannot be null");
+        user.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(getMessage(key, user)));
+    }
+
+    @Nonnull
+    private String getMessage(@Nonnull String key, @Nullable User user) {
+        Preconditions.checkArgument(key != null, "key cannot be null");
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getMessageTranslations(), user, key);
+        if (transl.isEmpty()) {
+            return key;
+        }
+
+        String message = ChatUtil.color(transl.get());
+        if (user != null) {
+            message = SlimefunTranslation.getIntegrationService().applyPlaceholders(user, message);
+        }
+        return message;
     }
 }

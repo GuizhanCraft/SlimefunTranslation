@@ -40,6 +40,7 @@ public class TranslationConfiguration {
     private final String lang;
     private final Map<String, ItemTranslation> itemTranslations;
     private final Map<String, String> loreTranslations;
+    private final Map<String, String> messageTranslations;
 
     private State state = State.UNREGISTERED;
     private SlimefunAddon addon = null;
@@ -61,12 +62,14 @@ public class TranslationConfiguration {
 
         var itemsSection = config.getConfigurationSection("translations");
         var loreSection = config.getConfigurationSection("lore");
-        if (itemsSection == null && loreSection == null) {
+        var messagesSection = config.getConfigurationSection("messages");
+        if (itemsSection == null && loreSection == null && messagesSection == null) {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
         }
         Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
+        Map<String, String> messageTranslations = new HashMap<>();
 
         SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\", language: {1}", name, lang);
 
@@ -141,7 +144,15 @@ public class TranslationConfiguration {
             }
         }
 
-        return Optional.of(new TranslationConfiguration(name, lang, itemTranslations, loreTranslations));
+        if (messagesSection != null) {
+            for (var messageId : messagesSection.getKeys(true)) {
+                SlimefunTranslation.debug("Loading message translation {0}", messageId);
+                var message = messagesSection.getString(messageId);
+                messageTranslations.put(messageId, message);
+            }
+        }
+
+        return Optional.of(new TranslationConfiguration(name, lang, itemTranslations, loreTranslations, messageTranslations));
     }
 
     public void register(@Nonnull SlimefunAddon addon) {
@@ -158,6 +169,11 @@ public class TranslationConfiguration {
         allLoreTranslations.putIfAbsent(lang, new HashMap<>());
         var currentLoreTranslations = allLoreTranslations.get(lang);
         currentLoreTranslations.putAll(loreTranslations);
+
+        var allMessageTranslations = SlimefunTranslation.getRegistry().getMessageTranslations();
+        allMessageTranslations.putIfAbsent(lang, new HashMap<>());
+        var currentMessageTranslations = allMessageTranslations.get(lang);
+        currentMessageTranslations.putAll(messageTranslations);
 
         this.addon = addon;
         setState(State.REGISTERED);

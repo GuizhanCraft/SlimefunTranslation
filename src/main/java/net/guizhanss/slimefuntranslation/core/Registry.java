@@ -17,4 +17,5 @@ public final class Registry {
     private final Set<String> languages = new HashSet<>();
     private final Map<String, Map<String, ItemTranslation>> itemTranslations = new HashMap<>();
     private final Map<String, Map<String, String>> loreTranslations = new HashMap<>();
+    private final Map<String, Map<String, String>> messageTranslations = new HashMap<>();
 }
