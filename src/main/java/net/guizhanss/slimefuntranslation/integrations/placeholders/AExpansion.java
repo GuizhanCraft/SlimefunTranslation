@@ -27,7 +27,7 @@ public abstract class AExpansion extends PlaceholderExpansion {
     @Nonnull
     @ParametersAreNonnullByDefault
     protected String getResult(User user, String id, String... args) {
-        var translation = SlimefunTranslation.getTranslationService().translateLore(user, id, true);
+        var translation = SlimefunTranslation.getTranslationService().getLore(user, id, true);
         return ColorUtils.color(
             SlimefunTranslation.getIntegrationService().applyPlaceholders(
                 user, MessageFormat.format(translation, (Object[]) args)
