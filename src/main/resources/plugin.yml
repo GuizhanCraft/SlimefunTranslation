@@ -15,3 +15,14 @@ commands:
     description: SlimefunTranslation Command
     usage: /<command> <subcommand>
     aliases: [ slimefuntranslation, sft, sftr, sftransl ]
+
+permissions:
+  sftranslation.command.id:
+    description: Get the ID of the Slimefun item in your main hand
+    default: true
+  sftranslation.command.search:
+    description: Search for a Slimefun item with your current language
+    default: true
+  sftranslation.command.translation:
+    description: Manage the translation files
+    default: op

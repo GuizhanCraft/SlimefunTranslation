@@ -1,0 +1,22 @@
+### These files are used by Crowdin to translate them into other languages, and will be provided by default.
+
+name: Slimefun UI items
+translations:
+  _UI_NO_PERMISSION:
+    force: true
+    name: "&cNo Permission"
+  _UI_NOT_RESEARCHED:
+    force: true
+    name: "&cNot Researched"
+  _UI_SEARCH:
+    force: true
+    name: "&7Search..."
+    lore:
+      - ""
+      - "&7\u21E8 &bClick to search for an item"
+      - ""
+      - "&cYour server has installed SlimefunTranslation,"
+      - "&cthe search will not work properly for translated items."
+      - ""
+      - "&7Use &e/sftr search <query> &7instead"
+      - "&7to search for an item with translated names."

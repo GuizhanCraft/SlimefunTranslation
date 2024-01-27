@@ -23,6 +23,7 @@ public class FixedItemTranslation implements ItemTranslation {
     private final List<String> lore;
     private final Map<Integer, String> overrides;
     private final Map<Integer, Pair<String, String>> replacements;
+    private final boolean forceLoad;
     private final boolean checkName;
     private final boolean partialOverride;
 
@@ -32,6 +33,7 @@ public class FixedItemTranslation implements ItemTranslation {
         List<String> lore,
         Map<Integer, String> overrides,
         Map<Integer, Pair<String, String>> replacements,
+        boolean forceLoad,
         boolean checkName,
         boolean partialOverride
     ) {
@@ -39,6 +41,7 @@ public class FixedItemTranslation implements ItemTranslation {
         this.lore = ColorUtils.color(lore);
         this.overrides = overrides;
         this.replacements = replacements;
+        this.forceLoad = forceLoad;
         this.checkName = checkName;
         this.partialOverride = partialOverride;
     }
@@ -103,9 +106,14 @@ public class FixedItemTranslation implements ItemTranslation {
 
     @Override
     @ParametersAreNonnullByDefault
-    public boolean canTranslate(ItemStack item, SlimefunItem sfItem) {
-        if (!checkName) {
+    public boolean canTranslate(ItemStack item, String sfId) {
+        if (!checkName || forceLoad) {
             return true;
+        }
+
+        SlimefunItem sfItem = SlimefunItem.getById(sfId);
+        if (sfItem == null) {
+            return false;
         }
 
         var originalDisplayName = sfItem.getItemName();

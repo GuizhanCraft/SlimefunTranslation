@@ -188,7 +188,7 @@ public enum SlimefunTranslationTag implements Tag<Material> {
                 additionalTags.addAll(additionalTagSet);
             });
         } catch (TagMisconfigurationException ex) {
-            SlimefunTranslation.log(Level.SEVERE, ex, "An error has occurred while trying to load SlimefunTranslation tag: " + name());
+            SlimefunTranslation.log(Level.SEVERE, ex, "An error has occurred while trying to load SlimefunTranslationTag: " + name());
         }
     }
 

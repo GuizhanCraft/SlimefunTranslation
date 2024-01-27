@@ -107,7 +107,7 @@ class TagParser implements Keyed {
             if (tag != null) {
                 tags.add(tag);
             } else {
-                throw new TagMisconfigurationException(key, "Bump tag not exist: " + keyValue);
+                throw new TagMisconfigurationException(key, "SlimefunTranslationTag not exist: " + keyValue);
             }
         }
     }

@@ -28,6 +28,7 @@ import net.guizhanss.slimefuntranslation.api.interfaces.TranslatableItem;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.FileUtils;
+import net.guizhanss.slimefuntranslation.utils.SlimefunItemUtils;
 import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -152,30 +153,30 @@ public final class TranslationService {
         if (item == null || !item.hasItemMeta()) {
             return false;
         }
-        SlimefunItem sfItem = SlimefunItem.getByItem(item);
-        if (sfItem == null) {
+        String sfId = SlimefunItemUtils.getId(item);
+        if (sfId == null) {
             return false;
         }
 
-        return translateItem(user, item, sfItem);
+        return translateItem(user, item, sfId);
     }
 
     @ParametersAreNonnullByDefault
-    private boolean translateItem(User user, ItemStack item, SlimefunItem sfItem) {
+    private boolean translateItem(User user, ItemStack item, String sfId) {
         // check if the item is disabled
-        if (SlimefunTranslation.getConfigService().getDisabledItems().contains(sfItem.getId())) {
+        if (SlimefunTranslation.getConfigService().getDisabledItems().contains(sfId)) {
             return false;
         }
         // find the translation
         var transl = TranslationUtils.findTranslation(
-            SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
+            SlimefunTranslation.getRegistry().getItemTranslations(), user, sfId);
         if (transl.isEmpty()) {
             return false;
         }
         var translation = transl.get();
 
         // check whether the translation can be applied
-        if (!translation.canTranslate(item, sfItem)) {
+        if (!translation.canTranslate(item, sfId)) {
             return false;
         }
 
@@ -234,11 +235,7 @@ public final class TranslationService {
     public void sendMessage(CommandSender sender, String key, Object... args) {
         Preconditions.checkArgument(sender != null, "sender cannot be null");
         Preconditions.checkArgument(key != null, "key cannot be null");
-        User user = null;
-        if (sender instanceof Player p) {
-            user = SlimefunTranslation.getUserService().getUser(p);
-        }
-        sender.sendMessage(getMessage(user, key, args));
+        sender.sendMessage(getMessage(sender, key, args));
     }
 
     /**
@@ -253,6 +250,16 @@ public final class TranslationService {
         Preconditions.checkArgument(user != null, "user cannot be null");
         Preconditions.checkArgument(key != null, "key cannot be null");
         user.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(getMessage(user, key, args)));
+    }
+
+    @ParametersAreNonnullByDefault
+    public String getMessage(CommandSender sender, String key, Object... args) {
+        Preconditions.checkArgument(sender != null, "sender cannot be null");
+        User user = null;
+        if (sender instanceof Player p) {
+            user = SlimefunTranslation.getUserService().getUser(p);
+        }
+        return getMessage(user, key, args);
     }
 
     /**

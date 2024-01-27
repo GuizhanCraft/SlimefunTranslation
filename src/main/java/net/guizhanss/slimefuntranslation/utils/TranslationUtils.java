@@ -23,11 +23,12 @@ public final class TranslationUtils {
     /**
      * Find the translation from Registry, using the given key for the give {@link User}.
      * If the {@link User} is not provided, will try the server default locale, then the default locale.
-     * @param map The {@link Map} from Registry.
+     *
+     * @param map  The {@link Map} from Registry.
      * @param user The {@link User} to find the translation for.
-     * @param key The key to find the translation for.
+     * @param key  The key to find the translation for.
+     * @param <V>  The key type of translation.
      * @return An {@link Optional} of the translation.
-     * @param <V> The key type of translation.
      */
     @Nonnull
     public static <V> Optional<V> findTranslation(@Nonnull Map<String, Map<String, V>> map, @Nullable User user, @Nonnull String key) {

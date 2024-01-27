@@ -129,7 +129,7 @@ public class TranslationConfiguration {
                 boolean checkName = itemSection.getBoolean("check-name", false);
                 boolean partialOverride = forceLoad || SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType());
 
-                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, checkName, partialOverride);
+                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, forceLoad, checkName, partialOverride);
                 itemTranslations.put(itemId, translation);
                 count++;
             }
