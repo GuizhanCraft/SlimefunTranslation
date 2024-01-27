@@ -1,0 +1,15 @@
+name: SlimefunTranslation 消息
+messages:
+  player-only: "&c只有玩家才能执行该操作！"
+  no-permission: "&c你没有权限来执行该操作。"
+  sftranslation:
+    commands:
+      id:
+        description: "获取你主手中的 Slimefun 物品 ID"
+        not-sf-item: "&c你主手手持的不是 Slimefun 物品！"
+        result: "你主手手持物品的 ID 为： "
+        click-to-copy: "点击以复制到剪贴板"
+      search:
+        description: "使用你当前的语言搜索 Slimefun 物品"
+      translation:
+        description: "管理翻译文件"
