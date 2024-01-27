@@ -6,7 +6,7 @@
 
     <groupId>net.guizhanss</groupId>
     <artifactId>SlimefunTranslation</artifactId>
-    <version>0.5.0-beta</version>
+    <version>0.5.2-beta</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -59,6 +59,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>*</include>
+                    <include>tags/*.yml</include>
                     <include>translations/**/*.yml</include>
                 </includes>
             </resource>
