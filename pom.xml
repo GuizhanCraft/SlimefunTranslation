@@ -59,7 +59,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>*</include>
-                    <include>tags/*.yml</include>
+                    <include>tags/*.json</include>
                     <include>translations/**/*.yml</include>
                 </includes>
             </resource>
