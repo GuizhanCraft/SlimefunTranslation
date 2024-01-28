@@ -11,5 +11,6 @@ messages:
         click-to-copy: "点击以复制到剪贴板"
       search:
         description: "使用你当前的语言搜索 Slimefun 物品"
+        error: "&4显示物品时发生错误！请通知管理员检查控制台！"
       translation:
         description: "管理翻译文件"
