@@ -12,6 +12,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
+
+import net.guizhanss.slimefuntranslation.utils.constant.Keys;
+
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -185,9 +189,12 @@ public final class TranslationService {
         // display name
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
         meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(originalDisplayName)));
-        // lore
-        List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
-        meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
+        // we want to keep the lore of search result item, so check the pdc
+        if (!PersistentDataAPI.hasBoolean(meta, Keys.SEARCH_DISPLAY)) {
+            // lore
+            List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
+            meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
+        }
 
         item.setItemMeta(meta);
         return true;

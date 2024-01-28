@@ -13,11 +13,12 @@ import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 public class TranslationCommand extends SubCommand {
     public TranslationCommand(@Nonnull AbstractCommand parent) {
         super(parent, "translation", (cmd, sender) ->
-            SlimefunTranslation.getTranslationService().getMessage(sender, "commands.translation.description"), "<subcommands>");
+            SlimefunTranslation.getTranslationService().getMessage(sender, "sftranslation.commands.translation.description"), "<subcommands>");
     }
 
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
+        // TODO: implement translation management
     }
 }

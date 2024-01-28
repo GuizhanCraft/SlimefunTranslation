@@ -11,5 +11,6 @@ messages:
         click-to-copy: "Click to copy to clipboard"
       search:
         description: "Search for a Slimefun item with your current language"
+        error: "&4An error has occurred while displaying the item! Please inform an admin to check for console!"
       translation:
         description: "Manage the translation files"
