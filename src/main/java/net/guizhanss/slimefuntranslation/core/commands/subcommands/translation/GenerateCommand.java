@@ -16,6 +16,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.FlexItemGroup;
 import io.github.thebusybiscuit.slimefun4.core.services.localization.Language;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
@@ -46,16 +47,33 @@ public class GenerateCommand extends AbstractSubCommand {
             return;
         }
 
+        Set<String> exportIds = new HashSet<>();
+
         if (args.length == 3) {
             // export every item in the item group
-            ItemGroup itemGroup = findItemGroup(args[2]);
+            ItemGroup itemGroup = findItemGroup(addonName.toLowerCase(Locale.ROOT), args[2]);
             if (itemGroup == null) {
                 translationService.sendMessage(sender, "sftranslation.commands.translation.generate.invalid-itemgroup", args[2]);
+                return;
             }
-            // TODO: implement export
+            exportIds.addAll(
+                Slimefun.getRegistry().getAllSlimefunItems().stream()
+                    .filter(item -> item.getItemGroup().equals(itemGroup))
+                    .map(SlimefunItem::getId)
+                    .toList()
+            );
         } else {
             // export every item in the addon
+            exportIds.addAll(
+                Slimefun.getRegistry().getAllSlimefunItems().stream()
+                    .filter(item -> item.getItemGroup().getKey().getNamespace().equals(addonName.toLowerCase(Locale.ROOT)))
+                    .map(SlimefunItem::getId)
+                    .toList()
+            );
         }
+
+        final String fileName = SlimefunTranslation.getTranslationService().exportItemTranslations(language, addonName, exportIds);
+        translationService.sendMessage(sender, "sftranslation.commands.translation.generate.success", fileName, language);
     }
 
     @Override
@@ -107,15 +125,16 @@ public class GenerateCommand extends AbstractSubCommand {
             .map(itemGroup -> itemGroup.getKey().toString())
             .filter(key -> key.startsWith(addon.toLowerCase(Locale.ROOT) + ":"))
             .filter(key -> key.toLowerCase(Locale.ROOT).startsWith(filter.toLowerCase(Locale.ROOT)))
+            .map(key -> key.split(":")[1])
             .toList();
     }
 
     @Nullable
-    private ItemGroup findItemGroup(@Nonnull String targetKey) {
-        String[] keyArr = targetKey.substring(9).split(":");
+    @ParametersAreNonnullByDefault
+    private ItemGroup findItemGroup(String namespace, String key) {
         for (ItemGroup itemGroup : Slimefun.getRegistry().getAllItemGroups()) {
-            NamespacedKey key = itemGroup.getKey();
-            if (key.getNamespace().equals(keyArr[0]) && itemGroup.getKey().getKey().equals(keyArr[1])) {
+            NamespacedKey itemGroupKey = itemGroup.getKey();
+            if (itemGroupKey.getNamespace().equals(namespace) && itemGroupKey.getKey().equals(key)) {
                 return itemGroup;
             }
         }

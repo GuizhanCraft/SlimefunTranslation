@@ -14,7 +14,11 @@ messages:
         error: "&4An error has occurred while displaying the item! Please inform an admin to check for console!"
       translation:
         description: "Manage the translation files"
+        extract:
+          description: "Extract the translation files to the \"translations\" folder"
+          success: "&aAll the translation files have been extracted! (replace: {0})"
         generate:
           description: "Generate a translation file based on the given addon and language."
           invalid-addon: "&cThe addon \"{0}\" is not enabled!"
           invalid-itemgroup: "&cThe ItemGroup \"{0}\" does not exist!"
+          success: "&aSuccessfully exported the translation file \"{0}\" with language \"{1}\"!"

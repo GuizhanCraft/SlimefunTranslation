@@ -1,10 +1,13 @@
 package net.guizhanss.slimefuntranslation.core.services;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
+import java.util.logging.Level;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -12,7 +15,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import net.guizhanss.slimefuntranslation.utils.ColorUtils;
+
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -44,21 +50,17 @@ import net.md_5.bungee.api.chat.TextComponent;
 @SuppressWarnings("ConstantConditions")
 public final class TranslationService {
     private static final String FOLDER_NAME = "translations";
+    private final SlimefunTranslation plugin;
     private final File translationsFolder;
+    private final File jarFile;
 
     @ParametersAreNonnullByDefault
     public TranslationService(SlimefunTranslation plugin, File jarFile) {
         translationsFolder = new File(plugin.getDataFolder(), FOLDER_NAME);
-        if (!translationsFolder.exists()) {
-            translationsFolder.mkdirs();
+        this.plugin = plugin;
+        this.jarFile = jarFile;
 
-            // also unzip the example translations
-            SlimefunTranslation.debug("translations folder not exist, extracting default translations");
-            List<String> translationFiles = FileUtils.listYamlFilesInJar(jarFile, FOLDER_NAME + "/");
-            for (String translationFile : translationFiles) {
-                plugin.saveResource(FOLDER_NAME + File.separator + translationFile, false);
-            }
-        }
+        extractTranslations(false);
     }
 
     /**
@@ -114,6 +116,57 @@ public final class TranslationService {
                 currentTranslations.put(sfItem.getId(), translation);
             }
         }
+    }
+
+    public void extractTranslations(boolean replace) {
+        if (!translationsFolder.exists()) {
+            translationsFolder.mkdirs();
+        }
+        List<String> translationFiles = FileUtils.listYamlFilesInJar(jarFile, FOLDER_NAME + "/");
+        for (String translationFile : translationFiles) {
+            plugin.saveResource(FOLDER_NAME + File.separator + translationFile, replace);
+        }
+    }
+
+    @ParametersAreNonnullByDefault
+    public String exportItemTranslations(String language, String addonName, Set<String> ids) {
+        // make language folder if not exists
+        File langFolder = new File(translationsFolder, language);
+        if (!langFolder.exists()) {
+            langFolder.mkdirs();
+        }
+
+        // find the next available file name
+        int idx = 1;
+        File file;
+        String fileName;
+        do {
+            fileName = "export-" + idx + ".yml";
+            file = new File(langFolder, fileName);
+            idx++;
+        } while (file.exists());
+
+        FileConfiguration config = YamlConfiguration.loadConfiguration(file);
+
+        config.set("name", addonName);
+        for (String itemId : ids) {
+            String path = "translations." + itemId;
+            SlimefunItem sfItem = SlimefunItem.getById(itemId);
+            if (sfItem == null) {
+                continue;
+            }
+            config.set(path + ".name", ColorUtils.useAltCode(sfItem.getItemName()));
+            config.set(path + ".lore", ColorUtils.useAltCode(sfItem.getItem().getItemMeta().getLore()));
+        }
+
+        // save the file
+        try {
+            config.save(file);
+        } catch (IOException ex) {
+            SlimefunTranslation.log(Level.SEVERE, ex, "An error has occurred while exporting translation file.");
+        }
+
+        return fileName;
     }
 
     /**

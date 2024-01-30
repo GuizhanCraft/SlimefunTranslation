@@ -23,6 +23,9 @@ permissions:
   sftranslation.command.search:
     description: Search for a Slimefun item with your current language
     default: true
-  sftranslation.command.translation:
-    description: Manage the translation files
+  sftranslation.command.translation.extract:
+    description: Extract the translation files to the "translations" folder
+    default: op
+  sftranslation.command.translation.generate:
+    description: Generate a translation file based on the given addon and language.
     default: op

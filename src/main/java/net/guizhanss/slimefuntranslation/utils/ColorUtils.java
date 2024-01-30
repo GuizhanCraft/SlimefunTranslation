@@ -21,4 +21,14 @@ public final class ColorUtils {
     public static List<String> color(@Nonnull List<String> str) {
         return str.stream().map(ColorUtils::color).collect(Collectors.toCollection(ArrayList::new));
     }
+
+    @Nonnull
+    public static String useAltCode(@Nonnull String str) {
+        return str.replace('§', '&');
+    }
+
+    @Nonnull
+    public static List<String> useAltCode(@Nonnull List<String> str) {
+        return str.stream().map(ColorUtils::useAltCode).collect(Collectors.toCollection(ArrayList::new));
+    }
 }

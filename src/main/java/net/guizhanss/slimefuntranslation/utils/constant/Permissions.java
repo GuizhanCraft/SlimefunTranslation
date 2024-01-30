@@ -14,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 public enum Permissions {
     COMMAND_ID("sftranslation.command.id"),
     COMMAND_SEARCH("sftranslation.command.search"),
+    COMMAND_TRANSLATION_EXTRACT("sftranslation.command.translation.extract"),
     COMMAND_TRANSLATION_GENERATE("sftranslation.command.translation.generate");
 
     private final String permission;

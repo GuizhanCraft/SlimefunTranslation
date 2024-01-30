@@ -1,14 +1,14 @@
 package net.guizhanss.slimefuntranslation.implementation.packetlisteners.client.items;
 
-import javax.annotation.Nonnull;
-
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketEvent;
 
-import org.bukkit.inventory.ItemStack;
-
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.implementation.packetlisteners.client.AClientListener;
+
+import org.bukkit.inventory.ItemStack;
+
+import javax.annotation.Nonnull;
 
 public class SetCreativeSlotListener extends AClientListener {
     public SetCreativeSlotListener() {
