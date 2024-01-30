@@ -3,22 +3,18 @@ package net.guizhanss.slimefuntranslation.utils;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import net.guizhanss.slimefuntranslation.utils.constant.Keys;
-
-import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
+import net.guizhanss.slimefuntranslation.utils.constant.Keys;
+
 import lombok.experimental.UtilityClass;
 
-import org.bukkit.inventory.meta.ItemMeta;
-
-@SuppressWarnings("deprecation")
 @UtilityClass
 public class SlimefunItemUtils {
-    private static final NamespacedKey ID_KEY = new NamespacedKey("slimefun", "slimefun_item");
 
     @Nullable
     public static String getId(@Nullable ItemStack item) {
@@ -28,7 +24,7 @@ public class SlimefunItemUtils {
         if (item instanceof SlimefunItemStack sfItemStack) {
             return sfItemStack.getItemId();
         } else {
-            return PersistentDataAPI.getString(item.getItemMeta(), ID_KEY);
+            return PersistentDataAPI.getString(item.getItemMeta(), Keys.SLIMEFUN_ITEM);
         }
     }
 

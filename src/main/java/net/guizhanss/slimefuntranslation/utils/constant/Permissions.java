@@ -4,7 +4,7 @@ import javax.annotation.Nonnull;
 
 import com.google.common.base.Preconditions;
 
-import org.bukkit.entity.Player;
+import org.bukkit.command.CommandSender;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -13,12 +13,13 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public enum Permissions {
     COMMAND_ID("sftranslation.command.id"),
-    COMMAND_SEARCH("sftranslation.command.search");
+    COMMAND_SEARCH("sftranslation.command.search"),
+    COMMAND_TRANSLATION_GENERATE("sftranslation.command.translation.generate");
 
     private final String permission;
 
-    public boolean hasPermission(@Nonnull Player p) {
-        Preconditions.checkArgument(p != null, "Player cannot be null!");
-        return p.hasPermission(permission);
+    public boolean hasPermission(@Nonnull CommandSender sender) {
+        Preconditions.checkArgument(sender != null, "sender cannot be null");
+        return sender.hasPermission(permission);
     }
 }

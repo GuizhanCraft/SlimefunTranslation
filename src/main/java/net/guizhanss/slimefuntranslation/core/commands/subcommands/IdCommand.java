@@ -8,8 +8,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
-import net.guizhanss.guizhanlib.minecraft.commands.SubCommand;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.core.commands.AbstractSubCommand;
 import net.guizhanss.slimefuntranslation.utils.SlimefunItemUtils;
 import net.guizhanss.slimefuntranslation.utils.constant.Permissions;
 import net.md_5.bungee.api.ChatColor;
@@ -24,10 +24,9 @@ import net.md_5.bungee.api.chat.hover.content.Text;
  * Code from StarWishsama's Slimefun4 fork:
  * <a href="https://github.com/StarWishsama/Slimefun4/blob/master/src/main/java/io/github/thebusybiscuit/slimefun4/core/commands/subcommands/ItemIdCommand.java">Link</a>
  */
-public class IdCommand extends SubCommand {
+public class IdCommand extends AbstractSubCommand {
     public IdCommand(@Nonnull AbstractCommand parent) {
-        super(parent, "id", (cmd, sender) ->
-            SlimefunTranslation.getTranslationService().getMessage(sender, "sftranslation.commands.id.description"), "");
+        super(parent, "id", (cmd, sender) -> getDescription("id", sender), "");
     }
 
     @Override

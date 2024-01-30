@@ -1,19 +1,24 @@
 package net.guizhanss.slimefuntranslation.utils.constant;
 
-import lombok.experimental.UtilityClass;
-
-import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import javax.annotation.Nonnull;
 
 import org.bukkit.NamespacedKey;
 
-import javax.annotation.Nonnull;
+import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 
+import lombok.experimental.UtilityClass;
+
+@SuppressWarnings("deprecation")
 @UtilityClass
 public final class Keys {
     public static final NamespacedKey SEARCH_DISPLAY = create("search_display");
+    // slimefun keys
+    public static final NamespacedKey SLIMEFUN_ITEM = new NamespacedKey("slimefun", "slimefun_item");
+    // zAuctionHouse keys
+    public static final NamespacedKey AUCTION_ITEM = new NamespacedKey("zauctionhousev3", "zauctionhouse-item");
 
     @Nonnull
-    public static NamespacedKey create(@Nonnull String key) {
+    private static NamespacedKey create(@Nonnull String key) {
         return new NamespacedKey(SlimefunTranslation.getInstance(), key);
     }
 }

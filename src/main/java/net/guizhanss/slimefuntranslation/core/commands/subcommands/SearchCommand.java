@@ -1,7 +1,17 @@
 package net.guizhanss.slimefuntranslation.core.commands.subcommands;
 
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.logging.Level;
+
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -11,28 +21,15 @@ import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.ChatUtils;
-
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
+import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
+import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.core.commands.AbstractSubCommand;
 import net.guizhanss.slimefuntranslation.utils.constant.Keys;
 import net.guizhanss.slimefuntranslation.utils.constant.Permissions;
-
-import org.bukkit.ChatColor;
-import org.bukkit.command.CommandSender;
-
-import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
-import net.guizhanss.guizhanlib.minecraft.commands.SubCommand;
-import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemFlag;
-import org.bukkit.inventory.ItemStack;
-
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.logging.Level;
 
 /**
  * The subcommand that searches for Slimefun items with player's language.
@@ -40,10 +37,9 @@ import java.util.logging.Level;
  * Guide code from:
  * <a href="https://github.com/Slimefun/Slimefun4/blob/cd3672c3f29dcb9d02d02cd1c80758c3badb6931/src/main/java/io/github/thebusybiscuit/slimefun4/implementation/guide/SurvivalSlimefunGuide.java#L334">Link</a>
  */
-public class SearchCommand extends SubCommand {
+public class SearchCommand extends AbstractSubCommand {
     public SearchCommand(@Nonnull AbstractCommand parent) {
-        super(parent, "search", (cmd, sender) ->
-            SlimefunTranslation.getTranslationService().getMessage(sender, "sftranslation.commands.search.description"), "<query> [.] [.] [.] [.] [.]");
+        super(parent, "search", (cmd, sender) -> getDescription("search", sender), "<query> [.] [.] [.] [.] [.]");
     }
 
     @Override

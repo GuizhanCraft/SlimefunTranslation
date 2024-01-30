@@ -1,24 +1,23 @@
 package net.guizhanss.slimefuntranslation.core.commands.subcommands;
 
-
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.bukkit.command.CommandSender;
 
 import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
-import net.guizhanss.guizhanlib.minecraft.commands.SubCommand;
-import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.core.commands.AbstractSubCommand;
+import net.guizhanss.slimefuntranslation.core.commands.subcommands.translation.GenerateCommand;
 
-public class TranslationCommand extends SubCommand {
+public class TranslationCommand extends AbstractSubCommand {
     public TranslationCommand(@Nonnull AbstractCommand parent) {
-        super(parent, "translation", (cmd, sender) ->
-            SlimefunTranslation.getTranslationService().getMessage(sender, "sftranslation.commands.translation.description"), "<subcommands>");
+        super(parent, "translation", (cmd, sender) -> getDescription("translation", sender), "<subcommands>");
+        addSubCommand(new GenerateCommand(this));
     }
 
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
-        // TODO: implement translation management
+        // we have subcommands so this method doesn't need to do anything
     }
 }
