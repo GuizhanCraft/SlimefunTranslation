@@ -14,3 +14,11 @@ messages:
         error: "&4显示物品时发生错误！请通知管理员检查控制台！"
       translation:
         description: "管理翻译文件"
+        extract:
+          description: "提取翻译文件到\"translations\"目录中"
+          success: "&a所有翻译文件已提取！(替换: {0})"
+        generate:
+          description: "按照指定附属和语言生成翻译文件。"
+          invalid-addon: "&c附属 \"{0}\" 没有启用！"
+          invalid-itemgroup: "&c物品组 \"{0}\" 不存在！"
+          success: "&a成功生成 \"{1}\" 语言的翻译文件 \"{0}\"！"
