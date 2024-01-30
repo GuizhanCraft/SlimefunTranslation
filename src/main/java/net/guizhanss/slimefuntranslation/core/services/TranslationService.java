@@ -12,10 +12,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
-
-import net.guizhanss.slimefuntranslation.utils.constant.Keys;
-
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -24,6 +20,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
 import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
@@ -34,6 +31,7 @@ import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedI
 import net.guizhanss.slimefuntranslation.utils.FileUtils;
 import net.guizhanss.slimefuntranslation.utils.SlimefunItemUtils;
 import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
+import net.guizhanss.slimefuntranslation.utils.constant.Keys;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 
@@ -190,7 +188,7 @@ public final class TranslationService {
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
         meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(originalDisplayName)));
         // we want to keep the lore of search result item, so check the pdc
-        if (!PersistentDataAPI.hasBoolean(meta, Keys.SEARCH_DISPLAY)) {
+        if (shouldTranslateLore(meta)) {
             // lore
             List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
             meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
@@ -198,6 +196,12 @@ public final class TranslationService {
 
         item.setItemMeta(meta);
         return true;
+    }
+
+    @ParametersAreNonnullByDefault
+    private boolean shouldTranslateLore(ItemMeta meta) {
+        return !PersistentDataAPI.hasBoolean(meta, Keys.SEARCH_DISPLAY)
+            && !PersistentDataAPI.hasBoolean(meta, Keys.AUCTION_ITEM);
     }
 
     /**
