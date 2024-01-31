@@ -55,14 +55,32 @@ public class TranslationConfiguration {
     @Nonnull
     @ParametersAreNonnullByDefault
     public static Optional<TranslationConfiguration> fromFileConfiguration(String language, FileConfiguration config) {
+        return fromFileConfiguration(language, config, TranslationConfigurationFields.DEFAULT);
+    }
+
+    /**
+     * Creates a {@link TranslationConfiguration} from a {@link FileConfiguration} with the given {@link TranslationConfigurationFields}.
+     *
+     * @param language the language of the translation.
+     * @param config   the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
+     * @param fields   the fields to look for in the config.
+     * @return an {@link Optional} of {@link TranslationConfiguration} if the config is valid, otherwise {@code null}.
+     */
+    @Nonnull
+    @ParametersAreNonnullByDefault
+    public static Optional<TranslationConfiguration> fromFileConfiguration(
+        String language,
+        FileConfiguration config,
+        TranslationConfigurationFields fields
+    ) {
         Preconditions.checkArgument(config != null, "config cannot be null");
 
         String name = config.getString("name", "Unnamed Translation");
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
 
-        var itemsSection = config.getConfigurationSection("translations");
-        var loreSection = config.getConfigurationSection("lore");
-        var messagesSection = config.getConfigurationSection("messages");
+        var itemsSection = config.getConfigurationSection(fields.items());
+        var loreSection = config.getConfigurationSection(fields.lore());
+        var messagesSection = config.getConfigurationSection(fields.messages());
         if (itemsSection == null && loreSection == null && messagesSection == null) {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
