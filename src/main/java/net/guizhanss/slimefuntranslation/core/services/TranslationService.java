@@ -270,8 +270,9 @@ public final class TranslationService {
 
     @ParametersAreNonnullByDefault
     private boolean shouldTranslateLore(ItemMeta meta) {
-        return !PersistentDataAPI.hasBoolean(meta, Keys.SEARCH_DISPLAY)
-            && !PersistentDataAPI.hasBoolean(meta, Keys.AUCTION_ITEM);
+        Set<NamespacedKey> keys = meta.getPersistentDataContainer().getKeys();
+        return !keys.contains(Keys.SEARCH_DISPLAY)
+            && !keys.contains(Keys.AUCTION_ITEM);
     }
 
     /**

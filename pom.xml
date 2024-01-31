@@ -6,7 +6,7 @@
 
     <groupId>net.guizhanss</groupId>
     <artifactId>SlimefunTranslation</artifactId>
-    <version>0.5.3-beta</version>
+    <version>0.5.4-beta</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -51,6 +51,13 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.3</version>
+                <configuration>
+                </configuration>
             </plugin>
         </plugins>
         <resources>
