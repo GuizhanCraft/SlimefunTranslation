@@ -39,7 +39,11 @@ public class SlimefunLoreExpansion extends AExpansion {
         return switch (id) {
             case "Machine" -> {
                 if (args.length != 2) yield null;
-                yield getResult(user, "Machine.Tier." + args[0]) + " " + getResult(user, "Machine.Type." + args[1]);
+                yield getResult(user, "Machine.Format",
+                    getResult(user, "Machine.TierColor." + args[0]), // color
+                    getResult(user, "Machine.Tier." + args[0]), // tier
+                    getResult(user, "Machine.Type." + args[1]) // type
+                );
             }
             case "Radioactive" -> {
                 if (args.length != 1) yield null;

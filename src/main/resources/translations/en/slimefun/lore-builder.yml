@@ -20,8 +20,8 @@ lore:
   PowerCapacity: "%sftrlore_Power_{0}_ Capacity%"
   PowerPerSecond: "%sftrlore_Power_{0}_/s%"
   PowerPerTick: "%sftrlore_Power_{0}_/t%"
-  Material: "&8\u21E8 &7Material: &b{0}"
   Hunger: "&7&oRestores &b&o{0} &7&oHunger"
+  Material: "&8\u21E8 &7Material: &b{0}"
   Materials:
     Duralumin: "Duralumin"
     Solder: "Solder"
@@ -32,13 +32,21 @@ lore:
     Carbonado: "Carbonado"
   Range: "&7Range: &c{0} blocks"
   Machine:
+    Format: "{0}{1} {2}" # {0} = TierColor, {1} = Tier, {2} = Type
+    TierColor:
+      Basic: "&e"
+      Average: "&6"
+      Medium: "&a"
+      Good: "&2"
+      Advanced: "&6"
+      EndGame: "&4"
     Tier:
-      Basic: "&eBasic"
-      Average: "&6Average"
-      Medium: "&aMedium"
-      Good: "&2Good"
-      Advanced: "&6Advanced"
-      EndGame: "&4End-Game"
+      Basic: "Basic"
+      Average: "Average"
+      Medium: "Medium"
+      Good: "Good"
+      Advanced: "Advanced"
+      EndGame: "End-Game"
     Type:
       Capacitor: "Capacitor"
       Generator: "Generator"
