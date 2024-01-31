@@ -16,7 +16,7 @@ public class SlimefunLanguageChangeListener implements Listener {
     }
 
     @EventHandler
-    public void onJoin(@Nonnull PlayerLanguageChangeEvent e) {
+    public void onLanguageChange(@Nonnull PlayerLanguageChangeEvent e) {
         User user = SlimefunTranslation.getUserService().getUser(e.getPlayer());
         user.updateLocale(e.getNewLanguage().getId());
     }
