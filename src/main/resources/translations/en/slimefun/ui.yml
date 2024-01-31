@@ -2,12 +2,6 @@
 
 name: Slimefun UI items
 translations:
-  _UI_NO_PERMISSION:
-    force: true
-    name: "&cNo Permission"
-  _UI_NOT_RESEARCHED:
-    force: true
-    name: "&cNot Researched"
   _UI_SEARCH:
     force: true
     name: "&7Search..."
