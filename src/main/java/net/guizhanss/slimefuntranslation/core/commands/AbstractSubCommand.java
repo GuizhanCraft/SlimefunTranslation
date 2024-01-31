@@ -12,6 +12,11 @@ import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
 import net.guizhanss.guizhanlib.minecraft.commands.SubCommand;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 
+/**
+ * A {@link SubCommand} that contains some common utility methods.
+ *
+ * @author ybw0014
+ */
 public abstract class AbstractSubCommand extends SubCommand {
     protected AbstractSubCommand(
         @Nullable AbstractCommand parent,

@@ -15,8 +15,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
-import net.guizhanss.slimefuntranslation.utils.ColorUtils;
-
+import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -26,7 +25,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
 import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
@@ -34,6 +32,7 @@ import net.guizhanss.slimefuntranslation.api.config.TranslationConfiguration;
 import net.guizhanss.slimefuntranslation.api.interfaces.TranslatableItem;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedItemTranslation;
+import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 import net.guizhanss.slimefuntranslation.utils.FileUtils;
 import net.guizhanss.slimefuntranslation.utils.SlimefunItemUtils;
 import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
@@ -64,7 +63,8 @@ public final class TranslationService {
     }
 
     /**
-     * Loads all translation.
+     * Loads all translation. Other plugins should never call this method.
+     * <p>
      * This should be called after all items are loaded.
      */
     public void loadTranslations() {
@@ -118,16 +118,34 @@ public final class TranslationService {
         }
     }
 
+    /**
+     * Extracts all translation files from the jar file.
+     *
+     * @param replace Whether to replace existing files.
+     */
     public void extractTranslations(boolean replace) {
         if (!translationsFolder.exists()) {
             translationsFolder.mkdirs();
         }
         List<String> translationFiles = FileUtils.listYamlFilesInJar(jarFile, FOLDER_NAME + "/");
         for (String translationFile : translationFiles) {
-            plugin.saveResource(FOLDER_NAME + File.separator + translationFile, replace);
+            String filePath = FOLDER_NAME + File.separator + translationFile;
+            File file = new File(plugin.getDataFolder(), filePath);
+            if (file.exists() && !replace) {
+                continue;
+            }
+            plugin.saveResource(filePath, replace);
         }
     }
 
+    /**
+     * Exports item translations to a file in the specified language.
+     *
+     * @param language  The language for which to export the translations.
+     * @param addonName The name of the addon.
+     * @param ids       The set of item ids to export translations for.
+     * @return The name of the exported file.
+     */
     @ParametersAreNonnullByDefault
     public String exportItemTranslations(String language, String addonName, Set<String> ids) {
         // make language folder if not exists
@@ -240,9 +258,8 @@ public final class TranslationService {
         // display name
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
         meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(originalDisplayName)));
-        // we want to keep the lore of search result item, so check the pdc
+        // lore
         if (shouldTranslateLore(meta)) {
-            // lore
             List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
             meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
         }
