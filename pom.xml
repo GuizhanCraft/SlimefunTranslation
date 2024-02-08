@@ -6,7 +6,7 @@
 
     <groupId>net.guizhanss</groupId>
     <artifactId>SlimefunTranslation</artifactId>
-    <version>0.5.5-beta</version>
+    <version>0.6.0-beta</version>
     <packaging>jar</packaging>
 
     <properties>

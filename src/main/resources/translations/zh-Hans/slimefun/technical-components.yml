@@ -31,7 +31,8 @@ translations:
   ELECTRIC_MOTOR:
     name: "&c电动马达"
   HEATING_COIL:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&c加热线圈"
   COPPER_WIRE:
     name: "&6铜线"

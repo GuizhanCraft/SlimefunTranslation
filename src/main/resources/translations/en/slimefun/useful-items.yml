@@ -69,7 +69,8 @@ translations:
       2: "&7Size: &e9"
       5: "%sftrlore_RightClickToOpen%"
   MEDIUM_BACKPACK:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&eBackpack"
     lore-overrides:
       2: "&7Size: &e18"

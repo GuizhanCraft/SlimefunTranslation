@@ -16,7 +16,8 @@ translations:
       - "&f机器人将从接口"
       - "&f抽取燃料到机器人中"
   PROGRAMMABLE_ANDROID:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&c可编程机器人 &7(普通)"
     lore:
       - ""

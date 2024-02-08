@@ -20,7 +20,8 @@ translations:
       - ""
       - "%sftrlore_RightClickToUse%"
   SMELTERS_PICKAXE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6Smelter's Pickaxe"
     lore:
       - "&c&lAuto-Smelting"

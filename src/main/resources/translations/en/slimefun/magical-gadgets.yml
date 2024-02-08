@@ -109,7 +109,8 @@ translations:
   ELYTRA_SCALE:
     name: "&bElytra Scale"
   INFUSED_ELYTRA:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&5Infused Elytra"
   SOULBOUND_ELYTRA:
     name: "&cSoulbound Elytra"

@@ -14,7 +14,8 @@ translations:
       - "&fHas a chance to behead Mobs"
       - "&f(even a higher chance for Wither Skeletons)"
   BLADE_OF_VAMPIRES:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&4Blade of Vampires"
     lore:
       - "&7Life Steal I"

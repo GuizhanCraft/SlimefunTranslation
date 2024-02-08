@@ -45,7 +45,8 @@ translations:
   LAVA_CRYSTAL:
     name: "&4Lava Crystal"
   COMMON_TALISMAN:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6Common Talisman"
   NECROTIC_SKULL:
     name: "&cNecrotic Skull"
@@ -72,7 +73,8 @@ translations:
   ANCIENT_RUNE_WATER:
     name: "&7Ancient Rune &8&l[&1&lWater&8&l]"
   ANCIENT_RUNE_ENDER:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&7Ancient Rune &8&l[&5&lEnder&8&l]"
   ANCIENT_RUNE_LIGHTNING:
     name: "&7Ancient Rune &8&l[&e&lLightning&8&l]"

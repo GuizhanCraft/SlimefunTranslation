@@ -27,7 +27,8 @@ translations:
   SOLDER_INGOT:
     name: "&bSolder Ingot"
   SYNTHETIC_SAPPHIRE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&bSynthetic Sapphire"
     lore:
       - ""

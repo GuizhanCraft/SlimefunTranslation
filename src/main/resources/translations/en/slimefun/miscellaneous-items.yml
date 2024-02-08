@@ -42,7 +42,8 @@ translations:
   CLOTH:
     name: "&bCloth"
   CAN:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&fTin Can"
   GOLD_24K_BLOCK:
     name: "&fGold Block &7(24-Carat)"

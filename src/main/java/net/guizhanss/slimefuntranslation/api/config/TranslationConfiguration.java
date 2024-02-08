@@ -46,7 +46,7 @@ public class TranslationConfiguration {
     private SlimefunAddon addon = null;
 
     /**
-     * Creates a {@link TranslationConfiguration} from a {@link FileConfiguration}.
+     * Creates a {@link TranslationConfiguration} from a {@link FileConfiguration} with default {@link TranslationConfigurationFields}.
      *
      * @param language the language of the translation.
      * @param config   the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
@@ -85,6 +85,8 @@ public class TranslationConfiguration {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
         }
+        var fileConditions = TranslationConditions.loadFromConfigurationSection(config.getConfigurationSection(fields.conditions()));
+        SlimefunTranslation.debug("Current file condition: {0}", fileConditions);
         Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
         Map<String, String> messageTranslations = new HashMap<>();
@@ -97,7 +99,15 @@ public class TranslationConfiguration {
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
 
                 var itemSection = itemsSection.getConfigurationSection(itemId);
-                boolean forceLoad = itemSection.getBoolean("force", false);
+                if (itemSection == null) {
+                    SlimefunTranslation.log(Level.SEVERE, "Invalid item {0} in translation {1}", itemId, name);
+                    continue;
+                }
+
+                var itemConditions = TranslationConditions.loadFromConfigurationSection(itemSection.getConfigurationSection(fields.conditions()));
+                itemConditions.mergeParent(fileConditions);
+                SlimefunTranslation.debug("Current item condition: {0}", itemConditions);
+                boolean forceLoad = itemConditions.isForceLoad();
 
                 // sfItem
                 SlimefunItem sfItem = SlimefunItem.getById(itemId);
@@ -144,13 +154,13 @@ public class TranslationConfiguration {
                     }
                 }
 
-                boolean checkName = itemSection.getBoolean("check-name", false);
-                boolean partialOverride = false;
-                if (!forceLoad) {
-                    partialOverride = SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType());
+                if (!itemConditions.isPartialOverride() && !forceLoad) {
+                    itemConditions.setPartialOverride(
+                        SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType())
+                    );
                 }
 
-                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, forceLoad, checkName, partialOverride);
+                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, itemConditions);
                 itemTranslations.put(itemId, translation);
                 count++;
             }

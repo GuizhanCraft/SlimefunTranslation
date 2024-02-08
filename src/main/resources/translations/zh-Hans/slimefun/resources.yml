@@ -26,7 +26,8 @@ translations:
   SOLDER_INGOT:
     name: "&b焊锡锭"
   SYNTHETIC_SAPPHIRE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&b人造蓝宝石"
     lore:
       - ""

@@ -3,7 +3,8 @@
 name: Slimefun GPS-based Machines
 translations:
   GPS_TRANSMITTER:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&bGPS Transmitter"
     lore:
       - ""

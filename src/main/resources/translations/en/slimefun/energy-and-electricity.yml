@@ -512,7 +512,8 @@ translations:
       - "%sftrlore_PowerBuffer_256%"
       - "%sftrlore_PowerPerSecond_42%"
   NUCLEAR_REACTOR:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&2Nuclear Reactor"
     lore:
       - ""

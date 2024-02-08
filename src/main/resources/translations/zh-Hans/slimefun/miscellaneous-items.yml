@@ -41,7 +41,8 @@ translations:
   CLOTH:
     name: "&b布"
   CAN:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&f锡罐"
   GOLD_24K_BLOCK:
     name: "&f金块&7（24克拉）"

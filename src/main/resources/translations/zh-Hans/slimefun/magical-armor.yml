@@ -2,7 +2,8 @@
 name: Slimefun 魔法护甲
 translations:
   ENDER_HELMET:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&5&l末影头盔"
     lore:
       - ""

@@ -10,7 +10,8 @@ translations:
       - "&c&oitems in this chest if it's placed"
       - "&c&oadjacent to the dispenser."
   ENHANCED_CRAFTING_TABLE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&eEnhanced Crafting Table"
     lore:
       - ""

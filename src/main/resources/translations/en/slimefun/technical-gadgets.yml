@@ -21,7 +21,8 @@ translations:
       4: "&8\u21E8 &7Thrust: &c0.45"
       6: "%sftrlore_CrouchToUse%"
   STEEL_JETPACK:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&9Electric Jetpack &7- &eIV"
     lore-overrides:
       2: "%sftrlore_Material_Steel%"

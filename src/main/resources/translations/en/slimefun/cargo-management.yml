@@ -9,7 +9,8 @@ translations:
       - "&7Important ingredient for items"
       - "&7related to Cargo Management"
   CARGO_MANAGER:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6Cargo Manager"
     lore:
       - ""

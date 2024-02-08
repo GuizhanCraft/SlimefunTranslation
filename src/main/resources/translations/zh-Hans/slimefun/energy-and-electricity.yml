@@ -511,7 +511,8 @@ translations:
       - "%sftrlore_PowerBuffer_256%"
       - "%sftrlore_PowerPerSecond_42%"
   NUCLEAR_REACTOR:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&2核反应堆"
     lore:
       - ""

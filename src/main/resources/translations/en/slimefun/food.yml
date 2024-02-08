@@ -3,7 +3,8 @@
 name: Slimefun Food
 translations:
   FORTUNE_COOKIE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6Fortune Cookie"
     lore:
       - ""

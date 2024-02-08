@@ -1,6 +1,8 @@
 ## These files are used by Crowdin to translate them into other languages, and will be provided by default.
 
 name: Slimefun Programmable Androids
+conditions:
+  match-name: true
 translations:
   ANDROID_INTERFACE_ITEMS:
     name: "&7Android Interface &9(Items)"
@@ -17,7 +19,6 @@ translations:
       - "&fwill be inserted into an Android's Fuel Slot"
       - "&fwhen its Script tells them to do so"
   PROGRAMMABLE_ANDROID:
-    check-name: true
     name: "&cProgrammable Android &7(Normal)"
     lore:
       - ""

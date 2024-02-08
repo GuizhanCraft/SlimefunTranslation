@@ -12,6 +12,7 @@ import org.bukkit.inventory.ItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
+import net.guizhanss.slimefuntranslation.api.config.TranslationConditions;
 import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 
@@ -23,9 +24,7 @@ public class FixedItemTranslation implements ItemTranslation {
     private final List<String> lore;
     private final Map<Integer, String> overrides;
     private final Map<Integer, Pair<String, String>> replacements;
-    private final boolean forceLoad;
-    private final boolean checkName;
-    private final boolean partialOverride;
+    private final TranslationConditions conditions;
 
     @ParametersAreNonnullByDefault
     public FixedItemTranslation(
@@ -33,17 +32,13 @@ public class FixedItemTranslation implements ItemTranslation {
         List<String> lore,
         Map<Integer, String> overrides,
         Map<Integer, Pair<String, String>> replacements,
-        boolean forceLoad,
-        boolean checkName,
-        boolean partialOverride
+        TranslationConditions conditions
     ) {
         this.displayName = ColorUtils.color(displayName);
         this.lore = ColorUtils.color(lore);
         this.overrides = overrides;
         this.replacements = replacements;
-        this.forceLoad = forceLoad;
-        this.checkName = checkName;
-        this.partialOverride = partialOverride;
+        this.conditions = conditions;
     }
 
     /**
@@ -88,7 +83,7 @@ public class FixedItemTranslation implements ItemTranslation {
                 }
             }
             return newLore;
-        } else if (partialOverride) {
+        } else if (conditions.isPartialOverride()) {
             List<String> newLore = new ArrayList<>(original);
             for (int i = 0; i < lore.size(); i++) {
                 try {
@@ -107,7 +102,7 @@ public class FixedItemTranslation implements ItemTranslation {
     @Override
     @ParametersAreNonnullByDefault
     public boolean canTranslate(ItemStack item, String sfId) {
-        if (!checkName || forceLoad) {
+        if (!conditions.isMatchName() || conditions.isForceLoad()) {
             return true;
         }
 

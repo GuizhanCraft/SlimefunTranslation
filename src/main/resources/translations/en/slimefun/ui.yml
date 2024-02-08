@@ -3,7 +3,8 @@
 name: Slimefun UI items
 translations:
   _UI_SEARCH:
-    force: true
+    conditions:
+      force-load: true
     name: "&7Search..."
     lore:
       - ""

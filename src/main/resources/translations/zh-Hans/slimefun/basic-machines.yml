@@ -9,7 +9,8 @@ translations:
       - "&c&o会将制作好的物品"
       - "&c&o存入该箱子中"
   ENHANCED_CRAFTING_TABLE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&e增强型工作台"
     lore:
       - ""

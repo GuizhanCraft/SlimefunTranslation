@@ -2,7 +2,8 @@
 name: Slimefun GPS相关机器
 translations:
   GPS_TRANSMITTER:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&bGPS 发射器"
     lore:
       - ""
