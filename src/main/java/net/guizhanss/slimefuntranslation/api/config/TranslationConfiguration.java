@@ -85,7 +85,7 @@ public class TranslationConfiguration {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
         }
-        var fileConditions = TranslationConditions.loadFromConfigurationSection(config.getConfigurationSection(fields.conditions()));
+        var fileConditions = TranslationConditions.load(config.getConfigurationSection(fields.conditions()));
         SlimefunTranslation.debug("Current file condition: {0}", fileConditions);
         Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
@@ -104,8 +104,7 @@ public class TranslationConfiguration {
                     continue;
                 }
 
-                var itemConditions = TranslationConditions.loadFromConfigurationSection(itemSection.getConfigurationSection(fields.conditions()));
-                itemConditions.mergeParent(fileConditions);
+                var itemConditions = TranslationConditions.load(fileConditions, itemSection.getConfigurationSection(fields.conditions()));
                 SlimefunTranslation.debug("Current item condition: {0}", itemConditions);
                 boolean forceLoad = itemConditions.isForceLoad();
 

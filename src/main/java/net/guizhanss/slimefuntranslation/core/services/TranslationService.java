@@ -15,6 +15,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -29,7 +30,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.config.TranslationConfiguration;
-import net.guizhanss.slimefuntranslation.api.interfaces.TranslatableItem;
+import net.guizhanss.slimefuntranslation.api.events.TranslationsLoadEvent;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;
@@ -62,6 +63,10 @@ public final class TranslationService {
         extractTranslations(false);
     }
 
+    public void callLoadEvent() {
+        Bukkit.getPluginManager().callEvent(new TranslationsLoadEvent());
+    }
+
     /**
      * Loads all translation. Other plugins should never call this method.
      * <p>
@@ -71,6 +76,14 @@ public final class TranslationService {
         loadLanguages();
         loadFixedTranslations();
         loadProgrammedTranslations();
+    }
+
+    public void clearTranslations() {
+        var registry = SlimefunTranslation.getRegistry();
+        registry.getLanguages().clear();
+        registry.getItemTranslations().clear();
+        registry.getLoreTranslations().clear();
+        registry.getMessageTranslations().clear();
     }
 
     private void loadLanguages() {

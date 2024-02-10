@@ -7,6 +7,7 @@ import net.guizhanss.slimefuntranslation.implementation.listeners.PlayerJoinList
 import net.guizhanss.slimefuntranslation.implementation.listeners.PlayerQuitListener;
 import net.guizhanss.slimefuntranslation.implementation.listeners.SlimefunItemLoadListener;
 import net.guizhanss.slimefuntranslation.implementation.listeners.SlimefunLanguageChangeListener;
+import net.guizhanss.slimefuntranslation.implementation.listeners.TranslationsLoadListener;
 
 public final class ListenerService {
     public ListenerService(@Nonnull SlimefunTranslation plugin) {
@@ -14,5 +15,6 @@ public final class ListenerService {
         new PlayerQuitListener(plugin);
         new SlimefunItemLoadListener(plugin);
         new SlimefunLanguageChangeListener(plugin);
+        new TranslationsLoadListener(plugin);
     }
 }

@@ -7,7 +7,6 @@ import javax.annotation.Nonnull;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
-import net.guizhanss.slimefuntranslation.api.interfaces.TranslatableItem;
 
 import lombok.RequiredArgsConstructor;
 
