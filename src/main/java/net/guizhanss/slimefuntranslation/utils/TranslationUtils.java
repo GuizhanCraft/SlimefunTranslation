@@ -9,9 +9,11 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 import net.guizhanss.slimefuntranslation.core.users.User;
+import net.guizhanss.slimefuntranslation.utils.constant.Methods;
 
 import lombok.experimental.UtilityClass;
 
@@ -77,5 +79,13 @@ public final class TranslationUtils {
         }
 
         return Optional.empty();
+    }
+
+    public static boolean isTranslatableItem(@Nullable SlimefunItem item) {
+        if (item == null) {
+            return false;
+        }
+        return ReflectionUtils.hasMethod(item.getClass(), Methods.TRANSLATABLE_ITEM_GET_NAME, Methods.TRANSLATABLE_ITEM_GET_NAME_PARAMS)
+            && ReflectionUtils.hasMethod(item.getClass(), Methods.TRANSLATABLE_ITEM_GET_LORE, Methods.TRANSLATABLE_ITEM_GET_LORE_PARAMS);
     }
 }

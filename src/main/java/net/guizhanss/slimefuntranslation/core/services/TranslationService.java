@@ -118,11 +118,11 @@ public final class TranslationService {
     private void loadProgrammedTranslations() {
         var languages = SlimefunTranslation.getRegistry().getLanguages();
         for (SlimefunItem sfItem : Slimefun.getRegistry().getAllSlimefunItems()) {
-            if (!(sfItem instanceof TranslatableItem translatableItem)) {
+            if (!TranslationUtils.isTranslatableItem(sfItem)) {
                 continue;
             }
             for (String lang : languages) {
-                var translation = new ProgrammedItemTranslation(lang, translatableItem);
+                var translation = new ProgrammedItemTranslation(lang, sfItem);
                 var allItemTranslations = SlimefunTranslation.getRegistry().getItemTranslations();
                 allItemTranslations.putIfAbsent(lang, new HashMap<>());
                 var currentTranslations = allItemTranslations.get(lang);
@@ -222,7 +222,7 @@ public final class TranslationService {
             SlimefunTranslation.getRegistry().getItemTranslations(), user, sfItem.getId());
         return transl.map(itemTranslation -> SlimefunTranslation.getIntegrationService().applyPlaceholders(
             user,
-            itemTranslation.getDisplayName(sfItem.getItemName())
+            itemTranslation.getDisplayName(user, sfItem.getItem(), sfItem.getItem().getItemMeta(), sfItem.getItemName())
         )).orElseGet(sfItem::getItemName);
     }
 
@@ -260,21 +260,21 @@ public final class TranslationService {
             return false;
         }
         var translation = transl.get();
+        final ItemMeta meta = item.getItemMeta();
 
         // check whether the translation can be applied
-        if (!translation.canTranslate(item, sfId)) {
+        if (!translation.canTranslate(user, item, meta, sfId)) {
             return false;
         }
 
         var integrationService = SlimefunTranslation.getIntegrationService();
-        final ItemMeta meta = item.getItemMeta();
         // display name
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
-        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(originalDisplayName)));
+        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(user, item, meta, originalDisplayName)));
         // lore
         if (shouldTranslateLore(meta)) {
             List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
-            meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(originalLore)));
+            meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(user, item, meta, originalLore)));
         }
 
         item.setItemMeta(meta);

@@ -5,15 +5,13 @@ import javax.annotation.Nullable;
 
 import com.google.common.base.Preconditions;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import org.bukkit.configuration.ConfigurationSection;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * This class holds all the conditions for a translation.

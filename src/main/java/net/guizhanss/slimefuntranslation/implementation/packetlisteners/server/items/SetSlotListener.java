@@ -1,16 +1,16 @@
 package net.guizhanss.slimefuntranslation.implementation.packetlisteners.server.items;
 
+import javax.annotation.Nonnull;
+
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.reflect.StructureModifier;
 
-import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-import net.guizhanss.slimefuntranslation.implementation.packetlisteners.server.AServerListener;
-
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
+import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.implementation.packetlisteners.server.AServerListener;
 
 public class SetSlotListener extends AServerListener {
     public SetSlotListener() {

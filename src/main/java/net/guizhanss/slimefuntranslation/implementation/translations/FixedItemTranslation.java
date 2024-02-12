@@ -8,12 +8,14 @@ import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 import net.guizhanss.slimefuntranslation.api.config.TranslationConditions;
 import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 
 /**
@@ -45,12 +47,16 @@ public class FixedItemTranslation implements ItemTranslation {
      * Get the display name of the item.
      * If the defined translated display name is empty, the original display name will be returned.
      *
+     * @param user     The {@link User} to get the display name for.
+     * @param item     The {@link ItemStack}.
+     * @param meta     The {@link ItemMeta} of the item.
      * @param original The original display name.
      * @return The translated display name.
      */
     @Override
     @Nonnull
-    public String getDisplayName(@Nonnull String original) {
+    @ParametersAreNonnullByDefault
+    public String getDisplayName(User user, ItemStack item, ItemMeta meta, String original) {
         return displayName.isEmpty() ? original : displayName;
     }
 
@@ -58,12 +64,16 @@ public class FixedItemTranslation implements ItemTranslation {
      * Get the lore of the item.
      * If the defined translated lore is empty, it will start replacing the lore lines.
      *
+     * @param user     The {@link User} to get the display name for.
+     * @param item     The {@link ItemStack}.
+     * @param meta     The {@link ItemMeta} of the item.
      * @param original The original lore.
      * @return The translated lore.
      */
     @Override
     @Nonnull
-    public List<String> getLore(@Nonnull List<String> original) {
+    @ParametersAreNonnullByDefault
+    public List<String> getLore(User user, ItemStack item, ItemMeta meta, List<String> original) {
         if (lore.isEmpty()) {
             // only line override exists
             var newLore = new ArrayList<>(original);
@@ -99,9 +109,18 @@ public class FixedItemTranslation implements ItemTranslation {
         }
     }
 
+    /**
+     * Check if the item can be translated.
+     *
+     * @param user The {@link User} to get the display name for.
+     * @param item The {@link ItemStack}.
+     * @param meta The {@link ItemMeta} of the item.
+     * @param sfId The {@link SlimefunItem} id of the item.
+     * @return
+     */
     @Override
     @ParametersAreNonnullByDefault
-    public boolean canTranslate(ItemStack item, String sfId) {
+    public boolean canTranslate(User user, ItemStack item, ItemMeta meta, String sfId) {
         if (!conditions.isMatchName() || conditions.isForceLoad()) {
             return true;
         }
@@ -112,7 +131,6 @@ public class FixedItemTranslation implements ItemTranslation {
         }
 
         var originalDisplayName = sfItem.getItemName();
-        var meta = item.getItemMeta();
         return meta.hasDisplayName() && meta.getDisplayName().equals(originalDisplayName);
     }
 }

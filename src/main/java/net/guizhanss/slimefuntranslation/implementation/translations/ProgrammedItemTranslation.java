@@ -1,32 +1,65 @@
 package net.guizhanss.slimefuntranslation.implementation.translations;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.List;
 
 import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.core.users.User;
+import net.guizhanss.slimefuntranslation.utils.constant.Methods;
 
 import lombok.RequiredArgsConstructor;
 
 /**
- * This {@link ItemTranslation} is applied by {@link SlimefunItem}s which implemented {@link TranslatableItem}.
+ * This {@link ItemTranslation} is applied by {@link SlimefunItem}s which implemented the 2 methods to provide translations.
  */
 @RequiredArgsConstructor
 public class ProgrammedItemTranslation implements ItemTranslation {
     private final String lang;
-    private final TranslatableItem translatableItem;
+    private final SlimefunItem sfItem;
 
-    @Nonnull
+    /**
+     * Get the display name of the item.
+     *
+     * @param user     The {@link User} to get the display name for.
+     * @param item     The {@link ItemStack}.
+     * @param meta     The {@link ItemMeta} of the item.
+     * @param original The original display name.
+     * @return The translated display name.
+     */
     @Override
-    public String getDisplayName(@Nonnull String original) {
-        return translatableItem.getTranslatedDisplayName(lang, original);
+    @Nonnull
+    @ParametersAreNonnullByDefault
+    public String getDisplayName(User user, ItemStack item, ItemMeta meta, String original) {
+        try {
+            Method method = sfItem.getClass().getDeclaredMethod(Methods.TRANSLATABLE_ITEM_GET_NAME, Methods.TRANSLATABLE_ITEM_GET_NAME_PARAMS);
+            Object obj = method.invoke(sfItem, user.getPlayer(), user.getLocale(), item, original);
+            return (String) obj;
+        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException | ClassCastException e) {
+            e.printStackTrace();
+            return original;
+        }
     }
 
-    @Nonnull
     @Override
-    public List<String> getLore(@Nonnull List<String> original) {
-        return translatableItem.getTranslatedLore(lang, original);
+    @Nonnull
+    @ParametersAreNonnullByDefault
+    public List<String> getLore(User user, ItemStack item, ItemMeta meta, List<String> original) {
+        try {
+            Method method = sfItem.getClass().getDeclaredMethod(Methods.TRANSLATABLE_ITEM_GET_LORE, Methods.TRANSLATABLE_ITEM_GET_LORE_PARAMS);
+            Object obj = method.invoke(sfItem, user.getPlayer(), user.getLocale(), item, original);
+            return (List<String>) obj;
+        } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException | ClassCastException e) {
+            e.printStackTrace();
+            return original;
+        }
     }
 }
