@@ -2,7 +2,8 @@
 name: Slimefunの食料
 translations:
   FORTUNE_COOKIE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6フォーチュンクッキー"
     lore:
       - ""
