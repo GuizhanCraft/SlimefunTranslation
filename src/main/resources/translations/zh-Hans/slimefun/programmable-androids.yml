@@ -1,5 +1,7 @@
 ## These files are used by Crowdin to translate them into other languages, and will be provided by default.
 name: Slimefun 可编程机器人
+conditions:
+  match-name: true
 translations:
   ANDROID_INTERFACE_ITEMS:
     name: "&7机器人接口 &9(物品)"
@@ -16,7 +18,6 @@ translations:
       - "&f机器人将从接口"
       - "&f抽取燃料到机器人中"
   PROGRAMMABLE_ANDROID:
-    check-name: true
     name: "&c可编程机器人 &7(普通)"
     lore:
       - ""
