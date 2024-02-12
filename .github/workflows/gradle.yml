@@ -26,15 +26,15 @@ jobs:
         uses: gradle/wrapper-validation-action@v2
 
       - name: Build with Gradle
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/gradle-build-action@v3
         with:
-          arguments: build
+          arguments: build shadowJar
 
       - name: Get build artifact ready
-        run: mkdir staging && cp build/libs/*.jar staging
+        run: mkdir staging && cp build/libs/*-all.jar staging
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dev-build
+          name: Preview Build (Do not report bugs for this build)
           path: staging
