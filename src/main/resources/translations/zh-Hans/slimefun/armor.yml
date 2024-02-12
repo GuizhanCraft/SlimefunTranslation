@@ -4,7 +4,8 @@ translations:
   DAMASCUS_STEEL_HELMET:
     name: "&7大马士革钢头盔"
   DAMASCUS_STEEL_CHESTPLATE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&7大马士革钢胸甲"
   DAMASCUS_STEEL_LEGGINGS:
     name: "&7大马士革钢护腿"
