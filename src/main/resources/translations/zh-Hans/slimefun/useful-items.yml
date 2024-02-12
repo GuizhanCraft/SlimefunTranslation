@@ -68,7 +68,8 @@ translations:
       2: "&7大小: &e9"
       5: "%sftrlore_RightClickToOpen%"
   MEDIUM_BACKPACK:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&e普通背包"
     lore-overrides:
       2: "&7大小: &e18"
