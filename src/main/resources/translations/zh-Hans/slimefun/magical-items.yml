@@ -44,7 +44,8 @@ translations:
   LAVA_CRYSTAL:
     name: "&4岩浆水晶"
   COMMON_TALISMAN:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6通用护身符"
   NECROTIC_SKULL:
     name: "&c坏死颅骨"
@@ -71,7 +72,8 @@ translations:
   ANCIENT_RUNE_WATER:
     name: "&7古代符文 &8&l[&1&l水&8&l]"
   ANCIENT_RUNE_ENDER:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&7古代符文 &8&l[&5&l末影&8&l]"
   ANCIENT_RUNE_LIGHTNING:
     name: "&7古代符文 &8&l[&e&l雷&8&l]"
