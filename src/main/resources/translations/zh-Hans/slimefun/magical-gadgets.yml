@@ -108,7 +108,8 @@ translations:
   ELYTRA_SCALE:
     name: "&b鞘翅鳞片"
   INFUSED_ELYTRA:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&5注入鞘翅"
   SOULBOUND_ELYTRA:
     name: "&c灵魂绑定鞘翅"
