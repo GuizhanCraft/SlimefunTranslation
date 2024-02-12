@@ -9,12 +9,14 @@ import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
 import net.guizhanss.slimefuntranslation.core.commands.AbstractSubCommand;
 import net.guizhanss.slimefuntranslation.core.commands.subcommands.translation.ExtractCommand;
 import net.guizhanss.slimefuntranslation.core.commands.subcommands.translation.GenerateCommand;
+import net.guizhanss.slimefuntranslation.core.commands.subcommands.translation.ReloadCommand;
 
 public class TranslationCommand extends AbstractSubCommand {
     public TranslationCommand(@Nonnull AbstractCommand parent) {
         super(parent, "translation", (cmd, sender) -> getDescription("translation", sender), "<subcommands>");
         addSubCommand(new ExtractCommand(this));
         addSubCommand(new GenerateCommand(this));
+        addSubCommand(new ReloadCommand(this));
     }
 
     @Override

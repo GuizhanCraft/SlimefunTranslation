@@ -22,3 +22,6 @@ messages:
           invalid-addon: "&cThe addon \"{0}\" is not enabled!"
           invalid-itemgroup: "&cThe ItemGroup \"{0}\" does not exist!"
           success: "&aSuccessfully exported the translation file \"{0}\" with language \"{1}\"!"
+        reload:
+          description: "Reload the translation files"
+          success: "&aAll the translation files are being reloaded!"

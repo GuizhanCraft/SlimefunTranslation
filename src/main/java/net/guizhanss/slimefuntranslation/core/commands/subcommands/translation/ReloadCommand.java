@@ -14,30 +14,26 @@ import net.guizhanss.slimefuntranslation.utils.constant.Permissions;
 
 public class ReloadCommand extends AbstractSubCommand {
     public ReloadCommand(@Nonnull AbstractCommand parent) {
-        super(parent, "extract", (cmd, sender) -> getDescription("translation.extract", sender), "<replace:true/false>");
+        super(parent, "reload", (cmd, sender) -> getDescription("translation.reload", sender), "");
     }
 
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
         var translationService = SlimefunTranslation.getTranslationService();
-        if (!Permissions.COMMAND_TRANSLATION_EXTRACT.hasPermission(sender)) {
+        if (!Permissions.COMMAND_TRANSLATION_RELOAD.hasPermission(sender)) {
             translationService.sendMessage(sender, "no-permission");
         }
 
-        boolean replace = Boolean.valueOf(args[0]);
-        SlimefunTranslation.getTranslationService().extractTranslations(replace);
-        translationService.sendMessage(sender, "sftranslation.commands.translation.extract.success", replace);
+        translationService.clearTranslations();
+        translationService.callLoadEvent();
+        translationService.sendMessage(sender, "sftranslation.commands.translation.reload.success");
     }
 
     @Override
     @Nonnull
     @ParametersAreNonnullByDefault
     public List<String> onTab(CommandSender sender, String[] args) {
-        if (args.length == 1) {
-            return List.of("true", "false");
-        } else {
-            return List.of();
-        }
+        return List.of();
     }
 }

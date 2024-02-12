@@ -15,7 +15,9 @@ public enum Permissions {
     COMMAND_ID("sftranslation.command.id"),
     COMMAND_SEARCH("sftranslation.command.search"),
     COMMAND_TRANSLATION_EXTRACT("sftranslation.command.translation.extract"),
-    COMMAND_TRANSLATION_GENERATE("sftranslation.command.translation.generate");
+    COMMAND_TRANSLATION_GENERATE("sftranslation.command.translation.generate"),
+    COMMAND_TRANSLATION_RELOAD("sftranslation.command.translation.reload"),
+    ;
 
     private final String permission;
 
