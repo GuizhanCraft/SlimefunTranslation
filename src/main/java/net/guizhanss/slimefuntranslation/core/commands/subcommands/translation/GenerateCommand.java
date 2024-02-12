@@ -37,6 +37,7 @@ public class GenerateCommand extends AbstractSubCommand {
         var translationService = SlimefunTranslation.getTranslationService();
         if (!Permissions.COMMAND_TRANSLATION_GENERATE.hasPermission(sender)) {
             translationService.sendMessage(sender, "no-permission");
+            return;
         }
 
         String addonName = args[0];

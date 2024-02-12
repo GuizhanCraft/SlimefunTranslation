@@ -23,6 +23,7 @@ public class ReloadCommand extends AbstractSubCommand {
         var translationService = SlimefunTranslation.getTranslationService();
         if (!Permissions.COMMAND_TRANSLATION_RELOAD.hasPermission(sender)) {
             translationService.sendMessage(sender, "no-permission");
+            return;
         }
 
         translationService.clearTranslations();

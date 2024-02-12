@@ -23,6 +23,7 @@ public class ExtractCommand extends AbstractSubCommand {
         var translationService = SlimefunTranslation.getTranslationService();
         if (!Permissions.COMMAND_TRANSLATION_EXTRACT.hasPermission(sender)) {
             translationService.sendMessage(sender, "no-permission");
+            return;
         }
 
         boolean replace = Boolean.valueOf(args[0]);
