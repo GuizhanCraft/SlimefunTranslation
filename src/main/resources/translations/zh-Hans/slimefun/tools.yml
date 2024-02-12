@@ -19,7 +19,8 @@ translations:
       - ""
       - "%sftrlore_RightClickToUse%"
   SMELTERS_PICKAXE:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&6熔炼镐"
     lore:
       - "&c&l自动熔炼"
