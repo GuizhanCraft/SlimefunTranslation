@@ -19,8 +19,8 @@ lore:
   PowerCapacity: "%sftrlore_Power_{0}_ 容量%"
   PowerPerSecond: "%sftrlore_Power_{0}_/s%"
   PowerPerTick: "%sftrlore_Power_{0}_/t%"
-  Material: "&8\u21E8 &7材料：&b{0}"
   Hunger: "&7&o恢复 &b&o{0} &7&o饱食度"
+  Material: "&8\u21E8 &7材料：&b{0}"
   Materials:
     Duralumin: "硬铝"
     Solder: "焊锡"
@@ -31,13 +31,21 @@ lore:
     Carbonado: "黑金刚石"
   Range: "&7范围：&c{0} 个方块"
   Machine:
+    Format: "{0}{1} {2}" #{0} = TierColor, {1} = Tier, {2} = Type
+    TierColor:
+      Basic: "&e"
+      Average: "&6"
+      Medium: "&a"
+      Good: "&2"
+      Advanced: "&6"
+      EndGame: "&4"
     Tier:
-      Basic: "&e基础"
-      Average: "&6普通"
-      Medium: "&a中型"
-      Good: "&2优秀"
-      Advanced: "&6高级"
-      EndGame: "&4终极"
+      Basic: "基础"
+      Average: "普通"
+      Medium: "中级"
+      Good: "优秀"
+      Advanced: "高级"
+      EndGame: "终极"
     Type:
       Capacitor: "电容"
       Generator: "发电机"
