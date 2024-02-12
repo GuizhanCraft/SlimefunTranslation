@@ -1,0 +1,142 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 护身符 (等级 I)
+translations:
+  ANVIL_TALISMAN:
+    name: "&a铁砧护身符"
+    lore:
+      - ""
+      - "&f该护身符可阻止"
+      - "&f工具因耐久耗尽而损坏"
+      - "&f然后便会被消耗"
+      - ""
+      - "&4&l警告："
+      - "&4该护身符无法对"
+      - "&4没有耐久条的物品"
+      - "&4生效"
+  MINER_TALISMAN:
+    name: "&a矿工护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f有20%几率双倍掉落"
+      - "&f你挖掘的矿石"
+  FARMER_TALISMAN:
+    name: "&a农夫护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f有20%几率双倍掉落"
+      - "&f你收获的作物"
+  HUNTER_TALISMAN:
+    name: "&a猎人护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f有20%几率双倍掉落"
+      - "&f你击杀的生物的战利品"
+  LAVA_TALISMAN:
+    name: "&a岩浆行者护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符"
+      - "&f且接触到岩浆时"
+      - "&f会获得防火效果"
+      - "&f然后护身符会被消耗"
+  WATER_TALISMAN:
+    name: "&a水下呼吸护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符"
+      - "&f且你开始溺水时"
+      - "&f你将获得水下呼吸"
+      - "&f的效果"
+      - "&f然后护身符会被消耗"
+  ANGEL_TALISMAN:
+    name: "&a天使护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f有 75% 的几率防止你"
+      - "&f受到摔落伤害"
+  FIRE_TALISMAN:
+    name: "&a消防员护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符"
+      - "&f且接开始燃烧时"
+      - "&f你将会获得防火效果"
+      - "&f然后护身符会被消耗"
+  MAGICIAN_TALISMAN:
+    name: "&a法师护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f你将获得 80% 几率的幸运奖励"
+      - "&f你会获得随机的额外附魔"
+  TRAVELLER_TALISMAN:
+    name: "&a旅行者护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符"
+      - "&f且开始奔跑时"
+      - "&f你将有 60% 几率获得速度效果"
+  WARRIOR_TALISMAN:
+    name: "&a战士护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符且受到伤害时"
+      - "&f你将获得力量 III 效果"
+      - "&f然后护身符会被消耗"
+  KNIGHT_TALISMAN:
+    name: "&a骑士护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符"
+      - "&f且受到伤害时"
+      - "&f你有 30% 几率获得 5 秒的生命恢复"
+      - "&f然后护身符会被消耗"
+  CAVEMAN_TALISMAN:
+    name: "&a穴居者护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f你挖矿时有 50% 几率"
+      - "&f获得急迫效果"
+  WISE_TALISMAN:
+    name: "&a智者护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该护身符时"
+      - "&f你将有 20% 几率获得"
+      - "&f双倍经验"
+  WHIRLWIND_TALISMAN:
+    name: "&a旋风护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中拥有该护身符时"
+      - "&f有 60% 几率"
+      - "&f反弹投射物"
+      - "&e&o只有三叉戟可以穿透"
+      - "&e&o这层保护。"
+  WIZARD_TALISMAN:
+    name: "&a巫师护身符"
+    lore:
+      - ""
+      - "&f当你物品栏中"
+      - "&f拥有该物品时"
+      - "&f你将有几率获得时运 4/5"
+      - "&f然而也有几率"
+      - "&f降低部分附魔的等级"
