@@ -13,7 +13,8 @@ translations:
       - "&r有几率砍下生物的头"
       - "&r(提高掉落凋灵骷髅头的几率)"
   BLADE_OF_VAMPIRES:
-    check-name: true
+    conditions:
+      match-name: true
     name: "&c吸血鬼之刃"
     lore:
       - "&7生命窃取 I"
