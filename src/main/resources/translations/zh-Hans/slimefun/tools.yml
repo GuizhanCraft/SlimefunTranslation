@@ -1,0 +1,82 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 工具
+translations:
+  GOLD_PAN:
+    name: "&6淘金盘"
+    lore:
+      - ""
+      - "&e右键点击&7可从"
+      - "&7沙砾收集资源"
+  NETHER_GOLD_PAN:
+    name: "&4下界淘金盘"
+    lore:
+      - ""
+      - "&e右键点击&7可从"
+      - "&7灵魂沙收集资源"
+  GRAPPLING_HOOK:
+    name: "&6抓钩"
+    lore:
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SMELTERS_PICKAXE:
+    conditions:
+      match-name: true
+    name: "&6熔炼镐"
+    lore:
+      - "&c&l自动熔炼"
+      - ""
+      - "&9可受时运附魔影响"
+  LUMBER_AXE:
+    name: "&6伐木斧"
+    lore:
+      - "&a&o砍倒一整棵树..."
+  PICKAXE_OF_CONTAINMENT:
+    name: "&c刷怪笼之镐"
+    lore:
+      - ""
+      - "&9可挖掘刷怪笼"
+  EXPLOSIVE_PICKAXE:
+    name: "&e爆炸镐"
+    lore:
+      - ""
+      - "&f允许你一次性挖掘"
+      - "&f范围内的所有可挖掘方块..."
+      - ""
+      - "&9可受时运附魔影响"
+  EXPLOSIVE_SHOVEL:
+    name: "&e爆炸铲"
+    lore:
+      - ""
+      - "&f允许你一次性挖掘"
+      - "&f范围内的所有可挖掘方块..."
+  PICKAXE_OF_THE_SEEKER:
+    name: "&a寻矿镐"
+    lore:
+      - "&f可指向最近的矿石"
+      - "&f但会受到损伤"
+      - ""
+      - "&7&e右键点击&7来指向最近的矿石"
+  COBALT_PICKAXE:
+    name: "&9钴镐"
+  PICKAXE_OF_VEIN_MINING:
+    name: "&e矿脉镐"
+    lore:
+      - ""
+      - "&f该镐可直接挖掘"
+      - "&f整个矿脉的矿石..."
+  CLIMBING_PICK:
+    name: "&b攀岩镐"
+    lore:
+      - ""
+      - "&f允许你右键点击"
+      - "&f来攀爬到平面上"
+      - "&f给该镐附魔效率"
+      - "&f可让攀爬更快！"
+  SOULBOUND_PICKAXE:
+    name: "&c灵魂绑定镐"
+  SOULBOUND_AXE:
+    name: "&c灵魂绑定斧"
+  SOULBOUND_SHOVEL:
+    name: "&c灵魂绑定铲"
+  SOULBOUND_HOE:
+    name: "&c灵魂绑定锄"
