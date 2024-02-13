@@ -74,39 +74,45 @@ public class FixedItemTranslation implements ItemTranslation {
     @Nonnull
     @ParametersAreNonnullByDefault
     public List<String> getLore(User user, ItemStack item, ItemMeta meta, List<String> original) {
-        if (lore.isEmpty()) {
-            // only line override exists
-            var newLore = new ArrayList<>(original);
-            for (var entry : overrides.entrySet()) {
-                try {
-                    newLore.set(entry.getKey() - 1, ColorUtils.color(entry.getValue()));
-                } catch (IndexOutOfBoundsException e) {
-                    // ignore
+        List<String> newLore = new ArrayList<>(original);
+
+        if (!lore.isEmpty()) {
+            // lore specified
+            if (conditions.isPartialOverride()) {
+                // partial override enabled, only override the specified lines
+                for (int i = 0; i < lore.size(); i++) {
+                    try {
+                        var line = lore.get(i);
+                        newLore.set(i, ColorUtils.color(line));
+                    } catch (IndexOutOfBoundsException e) {
+                        // ignore
+                    }
                 }
+            } else {
+                // partial override disabled, override all lines
+                newLore = new ArrayList<>(lore);
             }
-            for (var entry : replacements.entrySet()) {
-                try {
-                    var line = newLore.get(entry.getKey() - 1);
-                    newLore.set(entry.getKey() - 1, ColorUtils.color(line.replace(entry.getValue().getFirstValue(), entry.getValue().getSecondValue())));
-                } catch (IndexOutOfBoundsException e) {
-                    // ignore
-                }
-            }
-            return newLore;
-        } else if (conditions.isPartialOverride()) {
-            List<String> newLore = new ArrayList<>(original);
-            for (int i = 0; i < lore.size(); i++) {
-                try {
-                    var line = lore.get(i);
-                    newLore.set(i, ColorUtils.color(line));
-                } catch (IndexOutOfBoundsException e) {
-                    // ignore
-                }
-            }
-            return newLore;
-        } else {
-            return new ArrayList<>(lore);
         }
+
+        // specific line overrides
+        for (var entry : overrides.entrySet()) {
+            try {
+                newLore.set(entry.getKey() - 1, ColorUtils.color(entry.getValue()));
+            } catch (IndexOutOfBoundsException e) {
+                // ignore
+            }
+        }
+        // specific line replacements
+        for (var entry : replacements.entrySet()) {
+            try {
+                var line = newLore.get(entry.getKey() - 1);
+                newLore.set(entry.getKey() - 1, ColorUtils.color(line.replace(entry.getValue().getFirstValue(), entry.getValue().getSecondValue())));
+            } catch (IndexOutOfBoundsException e) {
+                // ignore
+            }
+        }
+
+        return newLore;
     }
 
     /**
