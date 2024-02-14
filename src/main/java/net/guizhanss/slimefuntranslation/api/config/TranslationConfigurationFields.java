@@ -1,23 +1,22 @@
 package net.guizhanss.slimefuntranslation.api.config;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
 /**
- * This record holds the fields to look for in a translation configuration file.
- *
- * @param items      The name of the section to look for item translations.
- * @param lore       The name of the section to look for lore translations.
- * @param messages   The name of the section to look for message translations.
- * @param conditions The name of the section to look for translation conditions.
+ * This class holds the fields to look for in a translation configuration file.
  */
-public record TranslationConfigurationFields(
-    String items,
-    String lore,
-    String messages,
-    String conditions
-) {
-    public static final TranslationConfigurationFields DEFAULT = new TranslationConfigurationFields(
-        "translations",
-        "lore",
-        "messages",
-        "conditions"
-    );
+@Getter
+@Builder
+@AllArgsConstructor
+public final class TranslationConfigurationFields {
+    @Builder.Default
+    private String items = "translations";
+    @Builder.Default
+    private String lore = "lore";
+    @Builder.Default
+    private String messages = "messages";
+    @Builder.Default
+    private String conditions = "conditions";
 }
