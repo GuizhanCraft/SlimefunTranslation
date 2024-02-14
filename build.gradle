@@ -42,7 +42,10 @@ dependencies {
 group = 'net.guizhanss'
 version = '0.7.0-beta'
 description = 'SlimefunTranslation'
-java.sourceCompatibility = JavaVersion.VERSION_16
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_16
+}
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -88,6 +91,10 @@ bukkit {
         }
         'sftranslation.command.translation.generate' {
             description = 'Generate a translation file based on the given addon and language.'
+            setDefault('OP')
+        }
+        'sftranslation.command.translation.reload' {
+            description = 'Reloads the translation files.'
             setDefault('OP')
         }
     }
