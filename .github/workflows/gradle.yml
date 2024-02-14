@@ -31,7 +31,7 @@ jobs:
           arguments: build shadowJar
 
       - name: Get build artifact ready
-        run: mkdir staging && cp build/libs/*-all.jar staging
+        run: mkdir staging && cp build/libs/*.jar staging
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
