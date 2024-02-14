@@ -53,8 +53,9 @@ tasks.withType(Javadoc) {
 }
 
 shadowJar {
-    relocate 'org.bstats', 'io.github.slimefunguguproject.bump.bstats'
+    relocate 'org.bstats', 'net.guizhanss.slimefuntranslation.libs.bstats'
     minimize()
+    archiveClassifier = ''
 }
 
 bukkit {
