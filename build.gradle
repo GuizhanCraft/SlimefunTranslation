@@ -40,7 +40,7 @@ dependencies {
 }
 
 group = 'net.guizhanss'
-version = '0.6.0-beta'
+version = '0.7.0-beta'
 description = 'SlimefunTranslation'
 java.sourceCompatibility = JavaVersion.VERSION_16
 
