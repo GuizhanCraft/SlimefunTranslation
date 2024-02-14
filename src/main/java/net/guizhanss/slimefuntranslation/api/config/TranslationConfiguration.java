@@ -78,14 +78,14 @@ public class TranslationConfiguration {
         String name = config.getString("name", "Unnamed Translation");
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
 
-        var itemsSection = config.getConfigurationSection(fields.items());
-        var loreSection = config.getConfigurationSection(fields.lore());
-        var messagesSection = config.getConfigurationSection(fields.messages());
+        var itemsSection = config.getConfigurationSection(fields.getItems());
+        var loreSection = config.getConfigurationSection(fields.getLore());
+        var messagesSection = config.getConfigurationSection(fields.getMessages());
         if (itemsSection == null && loreSection == null && messagesSection == null) {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
         }
-        var fileConditions = TranslationConditions.load(config.getConfigurationSection(fields.conditions()));
+        var fileConditions = TranslationConditions.load(config.getConfigurationSection(fields.getConditions()));
         SlimefunTranslation.debug("Current file condition: {0}", fileConditions);
         Map<String, ItemTranslation> itemTranslations = new HashMap<>();
         Map<String, String> loreTranslations = new HashMap<>();
@@ -104,7 +104,7 @@ public class TranslationConfiguration {
                     continue;
                 }
 
-                var itemConditions = TranslationConditions.load(fileConditions, itemSection.getConfigurationSection(fields.conditions()));
+                var itemConditions = TranslationConditions.load(fileConditions, itemSection.getConfigurationSection(fields.getConditions()));
                 SlimefunTranslation.debug("Current item condition: {0}", itemConditions);
                 boolean forceLoad = itemConditions.isForceLoad();
 
