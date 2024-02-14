@@ -8,7 +8,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
-import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.core.commands.AbstractSubCommand;
 import net.guizhanss.slimefuntranslation.utils.SlimefunItemUtils;
 import net.guizhanss.slimefuntranslation.utils.constant.Permissions;
@@ -32,31 +31,30 @@ public class IdCommand extends AbstractSubCommand {
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
-        var translationService = SlimefunTranslation.getTranslationService();
         if (!(sender instanceof Player p)) {
-            translationService.sendMessage(sender, "player-only");
+            MESSAGE_FACTORY.sendMessage(sender, "player-only");
             return;
         }
         if (!Permissions.COMMAND_ID.hasPermission(p)) {
-            translationService.sendMessage(sender, "no-permission");
+            MESSAGE_FACTORY.sendMessage(sender, "no-permission");
             return;
         }
 
         ItemStack item = p.getInventory().getItemInMainHand();
         if (item.getType().isAir()) {
-            translationService.sendMessage(sender, "sftranslation.commands.id.not-sf-item");
+            MESSAGE_FACTORY.sendMessage(sender, "commands.id.not-sf-item");
             return;
         }
 
         String sfId = SlimefunItemUtils.getId(item);
         if (sfId == null) {
-            translationService.sendMessage(sender, "sftranslation.commands.id.not-sf-item");
+            MESSAGE_FACTORY.sendMessage(sender, "commands.id.not-sf-item");
             return;
         }
 
-        TextComponent msg = new TextComponent(translationService.getMessage(sender, "sftranslation.commands.id.result"));
+        TextComponent msg = new TextComponent(MESSAGE_FACTORY.getMessage(sender, "commands.id.result"));
         msg.setColor(ChatColor.YELLOW);
-        String clickToCopy = translationService.getMessage(sender, "sftranslation.commands.id.click-to-copy");
+        String clickToCopy = MESSAGE_FACTORY.getMessage(sender, "commands.id.click-to-copy");
         var idMsg = new TextComponent(sfId);
         idMsg.setUnderlined(true);
         idMsg.setItalic(true);

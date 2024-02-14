@@ -77,6 +77,8 @@ public class TranslationConfiguration {
 
         String name = config.getString("name", "Unnamed Translation");
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
+        String prefix = config.getString(fields.getPrefix(), "");
+        String suffix = config.getString(fields.getSuffix(), "");
 
         var itemsSection = config.getConfigurationSection(fields.getItems());
         var loreSection = config.getConfigurationSection(fields.getLore());
@@ -95,7 +97,8 @@ public class TranslationConfiguration {
 
         if (itemsSection != null) {
             int count = 0;
-            for (var itemId : itemsSection.getKeys(false)) {
+            for (var id : itemsSection.getKeys(false)) {
+                String itemId = prefix + id + suffix;
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
 
                 var itemSection = itemsSection.getConfigurationSection(itemId);
@@ -153,6 +156,7 @@ public class TranslationConfiguration {
                     }
                 }
 
+                // check partial override
                 if (!itemConditions.isPartialOverride() && !forceLoad) {
                     itemConditions.setPartialOverride(
                         SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType())
@@ -201,8 +205,10 @@ public class TranslationConfiguration {
         currentLoreTranslations.putAll(loreTranslations);
 
         var allMessageTranslations = SlimefunTranslation.getRegistry().getMessageTranslations();
-        allMessageTranslations.putIfAbsent(lang, new HashMap<>());
-        var currentMessageTranslations = allMessageTranslations.get(lang);
+        allMessageTranslations.putIfAbsent(addon.getName(), new HashMap<>());
+        var pluginMessageTranslations = allMessageTranslations.get(addon.getName());
+        pluginMessageTranslations.putIfAbsent(lang, new HashMap<>());
+        var currentMessageTranslations = pluginMessageTranslations.get(lang);
         currentMessageTranslations.putAll(messageTranslations);
 
         this.addon = addon;

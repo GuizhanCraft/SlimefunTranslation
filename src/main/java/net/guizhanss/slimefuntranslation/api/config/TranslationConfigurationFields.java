@@ -16,6 +16,10 @@ public final class TranslationConfigurationFields {
     public static final TranslationConfigurationFields DEFAULT = TranslationConfigurationFields.builder().build();
 
     @Builder.Default
+    private String prefix = "item-id-prefix";
+    @Builder.Default
+    private String suffix = "item-id-suffix";
+    @Builder.Default
     private String items = "translations";
     @Builder.Default
     private String lore = "lore";

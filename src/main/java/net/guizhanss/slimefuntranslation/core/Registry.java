@@ -15,7 +15,10 @@ import lombok.Getter;
 public final class Registry {
     private final Map<UUID, User> users = new HashMap<>();
     private final Set<String> languages = new HashSet<>();
+    // lang -> itemId -> translation
     private final Map<String, Map<String, ItemTranslation>> itemTranslations = new HashMap<>();
+    // lang -> loreId -> translation
     private final Map<String, Map<String, String>> loreTranslations = new HashMap<>();
-    private final Map<String, Map<String, String>> messageTranslations = new HashMap<>();
+    // plugin -> lang -> messageId -> translation
+    private final Map<String, Map<String, Map<String, String>>> messageTranslations = new HashMap<>();
 }

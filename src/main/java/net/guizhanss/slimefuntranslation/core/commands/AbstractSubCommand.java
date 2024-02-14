@@ -11,6 +11,7 @@ import org.bukkit.command.CommandSender;
 import net.guizhanss.guizhanlib.minecraft.commands.AbstractCommand;
 import net.guizhanss.guizhanlib.minecraft.commands.SubCommand;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.core.factories.MessageFactory;
 
 /**
  * A {@link SubCommand} that contains some common utility methods.
@@ -18,6 +19,8 @@ import net.guizhanss.slimefuntranslation.SlimefunTranslation;
  * @author ybw0014
  */
 public abstract class AbstractSubCommand extends SubCommand {
+    protected static final MessageFactory MESSAGE_FACTORY = MessageFactory.get(SlimefunTranslation.getInstance());
+
     protected AbstractSubCommand(
         @Nullable AbstractCommand parent,
         @Nonnull String name,
@@ -41,6 +44,6 @@ public abstract class AbstractSubCommand extends SubCommand {
     @Nonnull
     @ParametersAreNonnullByDefault
     protected static String getDescription(String key, CommandSender sender) {
-        return SlimefunTranslation.getTranslationService().getMessage(sender, "sftranslation.commands." + key + ".description");
+        return MESSAGE_FACTORY.getMessage(sender, "commands." + key + ".description");
     }
 }

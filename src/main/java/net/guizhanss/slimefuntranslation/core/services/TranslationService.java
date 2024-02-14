@@ -2,7 +2,6 @@ package net.guizhanss.slimefuntranslation.core.services;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,17 +16,14 @@ import com.google.common.base.Preconditions;
 
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
-import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
-import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.config.TranslationConfiguration;
 import net.guizhanss.slimefuntranslation.api.events.TranslationsLoadEvent;
@@ -38,8 +34,6 @@ import net.guizhanss.slimefuntranslation.utils.FileUtils;
 import net.guizhanss.slimefuntranslation.utils.SlimefunItemUtils;
 import net.guizhanss.slimefuntranslation.utils.TranslationUtils;
 import net.guizhanss.slimefuntranslation.utils.constant.Keys;
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
 
 /**
  * This class holds all translations and can be used to access these translations
@@ -315,69 +309,5 @@ public final class TranslationService {
         var transl = TranslationUtils.findTranslation(
             SlimefunTranslation.getRegistry().getLoreTranslations(), user, id);
         return transl.orElse(defaultToId ? id : "");
-    }
-
-    /**
-     * Send a translated message to the given {@link CommandSender}.
-     * When the sender is a {@link Player}, the message will be translated based on the player's language.
-     * Otherwise, the message will be translated based on the default language.
-     *
-     * @param sender The {@link CommandSender}.
-     * @param key    The key of the message.
-     * @param args   The arguments to be applied to the message.
-     */
-    @ParametersAreNonnullByDefault
-    public void sendMessage(CommandSender sender, String key, Object... args) {
-        Preconditions.checkArgument(sender != null, "sender cannot be null");
-        Preconditions.checkArgument(key != null, "key cannot be null");
-        sender.sendMessage(getMessage(sender, key, args));
-    }
-
-    /**
-     * Send a translated message via the action bar to the given {@link User}.
-     *
-     * @param user The {@link User}.
-     * @param key  The key of the message.
-     * @param args The arguments to be applied to the message.
-     */
-    @ParametersAreNonnullByDefault
-    public void sendActionbarMessage(User user, String key, Object... args) {
-        Preconditions.checkArgument(user != null, "user cannot be null");
-        Preconditions.checkArgument(key != null, "key cannot be null");
-        user.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(getMessage(user, key, args)));
-    }
-
-    @ParametersAreNonnullByDefault
-    public String getMessage(CommandSender sender, String key, Object... args) {
-        Preconditions.checkArgument(sender != null, "sender cannot be null");
-        User user = null;
-        if (sender instanceof Player p) {
-            user = SlimefunTranslation.getUserService().getUser(p);
-        }
-        return getMessage(user, key, args);
-    }
-
-    /**
-     * Get the translated message for the given {@link User}.
-     *
-     * @param user The {@link User}.
-     * @param key  The key of the message.
-     * @param args The arguments to be applied to the message.
-     * @return The translated message. Will return the key if the translation does not exist.
-     */
-    @Nonnull
-    public String getMessage(@Nullable User user, @Nonnull String key, @Nonnull Object... args) {
-        Preconditions.checkArgument(key != null, "key cannot be null");
-        var transl = TranslationUtils.findTranslation(
-            SlimefunTranslation.getRegistry().getMessageTranslations(), user, key);
-        if (transl.isEmpty()) {
-            return key;
-        }
-
-        String message = MessageFormat.format(transl.get(), args);
-        if (user != null) {
-            message = SlimefunTranslation.getIntegrationService().applyPlaceholders(user, message);
-        }
-        return ChatUtil.color(message);
     }
 }

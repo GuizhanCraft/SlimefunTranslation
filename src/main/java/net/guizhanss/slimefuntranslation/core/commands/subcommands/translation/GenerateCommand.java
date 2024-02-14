@@ -34,9 +34,8 @@ public class GenerateCommand extends AbstractSubCommand {
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
-        var translationService = SlimefunTranslation.getTranslationService();
         if (!Permissions.COMMAND_TRANSLATION_GENERATE.hasPermission(sender)) {
-            translationService.sendMessage(sender, "no-permission");
+            MESSAGE_FACTORY.sendMessage(sender, "no-permission");
             return;
         }
 
@@ -44,7 +43,7 @@ public class GenerateCommand extends AbstractSubCommand {
         String language = args[1];
 
         if (!SlimefunTranslation.getInstance().getServer().getPluginManager().isPluginEnabled(addonName)) {
-            translationService.sendMessage(sender, "sftranslation.commands.translation.generate.invalid-addon", addonName);
+            MESSAGE_FACTORY.sendMessage(sender, "commands.translation.generate.invalid-addon", addonName);
             return;
         }
 
@@ -54,7 +53,7 @@ public class GenerateCommand extends AbstractSubCommand {
             // export every item in the item group
             ItemGroup itemGroup = findItemGroup(addonName.toLowerCase(Locale.ROOT), args[2]);
             if (itemGroup == null) {
-                translationService.sendMessage(sender, "sftranslation.commands.translation.generate.invalid-itemgroup", args[2]);
+                MESSAGE_FACTORY.sendMessage(sender, "commands.translation.generate.invalid-itemgroup", args[2]);
                 return;
             }
             exportIds.addAll(
@@ -74,7 +73,7 @@ public class GenerateCommand extends AbstractSubCommand {
         }
 
         final String fileName = SlimefunTranslation.getTranslationService().exportItemTranslations(language, addonName, exportIds);
-        translationService.sendMessage(sender, "sftranslation.commands.translation.generate.success", fileName, language);
+        MESSAGE_FACTORY.sendMessage(sender, "commands.translation.generate.success", fileName, language);
     }
 
     @Override

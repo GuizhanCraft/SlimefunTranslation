@@ -45,13 +45,12 @@ public class SearchCommand extends AbstractSubCommand {
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
-        var translationService = SlimefunTranslation.getTranslationService();
         if (!(sender instanceof Player p)) {
-            translationService.sendMessage(sender, "player-only");
+            MESSAGE_FACTORY.sendMessage(sender, "player-only");
             return;
         }
         if (!Permissions.COMMAND_SEARCH.hasPermission(p)) {
-            translationService.sendMessage(sender, "no-permission");
+            MESSAGE_FACTORY.sendMessage(sender, "no-permission");
             return;
         }
 
@@ -93,7 +92,7 @@ public class SearchCommand extends AbstractSubCommand {
                     try {
                         SlimefunGuide.displayItem(profile, slimefunItem, true);
                     } catch (Exception | LinkageError x) {
-                        SlimefunTranslation.getTranslationService().sendMessage(pl, "sftranslation.commands.search.error");
+                        MESSAGE_FACTORY.sendMessage(pl, "sftranslation.commands.search.error");
                         SlimefunTranslation.log(Level.WARNING, x, "Failed to open guide for item" + slimefunItem.getId());
                     }
 

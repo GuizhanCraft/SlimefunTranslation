@@ -13,6 +13,7 @@ import net.guizhanss.slimefuntranslation.core.commands.AbstractSubCommand;
 import net.guizhanss.slimefuntranslation.utils.constant.Permissions;
 
 public class ExtractCommand extends AbstractSubCommand {
+
     public ExtractCommand(@Nonnull AbstractCommand parent) {
         super(parent, "extract", (cmd, sender) -> getDescription("translation.extract", sender), "<replace:true/false>");
     }
@@ -20,15 +21,14 @@ public class ExtractCommand extends AbstractSubCommand {
     @Override
     @ParametersAreNonnullByDefault
     public void onExecute(CommandSender sender, String[] args) {
-        var translationService = SlimefunTranslation.getTranslationService();
         if (!Permissions.COMMAND_TRANSLATION_EXTRACT.hasPermission(sender)) {
-            translationService.sendMessage(sender, "no-permission");
+            MESSAGE_FACTORY.sendMessage(sender, "no-permission");
             return;
         }
 
-        boolean replace = Boolean.valueOf(args[0]);
+        boolean replace = Boolean.parseBoolean(args[0]);
         SlimefunTranslation.getTranslationService().extractTranslations(replace);
-        translationService.sendMessage(sender, "sftranslation.commands.translation.extract.success", replace);
+        MESSAGE_FACTORY.sendMessage(sender, "commands.translation.extract.success", replace);
     }
 
     @Override

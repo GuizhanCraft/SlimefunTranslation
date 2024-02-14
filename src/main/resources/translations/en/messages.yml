@@ -2,26 +2,25 @@ name: SlimefunTranslation messages
 messages:
   player-only: "&cOnly players can perform this action!"
   no-permission: "&cYou do not have permission to perform this action!"
-  sftranslation:
-    commands:
-      id:
-        description: "Get the ID of the Slimefun item in your main hand"
-        not-sf-item: "&cThe item in your main hand is not a Slimefun item!"
-        result: "The ID of the Slimefun item in your hand is: "
-        click-to-copy: "Click to copy to clipboard"
-      search:
-        description: "Search for a Slimefun item with your current language"
-        error: "&4An error has occurred while displaying the item! Please inform an admin to check for console!"
-      translation:
-        description: "Manage the translation files"
-        extract:
-          description: "Extract the translation files to the \"translations\" folder"
-          success: "&aAll the translation files have been extracted! (replace: {0})"
-        generate:
-          description: "Generate a translation file based on the given addon and language."
-          invalid-addon: "&cThe addon \"{0}\" is not enabled!"
-          invalid-itemgroup: "&cThe ItemGroup \"{0}\" does not exist!"
-          success: "&aSuccessfully exported the translation file \"{0}\" with language \"{1}\"!"
-        reload:
-          description: "Reload the translation files"
-          success: "&aAll the translation files are being reloaded!"
+  commands:
+    id:
+      description: "Get the ID of the Slimefun item in your main hand"
+      not-sf-item: "&cThe item in your main hand is not a Slimefun item!"
+      result: "The ID of the Slimefun item in your hand is: "
+      click-to-copy: "Click to copy to clipboard"
+    search:
+      description: "Search for a Slimefun item with your current language"
+      error: "&4An error has occurred while displaying the item! Please inform an admin to check for console!"
+    translation:
+      description: "Manage the translation files"
+      extract:
+        description: "Extract the translation files to the \"translations\" folder"
+        success: "&aAll the translation files have been extracted! (replace: {0})"
+      generate:
+        description: "Generate a translation file based on the given addon and language."
+        invalid-addon: "&cThe addon \"{0}\" is not enabled!"
+        invalid-itemgroup: "&cThe ItemGroup \"{0}\" does not exist!"
+        success: "&aSuccessfully exported the translation file \"{0}\" with language \"{1}\"!"
+      reload:
+        description: "Reload the translation files"
+        success: "&aAll the translation files are being reloaded!"
