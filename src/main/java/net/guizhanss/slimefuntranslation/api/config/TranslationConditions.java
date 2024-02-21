@@ -9,17 +9,15 @@ import org.bukkit.configuration.ConfigurationSection;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 /**
  * This class holds all the conditions for a translation.
  * <p>
  * Can be applied to a translation configuration or a single item translation.
  */
-@Getter
-@Setter
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
