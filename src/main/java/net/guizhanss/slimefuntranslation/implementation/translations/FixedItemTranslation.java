@@ -139,8 +139,8 @@ public class FixedItemTranslation implements ItemTranslation {
 
         if (conditions.isMatchName()) {
             var originalDisplayName = sfItem.getItemName();
-            if (meta.hasDisplayName() && meta.getDisplayName().equals(originalDisplayName)) {
-                return true;
+            if (!meta.hasDisplayName() || !meta.getDisplayName().equals(originalDisplayName)) {
+                return false;
             }
         }
 
@@ -148,17 +148,21 @@ public class FixedItemTranslation implements ItemTranslation {
             var originalItem = sfItem.getItem();
             if (originalItem instanceof SlimefunItemStack sfItemStack) {
                 var originalLore = sfItemStack.getItemMetaSnapshot().getLore();
-                return originalLore.isPresent() && meta.hasLore() && meta.getLore().equals(originalLore.get());
+                if (originalLore.isEmpty() || !meta.hasLore() || !meta.getLore().equals(originalLore.get())) {
+                    return false;
+                }
             } else {
                 var originalMeta = originalItem.getItemMeta();
                 if (!originalMeta.hasLore()) {
                     return false;
                 }
                 var originalLore = originalMeta.getLore();
-                return meta.hasLore() && meta.getLore().equals(originalLore);
+                if (!meta.hasLore() || !meta.getLore().equals(originalLore)) {
+                    return false;
+                }
             }
         }
 
-        return false;
+        return true;
     }
 }
