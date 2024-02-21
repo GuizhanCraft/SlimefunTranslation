@@ -126,6 +126,8 @@ translations:
       - "&fThis item can be used to"
       - "&ftrade with Villagers"
   URANIUM:
+    conditions:
+      match-lore: true
     name: "&4Uranium"
     lore:
       - ""
@@ -134,6 +136,8 @@ translations:
   REDSTONE_ALLOY:
     name: "&cRedstone Alloy Ingot"
   MAGNESIUM_SALT:
+    conditions:
+      match-lore: true
     name: "&cMagnesium Salt"
     lore:
       - ""
@@ -174,18 +178,24 @@ translations:
       - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   NEPTUNIUM:
+    conditions:
+      match-lore: true
     name: "&aNeptunium"
     lore:
       - ""
       - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   PLUTONIUM:
+    conditions:
+      match-lore: true
     name: "&7Plutonium"
     lore:
       - ""
       - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   BOOSTED_URANIUM:
+    conditions:
+      match-lore: true
     name: "&2Boosted Uranium"
     lore:
       - ""

@@ -125,6 +125,8 @@ translations:
       - "&f该物品可用于"
       - "&f与村民交易"
   URANIUM:
+    conditions:
+      match-lore: true
     name: "&4铀"
     lore:
       - ""
@@ -133,6 +135,8 @@ translations:
   REDSTONE_ALLOY:
     name: "&c红石合金锭"
   MAGNESIUM_SALT:
+    conditions:
+      match-lore: true
     name: "&c镁盐"
     lore:
       - ""
@@ -173,18 +177,24 @@ translations:
       - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   NEPTUNIUM:
+    conditions:
+      match-lore: true
     name: "&a镎"
     lore:
       - ""
       - "%sftrlore_Radioactive_High%"
       - "%sftrlore_HazmatSuitRequired%"
   PLUTONIUM:
+    conditions:
+      match-lore: true
     name: "&7钚"
     lore:
       - ""
       - "%sftrlore_Radioactive_VeryHigh%"
       - "%sftrlore_HazmatSuitRequired%"
   BOOSTED_URANIUM:
+    conditions:
+      match-lore: true
     name: "&2钚铀混合氧化物核燃料"
     lore:
       - ""
