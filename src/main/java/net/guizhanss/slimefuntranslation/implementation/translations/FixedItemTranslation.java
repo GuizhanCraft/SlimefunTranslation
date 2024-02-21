@@ -11,6 +11,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 import net.guizhanss.slimefuntranslation.api.config.TranslationConditions;
@@ -122,12 +123,12 @@ public class FixedItemTranslation implements ItemTranslation {
      * @param item The {@link ItemStack}.
      * @param meta The {@link ItemMeta} of the item.
      * @param sfId The {@link SlimefunItem} id of the item.
-     * @return
+     * @return Whether the item can be translated.
      */
     @Override
     @ParametersAreNonnullByDefault
     public boolean canTranslate(User user, ItemStack item, ItemMeta meta, String sfId) {
-        if (!conditions.isMatchName() || conditions.isForceLoad()) {
+        if (conditions.isForceLoad()) {
             return true;
         }
 
@@ -136,7 +137,28 @@ public class FixedItemTranslation implements ItemTranslation {
             return false;
         }
 
-        var originalDisplayName = sfItem.getItemName();
-        return meta.hasDisplayName() && meta.getDisplayName().equals(originalDisplayName);
+        if (conditions.isMatchName()) {
+            var originalDisplayName = sfItem.getItemName();
+            if (meta.hasDisplayName() && meta.getDisplayName().equals(originalDisplayName)) {
+                return true;
+            }
+        }
+
+        if (conditions.isMatchLore()) {
+            var originalItem = sfItem.getItem();
+            if (originalItem instanceof SlimefunItemStack sfItemStack) {
+                var originalLore = sfItemStack.getItemMetaSnapshot().getLore();
+                return originalLore.isPresent() && meta.hasLore() && meta.getLore().equals(originalLore.get());
+            } else {
+                var originalMeta = originalItem.getItemMeta();
+                if (!originalMeta.hasLore()) {
+                    return false;
+                }
+                var originalLore = originalMeta.getLore();
+                return meta.hasLore() && meta.getLore().equals(originalLore);
+            }
+        }
+
+        return false;
     }
 }

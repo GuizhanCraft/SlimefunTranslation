@@ -12,11 +12,13 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.implementation.translations.FixedItemTranslation;
+import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedItemTranslation;
 
 /**
  * This interface represents an item translation.
  *
  * @see FixedItemTranslation
+ * @see ProgrammedItemTranslation
  */
 public interface ItemTranslation {
     /**

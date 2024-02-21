@@ -25,6 +25,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public final class TranslationConditions {
     private static final String KEY_MATCH_NAME = "match-name";
+    private static final String KEY_MATCH_LORE = "match-lore";
     private static final String KEY_FORCE_LOAD = "force-load";
     private static final String KEY_PARTIAL_OVERRIDE = "partial-override";
 
@@ -32,6 +33,10 @@ public final class TranslationConditions {
      * Whether the translation needs the current item name to match the template item name (color is stripped).
      */
     private boolean matchName;
+    /**
+     * Whether the translation needs the current item lore to match the template item lore.
+     */
+    private boolean matchLore;
     /**
      * Whether to ignore item ID check.
      */
@@ -49,14 +54,8 @@ public final class TranslationConditions {
      */
     @Nonnull
     public static TranslationConditions load(@Nullable ConfigurationSection section) {
-        if (section == null) {
-            return TranslationConditions.builder().build();
-        }
-        return TranslationConditions.builder()
-            .matchName(section.getBoolean(KEY_MATCH_NAME, false))
-            .forceLoad(section.getBoolean(KEY_FORCE_LOAD, false))
-            .partialOverride(section.getBoolean(KEY_PARTIAL_OVERRIDE, false))
-            .build();
+        // the default conditions are all false
+        return load(TranslationConditions.builder().build(), section);
     }
 
     /**
@@ -74,6 +73,7 @@ public final class TranslationConditions {
         }
         return TranslationConditions.builder()
             .matchName(section.getBoolean(KEY_MATCH_NAME, parent.matchName))
+            .matchLore(section.getBoolean(KEY_MATCH_LORE, parent.matchLore))
             .forceLoad(section.getBoolean(KEY_FORCE_LOAD, parent.forceLoad))
             .partialOverride(section.getBoolean(KEY_PARTIAL_OVERRIDE, parent.partialOverride))
             .build();

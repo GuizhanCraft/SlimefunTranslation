@@ -3,6 +3,7 @@ package net.guizhanss.slimefuntranslation.implementation.translations;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
+import java.util.logging.Level;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -12,6 +13,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
+import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.utils.constant.Methods;
@@ -25,6 +27,8 @@ import lombok.RequiredArgsConstructor;
 public class ProgrammedItemTranslation implements ItemTranslation {
     private final String lang;
     private final SlimefunItem sfItem;
+
+    private int errorCount = 0;
 
     /**
      * Get the display name of the item.
@@ -44,7 +48,7 @@ public class ProgrammedItemTranslation implements ItemTranslation {
             Object obj = method.invoke(sfItem, user.getPlayer(), user.getLocale(), item, original);
             return (String) obj;
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException | ClassCastException e) {
-            e.printStackTrace();
+            handleError(user, e);
             return original;
         }
     }
@@ -58,8 +62,25 @@ public class ProgrammedItemTranslation implements ItemTranslation {
             Object obj = method.invoke(sfItem, user.getPlayer(), user.getLocale(), item, original);
             return (List<String>) obj;
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException | ClassCastException e) {
-            e.printStackTrace();
+            handleError(user, e);
             return original;
+        }
+    }
+
+    @ParametersAreNonnullByDefault
+    private void handleError(User user, Exception ex) {
+        SlimefunTranslation.log(Level.SEVERE, ex, "An error has occurred while translating item " + sfItem.getId() + " for user " + user.getPlayer().getName() + "." +
+            "Report this to the developer of addon " + sfItem.getAddon().getName() + ".");
+        if (++errorCount >= 5) {
+            for (var idMap : SlimefunTranslation.getRegistry().getItemTranslations().values()) {
+                for (var entry : idMap.entrySet()) {
+                    if (entry.getKey().equals(sfItem.getId())) {
+                        idMap.remove(entry.getKey());
+                    }
+                }
+            }
+            SlimefunTranslation.log(Level.SEVERE, "Too many exceptions were thrown by item translation of " + sfItem.getId() + " for user " + user.getPlayer().getName() + "." +
+                "Terminating translation.");
         }
     }
 }
