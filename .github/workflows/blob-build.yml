@@ -27,6 +27,9 @@ jobs:
         with:
           arguments: build shadowJar
 
+      - name: Rename jar file
+        run: mv build/libs/SlimefunTranslation-*.jar build/libs/SlimefunTranslation.jar
+
       - name: Upload to Blob Builds
         uses: WalshyDev/blob-builds/gh-action@main
         with:

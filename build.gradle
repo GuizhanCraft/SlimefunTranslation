@@ -61,7 +61,6 @@ shadowJar {
     relocate 'net.guizhanss.guizhanlib', 'net.guizhanss.slimefuntranslation.libs.guizhanlib'
     minimize()
     archiveClassifier = ''
-    archiveVersion = ''
 }
 
 bukkit {
