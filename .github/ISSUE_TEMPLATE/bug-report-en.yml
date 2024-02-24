@@ -18,7 +18,9 @@ body:
       label: Checklist
       description: Please go through this checklist before you create the issue.
       options:
-        - label: You are using official version downloaded from Builds Page
+        - label: You are using official version downloaded from Blob Builds ([blob.build](https://blob.build/)) or Guizhan Builds ([builds.guizhanss.com](https://builds.guizhanss.com))
+          required: true
+        - label: You have verified the checksum of the downloaded file to ensure it is complete (only for Guizhan Builds)
           required: true
         - label: You did not modify the jar file
           required: true

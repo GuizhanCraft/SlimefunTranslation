@@ -40,7 +40,7 @@ dependencies {
 }
 
 group = 'net.guizhanss'
-version = '0.7.2-beta'
+version = 'UNOFFICIAL'
 description = 'SlimefunTranslation'
 
 java {
@@ -57,8 +57,10 @@ tasks.withType(Javadoc) {
 
 shadowJar {
     relocate 'org.bstats', 'net.guizhanss.slimefuntranslation.libs.bstats'
+    relocate 'net.guizhanss.guizhanlib', 'net.guizhanss.slimefuntranslation.libs.guizhanlib'
     minimize()
     archiveClassifier = ''
+    archiveVersion = ''
 }
 
 bukkit {
@@ -94,7 +96,7 @@ bukkit {
             setDefault('OP')
         }
         'sftranslation.command.translation.reload' {
-            description = 'Reloads the translation files.'
+            description = 'Reload the translation files.'
             setDefault('OP')
         }
     }
