@@ -14,7 +14,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.utils.constant.Methods;
 

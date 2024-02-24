@@ -17,7 +17,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
-import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
 import net.guizhanss.slimefuntranslation.implementation.translations.FixedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ConfigUtils;
 

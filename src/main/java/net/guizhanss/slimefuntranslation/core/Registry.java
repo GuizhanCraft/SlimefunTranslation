@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
 import lombok.Getter;

@@ -27,6 +27,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.config.TranslationConfiguration;
 import net.guizhanss.slimefuntranslation.api.events.TranslationsLoadEvent;
+import net.guizhanss.slimefuntranslation.api.translation.TranslationStatus;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.implementation.translations.ProgrammedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;
@@ -257,7 +258,8 @@ public final class TranslationService {
         final ItemMeta meta = item.getItemMeta();
 
         // check whether the translation can be applied
-        if (!translation.canTranslate(user, item, meta, sfId)) {
+        TranslationStatus status = translation.canTranslate(user, item, meta, sfId);
+        if (status == TranslationStatus.DENIED) {
             return false;
         }
 
@@ -266,7 +268,7 @@ public final class TranslationService {
         String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
         meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(user, item, meta, originalDisplayName)));
         // lore
-        if (shouldTranslateLore(meta)) {
+        if (shouldTranslateLore(meta) && status != TranslationStatus.NAME_ONLY) {
             List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
             meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(user, item, meta, originalLore)));
         }

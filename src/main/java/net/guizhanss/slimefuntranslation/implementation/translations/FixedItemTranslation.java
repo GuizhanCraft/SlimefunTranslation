@@ -15,7 +15,8 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 import net.guizhanss.slimefuntranslation.api.config.TranslationConditions;
-import net.guizhanss.slimefuntranslation.api.interfaces.ItemTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.TranslationStatus;
 import net.guizhanss.slimefuntranslation.core.users.User;
 import net.guizhanss.slimefuntranslation.utils.ColorUtils;
 
@@ -123,24 +124,25 @@ public class FixedItemTranslation implements ItemTranslation {
      * @param item The {@link ItemStack}.
      * @param meta The {@link ItemMeta} of the item.
      * @param sfId The {@link SlimefunItem} id of the item.
-     * @return Whether the item can be translated.
+     * @return The {@link TranslationStatus} for the item.
      */
     @Override
+    @Nonnull
     @ParametersAreNonnullByDefault
-    public boolean canTranslate(User user, ItemStack item, ItemMeta meta, String sfId) {
+    public TranslationStatus canTranslate(User user, ItemStack item, ItemMeta meta, String sfId) {
         if (conditions.isForceLoad()) {
-            return true;
+            return TranslationStatus.ALLOWED;
         }
 
         SlimefunItem sfItem = SlimefunItem.getById(sfId);
         if (sfItem == null) {
-            return false;
+            return TranslationStatus.DENIED;
         }
 
         if (conditions.isMatchName()) {
             var originalDisplayName = sfItem.getItemName();
             if (!meta.hasDisplayName() || !meta.getDisplayName().equals(originalDisplayName)) {
-                return false;
+                return TranslationStatus.DENIED;
             }
         }
 
@@ -149,20 +151,20 @@ public class FixedItemTranslation implements ItemTranslation {
             if (originalItem instanceof SlimefunItemStack sfItemStack) {
                 var originalLore = sfItemStack.getItemMetaSnapshot().getLore();
                 if (originalLore.isEmpty() || !meta.hasLore() || !meta.getLore().equals(originalLore.get())) {
-                    return false;
+                    return TranslationStatus.NAME_ONLY;
                 }
             } else {
                 var originalMeta = originalItem.getItemMeta();
                 if (!originalMeta.hasLore()) {
-                    return false;
+                    return TranslationStatus.DENIED;
                 }
                 var originalLore = originalMeta.getLore();
                 if (!meta.hasLore() || !meta.getLore().equals(originalLore)) {
-                    return false;
+                    return TranslationStatus.NAME_ONLY;
                 }
             }
         }
 
-        return true;
+        return TranslationStatus.ALLOWED;
     }
 }

@@ -1,4 +1,4 @@
-package net.guizhanss.slimefuntranslation.api.interfaces;
+package net.guizhanss.slimefuntranslation.api.translation;
 
 import java.util.List;
 
@@ -54,10 +54,11 @@ public interface ItemTranslation {
      * @param item The {@link ItemStack} to check.
      * @param meta The {@link ItemMeta} to check.
      * @param sfId The {@link SlimefunItem} id of the item.
-     * @return Whether the item can be translated.
+     * @return The {@link TranslationStatus} for the item.
      */
+    @Nonnull
     @ParametersAreNonnullByDefault
-    default boolean canTranslate(User user, ItemStack item, ItemMeta meta, String sfId) {
-        return true;
+    default TranslationStatus canTranslate(User user, ItemStack item, ItemMeta meta, String sfId) {
+        return TranslationStatus.ALLOWED;
     }
 }
