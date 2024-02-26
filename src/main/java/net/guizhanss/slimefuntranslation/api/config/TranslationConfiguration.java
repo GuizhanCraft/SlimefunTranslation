@@ -105,7 +105,7 @@ public class TranslationConfiguration {
 
                 var itemSection = itemsSection.getConfigurationSection(id);
                 if (itemSection == null) {
-                    SlimefunTranslation.log(Level.SEVERE, "Invalid item {0}", itemId);
+                    SlimefunTranslation.log(Level.SEVERE, "Invalid item section {0} in configuration file.", id);
                     continue;
                 }
 
@@ -116,7 +116,7 @@ public class TranslationConfiguration {
                 // sfItem
                 SlimefunItem sfItem = SlimefunItem.getById(itemId);
                 if (sfItem == null && !forceLoad) {
-                    SlimefunTranslation.log(Level.SEVERE, "Item {0} is not registered, ignoring.", itemId);
+                    SlimefunTranslation.log(Level.WARNING, "Item {0} is not registered, ignoring.", itemId);
                     continue;
                 }
 
