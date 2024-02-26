@@ -55,7 +55,7 @@ public class TranslationConfiguration {
     @Nonnull
     @ParametersAreNonnullByDefault
     public static Optional<TranslationConfiguration> fromFileConfiguration(String language, FileConfiguration config) {
-        return fromFileConfiguration(language, config, TranslationConfigurationFields.DEFAULT);
+        return fromFileConfiguration(language, config, TranslationConfigurationFields.DEFAULT, TranslationConfigurationDefaults.DEFAULT);
     }
 
     /**
@@ -64,6 +64,7 @@ public class TranslationConfiguration {
      * @param language the language of the translation.
      * @param config   the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
      * @param fields   the fields to look for in the config.
+     * @param defaults the default values for the fields.
      * @return an {@link Optional} of {@link TranslationConfiguration} if the config is valid, otherwise {@code null}.
      */
     @Nonnull
@@ -71,14 +72,15 @@ public class TranslationConfiguration {
     public static Optional<TranslationConfiguration> fromFileConfiguration(
         String language,
         FileConfiguration config,
-        TranslationConfigurationFields fields
+        TranslationConfigurationFields fields,
+        TranslationConfigurationDefaults defaults
     ) {
         Preconditions.checkArgument(config != null, "config cannot be null");
 
-        String name = config.getString("name", "Unnamed Translation");
+        String name = config.getString("name", defaults.getName());
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
-        String prefix = config.getString(fields.getPrefix(), "");
-        String suffix = config.getString(fields.getSuffix(), "");
+        String itemIdPrefix = config.getString(fields.getPrefix(), defaults.getPrefix());
+        String itemIdSuffix = config.getString(fields.getSuffix(), defaults.getSuffix());
 
         var itemsSection = config.getConfigurationSection(fields.getItems());
         var loreSection = config.getConfigurationSection(fields.getLore());
@@ -98,7 +100,7 @@ public class TranslationConfiguration {
         if (itemsSection != null) {
             int count = 0;
             for (var id : itemsSection.getKeys(false)) {
-                String itemId = prefix + id + suffix;
+                String itemId = itemIdPrefix + id + itemIdSuffix;
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
 
                 var itemSection = itemsSection.getConfigurationSection(itemId);
