@@ -17,6 +17,6 @@ public class SlimefunItemLoadListener implements Listener {
     @EventHandler
     public void onSlimefunItemLoad(@Nonnull SlimefunItemRegistryFinalizedEvent e) {
         SlimefunTranslation.getTranslationService().clearTranslations();
-        SlimefunTranslation.getTranslationService().callLoadEvent();
+        SlimefunTranslation.getScheduler().run(() -> SlimefunTranslation.getTranslationService().callLoadEvent());
     }
 }
