@@ -14,6 +14,8 @@ public final class TranslationConfigurationDefaults {
 
     @Builder.Default
     private String name = "Unnamed Translation";
-    private String prefix;
-    private String suffix;
+    @Builder.Default
+    private String prefix = "";
+    @Builder.Default
+    private String suffix = "";
 }
