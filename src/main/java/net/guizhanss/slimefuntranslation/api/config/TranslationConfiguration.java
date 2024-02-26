@@ -103,9 +103,9 @@ public class TranslationConfiguration {
                 String itemId = itemIdPrefix + id + itemIdSuffix;
                 SlimefunTranslation.debug("Loading item translation {0}", itemId);
 
-                var itemSection = itemsSection.getConfigurationSection(itemId);
+                var itemSection = itemsSection.getConfigurationSection(id);
                 if (itemSection == null) {
-                    SlimefunTranslation.log(Level.SEVERE, "Invalid item {0} in translation {1}", itemId, name);
+                    SlimefunTranslation.log(Level.SEVERE, "Invalid item {0}", itemId);
                     continue;
                 }
 
@@ -116,7 +116,7 @@ public class TranslationConfiguration {
                 // sfItem
                 SlimefunItem sfItem = SlimefunItem.getById(itemId);
                 if (sfItem == null && !forceLoad) {
-                    SlimefunTranslation.log(Level.SEVERE, "Invalid item {0}", itemId);
+                    SlimefunTranslation.log(Level.SEVERE, "Item {0} is not registered, ignoring.", itemId);
                     continue;
                 }
 
