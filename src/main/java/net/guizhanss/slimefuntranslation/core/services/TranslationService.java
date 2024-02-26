@@ -182,7 +182,10 @@ public final class TranslationService {
                 continue;
             }
             config.set(path + ".name", ColorUtils.useAltCode(sfItem.getItemName()));
-            config.set(path + ".lore", ColorUtils.useAltCode(sfItem.getItem().getItemMeta().getLore()));
+            var meta = sfItem.getItem().getItemMeta();
+            if (meta.hasLore()) {
+                config.set(path + ".lore", ColorUtils.useAltCode(meta.getLore()));
+            }
         }
 
         // save the file
