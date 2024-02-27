@@ -290,19 +290,6 @@ public final class TranslationService {
     /**
      * Get the lore translation for the given {@link User}.
      *
-     * @param user The {@link User}.
-     * @param id   The id of the lore.
-     * @return The translated lore. Will be an empty string if translation does not exist.
-     */
-    @Nonnull
-    @ParametersAreNonnullByDefault
-    public String getLore(User user, String id) {
-        return getLore(user, id, false);
-    }
-
-    /**
-     * Get the lore translation for the given {@link User}.
-     *
      * @param user        The {@link User}.
      * @param id          The id of the lore.
      * @param defaultToId Whether to return the id if the translation does not exist.
