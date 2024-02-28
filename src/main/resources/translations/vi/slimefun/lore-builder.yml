@@ -1,0 +1,54 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Trình tạo Lore Slimefun
+lore:
+  HazmatSuitRequired: "&8\u21E8 &4Yêu cầu phải có bộ đồ Hazmat!"
+  Rainbow: "&dHiển thị qua hết các Màu sắc của Cầu Vồng!"
+  RightClickToUse: "&eNhấp Chuột phải &7để dùng"
+  RightClickToOpen: "&eNhấp Chuột phải &7để mở"
+  CrouchToUse: "&eCúi cuống&7 để dùng"
+  Radioactive: "&a\u2622&7 Mức độ phóng xạ: &r{0}"
+  Radioactivity:
+    Low: "&eThấp"
+    Moderate: "&eVừa phải"
+    High: "&6Cao"
+    VeryHigh: "&cCực Cao"
+    VeryDeadly: "&4Rất Nguy hiểm"
+  Speed: "&8\u21E8 &b\u26A1 &7Tốc độ: &b{0}x"
+  Power: "&8\u21E8 &e\u26A1 &7{0} J{1}"
+  PowerBuffer: "%sftrlore_Power_{0}_ Buffer%"
+  PowerCapacity: "%sftrlore_Power_{0}_ Capacity%"
+  PowerPerSecond: "%sftrlore_Power_{0}_/s%"
+  PowerPerTick: "%sftrlore_Power_{0}_/t%"
+  Hunger: "&7&oHồi phục &b&o{0} &7&othanh đói"
+  Material: "&8\u21E8 &7Vật liệu: &b{0}"
+  Materials:
+    Duralumin: "Duralumin"
+    Solder: "Solder"
+    Billon: "Billon"
+    Steel: "Thép"
+    DamascusSteel: "Thép Damascus"
+    ReinforcedAlloy: "Reinforced Alloy"
+    Carbonado: "Carbonado"
+  Range: "&7Phạm vi: &c{0} khối"
+  Machine:
+    Format: "{0}{1} {2}" #{0} = TierColor, {1} = Tier, {2} = Type
+    TierColor:
+      Basic: "&e"
+      Average: "&6"
+      Medium: "&a"
+      Good: "&2"
+      Advanced: "&6"
+      EndGame: "&4"
+    Tier:
+      Basic: "Cơ bản"
+      Average: "Trung bình"
+      Medium: "Khá"
+      Good: "Tốt"
+      Advanced: "Nâng cao"
+      EndGame: "End-Game"
+    Type:
+      Capacitor: "Tụ điện"
+      Generator: "Máy phát điện"
+      Machine: "Máy móc"
+  MultiTool: "&eCúi xuống và Chuột phải&7 để chuyển chế độ"
+
