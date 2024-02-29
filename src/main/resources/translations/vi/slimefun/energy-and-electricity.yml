@@ -1,0 +1,608 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Năng lượng và Điện Slimefun
+translations:
+  ENERGY_REGULATOR:
+    name: "&6Bộ Điều Chỉnh Năng Lượng"
+    lore:
+      - ""
+      - "&fThành phần Cốt lõi của một Mạng lưới Điện"
+  ENERGY_CONNECTOR:
+    name: "&eĐầu Nối Năng Lượng"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "&fĐặt cái này giữa các máy"
+      - "&fvà máy phát điện để kết nối chúng"
+      - "&fđến bộ điều chỉnh điện của bạn."
+  SMALL_CAPACITOR:
+    name: "&aTụ Điện Nhỏ"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Basic_Capacitor%"
+      - "%sftrlore_PowerCapacity_128%"
+  MEDIUM_CAPACITOR:
+    name: "&aTụ Điện Trung Bình"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Average_Capacitor%"
+      - "%sftrlore_PowerCapacity_512%"
+  BIG_CAPACITOR:
+    name: "&aTụ Điện Lớn"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Medium_Capacitor%"
+      - "%sftrlore_PowerCapacity_1024%"
+  LARGE_CAPACITOR:
+    name: "&aTụ Điện Siêu Lớn"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Good_Capacitor%"
+      - "%sftrlore_PowerCapacity_8192%"
+  CARBONADO_EDGED_CAPACITOR:
+    name: "&aTụ Điện Viền Carbonado"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_EndGame_Capacitor%"
+      - "%sftrlore_PowerCapacity_65536%"
+  ENERGIZED_CAPACITOR:
+    name: "&aTụ Điện Năng Lượng"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_EndGame_Capacitor%"
+      - "%sftrlore_PowerCapacity_524288%"
+  SOLAR_GENERATOR:
+    name: "&bPin Mặt Trời"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_4%"
+  SOLAR_GENERATOR_2:
+    name: "&cPin Mặt Trời Cải Tiến"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_16%"
+  SOLAR_GENERATOR_3:
+    name: "&4Pin Mặt Trời Carbonado"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_64%"
+  SOLAR_GENERATOR_4:
+    name: "&cPin Mặt Trời Được Nạp Điện"
+    lore:
+      - ""
+      - "&9Hoạt động vào ban đêm"
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_256% (Day)"
+      - "%sftrlore_PowerPerSecond_128% (Night)"
+  CHARGING_BENCH:
+    name: "&6Bàn Sạc Điện"
+    lore:
+      - ""
+      - "&fSạc các Vật phẩm như Jetpack"
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_PowerBuffer_128%"
+      - "&8\u21E8 &e\u26A1 &7Tiêu hao Năng lượng: &c50%"
+  ELECTRIC_FURNACE:
+    name: "&cLò Nung Điện"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_4%"
+  ELECTRIC_FURNACE_2:
+    name: "&cLò Nung Điện &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_6%"
+  ELECTRIC_FURNACE_3:
+    name: "&cLò Nung Điện &7- &eIII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_4%"
+      - "%sftrlore_PowerPerSecond_10%"
+  ELECTRIC_GOLD_PAN:
+    name: "&6Gold Pan Điện"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_2%"
+  ELECTRIC_GOLD_PAN_2:
+    name: "&6Gold Pan Điện &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_4%"
+  ELECTRIC_GOLD_PAN_3:
+    name: "&6Gold Pan Điện &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerPerSecond_14%"
+  ELECTRIC_DUST_WASHER:
+    name: "&3Máy Rửa Dust Điện"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_6%"
+  ELECTRIC_DUST_WASHER_2:
+    name: "&3Máy Rửa Dust Điện &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_10%"
+  ELECTRIC_DUST_WASHER_3:
+    name: "&3Máy Rửa Dust Điện &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerPerSecond_30%"
+  ELECTRIC_INGOT_FACTORY:
+    name: "&cNhà Máy Điện Phôi"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_8%"
+  ELECTRIC_INGOT_FACTORY_2:
+    name: "&cNhà Máy Điện Phôi &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_14%"
+  ELECTRIC_INGOT_FACTORY_3:
+    name: "&cNhà Máy Phôi Điện &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_8%"
+      - "%sftrlore_PowerPerSecond_40%"
+  ELECTRIFIED_CRUCIBLE:
+    name: "&cLò Nung Điện"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+  ELECTRIFIED_CRUCIBLE_2:
+    name: "&cLò Nung Điện &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_80%"
+  ELECTRIFIED_CRUCIBLE_3:
+    name: "&cLò Nung Điện &7- &eIII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_4%"
+      - "%sftrlore_PowerPerSecond_120%"
+  ELECTRIC_ORE_GRINDER:
+    name: "&cMáy Nghiền Quặng Điện"
+    lore:
+      - ""
+      - "&fHoạt động như một Máy nghiền quặng và Máy mài đá"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_12%"
+  ELECTRIC_ORE_GRINDER_2:
+    name: "&cMáy Nghiền Quặng Điện &7(&eII&7)"
+    lore:
+      - ""
+      - "&fHoạt động như một Máy nghiền quặng và Máy mài đá"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_4%"
+      - "%sftrlore_PowerPerSecond_30%"
+  ELECTRIC_ORE_GRINDER_3:
+    name: "&cMáy Nghiền Quặng Điện &7(&eIII&7)"
+    lore:
+      - ""
+      - "&fHoạt động như một Máy nghiền quặng và Máy mài đá"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerPerSecond_90%"
+  HEATED_PRESSURE_CHAMBER:
+    name: "&cBuồng Áp Suất Nóng"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_10%"
+  HEATED_PRESSURE_CHAMBER_2:
+    name: "&cBuồng Áp Suất Nóng &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_5%"
+      - "%sftrlore_PowerPerSecond_44%"
+  ELECTRIC_INGOT_PULVERIZER:
+    name: "&cMáy Nghiền Phôi Điện"
+    lore:
+      - ""
+      - "&fNghiền thỏi thành Dust"
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_14%"
+  COAL_GENERATOR:
+    name: "&cMáy Phát Điện Than"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Average_Generator%"
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_16%"
+  COAL_GENERATOR_2:
+    name: "&cMáy Phát Điện Than &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Generator%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_30%"
+  BIO_REACTOR:
+    name: "&2Lò Phản Ứng Sinh Học"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Average_Generator%"
+      - "%sftrlore_PowerBuffer_128%"
+      - "%sftrlore_PowerPerSecond_8%"
+  AUTO_DRIER:
+    name: "&6Máy Sấy Tự Động"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_10%"
+  AUTO_BREWER:
+    name: "&6Máy Pha Chế Tự Động"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_12%"
+  ELECTRIC_PRESS:
+    name: "&eMáy Ép Điện"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_16%"
+  ELECTRIC_PRESS_2:
+    name: "&eMáy Ép Điện &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_40%"
+  MAGNESIUM_GENERATOR:
+    name: "&cMáy phát điện chạy bằng Magiê"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Generator%"
+      - "%sftrlore_PowerBuffer_128%"
+      - "%sftrlore_PowerPerSecond_36%"
+  AUTO_ENCHANTER:
+    name: "&5Máy Enchant Tự Động"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_18%"
+  AUTO_ENCHANTER_2:
+    name: "&5Máy Enchant Tự Động &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_DISENCHANTER:
+    name: "&5Máy Xoá Enchant Tự Động"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_18%"
+  AUTO_DISENCHANTER_2:
+    name: "&5Máy Xoá Enchant Tự Động &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_ANVIL:
+    name: "&7Đe Tự Động"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "&8\u21E8 &7Hệ số Sửa chữa: 10%"
+      - "%sftrlore_PowerPerSecond_24%"
+  AUTO_ANVIL_2:
+    name: "&7Đe Tự Động Mk.II"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7Hệ số Sửa chữa: 25%"
+      - "%sftrlore_PowerPerSecond_32%"
+  BOOK_BINDER:
+    name: "&6Máy Đóng Sách"
+    lore:
+      - ""
+      - "&fĐóng nhiều sách đã enchant thành một."
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_PowerPerSecond_16%"
+  REFINERY:
+    name: "&cMáy Lọc Dầu"
+    lore:
+      - ""
+      - "&fTinh chế Dầu để tạo ra Nhiên liệu"
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_64%"
+  LAVA_GENERATOR:
+    name: "&6Máy Tạo Dung Nham"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Average_Generator%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_20%"
+  LAVA_GENERATOR_2:
+    name: "&6Máy Tạo Dung Nham&7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Generator%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_40%"
+  COMBUSTION_REACTOR:
+    name: "&cLò Phản Ứng Đốt"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Generator%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_24%"
+  FOOD_FABRICATOR:
+    name: "&cMáy Chế Biến Thực Phẩm"
+    lore:
+      - ""
+      - "&fChế biến &aThực phẩm Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_14%"
+  FOOD_FABRICATOR_2:
+    name: "&cMáy Chế Biến Thực Phẩm&7(&eII&7)"
+    lore:
+      - ""
+      - "&fChế biến &aThực phẩm Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_6%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_BREEDER:
+    name: "&eMáy Nhân Giống Tự Động"
+    lore:
+      - ""
+      - "&fChạy bằng &aThực phẩm Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_Power_60_/Animal%"
+  ANIMAL_GROWTH_ACCELERATOR:
+    name: "&aMáy Gia Tốc Tăng Trưởng Động Vật"
+    lore:
+      - ""
+      - "&fChạy bằng &aThực phẩm Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_28%"
+  TREE_GROWTH_ACCELERATOR:
+    name: "&aMáy Gia Tốc Tăng Trưởng Cây"
+    lore:
+      - ""
+      - "&fChạy bằng &aPhân bón Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7Bán kính: 9x9"
+      - "&8\u21E8 &7Tốc độ: &a4/lần"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_48%"
+  XP_COLLECTOR:
+    name: "&aMáy Thu Thập Kinh Nghiệm"
+    lore:
+      - ""
+      - "&fThu thập Kinh nghiệm gần đó và lưu trữ nó"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_20%"
+  FOOD_COMPOSTER:
+    name: "&cMáy Ủ Phân Thực Phẩm"
+    lore:
+      - ""
+      - "&fSản xuất &aPhân bón Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_16%"
+  FOOD_COMPOSTER_2:
+    name: "&cMáy Ủ Phân Thực Phẩm &7(&eII&7)"
+    lore:
+      - ""
+      - "&fSản xuất &aPhân bón Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_52%"
+  CROP_GROWTH_ACCELERATOR:
+    name: "&aMáy Gia Tốc Tăng Trưởng Cây Trồng"
+    lore:
+      - ""
+      - "&fChạy bằng &aPhân bón Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7Bán kính: 7x7"
+      - "&8\u21E8 &7Tốc độ: &a3/lần"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_50%"
+  CROP_GROWTH_ACCELERATOR_2:
+    name: "&aMáy Gia Tốc Tăng Trưởng Cây Trồng &7(&eII&7)"
+    lore:
+      - ""
+      - "&fChạy bằng &aPhân bón Hữu cơ"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7Bán kính: 9x9"
+      - "&8\u21E8 &7Tốc độ: &a4/lần"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_60%"
+  FREEZER:
+    name: "&bTủ Đông"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_18%"
+  FREEZER_2:
+    name: "&bTủ Đông &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_30%"
+  FREEZER_3:
+    name: "&bTủ Đông &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_42%"
+  NUCLEAR_REACTOR:
+    conditions:
+      match-name: true
+    name: "&2Lò Phản Ứng Hạt Nhân"
+    lore:
+      - ""
+      - "&fCần làm mát !"
+      - "&8\u21E8 &bCần phải bao quanh bởi Nước"
+      - "&8\u21E8 &bCần phải cung cấp với Cell Làm mát Lò phản ứng"
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_16384%"
+      - "%sftrlore_PowerPerSecond_500%"
+  NETHERSTAR_REACTOR:
+    name: "&fLò Phản Ứng Sao Nether"
+    lore:
+      - ""
+      - "&fChạy bằng các Sao Nether"
+      - "&8\u21E8 &bCần phải bao quanh bởi Nước"
+      - "&8\u21E8 &bCần được cung cấp với các Cell Làm Mát Nether Ice"
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_32768%"
+      - "%sftrlore_PowerPerSecond_1024%"
+      - "&8\u21E8 &4Làm cho các thực thể gần đó bị Héo"
+  FLUID_PUMP:
+    name: "&9Bơm Chất Lỏng"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_PowerPerSecond_32%"
+  CARBON_PRESS:
+    name: "&cMáy Ép Carbon"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_20%"
+  CARBON_PRESS_2:
+    name: "&cMáy Ép Carbon &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_50%"
+  CARBON_PRESS_3:
+    name: "&cMáy Ép Carbon &7- &eIII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_15%"
+      - "%sftrlore_PowerPerSecond_180%"
+  ELECTRIC_SMELTERY:
+    name: "&cLò Luyện Điện"
+    lore:
+      - ""
+      - "&4Chỉ dành cho Hợp kim, không biến Dust thành Thỏi"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_20%"
+  ELECTRIC_SMELTERY_2:
+    name: "&cLò Luyện Điện &7- &eII"
+    lore:
+      - ""
+      - "&4Chỉ dành cho Hợp kim, không biến Dust thành Thỏi"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_40%"
+  IRON_GOLEM_ASSEMBLER:
+    name: "&6Máy Chế Tạo Iron Golem"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7Thời gian chờ: &b30 giây"
+      - "%sftrlore_PowerBuffer_4096%"
+      - "%sftrlore_Power_2048_/Golem%"
+  WITHER_ASSEMBLER:
+    name: "&5Máy Chế Tạo Wither"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7Thời gian chờ: &b30 giây"
+      - "%sftrlore_PowerBuffer_4096%"
+      - "%sftrlore_Power_4096_/Wither%"
+  PRODUCE_COLLECTOR:
+    name: "&bMáy Thu Hoạch Nông Sản"
+    lore:
+      - ""
+      - "&fMáy này cho phép bạn"
+      - "&fthu hoạch sản phẩm từ các động vật gần đó."
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_32%"
