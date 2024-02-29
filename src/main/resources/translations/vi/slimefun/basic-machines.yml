@@ -1,0 +1,217 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Những Cỗ máy Slimefun Đơn giản
+translations:
+  OUTPUT_CHEST:
+    name: "&4Rương Đầu Ra"
+    lore:
+      - ""
+      - "&c&oMột cỗ máy đơn giản sẽ thử cho"
+      - "&c&ovài vật phẩm vào chiếc rương này nếu nó được đặt"
+      - "&c&obên cạnh Máy phân phát."
+  ENHANCED_CRAFTING_TABLE:
+    conditions:
+      match-name: true
+    name: "&eBàn Chế tạo Nâng Cao"
+    lore:
+      - ""
+      - "&aMột chiếc Bàn Chế tạo thông thường không thể"
+      - "&achịu được lượng Sức mạnh khổng lồ này..."
+  GRIND_STONE:
+    name: "&bĐá Mài"
+    lore:
+      - ""
+      - "&aMài các vật phẩm thành các thứ khác"
+  ARMOR_FORGE:
+    name: "&6Lò Rèn Giáp"
+    lore:
+      - ""
+      - "&aCho bạn khả năng chế tạo bộ giáp mạnh mẽ"
+  ORE_CRUSHER:
+    name: "&bMáy Nghiền Quặng"
+    lore:
+      - ""
+      - "&aNghiền quặng để gấp đôi chúng"
+  COMPRESSOR:
+    name: "&bMáy nén"
+    lore:
+      - ""
+      - "&aNén các vật phấm"
+  MAKESHIFT_SMELTERY:
+    name: "&eLò Luyện Kim Tự Chế"
+    lore:
+      - ""
+      - "&fPhiên bản cải tiến của Lò Luyện Kim"
+      - "&fchỉ cho phép bạn"
+      - "&fnung chảy dust thành các thỏi"
+  SMELTERY:
+    name: "&6Lò Luyện Kim"
+    lore:
+      - ""
+      - "&fLò nung Nhiệt độ cao"
+      - "&fcho phép bạn nung chảy bụi"
+      - "&fthành phôi và tạo hợp kim."
+  IGNITION_CHAMBER:
+    name: "&4Buồng Đánh Lửa Tự Động"
+    lore:
+      - ""
+      - "&fNgăn Lò luyện kim dùng hết lửa."
+      - "&fChỉ cần cho \"Flint and Steel\" vào"
+      - "&fvà đặt nó cạnh dispenser của Lò luyện kim"
+  PRESSURE_CHAMBER:
+    name: "&bBuồng áp suất"
+    lore:
+      - ""
+      - "&aNén các vật phẩm nhiều hơn nữa"
+  MAGIC_WORKBENCH:
+    name: "&6Bàn Chế Tạo Ma Thuật"
+    lore:
+      - ""
+      - "&fTruyền Năng lượng Ma thuật vào vật phẩm"
+  ORE_WASHER:
+    name: "&6Máy Rửa Quặng"
+    lore:
+      - ""
+      - "&aRửa quặng đã sàng để lọc"
+      - "&avừa đưa cho bọn những Khối đá nhỏ"
+  TABLE_SAW:
+    name: "&6Bàn Cưa"
+    lore:
+      - ""
+      - "&aCho phép bạn xẻ 8 ván gỗ từ 1 khúc gỗ"
+      - "&a(Hoạt động với tất cả các loại gỗ)"
+  COMPOSTER:
+    name: "&aPhân Trộn"
+    lore:
+      - ""
+      - "&aCó thể chuyển đổi các loại Vật liệu qua thời gian..."
+  AUTOMATED_PANNING_MACHINE:
+    name: "&eMáy Paning Tự Động"
+    lore:
+      - ""
+      - "&fPhiên bản MultiBlock của Gold Pan"
+      - "&fvà Nether Gold Pan kết hợp trong một máy."
+  INDUSTRIAL_MINER:
+    name: "&bThợ Mỏ Công Nghiệp"
+    lore:
+      - ""
+      - "&fMultiblock này sẽ khai thác bất kỳ Quặng nào"
+      - "&ftrong một khu vực 7x7 bên dưới nó."
+      - "&fĐặt than hoặc thứ tương tự vào rương của nó"
+      - "&fđể cung cấp nhiên liệu cho máy này."
+  ADVANCED_INDUSTRIAL_MINER:
+    name: "&cThợ Mỏ Công Nghiệp Tiên Tiến"
+    lore:
+      - ""
+      - "&fMultiblock này sẽ khai thác bất kỳ Quặng nào"
+      - "&ftrong một khu vực 11x11 bên dưới nó."
+      - "&fĐặt một xô nhiên liệu hoặc dung nham vào"
+      - "&frương của nó để cung cấp nhiên liệu cho máy."
+      - ""
+      - "&a+ Mềm Mại"
+  CRUCIBLE:
+    name: "&cNồi Nấu Kim Loại"
+    lore:
+      - ""
+      - "&aDùng để nấu chảy vật phẩm thành Chất lỏng"
+  JUICER:
+    name: "&aMáy Ép Trái Cây"
+    lore:
+      - ""
+      - "&aCho phép bạn tạo ra nước ép thơm ngon"
+  ENHANCED_FURNACE:
+    name: "&7Lò Nung Hiệu Suất Cao - &eI"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e1x"
+      - "&7Hiệu quả Năng lượng: &e1x"
+      - "&7Hệ số May mắn: &e1x"
+  ENHANCED_FURNACE_2:
+    name: "&7Lò Nung Hiệu Suất Cao - &eII"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e2x"
+      - "&7Hiệu quả Năng lượng: &e1x"
+      - "&7Hệ số May mắn: &e1x"
+  ENHANCED_FURNACE_3:
+    name: "&7Lò Nung Hiệu Suất Cao - &eIII"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e2x"
+      - "&7Hiệu quả Năng lượng: &e2x"
+      - "&7Hệ số May mắn: &e1x"
+  ENHANCED_FURNACE_4:
+    name: "&7Lò Nung Hiệu Suất Cao - &eIV"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e3x"
+      - "&7Hiệu quả Năng lượng: &e2x"
+      - "&7Hệ số May mắn: &e1x"
+  ENHANCED_FURNACE_5:
+    name: "&7Lò Nung Hiệu Suất Cao - &eV"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e3x"
+      - "&7Hiệu quả Năng lượng: &e2x"
+      - "&7Hệ số May mắn: &e2x"
+  ENHANCED_FURNACE_6:
+    name: "&7Lò Nung Hiệu Suất Cao - &eVI"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e3x"
+      - "&7Hiệu quả Năng lượng: &e3x"
+      - "&7Hệ số May mắn: &e2x"
+  ENHANCED_FURNACE_7:
+    name: "&7Lò Nung Hiệu Suất Cao - &eVII"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e4x"
+      - "&7Hiệu quả Năng lượng: &e3x"
+      - "&7Hệ số May mắn: &e2x"
+  ENHANCED_FURNACE_8:
+    name: "&7Lò Nung Hiệu Suất Cao - &eVIII"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e4x"
+      - "&7Hiệu quả Năng lượng: &e4x"
+      - "&7Hệ số May mắn: &e2x"
+  ENHANCED_FURNACE_9:
+    name: "&7Lò Nung Hiệu Suất Cao - &eIX"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e5x"
+      - "&7Hiệu quả Năng lượng: &e4x"
+      - "&7Hệ số May mắn: &e2x"
+  ENHANCED_FURNACE_10:
+    name: "&7Lò Nung Hiệu Suất Cao - &eX"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e5x"
+      - "&7Hiệu quả Năng lượng: &e5x"
+      - "&7Hệ số May mắn: &e2x"
+  ENHANCED_FURNACE_11:
+    name: "&7Lò Nung Hiệu Suất Cao - &eXI"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e5x"
+      - "&7Hiệu quả Năng lượng: &e5x"
+      - "&7Hệ số May mắn: &e3x"
+  REINFORCED_FURNACE:
+    name: "&7Lò Nung Reinforced"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e10x"
+      - "&7Hiệu quả Năng lượng: &e10x"
+      - "&7Hệ số May mắn: &e3x"
+  CARBONADO_EDGED_FURNACE:
+    name: "&7Lò Nung Viền Carbonado"
+    lore:
+      - ""
+      - "&7Tốc độ Xử lý: &e20x"
+      - "&7Hiệu quả Năng lượng: &e10x"
+      - "&7Hệ số May mắn: &e3x"
+  BLOCK_PLACER:
+    name: "&aMáy Đặt Block"
+    lore:
+      - ""
+      - "&fTất cả các block trong Máy Phân Phát"
+      - "&fsẽ tự động được đặt"
