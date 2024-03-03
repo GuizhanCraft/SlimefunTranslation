@@ -1,0 +1,144 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Những Vật Phẩm Slimefun Linh Tinh
+translations:
+  SIFTED_ORE:
+    name: "&6Quặng Đã Sàng"
+  WHEAT_FLOUR:
+    name: "&fBột Mì"
+  STEEL_PLATE:
+    name: "&7&lTấm Thép"
+  CHAIN:
+    name: "&bDây Xích"
+  HOOK:
+    name: "&bCái Móc"
+  STONE_CHUNK:
+    name: "&6Mảnh Đá"
+  SALT:
+    name: "&fMuối"
+  HEAVY_CREAM:
+    name: "&fKem Béo"
+  CHEESE:
+    name: "&fPhô Mai"
+  BUTTER:
+    name: "&fBơ"
+  CRUSHED_ORE:
+    name: "&6Quặng Đã Được Nghiền"
+  PULVERIZED_ORE:
+    name: "&6Quặng Đã Nghiền Thành Bột"
+  PURE_ORE_CLUSTER:
+    name: "&6Quặng Nguyên Chất"
+  TINY_URANIUM:
+    name: "&cMẩu Chất Phóng Xạ"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Low%"
+  SMALL_URANIUM:
+    name: "&cChất Phóng Xạ Nhỏ"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Moderate%"
+      - "%sftrlore_HazmatSuitRequired%"
+  CLOTH:
+    name: "&bVải"
+  CAN:
+    conditions:
+      match-name: true
+    name: "&fVỏ Lon Thiếc"
+  GOLD_24K_BLOCK:
+    name: "&fKhối Vàng &7(24-Carat)"
+  REINFORCED_PLATE:
+    name: "&7Tấm Hợp Kim Gia Cố"
+  DUCT_TAPE:
+    name: "&8Băng Keo"
+    lore:
+      - ""
+      - "&fBạn có thể sửa chữa các Vật phẩm khi sử dụng cái này"
+      - "&fTrong Máy Đe Tự động"
+  ORGANIC_FOOD_WHEAT:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Lúa Mì"
+  ORGANIC_FOOD_CARROT:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Cà rốt"
+  ORGANIC_FOOD_POTATO:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Khoai tây"
+  ORGANIC_FOOD_SEEDS:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Hạt giống"
+  ORGANIC_FOOD_BEETROOT:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Củ dền"
+  ORGANIC_FOOD_MELON:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Dưa hấu"
+  ORGANIC_FOOD_APPLE:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Táo"
+  ORGANIC_FOOD_SWEET_BERRIES:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Quả mọng ngọt"
+  ORGANIC_FOOD_KELP:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Tảo bẹ khô"
+  ORGANIC_FOOD_COCOA:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Hạt cacao"
+  ORGANIC_FOOD_SEAGRASS:
+    name: "&aThực Phẩm Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Cỏ biển"
+  FERTILIZER_WHEAT:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Lúa Mì"
+  FERTILIZER_CARROT:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Cà rốt"
+  FERTILIZER_POTATO:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Khoai tây"
+  FERTILIZER_SEEDS:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Hạt giống"
+  FERTILIZER_BEETROOT:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Củ dền"
+  FERTILIZER_MELON:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Dưa hấu"
+  FERTILIZER_APPLE:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Táo"
+  FERTILIZER_SWEET_BERRIES:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Quả mọng ngọt"
+  FERTILIZER_KELP:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Tảo bẹ khô"
+  FERTILIZER_COCOA:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Hạt cacao"
+  FERTILIZER_SEAGRASS:
+    name: "&aPhân Bón Hữu Cơ"
+    lore:
+      - "&7Chứa: &9Cỏ biển"

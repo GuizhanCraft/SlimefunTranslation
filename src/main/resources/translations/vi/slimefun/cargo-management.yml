@@ -1,0 +1,88 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Quản lý Cargo Slimefun
+translations:
+  CARGO_MOTOR:
+    name: "&3Mô-tơ Cargo"
+    lore:
+      - ""
+      - "&7Nguyên liệu quan trong cho các vật phẩm"
+      - "&7liên quan dến Quản lý Cargo"
+  CARGO_MANAGER:
+    conditions:
+      match-name: true
+    name: "&6Bộ Quản Lý Cargo"
+    lore:
+      - ""
+      - "&fThành phần Cốt lõi của một Mạng lưới Vận chuyển Vật phẩm"
+  CARGO_NODE:
+    name: "&7Cargo Node &c(Bộ kết nối)"
+    lore:
+      - ""
+      - "&fPipe Nối Cargo"
+  CARGO_NODE_INPUT:
+    name: "&7Cargo Node &c(Đầu vào)"
+    lore:
+      - ""
+      - "&fỐng Đầu Vào Cargo"
+  CARGO_NODE_OUTPUT:
+    name: "&7Cargo Node &c(Đầu ra)"
+    lore:
+      - ""
+      - "&fỐng Đầu Ra Cargo"
+  CARGO_NODE_OUTPUT_ADVANCED:
+    name: "&6Cargo Node Nâng Cao &c(Đầu ra)"
+    lore:
+      - ""
+      - "&fỐng Đầu Ra Cargo"
+  REACTOR_ACCESS_PORT:
+    name: "&2Cổng Truy Cập Lò Phản Ứng"
+    lore:
+      - ""
+      - "&fCho phép bạn tương tác với một Lò phản ứng"
+      - "&fthông qua các Cargo Nodes, cũng có thể được sử dụng"
+      - "&fnhư một Bộ đệm"
+      - ""
+      - "&8\u21E8 &eBắt buộc phải đặt &a3 các khối &ephía trên Lò phản ứng"
+  TRASH_CAN_BLOCK:
+    name: "&3Thùng Rác"
+    lore:
+      - ""
+      - "&fSẽ phá huỷ tất cả vật phẩm cho vào nó"
+  CRAFTING_MOTOR:
+    name: "&6Mô-tơ Chế Tạo"
+    lore:
+      - ""
+      - "&7Thành phần quan trọng của Auto-Crafters"
+  VANILLA_AUTO_CRAFTER:
+    name: "&2Auto-Crafter &8(Vanilla)"
+    lore:
+      - ""
+      - "&fĐặt chiếc máy này trên một"
+      - "&fcái rương hoặc tương tự và cho nó chế tạo"
+      - "&fbất kỳ thứ gì có thể chế tạo bằng cách dùng một"
+      - "&eBàn Chế tạo &fbình thường"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/Item%"
+  ENHANCED_AUTO_CRAFTER:
+    name: "&2Auto-Crafter &8(Nâng Cao)"
+    lore:
+      - ""
+      - "&fĐặt chiếc máy này trên một"
+      - "&fcái rương hoặc tương tự và cho nó chế tạo"
+      - "&fbất kỳ thứ gì có thể chế tạo bằng cách dùng một"
+      - "&eBàn Chế tạo Nâng Cao"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/Item%"
+  ARMOR_AUTO_CRAFTER:
+    name: "&2Auto-Crafter &8(Lò rèn Giáp)"
+    lore:
+      - ""
+      - "&fĐặt chiếc máy này trên một"
+      - "&fcái rương hoặc tương tự và cho nó chế tạo"
+      - "&fbất kỳ thứ gì có thể chế tạo bằng cách dùng một"
+      - "&eLò Rèn Giáp"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_32_/Item%"

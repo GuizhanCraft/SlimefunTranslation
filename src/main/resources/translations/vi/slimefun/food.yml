@@ -1,0 +1,92 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Thực phẩm Slimefun
+translations:
+  FORTUNE_COOKIE:
+    conditions:
+      match-name: true
+    name: "&6Bánh quy May mắn"
+    lore:
+      - ""
+      - "&a&oNói cho bạn biết về Tương lai của bạn :o"
+  DIET_COOKIE:
+    name: "&6Bánh quy Ăn kiêng"
+    lore:
+      - ""
+      - "&aMột loại bánh quy rất &a&onhẹ &a."
+  BEEF_JERKY:
+    name: "&6Khô Bò"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  PORK_JERKY:
+    name: "&6Khô Heo"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  CHICKEN_JERKY:
+    name: "&6Khô Gà"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  MUTTON_JERKY:
+    name: "&6Thịt Cừu Khô"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  RABBIT_JERKY:
+    name: "&6Thịt Thỏ Khô"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  FISH_JERKY:
+    name: "&6Cá Khô"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  KELP_COOKIE:
+    name: "&2Bánh quy Tảo bẹ"
+    lore:
+      - ""
+      - "&fCực kỳ ngol!"
+  MAGIC_SUGAR:
+    name: "&6Đường Ma thuật"
+    lore:
+      - ""
+      - "&a&oCảm nhận Sức mạnh từ Hermes!"
+  MONSTER_JERKY:
+    name: "&6Thịt Quái Vật Khô"
+    lore:
+      - ""
+      - "&a&oKhông còn đói nữa"
+  APPLE_JUICE:
+    name: "&cNước Táo"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  CARROT_JUICE:
+    name: "&6Nước Cà Rốt"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  MELON_JUICE:
+    name: "&cNước Ép Dưa"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  PUMPKIN_JUICE:
+    name: "&6Nước Ép Bí Ngô"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  SWEET_BERRY_JUICE:
+    name: "&cNước Ép Quả Mọng Ngọt"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"
+  GOLDEN_APPLE_JUICE:
+    name: "&bNước Táo Vàng"
+  GLOW_BERRY_JUICE:
+    name: "&6Nước Ép Quả Mọng Phát Sáng"
+    lore:
+      - ""
+      - "%sftrlore_Hunger_3%"

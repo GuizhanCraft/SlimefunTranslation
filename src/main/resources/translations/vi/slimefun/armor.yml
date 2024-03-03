@@ -1,0 +1,77 @@
+### These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Giáp Slimefun
+translations:
+  DAMASCUS_STEEL_HELMET:
+    name: "&7Mũ Thép Damascus"
+  DAMASCUS_STEEL_CHESTPLATE:
+    conditions:
+      match-name: true
+    name: "&7Áo Giáp Thép Damascus"
+  DAMASCUS_STEEL_LEGGINGS:
+    name: "&7Quần Thép Damascus"
+  DAMASCUS_STEEL_BOOTS:
+    name: "&7Ủng Thép Damascus"
+  REINFORCED_ALLOY_HELMET:
+    name: "&bMũ Gia Cố"
+  REINFORCED_ALLOY_CHESTPLATE:
+    name: "&bÁo Giáp Reinforced"
+  REINFORCED_ALLOY_LEGGINGS:
+    name: "&bQuần Reinforced"
+  REINFORCED_ALLOY_BOOTS:
+    name: "&bỦng Reinforced"
+  CACTUS_HELMET:
+    name: "&2Mũ Xương Rồng"
+  CACTUS_CHESTPLATE:
+    name: "&2Áo Giáp Xương Rồng"
+  CACTUS_LEGGINGS:
+    name: "&2Quần Xương Rồng"
+  CACTUS_BOOTS:
+    name: "&2Ủng Xương Rồng"
+  GILDED_IRON_HELMET:
+    name: "&6Mũ Sắt Mạ Vàng"
+  GILDED_IRON_CHESTPLATE:
+    name: "&6Áo Giáp Sắt Mạ Vàng"
+  GILDED_IRON_LEGGINGS:
+    name: "&6Quần Sắt Mạ Vàng"
+  GILDED_IRON_BOOTS:
+    name: "&6Ủng Sắt Mạ Vàng"
+  SCUBA_HELMET:
+    name: "&cMũ Lặn"
+    lore:
+      - ""
+      - "&7Cho phép bạn thở dưới nước"
+      - ""
+      - "&6Full bộ hiệu ứng:"
+      - "&e- Miễn nhiễm phóng xạ"
+      - "&e- Chống Ong đốt"
+  HAZMAT_CHESTPLATE:
+    name: "&cBộ đồ Hazmat"
+    lore:
+      - ""
+      - "&7Cho phép bạn đi qua lửa và dung nham"
+      - ""
+      - "&6Full bộ hiệu ứng:"
+      - "&e- Miễn nhiễm phóng xạ"
+      - "&e- Chống Ong đốt"
+  HAZMAT_LEGGINGS:
+    name: "&cQuần Hazmat"
+    lore:
+      - ""
+      - "&6Full bộ hiệu ứng:"
+      - "&e- Miễn nhiễm phóng xạ"
+      - "&e- Chống Ong đốt"
+  RUBBER_BOOTS:
+    name: "&cỦng Hazmat"
+    lore:
+      - ""
+      - "&6Full bộ hiệu ứng:"
+      - "&e- Miễn nhiễm phóng xạ"
+      - "&e- Chống Ong đốt"
+  GOLD_12K_HELMET:
+    name: "&6Mũ Vàng &7(12-Carat)"
+  GOLD_12K_CHESTPLATE:
+    name: "&6Áo Giáp Vàng &7(12-Carat)"
+  GOLD_12K_LEGGINGS:
+    name: "&6Quần Vàng &7(12-Carat)"
+  GOLD_12K_BOOTS:
+    name: "&6Ủng Vàng &7(12-Carat)"
