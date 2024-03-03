@@ -101,19 +101,19 @@ translations:
   SLIME_STEEL_HELMET:
     name: "&a&lMũ Slime"
     lore:
-      - "&7&oReinforced"
+      - "&7&oGia Cố"
       - ""
       - "&a&oCảm giác Bồng bềnh"
   SLIME_STEEL_CHESTPLATE:
     name: "&a&lÁo Giáp Slime"
     lore:
-      - "&7&oReinforced"
+      - "&7&oGia Cố"
       - ""
       - "&a&oCảm giác Bồng bềnh"
   SLIME_STEEL_LEGGINGS:
     name: "&a&lQuần Slime"
     lore:
-      - "&7&oReinforced"
+      - "&7&oGia Cố"
       - ""
       - "&a&oCảm giác Bồng bềnh"
       - ""
@@ -121,7 +121,7 @@ translations:
   SLIME_STEEL_BOOTS:
     name: "&a&lỦng Slime"
     lore:
-      - "&7&oReinforced"
+      - "&7&oGia Cố"
       - ""
       - "&a&oCảm giác Bồng bềnh"
       - ""
