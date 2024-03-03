@@ -196,18 +196,18 @@ translations:
       - "&7Hiệu quả Năng lượng: &e5x"
       - "&7Hệ số May mắn: &e3x"
   REINFORCED_FURNACE:
-    name: "&7Lò Nung Reinforced"
+    name: "&7Lò Nung Gia Cố"
     lore:
       - ""
       - "&7Tốc độ Xử lý: &e10x"
-      - "&7Hiệu quả Năng lượng: &e10x"
+      - "&7Hiệu suất nhiên liệu: &e10x"
       - "&7Hệ số May mắn: &e3x"
   CARBONADO_EDGED_FURNACE:
     name: "&7Lò Nung Viền Carbonado"
     lore:
       - ""
       - "&7Tốc độ Xử lý: &e20x"
-      - "&7Hiệu quả Năng lượng: &e10x"
+      - "&7Hiệu suất nhiên liệu: &e10x"
       - "&7Hệ số May mắn: &e3x"
   BLOCK_PLACER:
     name: "&aMáy Đặt Block"
