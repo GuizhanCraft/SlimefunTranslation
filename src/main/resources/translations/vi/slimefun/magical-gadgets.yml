@@ -61,7 +61,7 @@ translations:
       2: "&7Kích Cỡ: &e36"
       5: "%sftrlore_RightClickToOpen%"
   REINFORCED_SPAWNER:
-    name: "&bLồng Spawn Reinforced"
+    name: "&bLồng Spawn Gia Cố"
   SCROLL_OF_DIMENSIONAL_TELEPOSITION:
     name: "&6Cuộn Dịch Chuyển Chiều Không Gian"
     lore:
