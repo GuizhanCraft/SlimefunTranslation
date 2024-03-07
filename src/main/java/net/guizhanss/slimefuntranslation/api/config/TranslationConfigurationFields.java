@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 /**
  * This class holds the fields to look for in a translation configuration file.
+ * <p>
+ * It is recommended to use builder to specify the fields, as fields may subject to change.
  */
 @Getter
 @Builder
@@ -19,6 +21,10 @@ public final class TranslationConfigurationFields {
     private String prefix = "item-id-prefix";
     @Builder.Default
     private String suffix = "item-id-suffix";
+    @Builder.Default
+    private String guides = "guides";
+    @Builder.Default
+    private String itemGroups = "item-groups";
     @Builder.Default
     private String items = "translations";
     @Builder.Default

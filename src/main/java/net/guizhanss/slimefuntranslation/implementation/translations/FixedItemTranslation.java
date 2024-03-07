@@ -30,6 +30,13 @@ public class FixedItemTranslation implements ItemTranslation {
     private final Map<Integer, Pair<String, String>> replacements;
     private final TranslationConditions conditions;
 
+    public FixedItemTranslation(
+        String displayName,
+        List<String> lore
+    ) {
+        this(displayName, lore, Map.of(), Map.of(), new TranslationConditions());
+    }
+
     @ParametersAreNonnullByDefault
     public FixedItemTranslation(
         String displayName,

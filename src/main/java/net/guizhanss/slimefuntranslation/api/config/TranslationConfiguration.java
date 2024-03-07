@@ -10,6 +10,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
@@ -20,6 +21,7 @@ import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
 import net.guizhanss.slimefuntranslation.implementation.translations.FixedItemTranslation;
 import net.guizhanss.slimefuntranslation.utils.ConfigUtils;
+import net.guizhanss.slimefuntranslation.utils.GeneralUtils;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -32,15 +34,13 @@ import lombok.Setter;
  * @author ybw0014
  */
 @SuppressWarnings("ConstantConditions")
-@RequiredArgsConstructor
 @Getter
-@Setter(AccessLevel.PROTECTED)
+@Setter(AccessLevel.PACKAGE)
+@RequiredArgsConstructor(access = AccessLevel.PACKAGE)
 public class TranslationConfiguration {
     private final String name;
     private final String lang;
-    private final Map<String, ItemTranslation> itemTranslations;
-    private final Map<String, String> loreTranslations;
-    private final Map<String, String> messageTranslations;
+    private final Translations translations;
 
     private State state = State.UNREGISTERED;
     private SlimefunAddon addon = null;
@@ -82,94 +82,42 @@ public class TranslationConfiguration {
         String itemIdPrefix = config.getString(fields.getPrefix(), defaults.getPrefix());
         String itemIdSuffix = config.getString(fields.getSuffix(), defaults.getSuffix());
 
+        var guidesSection = config.getConfigurationSection(fields.getGuides());
+        var itemGroupsSection = config.getConfigurationSection(fields.getItemGroups());
         var itemsSection = config.getConfigurationSection(fields.getItems());
         var loreSection = config.getConfigurationSection(fields.getLore());
         var messagesSection = config.getConfigurationSection(fields.getMessages());
-        if (itemsSection == null && loreSection == null && messagesSection == null) {
+
+        if (GeneralUtils.isAllNull(guidesSection, itemGroupsSection, itemsSection, loreSection, messagesSection)) {
             SlimefunTranslation.log(Level.WARNING, "No translations found in " + name);
             return Optional.empty();
         }
+
         var fileConditions = TranslationConditions.load(config.getConfigurationSection(fields.getConditions()));
         SlimefunTranslation.debug("Current file condition: {0}", fileConditions);
-        Map<String, ItemTranslation> itemTranslations = new HashMap<>();
-        Map<String, String> loreTranslations = new HashMap<>();
-        Map<String, String> messageTranslations = new HashMap<>();
+        var translations = new Translations();
+        var guideTranslations = translations.getGuide();
+        var itemGroupTranslations = translations.getItemGroup();
+        var itemTranslations = translations.getItem();
+        var loreTranslations = translations.getLore();
+        var messageTranslations = translations.getMessage();
 
         SlimefunTranslation.log(Level.INFO, "Loading translation configuration \"{0}\", language: {1}", name, lang);
 
-        if (itemsSection != null) {
-            int count = 0;
-            for (var id : itemsSection.getKeys(false)) {
-                String itemId = itemIdPrefix + id + itemIdSuffix;
-                SlimefunTranslation.debug("Loading item translation {0}", itemId);
+        if (guidesSection != null) {
+            loadGuides(guideTranslations, guidesSection);
+        }
 
-                var itemSection = itemsSection.getConfigurationSection(id);
-                if (itemSection == null) {
-                    SlimefunTranslation.log(Level.SEVERE, "Invalid item section {0} in configuration file.", id);
-                    continue;
-                }
-
-                var itemConditions = TranslationConditions.load(fileConditions, itemSection.getConfigurationSection(fields.getConditions()));
-                SlimefunTranslation.debug("Current item condition: {0}", itemConditions);
-                boolean forceLoad = itemConditions.isForceLoad();
-
-                // sfItem
-                SlimefunItem sfItem = SlimefunItem.getById(itemId);
-                if (sfItem == null && !forceLoad) {
-                    SlimefunTranslation.log(Level.WARNING, "Item {0} is not registered, ignoring.", itemId);
-                    continue;
-                }
-
-                // name
-                String displayName = "";
-                if (itemSection.contains("name")) {
-                    displayName = itemSection.getString("name", "");
-                }
-
-                // lore
-                var lore = itemSection.getStringList("lore");
-
-                // lore overrides
-                Map<Integer, String> overrides = new HashMap<>();
-                if (itemSection.contains("lore-overrides")) {
-                    try {
-                        Map<String, String> replacements = ConfigUtils.getMap(itemSection.getConfigurationSection("lore-overrides"));
-                        for (var entry : replacements.entrySet()) {
-                            overrides.put(Integer.parseInt(entry.getKey()), entry.getValue());
-                        }
-                    } catch (NumberFormatException | NullPointerException ex) {
-                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore overrides of item {0} in translation {1}", itemId, name);
-                        return Optional.empty();
-                    }
-                }
-
-                // lore replacements
-                Map<Integer, Pair<String, String>> replacements = new HashMap<>();
-                if (itemSection.contains("lore-replacements")) {
-                    try {
-                        for (String idx : itemSection.getConfigurationSection("lore-replacements").getKeys(false)) {
-                            int i = Integer.parseInt(idx);
-                            var section = itemSection.getConfigurationSection("lore-replacements." + idx);
-                            replacements.put(i, new Pair<>(section.getString("original"), section.getString("replaced")));
-                        }
-                    } catch (NumberFormatException | NullPointerException ex) {
-                        SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0} in translation {1}", itemId, name);
-                        return Optional.empty();
-                    }
-                }
-
-                // check partial override
-                if (!itemConditions.isPartialOverride() && !forceLoad) {
-                    itemConditions.setPartialOverride(
-                        SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType())
-                    );
-                }
-
-                var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, itemConditions);
-                itemTranslations.put(itemId, translation);
-                count++;
+        if (itemGroupsSection != null) {
+            for (var group : itemGroupsSection.getKeys(true)) {
+                SlimefunTranslation.debug("Loading item group translation {0}", group);
+                var translation = itemGroupsSection.getString(group);
+                itemGroupTranslations.put(group, translation);
             }
-            SlimefunTranslation.log(Level.INFO, "Loaded {0} item translations.", count);
+        }
+
+        if (itemsSection != null) {
+            loadItems(itemTranslations, itemsSection, fields, fileConditions, itemIdPrefix, itemIdSuffix);
         }
 
         if (loreSection != null) {
@@ -188,7 +136,109 @@ public class TranslationConfiguration {
             }
         }
 
-        return Optional.of(new TranslationConfiguration(name, lang, itemTranslations, loreTranslations, messageTranslations));
+        return Optional.of(new TranslationConfiguration(name, lang, translations));
+    }
+
+    private static void loadGuides(
+        Map<String, ItemTranslation> translations,
+        ConfigurationSection guidesSection
+    ) {
+        for (var mode : guidesSection.getKeys(false)) {
+            SlimefunTranslation.debug("Loading guide translation for mode {0}", mode);
+
+            var guideSection = guidesSection.getConfigurationSection(mode);
+            if (guideSection == null) {
+                SlimefunTranslation.log(Level.SEVERE, "Invalid guide section {0} in configuration file.", mode);
+                continue;
+            }
+
+            // name
+            String displayName = guideSection.getString("name", "");
+            // lore
+            var lore = guideSection.getStringList("lore");
+
+            var translation = new FixedItemTranslation(displayName, lore);
+            translations.put(mode, translation);
+        }
+    }
+
+    private static void loadItems(
+        Map<String, ItemTranslation> translations,
+        ConfigurationSection itemsSection,
+        TranslationConfigurationFields fields,
+        TranslationConditions fileConditions,
+        String prefix,
+        String suffix
+    ) {
+        int count = 0;
+        for (var id : itemsSection.getKeys(false)) {
+            String itemId = prefix + id + suffix;
+            SlimefunTranslation.debug("Loading item translation {0}", itemId);
+
+            var itemSection = itemsSection.getConfigurationSection(id);
+            if (itemSection == null) {
+                SlimefunTranslation.log(Level.SEVERE, "Invalid item section {0} in configuration file.", id);
+                continue;
+            }
+
+            var itemConditions = TranslationConditions.load(fileConditions, itemSection.getConfigurationSection(fields.getConditions()));
+            SlimefunTranslation.debug("Current item condition: {0}", itemConditions);
+            boolean forceLoad = itemConditions.isForceLoad();
+
+            // sfItem
+            SlimefunItem sfItem = SlimefunItem.getById(itemId);
+            if (sfItem == null && !forceLoad) {
+                SlimefunTranslation.log(Level.WARNING, "Item {0} is not registered, ignoring.", itemId);
+                continue;
+            }
+
+            // name
+            String displayName = itemSection.getString("name", "");
+
+            // lore
+            var lore = itemSection.getStringList("lore");
+
+            // lore overrides
+            Map<Integer, String> overrides = new HashMap<>();
+            if (itemSection.contains("lore-overrides")) {
+                try {
+                    Map<String, String> replacements = ConfigUtils.getMap(itemSection.getConfigurationSection("lore-overrides"));
+                    for (var entry : replacements.entrySet()) {
+                        overrides.put(Integer.parseInt(entry.getKey()), entry.getValue());
+                    }
+                } catch (NumberFormatException | NullPointerException ex) {
+                    SlimefunTranslation.log(Level.SEVERE, "Invalid lore overrides of item {0}.", itemId);
+                    continue;
+                }
+            }
+
+            // lore replacements
+            Map<Integer, Pair<String, String>> replacements = new HashMap<>();
+            if (itemSection.contains("lore-replacements")) {
+                try {
+                    for (String idx : itemSection.getConfigurationSection("lore-replacements").getKeys(false)) {
+                        int i = Integer.parseInt(idx);
+                        var section = itemSection.getConfigurationSection("lore-replacements." + idx);
+                        replacements.put(i, new Pair<>(section.getString("original"), section.getString("replaced")));
+                    }
+                } catch (NumberFormatException | NullPointerException ex) {
+                    SlimefunTranslation.log(Level.SEVERE, "Invalid lore replacements of item {0}", itemId);
+                    continue;
+                }
+            }
+
+            // check partial override
+            if (!itemConditions.isPartialOverride() && !forceLoad) {
+                itemConditions.setPartialOverride(
+                    SlimefunTranslation.getConfigService().getPartialOverrideMaterials().contains(sfItem.getItem().getType())
+                );
+            }
+
+            var translation = new FixedItemTranslation(displayName, lore, overrides, replacements, itemConditions);
+            translations.put(itemId, translation);
+            count++;
+        }
+        SlimefunTranslation.debug("Loaded {0} item translations.", count);
     }
 
     public void register(@Nonnull SlimefunAddon addon) {
@@ -196,25 +246,32 @@ public class TranslationConfiguration {
             throw new IllegalStateException("TranslationConfiguration is already registered");
         }
 
-        var allItemTranslations = SlimefunTranslation.getRegistry().getItemTranslations();
-        allItemTranslations.putIfAbsent(lang, new HashMap<>());
-        var currentTranslations = allItemTranslations.get(lang);
-        currentTranslations.putAll(itemTranslations);
+        // guides
+        registerTranslations(SlimefunTranslation.getRegistry().getGuideTranslations(), lang, translations.getGuide());
 
-        var allLoreTranslations = SlimefunTranslation.getRegistry().getLoreTranslations();
-        allLoreTranslations.putIfAbsent(lang, new HashMap<>());
-        var currentLoreTranslations = allLoreTranslations.get(lang);
-        currentLoreTranslations.putAll(loreTranslations);
+        // itemGroups
+        registerTranslations(SlimefunTranslation.getRegistry().getItemGroupTranslations(), lang, translations.getItemGroup());
 
+        // items
+        registerTranslations(SlimefunTranslation.getRegistry().getItemTranslations(), lang, translations.getItem());
+
+        // lore
+        registerTranslations(SlimefunTranslation.getRegistry().getLoreTranslations(), lang, translations.getLore());
+
+        // messages
         var allMessageTranslations = SlimefunTranslation.getRegistry().getMessageTranslations();
         allMessageTranslations.putIfAbsent(addon.getName(), new HashMap<>());
         var pluginMessageTranslations = allMessageTranslations.get(addon.getName());
-        pluginMessageTranslations.putIfAbsent(lang, new HashMap<>());
-        var currentMessageTranslations = pluginMessageTranslations.get(lang);
-        currentMessageTranslations.putAll(messageTranslations);
+        registerTranslations(pluginMessageTranslations, lang, translations.getMessage());
 
-        this.addon = addon;
+        setAddon(addon);
         setState(State.REGISTERED);
+    }
+
+    private <V> void registerTranslations(Map<String, Map<String, V>> allTranslations, String lang, Map<String, V> translations) {
+        allTranslations.putIfAbsent(lang, new HashMap<>());
+        var currentTranslations = allTranslations.get(lang);
+        currentTranslations.putAll(translations);
     }
 
     public enum State {
