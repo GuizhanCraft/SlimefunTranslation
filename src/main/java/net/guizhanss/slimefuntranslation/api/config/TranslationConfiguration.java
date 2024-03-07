@@ -246,22 +246,19 @@ public class TranslationConfiguration {
             throw new IllegalStateException("TranslationConfiguration is already registered");
         }
 
+        var registry = SlimefunTranslation.getRegistry();
+
         // guides
-        registerTranslations(SlimefunTranslation.getRegistry().getGuideTranslations(), lang, translations.getGuide());
-
+        registerTranslations(registry.getGuideTranslations(), lang, translations.getGuide());
         // itemGroups
-        registerTranslations(SlimefunTranslation.getRegistry().getItemGroupTranslations(), lang, translations.getItemGroup());
-
+        registerTranslations(registry.getItemGroupTranslations(), lang, translations.getItemGroup());
         // items
-        registerTranslations(SlimefunTranslation.getRegistry().getItemTranslations(), lang, translations.getItem());
-
+        registerTranslations(registry.getItemTranslations(), lang, translations.getItem());
         // lore
-        registerTranslations(SlimefunTranslation.getRegistry().getLoreTranslations(), lang, translations.getLore());
-
+        registerTranslations(registry.getLoreTranslations(), lang, translations.getLore());
         // messages
-        var allMessageTranslations = SlimefunTranslation.getRegistry().getMessageTranslations();
-        allMessageTranslations.putIfAbsent(addon.getName(), new HashMap<>());
-        var pluginMessageTranslations = allMessageTranslations.get(addon.getName());
+        var allMessageTranslations = registry.getMessageTranslations();
+        var pluginMessageTranslations = allMessageTranslations.computeIfAbsent(addon.getName(), k -> new HashMap<>());
         registerTranslations(pluginMessageTranslations, lang, translations.getMessage());
 
         setAddon(addon);
@@ -269,8 +266,7 @@ public class TranslationConfiguration {
     }
 
     private <V> void registerTranslations(Map<String, Map<String, V>> allTranslations, String lang, Map<String, V> translations) {
-        allTranslations.putIfAbsent(lang, new HashMap<>());
-        var currentTranslations = allTranslations.get(lang);
+        var currentTranslations = allTranslations.computeIfAbsent(lang, k -> new HashMap<>());
         currentTranslations.putAll(translations);
     }
 
