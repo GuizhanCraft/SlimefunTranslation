@@ -246,6 +246,12 @@ public final class TranslationService {
             return translateSfGuide(user, item, guideMode);
         }
 
+        // slimefun item group
+        String itemGroupKey = SlimefunItemUtils.getItemGroupKey(item);
+        if (itemGroupKey != null) {
+            return translateSfItemGroup(user, item, itemGroupKey);
+        }
+
         // slimefun item
         String sfId = SlimefunItemUtils.getId(item);
         if (sfId != null) {
@@ -274,6 +280,24 @@ public final class TranslationService {
         List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
         meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(user, item, meta, originalLore)));
 
+        item.setItemMeta(meta);
+        return true;
+    }
+
+    @ParametersAreNonnullByDefault
+    private boolean translateSfItemGroup(User user, ItemStack item, String itemGroupKey) {
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getItemGroupTranslations(), user, itemGroupKey);
+        if (transl.isEmpty()) {
+            return false;
+        }
+
+        var translation = transl.get();
+        final ItemMeta meta = item.getItemMeta();
+
+        var integrationService = SlimefunTranslation.getIntegrationService();
+        // display name
+        meta.setDisplayName(integrationService.applyPlaceholders(user, translation));
         item.setItemMeta(meta);
         return true;
     }
