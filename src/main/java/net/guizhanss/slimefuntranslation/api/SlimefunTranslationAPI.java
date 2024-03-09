@@ -15,6 +15,7 @@ import org.bukkit.plugin.Plugin;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.lore.LoreHandler;
 import net.guizhanss.slimefuntranslation.core.factories.MessageFactory;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
@@ -115,6 +116,14 @@ public final class SlimefunTranslationAPI {
         Preconditions.checkArgument(id != null, "ID cannot be null");
 
         return SlimefunTranslation.getTranslationService().getLore(user, id, defaultToId);
+    }
+
+    @ParametersAreNonnullByDefault
+    public static void registerLoreHandler(String id, LoreHandler handler) {
+        Preconditions.checkArgument(id != null, "ID cannot be null");
+        Preconditions.checkArgument(handler != null, "Handler cannot be null");
+
+        SlimefunTranslation.getRegistry().getSlimefunLoreHandlers().put(id, handler);
     }
 
     /**
