@@ -3,12 +3,14 @@ package net.guizhanss.slimefuntranslation.core.users;
 import java.util.UUID;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import com.google.common.base.Preconditions;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 import lombok.Getter;
@@ -23,6 +25,7 @@ public class User {
     private final Player player;
     private final UUID uuid;
     private String locale;
+    private SlimefunItem recentClickedBlock;
 
     public User(@Nonnull Player player) {
         this.player = player;
@@ -43,14 +46,18 @@ public class User {
     public void updateLocale() {
         var lang = Slimefun.getLocalization().getLanguage(player);
         if (lang != null) {
-            locale = lang.getId();
+            setLocale(lang.getId());
         } else {
-            locale = Slimefun.getLocalization().getDefaultLanguage().getId();
+            setLocale(Slimefun.getLocalization().getDefaultLanguage().getId());
         }
     }
 
-    public void updateLocale(@Nonnull String newLocale) {
+    public void setLocale(@Nonnull String newLocale) {
         Preconditions.checkArgument(newLocale != null, "Locale cannot be null");
         locale = newLocale;
+    }
+
+    public void setRecentClickedBlock(@Nullable SlimefunItem block) {
+        recentClickedBlock = block;
     }
 }
