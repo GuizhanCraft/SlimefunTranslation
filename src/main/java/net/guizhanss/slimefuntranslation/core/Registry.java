@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.UUID;
 
 import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
+import net.guizhanss.slimefuntranslation.core.lore.LoreHandler;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
 import lombok.Getter;
@@ -21,4 +22,5 @@ public final class Registry {
     private final Map<String, Map<String, String>> loreTranslations = new HashMap<>();
     // plugin -> lang -> messageId -> translation
     private final Map<String, Map<String, Map<String, String>>> messageTranslations = new HashMap<>();
+    private final Map<String, LoreHandler> slimefunLoreHandlers = new HashMap<>();
 }

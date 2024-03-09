@@ -8,6 +8,8 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.google.common.base.Preconditions;
 
+import net.guizhanss.slimefuntranslation.core.lore.LoreHandler;
+
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
@@ -115,6 +117,14 @@ public final class SlimefunTranslationAPI {
         Preconditions.checkArgument(id != null, "ID cannot be null");
 
         return SlimefunTranslation.getTranslationService().getLore(user, id, defaultToId);
+    }
+
+    @ParametersAreNonnullByDefault
+    public static void registerLoreHandler(String id, LoreHandler handler) {
+        Preconditions.checkArgument(id != null, "ID cannot be null");
+        Preconditions.checkArgument(handler != null, "Handler cannot be null");
+
+        SlimefunTranslation.getRegistry().getSlimefunLoreHandlers().put(id, handler);
     }
 
     /**

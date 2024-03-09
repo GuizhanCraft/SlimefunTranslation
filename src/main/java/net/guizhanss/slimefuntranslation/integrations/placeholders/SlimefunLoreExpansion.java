@@ -9,9 +9,30 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import org.bukkit.entity.Player;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.api.SlimefunTranslationAPI;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
 public class SlimefunLoreExpansion extends AExpansion {
+    public SlimefunLoreExpansion() {
+        super();
+        SlimefunTranslationAPI.registerLoreHandler("Machine", (user, id, args) -> {
+            if (args.length != 2) return null;
+            return getLore(user, "Machine.Format",
+                getLore(user, "Machine.TierColor." + args[0]), // color
+                getLore(user, "Machine.Tier." + args[0]), // tier
+                getLore(user, "Machine.Type." + args[1]) // type
+            );
+        });
+        SlimefunTranslationAPI.registerLoreHandler("Radioactive", (user, id, args) -> {
+            if (args.length != 1) return null;
+            return getLore(user, "Radioactive", getLore(user, "Radioactivity." + args[0]));
+        });
+        SlimefunTranslationAPI.registerLoreHandler("Material", (user, id, args) -> {
+            if (args.length != 1) return null;
+            return getLore(user, "Material", getLore(user, "Materials." + args[0]));
+        });
+    }
+
     @Override
     @Nonnull
     public String getName() {
@@ -36,24 +57,7 @@ public class SlimefunLoreExpansion extends AExpansion {
         if (s.length >= 2) {
             args = Arrays.copyOfRange(s, 1, s.length);
         }
-        return switch (id) {
-            case "Machine" -> {
-                if (args.length != 2) yield null;
-                yield getResult(user, "Machine.Format",
-                    getResult(user, "Machine.TierColor." + args[0]), // color
-                    getResult(user, "Machine.Tier." + args[0]), // tier
-                    getResult(user, "Machine.Type." + args[1]) // type
-                );
-            }
-            case "Radioactive" -> {
-                if (args.length != 1) yield null;
-                yield getResult(user, "Radioactive", getResult(user, "Radioactivity." + args[0]));
-            }
-            case "Material" -> {
-                if (args.length != 1) yield null;
-                yield getResult(user, "Material", getResult(user, "Materials." + args[0]));
-            }
-            default -> getResult(user, id, args);
-        };
+        var handler = SlimefunTranslation.getRegistry().getSlimefunLoreHandlers().getOrDefault(id, this::getLore);
+        return handler.getLore(user, id, args);
     }
 }
