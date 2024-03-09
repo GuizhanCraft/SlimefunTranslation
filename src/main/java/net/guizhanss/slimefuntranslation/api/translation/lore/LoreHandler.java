@@ -1,4 +1,4 @@
-package net.guizhanss.slimefuntranslation.core.lore;
+package net.guizhanss.slimefuntranslation.api.translation.lore;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;

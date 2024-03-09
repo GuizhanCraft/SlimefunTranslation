@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.UUID;
 
 import net.guizhanss.slimefuntranslation.api.translation.ItemTranslation;
-import net.guizhanss.slimefuntranslation.core.lore.LoreHandler;
+import net.guizhanss.slimefuntranslation.api.translation.lore.LoreHandler;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
 import lombok.Getter;

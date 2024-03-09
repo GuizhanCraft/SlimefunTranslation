@@ -15,8 +15,8 @@ import org.bukkit.plugin.Plugin;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
+import net.guizhanss.slimefuntranslation.api.translation.lore.LoreHandler;
 import net.guizhanss.slimefuntranslation.core.factories.MessageFactory;
-import net.guizhanss.slimefuntranslation.core.lore.LoreHandler;
 import net.guizhanss.slimefuntranslation.core.users.User;
 
 import lombok.experimental.UtilityClass;
