@@ -38,7 +38,7 @@ public class SlimefunItemUtils {
         String mode = PersistentDataAPI.getString(item.getItemMeta(), Slimefun.getRegistry().getGuideDataKey());
         try {
             return SlimefunGuideMode.valueOf(mode);
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | NullPointerException e) {
             return null;
         }
     }

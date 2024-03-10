@@ -1,13 +1,13 @@
 name: Slimefun Guides
 guides:
   SURVIVAL_MODE:
-    name: '&aSlimefun Guide &7(Chest GUI)'
+    name: "&aSlimefun Guide &7(Chest GUI)"
     lore:
-      - '&eRight Click &8\u21E8 &7Browse Items'
-      - '&eShift + Right Click &8\u21E8 &7Open Settings / Credits'
+      - "&eRight Click &8\u21E8 &7Browse Items"
+      - "&eShift + Right Click &8\u2192 &7Open Settings / Credits"
   CHEAT_MODE:
-    name: '&cSlimefun Guide &4(Cheat Sheet)'
+    name: "&cSlimefun Guide &4(Cheat Sheet)"
     lore:
-      - '&4&lOnly openable by Admins'
-      - '&eRight Click &8\u21E8 &7Browse Items'
-      - '&eShift + Right Click &8\u21E8 &7Open Settings / Credits'
+      - "&4&lOnly openable by Admins"
+      - "&eRight Click &8\u2192 &7Browse Items"
+      - "&eShift + Right Click &8\u2192 &7Open Settings / Credits"
