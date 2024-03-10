@@ -7,6 +7,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 
 import net.guizhanss.slimefuntranslation.utils.constant.Keys;
@@ -26,6 +28,27 @@ public class SlimefunItemUtils {
         } else {
             return PersistentDataAPI.getString(item.getItemMeta(), Keys.SLIMEFUN_ITEM);
         }
+    }
+
+    @Nullable
+    public static SlimefunGuideMode getGuideMode(@Nullable ItemStack item) {
+        if (item == null || item.getType().isAir() || !item.hasItemMeta()) {
+            return null;
+        }
+        String mode = PersistentDataAPI.getString(item.getItemMeta(), Slimefun.getRegistry().getGuideDataKey());
+        try {
+            return SlimefunGuideMode.valueOf(mode);
+        } catch (IllegalArgumentException | NullPointerException e) {
+            return null;
+        }
+    }
+
+    @Nullable
+    public static String getItemGroupKey(@Nullable ItemStack item) {
+        if (item == null || item.getType().isAir() || !item.hasItemMeta()) {
+            return null;
+        }
+        return PersistentDataAPI.getString(item.getItemMeta(), Keys.SLIMEFUN_ITEM_GROUP);
     }
 
     @Nonnull

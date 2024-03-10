@@ -22,6 +22,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
@@ -237,16 +238,71 @@ public final class TranslationService {
         if (item == null || !item.hasItemMeta()) {
             return false;
         }
-        String sfId = SlimefunItemUtils.getId(item);
-        if (sfId == null) {
-            return false;
+
+        // slimefun guide
+        SlimefunGuideMode guideMode = SlimefunItemUtils.getGuideMode(item);
+        if (guideMode != null) {
+            return translateSfGuide(user, item, guideMode);
         }
 
-        return translateItem(user, item, sfId);
+        // slimefun item group
+        String itemGroupKey = SlimefunItemUtils.getItemGroupKey(item);
+        if (itemGroupKey != null) {
+            return translateSfItemGroup(user, item, itemGroupKey);
+        }
+
+        // slimefun item
+        String sfId = SlimefunItemUtils.getId(item);
+        if (sfId != null) {
+            return translateSfItem(user, item, sfId);
+        }
+
+        return false;
     }
 
     @ParametersAreNonnullByDefault
-    private boolean translateItem(User user, ItemStack item, String sfId) {
+    private boolean translateSfGuide(User user, ItemStack item, SlimefunGuideMode guideMode) {
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getGuideTranslations(), user, guideMode.name());
+        if (transl.isEmpty()) {
+            return false;
+        }
+
+        var translation = transl.get();
+        final ItemMeta meta = item.getItemMeta();
+
+        var integrationService = SlimefunTranslation.getIntegrationService();
+        // display name
+        String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
+        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(user, item, meta, originalDisplayName)));
+        // lore
+        List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
+        meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(user, item, meta, originalLore)));
+
+        item.setItemMeta(meta);
+        return true;
+    }
+
+    @ParametersAreNonnullByDefault
+    private boolean translateSfItemGroup(User user, ItemStack item, String itemGroupKey) {
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getItemGroupTranslations(), user, itemGroupKey);
+        if (transl.isEmpty()) {
+            return false;
+        }
+
+        var translation = transl.get();
+        final ItemMeta meta = item.getItemMeta();
+
+        var integrationService = SlimefunTranslation.getIntegrationService();
+        // display name
+        meta.setDisplayName(integrationService.applyPlaceholders(user, translation));
+        item.setItemMeta(meta);
+        return true;
+    }
+
+    @ParametersAreNonnullByDefault
+    private boolean translateSfItem(User user, ItemStack item, String sfId) {
         // check if the item is disabled
         if (SlimefunTranslation.getConfigService().getDisabledItems().contains(sfId)) {
             return false;
