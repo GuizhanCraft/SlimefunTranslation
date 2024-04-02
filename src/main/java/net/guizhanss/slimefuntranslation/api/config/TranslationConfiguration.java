@@ -79,6 +79,12 @@ public class TranslationConfiguration {
 
         String name = config.getString("name", defaults.getName());
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
+
+        if (SlimefunTranslation.getConfigService().getDisabledLanguages().contains(lang)) {
+            SlimefunTranslation.log(Level.INFO, "Language {0} is disabled, ignoring.", lang);
+            return Optional.empty();
+        }
+
         String itemIdPrefix = config.getString(fields.getPrefix(), defaults.getPrefix());
         String itemIdSuffix = config.getString(fields.getSuffix(), defaults.getSuffix());
 

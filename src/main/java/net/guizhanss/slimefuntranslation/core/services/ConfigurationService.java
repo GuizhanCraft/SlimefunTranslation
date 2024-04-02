@@ -22,9 +22,10 @@ import lombok.Getter;
 public final class ConfigurationService {
     @Getter(AccessLevel.NONE)
     private final AddonConfig config;
-    private Map<String, String> languageMappings;
     private boolean autoUpdate;
     private boolean debug;
+    private Map<String, String> languageMappings;
+    private Set<String> disabledLanguages;
     private Set<Material> partialOverrideMaterials;
     private Set<String> disabledItems;
 
@@ -40,6 +41,7 @@ public final class ConfigurationService {
         autoUpdate = config.getBoolean("auto-update", true);
         debug = config.getBoolean("debug", false);
         languageMappings = ConfigUtils.getMap(config.getConfigurationSection("language-mappings"));
+        disabledLanguages = new HashSet<>(config.getStringList("disabled-languages"));
         partialOverrideMaterials = ConfigUtils.parseMaterials(config.getStringList("partial-override-materials"));
         disabledItems = new HashSet<>(config.getStringList("disabled-items"));
 

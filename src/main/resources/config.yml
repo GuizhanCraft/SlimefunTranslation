@@ -11,6 +11,10 @@ language-mappings:
   zh-Hans: zh-CN
   zh-Hant: zh-TW
 
+# The list of languages that the translations will be disabled.
+# Should be Slimefun language codes.
+disabled-languages: []
+
 # Some items (such as swords, armor, tools) may hae extra lore that is added by other plugins.
 # SlimefunTranslation overrides all lore by default, but you can add the materials here to only override the covered lines.
 # For example, an item with the lore:
