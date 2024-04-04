@@ -81,7 +81,7 @@ public class TranslationConfiguration {
         String lang = SlimefunTranslation.getConfigService().getMappedLanguage(language);
 
         if (SlimefunTranslation.getConfigService().getDisabledLanguages().contains(lang)) {
-            SlimefunTranslation.log(Level.INFO, "Language {0} is disabled, ignoring.", lang);
+            SlimefunTranslation.debug("Language {0} is disabled, ignoring.", lang);
             return Optional.empty();
         }
 
