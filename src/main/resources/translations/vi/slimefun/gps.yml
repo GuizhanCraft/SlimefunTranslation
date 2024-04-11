@@ -1,0 +1,120 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Các Máy GPS Slimefun
+translations:
+  GPS_TRANSMITTER:
+    conditions:
+      match-name: true
+    name: "&bMáy Phát GPS"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_16%"
+      - "%sftrlore_PowerPerSecond_2%"
+  GPS_TRANSMITTER_2:
+    name: "&cMáy Phát GPS Nâng Cao"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_6%"
+  GPS_TRANSMITTER_3:
+    name: "&cMáy Phát GPS Carbonado"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_22%"
+  GPS_TRANSMITTER_4:
+    name: "&eMáy Phát GPS Có Năng Lượng"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_92%"
+  GPS_CONTROL_PANEL:
+    name: "&bBảng Điều Khiển GPS"
+    lore:
+      - ""
+      - "&fCho phép bạn theo dõi các Vệ tinh của bạn"
+      - "&fvà quản lý Waypoints"
+  GPS_MARKER_TOOL:
+    name: "&bCông Cụ Đánh Dấu GPS"
+    lore:
+      - "&fCho phép bạn đặt Waypoint ở"
+      - "&fvị trí bạn đặt cái này"
+  GPS_EMERGENCY_TRANSMITTER:
+    name: "&cMáy Phát GPS Khẩn Cấp"
+    lore:
+      - "&fMang theo các này trong Túi đồ của bạn"
+      - "&fsẽ tự động đặt một Waypoint"
+      - "&fở Vị trí bạn chết."
+  GPS_GEO_SCANNER:
+    name: "&bMáy Quét GPS Địa Lý"
+    lore:
+      - "&fQuét một Chunk để tìm các tài nguyên thiên nhiên"
+      - "&fnhư là &8Dầu"
+  PORTABLE_GEO_SCANNER:
+    name: "&bMáy Quét Địa Lý Di Động"
+    lore:
+      - ""
+      - "&fQuét một Chunk để tìm các tài nguyên thiên nhiên"
+      - ""
+      - "&eChuột phải&7 để quét"
+  OIL_PUMP:
+    name: "&4Bơm Dầu"
+    lore:
+      - "&7Bơm Dầu lên và đổ đầy vào Xô"
+      - ""
+      - "&c&l! &cĐảm bảo Geo-Scan cái chunk trước"
+  GEO_MINER:
+    name: "&6GEO Miner"
+    lore:
+      - ""
+      - "&eKhai thác tài nguyên từ chunk"
+      - "&eNhững tài nguyên này không thể khai thác bằng cuốc"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+      - ""
+      - "&c&l! &cĐảm bảo Geo-Scan cái chunk trước"
+  GPS_TELEPORTER_PYLON:
+    name: "&5Tháp Dịch Chuyển GPS"
+    lore:
+      - ""
+      - "&7Thành Phần Bộ Dịch Chuyển"
+  GPS_TELEPORTATION_MATRIX:
+    name: "&bMa Trận Dịch Chuyển GPS"
+    lore:
+      - ""
+      - "&fĐây là Thành phần chính của Bộ dịch chuyển của bạn"
+      - "&fMa trận này cho phép Người chơi lựa chọn tất cả"
+      - "&fWaypoint được tạo ra bởi Người chơi đã đặt"
+      - "&fThiết bị này."
+  PORTABLE_TELEPORTER:
+    name: "&bBộ Dịch Chuyển Di Động"
+    lore-overrides:
+      2: "&fThiết bị này cho phép bạn dịch chuyển"
+      3: "&fđến waypoint từ bất kỳ đâu"
+      7: "%sftrlore_RightClickToUse%"
+  GPS_ACTIVATION_DEVICE_SHARED:
+    name: "&fThiết Bị Kích Hoạt GPS &3(Được chia sẻ)"
+    lore:
+      - ""
+      - "&fĐặt nó vào một Ma trận Dịch chuyển"
+      - "&fvà bước lên tấm Plate để kích hoạt"
+      - "&fquá trình Dịch chuyển"
+  GPS_ACTIVATION_DEVICE_PERSONAL:
+    name: "&fThiết Bị Kích Hoạt GPS &a(Cá nhân)"
+    lore:
+      - ""
+      - "&fĐặt nó vào một Ma trận Dịch chuyển"
+      - "&fvà bước lên tấm Plate để kích hoạt"
+      - "&fquá trình Dịch chuyển"
+      - ""
+      - "&fPhiên bản này chỉ cho phép người"
+      - "&fđã đặt thiết bị này dùng nó"
+  ELEVATOR_PLATE:
+    name: "&bPlate Thang Máy"
+    lore:
+      - ""
+      - "&fĐặt một Plate Thang Máy ở mỗi tầng"
+      - "&fvà bạn sẽ có thể dịch chuyển giữa chúng."
+      - ""
+      - "&eChuột phải khối này &7để đặt tên cho nó"
