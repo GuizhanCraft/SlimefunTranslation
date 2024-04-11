@@ -24,6 +24,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 
 import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 import net.guizhanss.slimefuntranslation.api.config.TranslationConfiguration;
@@ -254,7 +255,11 @@ public final class TranslationService {
         // slimefun item
         String sfId = SlimefunItemUtils.getId(item);
         if (sfId != null) {
-            return translateSfItem(user, item, sfId);
+            if (sfId.equals("_UI_NOT_RESEARCHED")) {
+                return translateNotResearchedItem(user, item, ItemUtils.getItemName(item));
+            } else {
+                return translateSfItem(user, item, sfId);
+            }
         }
 
         return false;
@@ -331,6 +336,26 @@ public final class TranslationService {
             List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
             meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(user, item, meta, originalLore)));
         }
+
+        item.setItemMeta(meta);
+        return true;
+    }
+
+    @ParametersAreNonnullByDefault
+    private boolean translateNotResearchedItem(User user, ItemStack item, String itemName) {
+        // find the translation
+        var transl = TranslationUtils.findTranslation(
+            SlimefunTranslation.getRegistry().getItemNameTranslations(), user, itemName);
+        if (transl.isEmpty()) {
+            return false;
+        }
+        var translation = transl.get();
+        final ItemMeta meta = item.getItemMeta();
+
+        var integrationService = SlimefunTranslation.getIntegrationService();
+        // display name
+        String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
+        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(user, item, meta, originalDisplayName)));
 
         item.setItemMeta(meta);
         return true;

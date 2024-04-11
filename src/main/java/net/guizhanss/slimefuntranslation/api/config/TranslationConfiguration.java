@@ -65,7 +65,7 @@ public class TranslationConfiguration {
      * @param config   the {@link FileConfiguration} to create the {@link TranslationConfiguration} from.
      * @param fields   the fields to look for in the config.
      * @param defaults the default values for the fields.
-     * @return an {@link Optional} of {@link TranslationConfiguration} if the config is valid, otherwise {@code null}.
+     * @return an {@link Optional} of {@link TranslationConfiguration} if the config is valid, otherwise an empty {@link Optional}.
      */
     @Nonnull
     @ParametersAreNonnullByDefault
@@ -266,6 +266,17 @@ public class TranslationConfiguration {
         var allMessageTranslations = registry.getMessageTranslations();
         var pluginMessageTranslations = allMessageTranslations.computeIfAbsent(addon.getName(), k -> new HashMap<>());
         registerTranslations(pluginMessageTranslations, lang, translations.getMessage());
+
+        // itemNames
+        // we only record the item names for registered Slimefun items
+        for (var entry : translations.getItem().entrySet()) {
+            var sfItem = SlimefunItem.getById(entry.getKey());
+            if (sfItem == null) {
+                continue;
+            }
+            var itemName = sfItem.getItemName();
+            registry.getItemNameTranslations().computeIfAbsent(lang, k -> new HashMap<>()).put(itemName, entry.getValue());
+        }
 
         setAddon(addon);
         setState(State.REGISTERED);

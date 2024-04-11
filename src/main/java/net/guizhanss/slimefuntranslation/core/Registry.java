@@ -26,5 +26,7 @@ public final class Registry {
     private final Map<String, Map<String, String>> loreTranslations = new HashMap<>();
     // plugin -> lang -> messageId -> translation
     private final Map<String, Map<String, Map<String, String>>> messageTranslations = new HashMap<>();
+    // lang -> itemName -> translatedName
+    private final Map<String, Map<String, ItemTranslation>> itemNameTranslations = new HashMap<>();
     private final Map<String, LoreHandler> slimefunLoreHandlers = new HashMap<>();
 }
