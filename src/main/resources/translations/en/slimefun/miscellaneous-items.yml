@@ -29,11 +29,15 @@ translations:
   PURE_ORE_CLUSTER:
     name: "&6Pure Ore Cluster"
   TINY_URANIUM:
+    conditions:
+      match-lore: true
     name: "&cTiny Pile of Uranium"
     lore:
       - ""
       - "%sftrlore_Radioactive_Low%"
   SMALL_URANIUM:
+    conditions:
+      match-lore: true
     name: "&cSmall Chunk of Uranium"
     lore:
       - ""
