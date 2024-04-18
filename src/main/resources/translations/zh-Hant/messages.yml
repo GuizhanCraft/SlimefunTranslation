@@ -1,0 +1,26 @@
+name: SlimefunTranslation 訊息
+messages:
+  player-only: "&c只有玩家可以執行此動作！"
+  no-permission: "&c您沒有權限來執行該動作！"
+  commands:
+    id:
+      description: "獲取你主手上的 Slimefun 物品 ID"
+      not-sf-item: "&c你主手手持的物品不是 Slimefun 物品！"
+      result: "你主手手持的 Slimefun 物品 ID 為："
+      click-to-copy: "點擊以複製到剪貼簿"
+    search:
+      description: "使用你目前的語言搜尋 Slimefun 物品"
+      error: "&4顯示物品時發生錯誤！ 請通知管理員檢查控制台！"
+    translation:
+      description: "管理翻譯檔案"
+      extract:
+        description: "提取翻譯文件到\"translation\"目錄中"
+        success: "&a所有翻譯文件已提取！（替換: {0}）"
+      generate:
+        description: "按照指定附加和語言生成翻譯文件"
+        invalid-addon: "&c附屬 \"{0}\" 沒有啟用！"
+        invalid-itemgroup: "&c物品組 \"{0}\" 不存在！"
+        success: "&a成功產生 \"{1}\" 語言的翻譯檔案 \"{0}\"！"
+      reload:
+        description: "重新載入翻譯檔案"
+        success: "&a所有翻譯正在重新載入中！"
