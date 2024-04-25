@@ -153,11 +153,13 @@ public class FixedItemTranslation implements ItemTranslation {
             }
         }
 
-        if (conditions.isMatchLore()) {
+        // currently, items displayed in network grid have lore displayed as original
+        // so match lore condition now is ignored and is checked every time
+        if (meta.hasLore()) {
             var originalItem = sfItem.getItem();
             if (originalItem instanceof SlimefunItemStack sfItemStack) {
                 var originalLore = sfItemStack.getItemMetaSnapshot().getLore();
-                if (originalLore.isEmpty() || !meta.hasLore() || !meta.getLore().equals(originalLore.get())) {
+                if (originalLore.isEmpty() || !meta.getLore().equals(originalLore.get())) {
                     return TranslationStatus.NAME_ONLY;
                 }
             } else {
@@ -166,11 +168,30 @@ public class FixedItemTranslation implements ItemTranslation {
                     return TranslationStatus.DENIED;
                 }
                 var originalLore = originalMeta.getLore();
-                if (!meta.hasLore() || !meta.getLore().equals(originalLore)) {
+                if (!meta.getLore().equals(originalLore)) {
                     return TranslationStatus.NAME_ONLY;
                 }
             }
         }
+        // old match lore check
+//        if (conditions.isMatchLore()) {
+//            var originalItem = sfItem.getItem();
+//            if (originalItem instanceof SlimefunItemStack sfItemStack) {
+//                var originalLore = sfItemStack.getItemMetaSnapshot().getLore();
+//                if (originalLore.isEmpty() || !meta.hasLore() || !meta.getLore().equals(originalLore.get())) {
+//                    return TranslationStatus.NAME_ONLY;
+//                }
+//            } else {
+//                var originalMeta = originalItem.getItemMeta();
+//                if (!originalMeta.hasLore()) {
+//                    return TranslationStatus.DENIED;
+//                }
+//                var originalLore = originalMeta.getLore();
+//                if (!meta.hasLore() || !meta.getLore().equals(originalLore)) {
+//                    return TranslationStatus.NAME_ONLY;
+//                }
+//            }
+//        }
 
         return TranslationStatus.ALLOWED;
     }
