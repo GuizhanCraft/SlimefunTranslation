@@ -278,8 +278,9 @@ public final class TranslationService {
 
         var integrationService = SlimefunTranslation.getIntegrationService();
         // display name
-        String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
-        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(user, item, meta, originalDisplayName)));
+        // TODO: Slimefun still checks name, so not changing name
+//        String originalDisplayName = meta.hasDisplayName() ? meta.getDisplayName() : "";
+//        meta.setDisplayName(integrationService.applyPlaceholders(user, translation.getDisplayName(user, item, meta, originalDisplayName)));
         // lore
         List<String> originalLore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
         meta.setLore(integrationService.applyPlaceholders(user, translation.getLore(user, item, meta, originalLore)));
