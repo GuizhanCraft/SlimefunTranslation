@@ -86,21 +86,31 @@ public class FixedItemTranslation implements ItemTranslation {
         List<String> newLore = new ArrayList<>(original);
 
         if (!lore.isEmpty()) {
-            // lore specified
-            if (conditions.isPartialOverride()) {
-                // partial override enabled, only override the specified lines
-                for (int i = 0; i < lore.size(); i++) {
-                    try {
-                        var line = lore.get(i);
-                        newLore.set(i, ColorUtils.color(line));
-                    } catch (IndexOutOfBoundsException e) {
-                        // ignore
-                    }
+            // partial override is ignored for now, always enabled
+            for (int i = 0; i < lore.size(); i++) {
+                try {
+                    var line = lore.get(i);
+                    newLore.set(i, ColorUtils.color(line));
+                } catch (IndexOutOfBoundsException e) {
+                    // ignore
                 }
-            } else {
-                // partial override disabled, override all lines
-                newLore = new ArrayList<>(lore);
             }
+            // legacy partial override code until a better solution is found
+//            // lore specified
+//            if (conditions.isPartialOverride()) {
+//                // partial override enabled, only override the specified lines
+//                for (int i = 0; i < lore.size(); i++) {
+//                    try {
+//                        var line = lore.get(i);
+//                        newLore.set(i, ColorUtils.color(line));
+//                    } catch (IndexOutOfBoundsException e) {
+//                        // ignore
+//                    }
+//                }
+//            } else {
+//                // partial override disabled, override all lines
+//                newLore = new ArrayList<>(lore);
+//            }
         }
 
         // specific line overrides
@@ -153,23 +163,19 @@ public class FixedItemTranslation implements ItemTranslation {
             }
         }
 
-        // currently, items displayed in network grid have lore displayed as original
-        // so match lore condition now is ignored and is checked every time
+        // if there is no lore in the original item, lore cannot be translated
         if (meta.hasLore()) {
             var originalItem = sfItem.getItem();
             if (originalItem instanceof SlimefunItemStack sfItemStack) {
                 var originalLore = sfItemStack.getItemMetaSnapshot().getLore();
-                if (originalLore.isEmpty() || !meta.getLore().equals(originalLore.get())) {
-                    return TranslationStatus.NAME_ONLY;
+                if (originalLore.isEmpty()) {
+                    return TranslationStatus.DENIED;
                 }
             } else {
                 var originalMeta = originalItem.getItemMeta();
+
                 if (!originalMeta.hasLore()) {
                     return TranslationStatus.DENIED;
-                }
-                var originalLore = originalMeta.getLore();
-                if (!meta.getLore().equals(originalLore)) {
-                    return TranslationStatus.NAME_ONLY;
                 }
             }
         }
