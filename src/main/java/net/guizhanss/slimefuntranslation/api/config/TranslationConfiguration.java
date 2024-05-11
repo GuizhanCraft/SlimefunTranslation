@@ -194,7 +194,7 @@ public class TranslationConfiguration {
             // sfItem
             SlimefunItem sfItem = SlimefunItem.getById(itemId);
             if (sfItem == null && !forceLoad) {
-                SlimefunTranslation.log(Level.WARNING, "Item {0} is not registered, ignoring.", itemId);
+                SlimefunTranslation.debug("Item {0} is not registered, ignoring.", itemId);
                 continue;
             }
 
