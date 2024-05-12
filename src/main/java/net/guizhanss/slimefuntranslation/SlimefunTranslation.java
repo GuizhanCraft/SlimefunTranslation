@@ -10,6 +10,7 @@ import com.google.common.base.Preconditions;
 
 import org.bukkit.plugin.Plugin;
 
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.BlobBuildUpdater;
 
 import net.guizhanss.guizhanlib.slimefun.addon.AbstractAddon;
@@ -82,6 +83,13 @@ public final class SlimefunTranslation extends AbstractAddon {
         log(Level.INFO, "     by ybw0014     ");
         log(Level.INFO, "====================");
 
+        // check if slimefun has set a server default language
+        if (Slimefun.getLocalization().getDefaultLanguage() == null) {
+            log(Level.SEVERE, "Slimefun has no default language, this will make SlimefunTranslation not working properly, disabling...");
+            getPluginLoader().disablePlugin(this);
+            return;
+        }
+
         // tags
         SlimefunTranslationTag.reloadAll();
 
@@ -107,6 +115,7 @@ public final class SlimefunTranslation extends AbstractAddon {
 
     @Override
     public void disable() {
+        // does nothing
     }
 
     private void setupMetrics() {

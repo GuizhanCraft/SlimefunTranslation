@@ -8,9 +8,9 @@ import net.guizhanss.slimefuntranslation.SlimefunTranslation;
 
 import lombok.experimental.UtilityClass;
 
-@SuppressWarnings("deprecation")
 @UtilityClass
 public final class Keys {
+    public static final NamespacedKey SEARCH_RESULT_GROUP = create("search_result");
     public static final NamespacedKey SEARCH_DISPLAY = create("search_display");
     // slimefun keys
     public static final NamespacedKey SLIMEFUN_ITEM = new NamespacedKey("slimefun", "slimefun_item");

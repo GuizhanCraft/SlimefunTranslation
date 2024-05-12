@@ -3,7 +3,6 @@ package net.guizhanss.slimefuntranslation.core.users;
 import java.util.UUID;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 import com.google.common.base.Preconditions;
 
@@ -14,6 +13,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 /**
@@ -25,6 +25,7 @@ public class User {
     private final Player player;
     private final UUID uuid;
     private String locale;
+    @Setter
     private SlimefunItem recentClickedBlock;
 
     public User(@Nonnull Player player) {
@@ -55,9 +56,5 @@ public class User {
     public void setLocale(@Nonnull String newLocale) {
         Preconditions.checkArgument(newLocale != null, "Locale cannot be null");
         locale = newLocale;
-    }
-
-    public void setRecentClickedBlock(@Nullable SlimefunItem block) {
-        recentClickedBlock = block;
     }
 }
