@@ -4,6 +4,10 @@ auto-update: true
 # Print debug messages in console.
 debug: false
 
+# whether to enable search interception
+# enabling this will make player's click on search button in sf guide to start SlimefunTranslation search, instead of Slimefun's search.
+intercept-search: true
+
 # Language mappings
 # Format: <provided language code>: <slimefun language code>
 language-mappings:

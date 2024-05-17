@@ -24,6 +24,7 @@ public final class ConfigurationService {
     private final AddonConfig config;
     private boolean autoUpdate;
     private boolean debug;
+    private boolean interceptSearch;
     private Map<String, String> languageMappings;
     private Set<String> disabledLanguages;
     private Set<Material> partialOverrideMaterials;
@@ -40,6 +41,7 @@ public final class ConfigurationService {
 
         autoUpdate = config.getBoolean("auto-update", true);
         debug = config.getBoolean("debug", false);
+        interceptSearch = config.getBoolean("intercept-search", false);
         languageMappings = ConfigUtils.getMap(config.getConfigurationSection("language-mappings"));
         disabledLanguages = new HashSet<>(config.getStringList("disabled-languages"));
         partialOverrideMaterials = ConfigUtils.parseMaterials(config.getStringList("partial-override-materials"));

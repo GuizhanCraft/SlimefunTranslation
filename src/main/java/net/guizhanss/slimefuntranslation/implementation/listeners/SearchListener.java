@@ -20,13 +20,15 @@ public class SearchListener implements Listener {
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void onSearch(@Nonnull InventoryClickEvent e) {
+        if (!SlimefunTranslation.getConfigService().isInterceptSearch()) {
+            return;
+        }
         var item = e.getCurrentItem();
         if (item == null || item.getType().isAir()) {
             return;
         }
 
         var sfId = Slimefun.getItemDataService().getItemData(item);
-        SlimefunTranslation.debug("player clicked on item with sfId: " + sfId.orElse("null"));
         if (sfId.isEmpty() || !sfId.get().equals("_UI_SEARCH")) {
             return;
         }
