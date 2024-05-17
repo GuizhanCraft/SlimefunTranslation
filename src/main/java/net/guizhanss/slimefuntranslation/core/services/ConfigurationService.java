@@ -41,7 +41,7 @@ public final class ConfigurationService {
 
         autoUpdate = config.getBoolean("auto-update", true);
         debug = config.getBoolean("debug", false);
-        interceptSearch = config.getBoolean("intercept-search", false);
+        interceptSearch = config.getBoolean("intercept-search", true);
         languageMappings = ConfigUtils.getMap(config.getConfigurationSection("language-mappings"));
         disabledLanguages = new HashSet<>(config.getStringList("disabled-languages"));
         partialOverrideMaterials = ConfigUtils.parseMaterials(config.getStringList("partial-override-materials"));
