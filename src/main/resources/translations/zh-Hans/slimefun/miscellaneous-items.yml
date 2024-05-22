@@ -51,7 +51,7 @@ translations:
   GOLD_24K_BLOCK:
     name: "&f金块&7（24克拉）"
   REINFORCED_PLATE:
-    name: "&7强化布料"
+    name: "&7强化合金板"
   DUCT_TAPE:
     name: "&8强力胶布"
     lore:
