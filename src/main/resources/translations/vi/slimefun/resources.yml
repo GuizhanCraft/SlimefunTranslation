@@ -28,11 +28,11 @@ translations:
   SYNTHETIC_SAPPHIRE:
     conditions:
       match-name: true
-    name: "&bLưu Li Nhân Tạo"
+    name: "&bLưu Ly Nhân Tạo"
     lore:
       - ""
       - "&fVật phẩm này có thể được dùng"
-      - "&ftrong bàn chế tạo như Ngọc Lưu Li bình thường"
+      - "&ftrong bàn chế tạo như Ngọc Lưu Ly bình thường"
   SYNTHETIC_DIAMOND:
     name: "&bKim Cương Nhân Tạo"
     lore:
@@ -85,7 +85,7 @@ translations:
   MAGNESIUM_INGOT:
     name: "&bThỏi Magnesium"
   SULFATE:
-    name: "&bSulfate"
+    name: "&bMuối Sulfate"
   CARBON:
     name: "&eCarbon"
   COMPRESSED_CARBON:
