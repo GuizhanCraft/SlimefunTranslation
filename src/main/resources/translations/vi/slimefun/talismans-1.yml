@@ -1,0 +1,142 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Bùa Hộ Mệnh (Bậc I)
+translations:
+  ANVIL_TALISMAN:
+    name: "&aBùa Thợ Rèn"
+    lore:
+      - ""
+      - "&fMỗi lá bùa hộ mệnh có thể ngăn chặn"
+      - "&f1 công cụ bị phá vỡ, nhưng sau đó 1 lá bùa sẽ"
+      - "&fbị tiêu thụ"
+      - ""
+      - "&4&lCẢNH BÁO:"
+      - "&4Bùa hộ mệnh này không hoạt động với"
+      - "&4các Công cụ quá mạnh mẽ"
+      - "&4do sự phức tạp của chúng"
+  MINER_TALISMAN:
+    name: "&aBùa Thợ Mỏ"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 20% nhân đôi"
+      - "&ftất cả Quặng bạn khai thác"
+  FARMER_TALISMAN:
+    name: "&aBùa Nhà Nông"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 20% nhân đôi"
+      - "&ftất cả nông sản bạn thu hoạch"
+  HUNTER_TALISMAN:
+    name: "&aBùa Thợ Săn"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 20% nhân đôi"
+      - "&fvật phẩm từ Mob rơi ra"
+  LAVA_TALISMAN:
+    name: "&aBùa Dung Nham"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó sẽ"
+      - "&fcho bạn hiệu ứng Kháng Lửa"
+      - "&fngay khi bạn chạm vào dung nham"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  WATER_TALISMAN:
+    name: "&aBùa Thợ Lặn"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó sẽ"
+      - "&fcho bạn hiệu ứng"
+      - "&fThở dưới nước"
+      - "&fngay khi bạn bắt đầu chết đuối"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  ANGEL_TALISMAN:
+    name: "&aBùa Thiên Thần"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 75% giúp bạn"
+      - "&fkhông nhận sát thương rơi"
+  FIRE_TALISMAN:
+    name: "&aBùa Cứu Hỏa"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó sẽ"
+      - "&fcho bạn hiệu ứng Kháng Lửa"
+      - "&fngay khi bạn bắt đầu cháy"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  MAGICIAN_TALISMAN:
+    name: "&aBùa Ảo Thuật"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó cho"
+      - "&fbạn thêm 80% may mắn khi phù phép"
+      - "&fCó tỉ lệ nhận thêm một phù phép"
+  TRAVELLER_TALISMAN:
+    name: "&aBùa Lãng Du"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 60% cho bạn hiệu ứng Chạy Nhanh"
+      - "&fmỗi lần bạn bắt đầu chạy"
+  WARRIOR_TALISMAN:
+    name: "&aBùa Chiến Binh"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó cho"
+      - "&fbạn hiệu ứng Sức Mạnh III khi bạn bị đánh"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  KNIGHT_TALISMAN:
+    name: "&aBùa Kị Sĩ"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 30% cho bạn 5 giây hiệu ứng Hồi Phục"
+      - "&fkhi bạn bị đánh"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  CAVEMAN_TALISMAN:
+    name: "&aBùa Tối Cổ"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 50% cho bạn hiệu ứng Đào Nhanh"
+      - "&fmỗi khi bạn đào quặng bất kì"
+  WISE_TALISMAN:
+    name: "&aBùa Thông Thái"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 20% nhân đôi"
+      - "&fmọi kinh nghiệm bạn nhận được"
+  WHIRLWIND_TALISMAN:
+    name: "&aBùa Lốc Xoáy"
+    lore:
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 60% phản lại vật được bắn về phía bạn"
+      - "&e&oChỉ khi ném Đinh Ba mới có thể xuyên qua"
+      - "&e&olớp bảo vệ này"
+  WIZARD_TALISMAN:
+    name: "&aBùa Phù Thủy"
+    lore:
+      - ""
+      - "&fKhi bạn có Lá bùa này"
+      - "&ftrong túi đồ của bạn, nó cho"
+      - "&fphép bạn nhận được phù phép Gia Tài IV/V"
+      - "&fnhưng có tỉ lệ giảm cấp độ"
+      - "&fcủa các phù phép khác trong vật phẩm"
