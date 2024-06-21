@@ -1,0 +1,217 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 基礎機器
+translations:
+  OUTPUT_CHEST:
+    name: "&4物品輸出箱"
+    lore:
+      - ""
+      - "&c&o將其放在基礎機器的發射器旁邊時"
+      - "&c&o會將製作好的物品"
+      - "&c&o存入該箱子中"
+  ENHANCED_CRAFTING_TABLE:
+    conditions:
+      match-name: true
+    name: "&e進階工作台"
+    lore:
+      - ""
+      - "&a一個原版的工作台"
+      - "&a無法承受如此強大的力量……"
+  GRIND_STONE:
+    name: "&b研磨機"
+    lore:
+      - ""
+      - "&a更高效的磨物品"
+  ARMOR_FORGE:
+    name: "&6盔甲鍛造台"
+    lore:
+      - ""
+      - "&讓你有製造強大盔甲的能力"
+  ORE_CRUSHER:
+    name: "&b礦石粉碎機"
+    lore:
+      - ""
+      - "&a粉碎礦石並獲得雙倍的礦粉"
+  COMPRESSOR:
+    name: "&b壓縮機"
+    lore:
+      - ""
+      - "&a壓縮物品"
+  MAKESHIFT_SMELTERY:
+    name: "&e簡易冶煉爐"
+    lore:
+      - ""
+      - "&f簡易版本的冶煉爐"
+      - "&f只能將礦粉"
+      - "&f冶煉成錠"
+  SMELTERY:
+    name: "&6冶煉爐"
+    lore:
+      - ""
+      - "&f可以將礦粉冶煉成錠"
+      - "&f和製作合金"
+      - "&f的高溫熔爐"
+  IGNITION_CHAMBER:
+    name: "&4自動點火機"
+    lore:
+      - ""
+      - "&防止冶煉爐的火焰熄滅"
+      - "&f只需要放入\"打火石\""
+      - "&f並放在冶煉爐的發射器旁邊"
+  PRESSURE_CHAMBER:
+    name: "&b壓力室"
+    lore:
+      - ""
+      - "&a進一步的壓縮物品"
+  MAGIC_WORKBENCH:
+    name: "&6魔法工作台"
+    lore:
+      - ""
+      - "&d給物品注入魔法能量"
+  ORE_WASHER:
+    name: "礦物洗滌機"
+    lore:
+      - ""
+      - "&a清洗篩礦獲得礦粉"
+      - "&a並給你一些小石塊"
+  TABLE_SAW:
+    name: "&6鋸木機"
+    lore:
+      - ""
+      - "&a可以從一個原木中取得八個木材"
+      - "&a(支援所有原木類型)"
+  COMPOSTER:
+    name: "&a堆肥桶"
+    lore:
+      - ""
+      - "&a隨著時間的推移可以轉換各種材料……"
+  AUTOMATED_PANNING_MACHINE:
+    name: "&e自動淘金機"
+    lore:
+      - ""
+      - "&f多重方塊機器版本的淘金盤"
+      - "&f結合了「普通淘金盤」及「地獄淘金盤」"
+  INDUSTRIAL_MINER:
+    name: "&b工業挖礦機"
+    lore:
+      - ""
+      - "&f此多重方塊機器能開採"
+      - "&f其下方 7x7 範圍內的任何礦石"
+      - "&f將煤炭或其他燃料放入箱子"
+      - "&f來補充燃料"
+  ADVANCED_INDUSTRIAL_MINER:
+    name: "&c高級工業挖礦機"
+    lore:
+      - ""
+      - "&f此多重方塊機器能開採"
+      - "&f其下方 11x11 範圍內的任何礦石"
+      - "&f將燃油或岩漿桶放入箱子"
+      - "&f來填充燃料"
+      - ""
+      - "&a+ 絲綢之觸效果"
+  CRUCIBLE:
+    name: "&c坩堝"
+    lore:
+      - ""
+      - "&a用於將物品熔煉成液體"
+  JUICER:
+    name: "&a果汁機"
+    lore:
+      - ""
+      - "&a讓你製作美味的果汁"
+  ENHANCED_FURNACE:
+    name: "&7強化熔爐 - &eI"
+    lore:
+      - ""
+      - "&7燃燒速度： &e1x"
+      - "&7燃料效率：&e1x"
+      - "&7產物翻倍倍數：&e1x"
+  ENHANCED_FURNACE_2:
+    name: "&7強化熔爐 - &eII"
+    lore:
+      - ""
+      - "&7燃燒速度：&e2x"
+      - "&7燃料效率：&e1x"
+      - "&7產物翻倍倍數：&e1x"
+  ENHANCED_FURNACE_3:
+    name: "&7強化熔爐 - &eIII"
+    lore:
+      - ""
+      - "&7燃燒速度：&e2x"
+      - "&7燃料效率：&e2x"
+      - "&7產物翻倍倍數：&e1x"
+  ENHANCED_FURNACE_4:
+    name: "&7強化熔爐 - &eIV"
+    lore:
+      - ""
+      - "&7燃燒速度：&e3x"
+      - "&7燃料效率：&e2x"
+      - "&7產物翻倍倍數：&e1x"
+  ENHANCED_FURNACE_5:
+    name: "&7強化熔爐 - &eV"
+    lore:
+      - ""
+      - "&7燃燒速度：&e3x"
+      - "&7燃料效率：&e2x"
+      - "&7產物翻倍倍數：&e2x"
+  ENHANCED_FURNACE_6:
+    name: "&7強化熔爐 - &eVI"
+    lore:
+      - ""
+      - "&7燃燒速度：&e3x"
+      - "&7燃料效率：&e3x"
+      - "&7產物翻倍倍數：&e2x"
+  ENHANCED_FURNACE_7:
+    name: "&7強化熔爐 - &eVII"
+    lore:
+      - ""
+      - "&7燃燒速度：&e4x"
+      - "&7燃料效率：&e3x"
+      - "&7產物翻倍倍數：&e2x"
+  ENHANCED_FURNACE_8:
+    name: "&7強化熔爐 - &eVIII"
+    lore:
+      - ""
+      - "&7燃燒速度：&e4x"
+      - "&7燃料效率：&e4x"
+      - "&7產物翻倍倍數：&e2x"
+  ENHANCED_FURNACE_9:
+    name: "&7強化熔爐 - &eIX"
+    lore:
+      - ""
+      - "&7燃燒速度：&e5x"
+      - "&7燃料效率：&e4x"
+      - "&7產物翻倍倍數：&e2x"
+  ENHANCED_FURNACE_10:
+    name: "&7強化熔爐 - &eX"
+    lore:
+      - ""
+      - "&7燃燒速度：&e5x"
+      - "&7燃料效率：&e5x"
+      - "&7產物翻倍倍數：&e2x"
+  ENHANCED_FURNACE_11:
+    name: "&7強化熔爐 - &eXI"
+    lore:
+      - ""
+      - "&7燃燒速度：&e5x"
+      - "&7燃料效率：&e5x"
+      - "&7產物翻倍倍數：&e3x"
+  REINFORCED_FURNACE:
+    name: "&7強化合金熔爐"
+    lore:
+      - ""
+      - "&7燃燒速度：&e10x"
+      - "&7燃料效率：&e10x"
+      - "&7產物翻倍倍數：&e3x"
+  CARBONADO_EDGED_FURNACE:
+    name: "&7黑鑽石鑲邊熔爐"
+    lore:
+      - ""
+      - "&7燃燒速度：&e20x"
+      - "&7燃料效率：&e10x"
+      - "&7產物翻倍倍數：&e3x"
+  BLOCK_PLACER:
+    name: "&a方塊放置器"
+    lore:
+      - ""
+      - "&f所有在該發射器中的方塊"
+      - "&f會被自動放置"

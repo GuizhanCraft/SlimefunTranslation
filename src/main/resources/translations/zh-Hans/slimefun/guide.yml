@@ -1,0 +1,13 @@
+name: Slimefun 指南
+guides:
+  SURVIVAL_MODE:
+    name: "&aSlimefun 指南 &7(箱子界面)"
+    lore:
+      - "&e右键点击 &8\u21E8 &7浏览物品"
+      - "&eShift + 右键点击 &8\u2192 &7打开设置 / 关于"
+  CHEAT_MODE:
+    name: "&cSlimefun 指南 &4(箱子界面)"
+    lore:
+      - "&4&l仅限管理员使用"
+      - "&e右键点击 &8\u2192 &7浏览物品"
+      - "&eShift + 右键点击 &8\u2192 &7打开设置 / 关于"
