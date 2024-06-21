@@ -1,0 +1,158 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Bùa Hộ Mệnh Ender (Bậc II)
+translations:
+  ENDER_ANVIL_TALISMAN:
+    name: "&5Bùa Thợ Rèn Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fMỗi lá bùa hộ mệnh có thể ngăn chặn"
+      - "&f1 Công cụ khi bị phá vỡ, nhưng sau đó sẽ"
+      - "&fbị tiêu thụ"
+      - ""
+      - "&4&lCẢNH BÁO:"
+      - "&4Bùa hộ mệnh này không hoạt động với"
+      - "&4các công cụ quá mạnh mẽ"
+      - "&4do sự phức tạp của chúng"
+  ENDER_MINER_TALISMAN:
+    name: "&5Bùa Thợ mỏ Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong kho đồ của bạn, nó có"
+      - "&f20% tỉ lệ tăng gấp đôi"
+      - "&ftất cả quặng bạn khai thác"
+  ENDER_FARMER_TALISMAN:
+    name: "&5Bùa Nhà Nông Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong kho đồ của bạn, nó có"
+      - "&f20% tỉ lệ tăng gấp đôi"
+      - "&fnông sản bạn thu hoạch"
+  ENDER_HUNTER_TALISMAN:
+    name: "&5Bùa Thợ săn Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&f20% tỉ lệ gấp đôi"
+      - "&fvật phẩm mà Mob rơi ra"
+  ENDER_LAVA_TALISMAN:
+    name: "&5Bùa Dung Nham Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó sẽ"
+      - "&fcho bạn hiệu ứng Kháng Lửa"
+      - "&fngay khi bạn chạm vào dung nham"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  ENDER_WATER_TALISMAN:
+    name: "&5Bùa Thợ Lặn Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó sẽ"
+      - "&fcho bạn khả năng"
+      - "&fThở Dưới Nước"
+      - "&fngay khi bạn bắt đầu chết đuối"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  ENDER_ANGEL_TALISMAN:
+    name: "&5Bùa Thiên Thần Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 75% giúp bạn"
+      - "&fkhông nhận sát thương rơi"
+  ENDER_FIRE_TALISMAN:
+    name: "&5Bùa Cứu Hỏa Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có bùa này"
+      - "&ftrong túi đồ của bạn, nó sẽ"
+      - "&fcho bạn hiệu ứng Kháng Lửa"
+      - "&fngay khi bạn bắt đầu cháy"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  ENDER_MAGICIAN_TALISMAN:
+    name: "&5Bùa Ảo Thuật Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó cho"
+      - "&fbạn thêm 80% may mắn khi phù phép"
+      - "&fCó tỉ lệ nhận thêm một phù phép"
+  ENDER_TRAVELLER_TALISMAN:
+    name: "&5Bùa Lãng Du Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 60% cho bạn hiệu ứng Chạy Nhanh"
+      - "&fmỗi lần bạn bắt đầu chạy"
+  ENDER_WARRIOR_TALISMAN:
+    name: "&5Bùa Chiến Binh Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó cho"
+      - "&fbạn hiệu ứng Sức Mạnh III khi bạn bị đánh"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  ENDER_KNIGHT_TALISMAN:
+    name: "&5Bùa Kị Sĩ Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 30% cho bạn 5 giây hiệu ứng Hồi Phục"
+      - "&fkhi bạn bị đánh"
+      - "&fnhưng sau đó 1 lá bùa sẽ bị tiêu thụ"
+  ENDER_CAVEMAN_TALISMAN:
+    name: "&5Bùa Tối Cổ Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có"
+      - "&ftỉ lệ 50% cho bạn hiệu ứng Đào Nhanh"
+      - "&fmỗi khi bạn đào quặng bất kì"
+  ENDER_WISE_TALISMAN:
+    name: "&5Bùa Thông Thái Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có tỉ lệ"
+      - "&f20% nhân đôi"
+      - "&fmọi kinh nghiệm bạn nhận được"
+  ENDER_WHIRLWIND_TALISMAN:
+    name: "&5Bùa Lốc Xoáy Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó có tỉ lệ"
+      - "&f60% phản lại vật được bắn về phía bạn"
+      - "&e&oChỉ khi ném Đinh Ba mới có thể xuyên qua"
+      - "&e&olớp bảo vệ này"
+  ENDER_WIZARD_TALISMAN:
+    name: "&5Bùa Phù Thủy Ender"
+    lore:
+      - "&7&oPha trộn với Ender"
+      - ""
+      - "&fKhi bạn có lá bùa này"
+      - "&ftrong túi đồ của bạn, nó cho"
+      - "&fphép bạn nhận được phù phép Gia Tài IV/V"
+      - "&fnhưng có tỉ lệ giảm cấp độ"
+      - "&fcủa các phù phép khác trong vật phẩm"
