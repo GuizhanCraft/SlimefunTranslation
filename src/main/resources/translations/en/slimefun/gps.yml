@@ -37,17 +37,20 @@ translations:
   GPS_MARKER_TOOL:
     name: "&bGPS Marker Tool"
     lore:
+      - ""
       - "&fAllows you to set a Waypoint at"
       - "&fthe Location you place this"
   GPS_EMERGENCY_TRANSMITTER:
     name: "&cGPS Emergency Transmitter"
     lore:
+      - ""
       - "&fCarrying this in your Inventory"
       - "&fautomatically sets a Waypoint"
       - "&fat your Location when you die."
   GPS_GEO_SCANNER:
     name: "&bGPS Geo-Scanner"
     lore:
+      - ""
       - "&fScans a Chunk for natural Resources"
       - "&fsuch as &8Oil"
   PORTABLE_GEO_SCANNER:
@@ -60,6 +63,7 @@ translations:
   OIL_PUMP:
     name: "&4Oil Pump"
     lore:
+      - ""
       - "&7Pumps up Oil and fills it into Buckets"
       - ""
       - "&c&l! &cMake sure to Geo-Scan the Chunk first"
