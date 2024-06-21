@@ -1,0 +1,151 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Tiện Ích Ma Thuật Slimefun
+translations:
+  ENDER_BACKPACK:
+    name: "&6Ba Lô Ender"
+    lore:
+      - "&a&oRương Ender Bỏ Túi"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  MAGIC_EYE_OF_ENDER:
+    name: "&6&lMắt Ender Ma Thuật"
+    lore:
+      - "&4&lCần mặc full Giáp Ender"
+      - ""
+      - "&eChuột phải &7để bắn một viên ngọc Ender"
+  STAFF_ELEMENTAL:
+    name: "&6Gậy Nguyên Tố"
+  STAFF_ELEMENTAL_WIND:
+    name: "&6Gậy Nguyên Tố &7-&b&oGió"
+    lore:
+      - ""
+      - "&7Nguyên Tố: &b&oGió"
+      - ""
+      - "&eChuột phải &7để phóng bản thân về phía trước"
+  STAFF_ELEMENTAL_WATER:
+    name: "&6Gậy Nguyên Tố &7-&1&oNước"
+    lore:
+      - ""
+      - "&7Nguyên Tố: &1&oNước"
+      - ""
+      - "&eChuột Phải &7để dập lửa cho bản thân"
+  STAFF_ELEMENTAL_FIRE:
+    name: "&6Gậy Nguyên Tố &7-&c&oLửa"
+    lore:
+      - ""
+      - "&7Nguyên Tố: &c&oLửa"
+  STAFF_ELEMENTAL_STORM:
+    name: "&6Gậy Nguyên Tố &7-&8&Sấm Sét"
+    lore-overrides:
+      2: "&7Nguyên Tố: &8&oSấm Sét"
+      4: "&eChuột Phải &7để triệu hồi một tia sét"
+  MAGICAL_ZOMBIE_PILLS:
+    name: "&6Thuốc Con Nhộng Zombie Ma Thuật"
+    lore:
+      - "&eChuột Phải &7Một Dân làng Thây ma"
+      - "&3hoặc &7một Piglin Thây ma để"
+      - "&7lập tức biến chúng trở lại thành Piglin"
+  INFUSED_MAGNET:
+    name: "&aNam Châm Kép"
+    lore:
+      - ""
+      - "&fNam Châm Kép Ma Thuật"
+      - "&fhút các vật phẩm xung quanh"
+      - "&fmiễn là nó có đâu đó trong"
+      - "&ftúi đồ của bạn"
+      - ""
+      - "&7Giữ &eShift &7để nhặt các vật phẩm xung quanh"
+  BOUND_BACKPACK:
+    name: "&cBa-lô Soulbound"
+    lore-overrides:
+      2: "&7Kích Cỡ: &e36"
+      5: "%sftrlore_RightClickToOpen%"
+  REINFORCED_SPAWNER:
+    name: "&bLồng Spawn Gia Cố"
+  SCROLL_OF_DIMENSIONAL_TELEPOSITION:
+    name: "&6Cuộn Dịch Chuyển Chiều Không Gian"
+    lore:
+      - ""
+      - "&cCuộn này có thể tạo ra"
+      - "&cmột hố đen tạm thời để kéo"
+      - "&ccác thực thể vào và đưa"
+      - "&cchúng đến một chiều không gian nơi"
+      - "&cmọi thứ bị xoay chuyển"
+      - ""
+      - "&fNói cách khác: Làm các Thực thể quay 180 độ"
+  TOME_OF_KNOWLEDGE_SHARING:
+    name: "&6Sách Chia Sẻ Kiến Thức"
+    lore-overrides:
+      3: "&eChuột Phải&7 để ấn định sách"
+      6: "&eChuột Phải&7 để nhận tất cả các Nghiên Cứu của"
+      7: "&7người chơi đã ấn định sách"
+  FLASK_OF_KNOWLEDGE:
+    name: "&cLọ Kiến Thức"
+    lore:
+      - ""
+      - "&fGiúp bạn chứa một phần"
+      - "&fkinh nghiệm của bạn trong lọ"
+      - "&7Giá: &a1 Cấp"
+  FILLED_FLASK_OF_KNOWLEDGE:
+    name: "&cLọ Kiến Thức"
+  ANCIENT_PEDESTAL:
+    name: "&dBệ Cổ Đại"
+    lore:
+      - ""
+      - "&5Một phần của Tế Đàn Cổ Đại"
+  ANCIENT_ALTAR:
+    name: "&dTế Đàn Cổ Đại"
+    lore:
+      - ""
+      - "&5Multi-Block Tế Đàn dùng trong việc"
+      - "&5chế tạo ma thuật"
+  INFERNAL_BONEMEAL:
+    name: "&4Bột Xương Quỷ Quái"
+    lore:
+      - ""
+      - "&cĐẩy nhanh tốc độ Tăng trưởng của"
+      - "&cNether Wart"
+  ELYTRA_SCALE:
+    name: "&cCân Elytra"
+  INFUSED_ELYTRA:
+    conditions:
+      match-name: true
+    name: "&5Cánh Cứng Được Phù Phép"
+  SOULBOUND_ELYTRA:
+    name: "&cCánh Cứng Soulbound"
+  RAINBOW_WOOL:
+    name: "&5Len Cầu Vồng"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS:
+    name: "&5Kính Cầu Vồng"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS_PANE:
+    name: "&5Khung Kính Cầu Vồng"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CLAY:
+    name: "&5Đất Sét Cầu Vồng"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CONCRETE:
+    name: "&5Bê Tông Cầu Vồng"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLAZED_TERRACOTTA:
+    name: "&5Đất Nung Tráng Men Cầu Vồng"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  INFUSED_HOPPER:
+    name: "&5Phễu Ma Thuật"
+    lore:
+      - ""
+      - "&fTự động nhặt vật phẩm trong phạm vi 7x7x7"
+      - "&fquanh nơi được đặt"
