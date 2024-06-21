@@ -1,0 +1,48 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 武器
+translations:
+  GRANDMAS_WALKING_STICK:
+    name: "&7奶奶的拐杖"
+  GRANDPAS_WALKING_STICK:
+    name: "&7爷爷的拐杖"
+  SWORD_OF_BEHEADING:
+    name: "&6处决之剑"
+    lore:
+      - "&7斩首处决 II"
+      - ""
+      - "&r有几率砍下生物的头"
+      - "&r(提高掉落凋灵骷髅头的几率)"
+  BLADE_OF_VAMPIRES:
+    conditions:
+      match-name: true
+    name: "&c吸血鬼之刃"
+    lore:
+      - "&7生命窃取 I"
+      - ""
+      - "&f每次攻击时"
+      - "&f有 45% 的几率"
+      - "&f使自己恢复 2 点生命值"
+  SEISMIC_AXE:
+    name: "&a地震斧"
+    lore:
+      - ""
+      - "&7&o制造一场地震…"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SOULBOUND_SWORD:
+    name: "&c灵魂绑定剑"
+  SOULBOUND_TRIDENT:
+    name: "&c灵魂绑定三叉戟"
+  SOULBOUND_BOW:
+    name: "&c灵魂绑定弓"
+  EXPLOSIVE_BOW:
+    name: "&c爆裂之弓"
+    lore:
+      - "&f被爆裂之弓射出的箭"
+      - "&f将会飞上天"
+  ICY_BOW:
+    name: "&b冰封之弓"
+    lore:
+      - "&f被爆裂之弓射出的箭"
+      - "&r将会因寒冷而无法移动"
+      - "&f持续 2 秒"
