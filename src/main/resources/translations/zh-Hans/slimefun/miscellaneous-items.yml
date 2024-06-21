@@ -1,0 +1,148 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 杂项物品
+translations:
+  SIFTED_ORE:
+    name: "&6筛矿"
+  WHEAT_FLOUR:
+    name: "&f小麦粉"
+  STEEL_PLATE:
+    name: "&7&l钢板"
+  CHAIN:
+    name: "&b锁链"
+  HOOK:
+    name: "&b钩子"
+  STONE_CHUNK:
+    name: "&6小石块"
+  SALT:
+    name: "&f盐"
+  HEAVY_CREAM:
+    name: "&f浓奶油"
+  CHEESE:
+    name: "&f奶酪"
+  BUTTER:
+    name: "&f黄油"
+  CRUSHED_ORE:
+    name: "&6已粉碎的矿石"
+  PULVERIZED_ORE:
+    name: "&6粉末状的矿石"
+  PURE_ORE_CLUSTER:
+    name: "&6纯矿簇"
+  TINY_URANIUM:
+    conditions:
+      match-lore: true
+    name: "&c一小撮铀"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Low%"
+  SMALL_URANIUM:
+    conditions:
+      match-lore: true
+    name: "&c一小块铀"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Moderate%"
+      - "%sftrlore_HazmatSuitRequired%"
+  CLOTH:
+    name: "&b布"
+  CAN:
+    conditions:
+      match-name: true
+    name: "&f锡罐"
+  GOLD_24K_BLOCK:
+    name: "&f金块&7（24克拉）"
+  REINFORCED_PLATE:
+    name: "&7强化合金板"
+  DUCT_TAPE:
+    name: "&8强力胶布"
+    lore:
+      - ""
+      - "&f你可以在自动铁砧中"
+      - "&f用此物来修理物品"
+  ORGANIC_FOOD_WHEAT:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9小麦"
+  ORGANIC_FOOD_CARROT:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9胡萝卜"
+  ORGANIC_FOOD_POTATO:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9土豆"
+  ORGANIC_FOOD_SEEDS:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9种子"
+  ORGANIC_FOOD_BEETROOT:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9甜菜根"
+  ORGANIC_FOOD_MELON:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9西瓜"
+  ORGANIC_FOOD_APPLE:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9苹果"
+  ORGANIC_FOOD_SWEET_BERRIES:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9甜浆果"
+  ORGANIC_FOOD_KELP:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9干海带"
+  ORGANIC_FOOD_COCOA:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9可可豆"
+  ORGANIC_FOOD_SEAGRASS:
+    name: "&a有机食物"
+    lore:
+      - "&7内含 &9海草"
+  FERTILIZER_WHEAT:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9小麦"
+  FERTILIZER_CARROT:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9胡萝卜"
+  FERTILIZER_POTATO:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9土豆"
+  FERTILIZER_SEEDS:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9种子"
+  FERTILIZER_BEETROOT:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9甜菜根"
+  FERTILIZER_MELON:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9西瓜"
+  FERTILIZER_APPLE:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9苹果"
+  FERTILIZER_SWEET_BERRIES:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9甜浆果"
+  FERTILIZER_KELP:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9干海带"
+  FERTILIZER_COCOA:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9可可豆"
+  FERTILIZER_SEAGRASS:
+    name: "&a有机肥料"
+    lore:
+      - "&7内含 &9海草"
