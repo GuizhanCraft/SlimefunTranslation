@@ -35,7 +35,7 @@ translations:
       - ""
       - "&7Nguyên Tố: &c&oLửa"
   STAFF_ELEMENTAL_STORM:
-    name: "&6Gậy Nguyên Tố &7-&8&Sấm Sét"
+    name: "&6Gậy Nguyên Tố &7- &8Sấm Sét"
     lore-overrides:
       2: "&7Nguyên Tố: &8&oSấm Sét"
       4: "&eChuột Phải &7để triệu hồi một tia sét"
