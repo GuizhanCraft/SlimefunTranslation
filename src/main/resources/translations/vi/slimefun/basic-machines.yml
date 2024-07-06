@@ -85,7 +85,7 @@ translations:
       - ""
       - "&aCó thể chuyển đổi các loại Vật liệu qua thời gian..."
   AUTOMATED_PANNING_MACHINE:
-    name: "&eMáy Paning Tự Động"
+    name: "&eMáy Panning Tự Động"
     lore:
       - ""
       - "&fPhiên bản MultiBlock của Gold Pan"
