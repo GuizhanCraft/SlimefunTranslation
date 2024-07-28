@@ -61,7 +61,7 @@ translations:
       - ""
       - "&fPhục hồi 4 tim"
       - "&fDập lửa"
-      - "&fChữa Độc/Khô Héo/Nhiễm Phóng Xạ"
+      - "&fChữa Độc/Khô Héo/Phóng Xạ"
   SMALL_BACKPACK:
     name: "&eBa Lô Nhỏ"
     lore-overrides:
