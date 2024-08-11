@@ -37,7 +37,7 @@ translations:
     name: "&bKim Cương Nhân Tạo"
     lore:
       - ""
-      - "&fVật phẩm này có thể được dùng"
+      - "&fVật phẩm này có thể được dùng trong một"
       - "&ftrong bàn chế tạo như Kim Cương bình thường"
   RAW_CARBONADO:
     name: "&bCarbonado Thô"
