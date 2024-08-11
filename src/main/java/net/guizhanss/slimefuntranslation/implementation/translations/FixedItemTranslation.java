@@ -86,31 +86,31 @@ public class FixedItemTranslation implements ItemTranslation {
         List<String> newLore = new ArrayList<>(original);
 
         if (!lore.isEmpty()) {
+            // TODO: find a performant way to handle partial overrides
             // partial override is ignored for now, always enabled
-            for (int i = 0; i < lore.size(); i++) {
-                try {
-                    var line = lore.get(i);
-                    newLore.set(i, ColorUtils.color(line));
-                } catch (IndexOutOfBoundsException e) {
-                    // ignore
-                }
-            }
-            // legacy partial override code until a better solution is found
-//            // lore specified
-//            if (conditions.isPartialOverride()) {
-//                // partial override enabled, only override the specified lines
-//                for (int i = 0; i < lore.size(); i++) {
-//                    try {
-//                        var line = lore.get(i);
-//                        newLore.set(i, ColorUtils.color(line));
-//                    } catch (IndexOutOfBoundsException e) {
-//                        // ignore
-//                    }
+//            for (int i = 0; i < lore.size(); i++) {
+//                try {
+//                    var line = lore.get(i);
+//                    newLore.set(i, ColorUtils.color(line));
+//                } catch (IndexOutOfBoundsException e) {
+//                    // ignore
 //                }
-//            } else {
-//                // partial override disabled, override all lines
-//                newLore = new ArrayList<>(lore);
 //            }
+            // lore specified
+            if (conditions.isPartialOverride()) {
+                // partial override enabled, only override the specified lines
+                for (int i = 0; i < lore.size(); i++) {
+                    try {
+                        var line = lore.get(i);
+                        newLore.set(i, ColorUtils.color(line));
+                    } catch (IndexOutOfBoundsException e) {
+                        // ignore
+                    }
+                }
+            } else {
+                // partial override disabled, override all lines
+                newLore = new ArrayList<>(lore);
+            }
         }
 
         // specific line overrides
