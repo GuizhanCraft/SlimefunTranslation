@@ -1,0 +1,182 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Armadura Mágica Slimefun
+translations:
+  ENDER_HELMET:
+    conditions:
+      match-name: true
+    name: "&5&lCapacete Ender"
+    lore:
+      - ""
+      - "&a&oÁs vezes é aqui, ás vezes lá!"
+  ENDER_CHESTPLATE:
+    name: "&5&lPeitoral Ender"
+    lore:
+      - ""
+      - "&a&oÁs vezes é aqui, ás vezes lá!"
+  ENDER_LEGGINGS:
+    name: "&5&lCalças Ender"
+    lore:
+      - ""
+      - "&a&oÁs vezes é aqui, ás vezes lá!"
+  ENDER_BOOTS:
+    name: "&5&lBotas Ender"
+    lore:
+      - ""
+      - "&a&oÁs vezes é aqui, ás vezes lá!"
+      - ""
+      - "&9+ Sem dano da Pérola do Ender"
+  SLIME_HELMET:
+    name: "&a&lCapacete de Slime"
+    lore:
+      - ""
+      - "&a&oSentimento Saltitante"
+  SLIME_CHESTPLATE:
+    name: "&a&lPeitoral de Slime"
+    lore:
+      - ""
+      - "&a&oSentimento Saltitante"
+  SLIME_LEGGINGS:
+    name: "&a&lCalças de Slime"
+    lore:
+      - ""
+      - "&a&oSentimento Saltitante"
+      - ""
+      - "&9+ Velocidade"
+  SLIME_BOOTS:
+    name: "&a&lBotas de Slime"
+    lore:
+      - ""
+      - "&a&oSentimento Saltitante"
+      - ""
+      - "&9+ Aumento de Pulo"
+      - "&9+ Sem Dano de Queda"
+  GLOWSTONE_HELMET:
+    name: "&e&lCapacete de Pedra Luminosa"
+    lore:
+      - ""
+      - "&a&oBrilhando como o sol!"
+      - ""
+      - "&9+ Visão Noturna"
+  GLOWSTONE_CHESTPLATE:
+    name: "&e&lPeitoral de Pedra Luminosa"
+    lore:
+      - ""
+      - "&a&oBrilhando como o sol!"
+      - ""
+      - "&9+ Visão Noturna"
+  GLOWSTONE_LEGGINGS:
+    name: "&e&lCalças de Pedra Luminosa"
+    lore:
+      - ""
+      - "&a&oBrilhando como o sol!"
+      - ""
+      - "&9+ Visão Noturna"
+  GLOWSTONE_BOOTS:
+    name: "&e&lBotas de Pedra Luminosa"
+    lore:
+      - ""
+      - "&a&oBrilhando como o sol!"
+      - ""
+      - "&9+ Visão Noturna"
+  RAINBOW_HELMET:
+    name: "&d&lCapacete de Arco-íris"
+    lore:
+      - ""
+      - "&fPercorre todas as Cores do Arco-íris!"
+  RAINBOW_CHESTPLATE:
+    name: "&d&lPeitoral de Arco-íris"
+    lore:
+      - ""
+      - "&fPercorre todas as Cores do Arco-íris!"
+  RAINBOW_LEGGINGS:
+    name: "&d&lCalças de Arco-íris"
+    lore:
+      - ""
+      - "&fPercorre todas as Cores do Arco-íris!"
+  RAINBOW_BOOTS:
+    name: "&d&lBotas de Arco-íris"
+    lore:
+      - ""
+      - "&fPercorre todas as Cores do Arco-íris!"
+  SLIME_STEEL_HELMET:
+    name: "&a&lCapacete de Slime"
+    lore:
+      - "&7&oReforçado"
+      - ""
+      - "&a&oSentimento Saltitante"
+  SLIME_STEEL_CHESTPLATE:
+    name: "&a&lPeitoral de Slime"
+    lore:
+      - "&7&oReforçado"
+      - ""
+      - "&a&oSentimento Saltitante"
+  SLIME_STEEL_LEGGINGS:
+    name: "&a&lCalças de Slime"
+    lore:
+      - "&7&oReforçado"
+      - ""
+      - "&a&oSentimento Saltitante"
+      - ""
+      - "&9+ Velocidade"
+  SLIME_STEEL_BOOTS:
+    name: "&a&lBotas de Slime"
+    lore:
+      - "&7&oReforçado"
+      - ""
+      - "&a&oSentimento Saltitante"
+      - ""
+      - "&9+ Aumento de Pulo"
+      - "&9+ Sem Dano de Queda"
+  FARMER_SHOES:
+    name: "&eSapatos de Fazendeiro"
+    lore:
+      - ""
+      - "&6&oImpede você de pisotear suas plantações"
+  BOOTS_OF_THE_STOMPER:
+    name: "&eBotas do Pisador"
+    lore:
+      - ""
+      - "&9Todo Dano de Queda que você receber"
+      - "&9será aplicado a Monstros/Jogadores próximos"
+      - ""
+      - "&9+ Sem Dano de Queda"
+  SOULBOUND_HELMET:
+    name: "&cCapacete Ligado à Alma"
+  SOULBOUND_CHESTPLATE:
+    name: "&cPeitoral Ligado à Alma"
+  SOULBOUND_LEGGINGS:
+    name: "&cCalça Ligada à Alma"
+  SOULBOUND_BOOTS:
+    name: "&cBotas Ligadas à Alma"
+  BEE_HELMET:
+    name: "&e&lCapacete de Abelha"
+    lore:
+      - ""
+      - "&fBzzzzzzz"
+  BEE_WINGS:
+    name: "&e&lAsas de Abelha"
+    lore:
+      - ""
+      - "&fBzzzzzzz"
+      - ""
+      - "&9Ativa a Queda Lenta"
+      - "&9ao se aproximar do chão"
+  BEE_LEGGINGS:
+    name: "&e&lCalça de Abelha"
+    lore:
+      - ""
+      - "&fBzzzzzzz"
+  BEE_BOOTS:
+    name: "&e&lBotas de Abelha"
+    lore:
+      - ""
+      - "&fBzzzzzzz"
+      - ""
+      - "&9+ Aumento de Pulo"
+      - "&9+ Sem Dano de Queda"
+  ELYTRA_CAP:
+    name: "&5Boné de Élitros"
+    lore:
+      - ""
+      - "&7Este capacete irá protegê-lo de"
+      - "&7bater ao voar com um élitros."
