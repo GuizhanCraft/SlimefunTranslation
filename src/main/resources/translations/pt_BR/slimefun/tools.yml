@@ -1,0 +1,82 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Ferramentas Slimefun
+translations:
+  GOLD_PAN:
+    name: "&6Bateia de Ouro"
+    lore:
+      - ""
+      - "&Botão Direito&7 para coletar recursos"
+      - "&7do Cascalho"
+  NETHER_GOLD_PAN:
+    name: "&4Bateia de Ouro do Nether"
+    lore:
+      - ""
+      - "&Botão Direito&7 para coletar recursos"
+      - "&7da Areia das Almas"
+  GRAPPLING_HOOK:
+    name: "&6Gancho Fixante"
+    lore:
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SMELTERS_PICKAXE:
+    conditions:
+      match-name: true
+    name: "&6Picareta de Fundição"
+    lore:
+      - "&c&lAuto-Fundição"
+      - ""
+      - "&9Funciona com Fortuna"
+  LUMBER_AXE:
+    name: "&6Machado de Madeira"
+    lore:
+      - "&a&oCorta a Árvore inteira..."
+  PICKAXE_OF_CONTAINMENT:
+    name: "&cPicareta de Contenção"
+    lore:
+      - ""
+      - "&9Pode pegar Spawners"
+  EXPLOSIVE_PICKAXE:
+    name: "&ePicareta Explosiva"
+    lore:
+      - ""
+      - "&fTe deixa minerar uma boa quantidade"
+      - "&fde Blocos de uma vez..."
+      - ""
+      - "&9Funciona com Fortuna"
+  EXPLOSIVE_SHOVEL:
+    name: "&ePá Explosiva"
+    lore:
+      - ""
+      - "&fTe deixa minerar uma boa quantidade"
+      - "&fde Blocos caváveis de uma vez..."
+  PICKAXE_OF_THE_SEEKER:
+    name: "&aPicareta do Observador"
+    lore:
+      - "&fSempre indicará você para o Minério mais próximo"
+      - "&fmas pode se danificar enquanto faz isso"
+      - ""
+      - "&7&eClique com o botão direito&7 para ser apontado para o Minério mais próximo"
+  COBALT_PICKAXE:
+    name: "&9Picareta de Cobalto"
+  PICKAXE_OF_VEIN_MINING:
+    name: "&ePicareta de Mineração em Veias"
+    lore:
+      - ""
+      - "&fEsta Picareta irá cavar"
+      - "&fVeias de Minérios inteiras..."
+  CLIMBING_PICK:
+    name: "&bPicareta de Escalada"
+    lore:
+      - ""
+      - "&fPermite que você suba em certas superfícies"
+      - "&fao clicar com o botão direito."
+      - "&fEncante esta picareta com Eficiência para"
+      - "&fsubir ainda mais rápido!"
+  SOULBOUND_PICKAXE:
+    name: "&cEspada Ligada à Alma"
+  SOULBOUND_AXE:
+    name: "&cMachado Ligado à Alma"
+  SOULBOUND_SHOVEL:
+    name: "&cPá Ligada à Alma"
+  SOULBOUND_HOE:
+    name: "&cEnxada Ligada à Alma"
