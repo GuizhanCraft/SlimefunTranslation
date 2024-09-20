@@ -1,0 +1,48 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Armas Slimefun
+translations:
+  GRANDMAS_WALKING_STICK:
+    name: "&7Bengala da Vovó"
+  GRANDPAS_WALKING_STICK:
+    name: "&7Bengala do Vovô"
+  SWORD_OF_BEHEADING:
+    name: "&6Espada da Decapitação"
+    lore:
+      - "&7Decapitação II"
+      - ""
+      - "&fTem a chance de decapitar Monstros"
+      - "&f(chance ainda maior para Esqueletos Wither)"
+  BLADE_OF_VAMPIRES:
+    conditions:
+      match-name: true
+    name: "&4Lâmina dos Vampiros"
+    lore:
+      - "&7Roubo de Vida I"
+      - ""
+      - "&fSempre que você atacar algo"
+      - "&fvocê tem 45% de chance de"
+      - "&frecuperar 2 Corações da sua Vida"
+  SEISMIC_AXE:
+    name: "&aMachado Sísmico"
+    lore:
+      - ""
+      - "&7&oUm Terremoto portátil..."
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SOULBOUND_SWORD:
+    name: "&cEspada Ligada à Alma"
+  SOULBOUND_TRIDENT:
+    name: "&cTridente Ligado à Alma"
+  SOULBOUND_BOW:
+    name: "&cArco Ligado à Alma"
+  EXPLOSIVE_BOW:
+    name: "&cArco Explosivo"
+    lore:
+      - "&fQualquer flecha disparada usando este Arco"
+      - "&firá lançar os inimigos no ar"
+  ICY_BOW:
+    name: "&bArco Gelado"
+    lore:
+      - "&fQualquer flecha disparada usando este Arco"
+      - "&fvai prevenir os inimigos de se moverem"
+      - "&fpor 2 segundos"
