@@ -1,0 +1,158 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Talismãs do Ender do Slimefun (Nível II)
+translations:
+  ENDER_ANVIL_TALISMAN:
+    name: "&aTalismã Ender da Bigorna"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fCada Talismã pode prevenir"
+      - "&f1 Ferramenta de quebrar, mas então"
+      - "&fserá consumido"
+      - ""
+      - "&4&lAVISO:"
+      - "&4Este Talismã não funciona em"
+      - "&4Ferramentas que são muito poderosas"
+      - "&4devido à sua complexidade"
+  ENDER_MINER_TALISMAN:
+    name: "&5Talismã Ender do Mineiro"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele terá"
+      - "&f20% de chance de dobrar"
+      - "&ftodos os Minérios que você minerar"
+  ENDER_FARMER_TALISMAN:
+    name: "&5Talismã Ender do Fazendeiro"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele terá"
+      - "&f20% de chance de dobrar"
+      - "&ftodas as suas colheitas"
+  ENDER_HUNTER_TALISMAN:
+    name: "&5Talismã Ender do Caçador"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele terá"
+      - "&f20% de chance de dobrar"
+      - "&ftodos os itens recolhidos de criaturas que você matar"
+  ENDER_LAVA_TALISMAN:
+    name: "&5Talismã Ender do Caminhante de Lava"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele vai"
+      - "&fte dar Resistência ao Fogo"
+      - "&fassim que você tocar em Lava"
+      - "&fmas será então consumido"
+  ENDER_WATER_TALISMAN:
+    name: "&5Talismã Ender do Respirador Aquático"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele vai"
+      - "&fte dar a habilidade"
+      - "&fde respirar debaixo d'água assim"
+      - "&fque você começar a se afogar"
+      - "&fmas será então consumido"
+  ENDER_ANGEL_TALISMAN:
+    name: "&5Talismã Ender do Anjo"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele vai ter"
+      - "&f75% de chance de prevenir que você"
+      - "&freceba Dano de Queda"
+  ENDER_FIRE_TALISMAN:
+    name: "&5Talismã Ender do Bombeiro"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele vai"
+      - "&fte dar Resistência ao Fogo"
+      - "&fassim que você começar a pegar fogo"
+      - "&fmas será então consumido"
+  ENDER_MAGICIAN_TALISMAN:
+    name: "&5Talismã Ender do Mágico"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele dá"
+      - "&fa você um Bônus de Sorte de 80% ao Encantar"
+      - "&fÀs vezes você receberá um Encantamento Extra"
+  ENDER_TRAVELLER_TALISMAN:
+    name: "&5Talismã Ender do Viajante"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele dá"
+      - "&fa você uma chance de 60% para um decente"
+      - "&fBônus de Velocidade ao começar a correr"
+  ENDER_WARRIOR_TALISMAN:
+    name: "&5Talismã Ender do Guerreiro"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele dá"
+      - "&fa você Força III sempre que for atingido"
+      - "&fmas será então consumido"
+  ENDER_KNIGHT_TALISMAN:
+    name: "&5Talismã Ender do Cavaleiro"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele dá"
+      - "&fa você uma Chance de 30% de ter 5 segundos de Regeneração"
+      - "&fsempre que Você for atingido"
+      - "&fmas será então consumido"
+  ENDER_CAVEMAN_TALISMAN:
+    name: "&5Talismã Ender do Homen das Cavernas"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele dá"
+      - "&fa você uma chance de 50% para um decente"
+      - "&fBônus de Agilidade ao minerar qualquer minério"
+  ENDER_WISE_TALISMAN:
+    name: "&5Talismã Ender do Sábio"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele dá"
+      - "&fa você uma chance de 20% de dobrar"
+      - "&fqualquer experiência que você obtenha"
+  ENDER_WHIRLWIND_TALISMAN:
+    name: "&5Talismã Ender do Redemoinho"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fAo ter este Talismã"
+      - "&fem seu inventario ele vai refletir"
+      - "&f60% de qualquer projétil disparado contra você."
+      - "&e&oSomente um Tridente lançado pode perfurar"
+      - "&e&oesta camada de proteção"
+  ENDER_WIZARD_TALISMAN:
+    name: "&5Talismã Ender do Mago"
+    lore:
+      - "&7&oInfundido com Ender"
+      - ""
+      - "&fEnquanto você tiver este Talismã"
+      - "&fem seu Inventário ele permite que você"
+      - "&fobtenha Fortuna Nível 4/5, entretanto"
+      - "&ftambém tem uma chance de reduzir o"
+      - "&fNível de alguns Encantamentos de seu Item"

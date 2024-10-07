@@ -1,0 +1,54 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Construtor de História Slimefun
+lore:
+  HazmatSuitRequired: "&8\u21E8 &4Traje de Proteção necessário!"
+  Rainbow: "&dPercorre todas as Cores do Arco-íris!"
+  RightClickToUse: "&eBotão Direito &7para usar"
+  RightClickToOpen: "&eBotão Direito &7para abrir"
+  CrouchToUse: "&eAgache&7 para usar"
+  Radioactive: "&a\u2622&7 Nível de radiação: &r{0}"
+  Radioactivity:
+    Low: "&eBaixo"
+    Moderate: "&eModerado"
+    High: "&6Alto"
+    VeryHigh: "&cMuito alto"
+    VeryDeadly: "&4Muito Mortal"
+  Speed: "&8\u21E8 &b\u26A1 &7Velocidade: &b{0}x"
+  Power: "&8\u21E8 &e\u26A1 &7{0} J{1}"
+  PowerBuffer: "%sftrlore_Power_{0}_ Armazenamento%"
+  PowerCapacity: "%sftrlore_Power_{0}_ Capacidade%"
+  PowerPerSecond: "%sftrlore_Power_{0}_/s%"
+  PowerPerTick: "%sftrlore_Power_{0}_/t%"
+  Hunger: "&7&oRestaura &b&o{0} &7&oa Fome"
+  Material: "&8\u21E8 &7Material: &b{0}"
+  Materials:
+    Duralumin: "Duralumínio"
+    Solder: "Solda"
+    Billon: "Billon"
+    Steel: "Aço"
+    DamascusSteel: "Aço Damasco"
+    ReinforcedAlloy: "Liga Reforçada"
+    Carbonado: "Carbonado"
+  Range: "&7Alcance: &c{0} blocos"
+  Machine:
+    Format: "{0}{1} {2}" #{0} = TierColor, {1} = Tier, {2} = Type
+    TierColor:
+      Basic: "&e"
+      Average: "&6"
+      Medium: "&a"
+      Good: "&2"
+      Advanced: "&6"
+      EndGame: "&4"
+    Tier:
+      Basic: "Básico"
+      Average: "Média"
+      Medium: "Médio"
+      Good: "Bom"
+      Advanced: "Avançado"
+      EndGame: "Fim de jogo"
+    Type:
+      Capacitor: "Capacitor"
+      Generator: "Gerador"
+      Machine: "Máquina"
+  MultiTool: "&eAgache & Botão Direito&7 para trocar o modo"
+

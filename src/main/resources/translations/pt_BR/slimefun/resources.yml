@@ -1,0 +1,202 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Recursos Slimefun
+translations:
+  REINFORCED_ALLOY_INGOT:
+    name: "&b&lLingote de Liga Reforçada"
+  HARDENED_METAL_INGOT:
+    name: "&b&lMetal Endurecido"
+  DAMASCUS_STEEL_INGOT:
+    name: "&bLingote de Aço de Damasco"
+  STEEL_INGOT:
+    name: "&bLingote de Aço"
+  BRONZE_INGOT:
+    name: "&bLingote de Bronze"
+  DURALUMIN_INGOT:
+    name: "&bLingote de Duralumínio"
+  BILLON_INGOT:
+    name: "&bLingote de Billon"
+  BRASS_INGOT:
+    name: "&bLingote de Latão"
+  ALUMINUM_BRASS_INGOT:
+    name: "&bLingote de Latão de Alumínio"
+  ALUMINUM_BRONZE_INGOT:
+    name: "&bLingote de Bronze de Alumínio"
+  CORINTHIAN_BRONZE_INGOT:
+    name: "&bLingote de Bronze Coríntio"
+  SOLDER_INGOT:
+    name: "&bLingote de Solda"
+  SYNTHETIC_SAPPHIRE:
+    conditions:
+      match-name: true
+    name: "&bSafira Sintética"
+    lore:
+      - ""
+      - "&fEste item pode ser utilizado numa"
+      - "&fbancada de trabalho e atua como o Lápis-Lazúli"
+  SYNTHETIC_DIAMOND:
+    name: "&bDiamante Sintético"
+    lore:
+      - ""
+      - "&fEste itempode ser utilizado numa"
+      - "&fbancada de trabalho e funciona como um diamante normal"
+  RAW_CARBONADO:
+    name: "&bCarbonado Cru"
+  NICKEL_INGOT:
+    name: "&bLingote de Níquel"
+  COBALT_INGOT:
+    name: "&9Lingote de Cobalto"
+  CARBONADO:
+    name: "&b&lCarbonado"
+    lore:
+      - ""
+      - "&7&o\"Diamante Negro\""
+  FERROSILICON:
+    name: "&bFerrosilício"
+  IRON_DUST:
+    name: "&6Pó de Ferro"
+  GOLD_DUST:
+    name: "&6Pó de Ouro"
+  COPPER_DUST:
+    name: "&6Pó de Cobre"
+  TIN_DUST:
+    name: "&6Pó de Estanho"
+  SILVER_DUST:
+    name: "&6Pó de Prata"
+  LEAD_DUST:
+    name: "&6Pó de Chumbo"
+  ALUMINUM_DUST:
+    name: "&6Pó de Alumínio"
+  ZINC_DUST:
+    name: "&6Pó de Zinco"
+  MAGNESIUM_DUST:
+    name: "&6Pó de Magnésio"
+  COPPER_INGOT:
+    name: "&bLingote de Cobre"
+  TIN_INGOT:
+    name: "&bBarra de Estanho"
+  SILVER_INGOT:
+    name: "&bLingote de Prata"
+  LEAD_INGOT:
+    name: "&bLingote de Chumbo"
+  ALUMINUM_INGOT:
+    name: "&bLingote de Alumínio"
+  ZINC_INGOT:
+    name: "&bLingote de Zinco"
+  MAGNESIUM_INGOT:
+    name: "&bLingote de Magnésio"
+  SULFATE:
+    name: "&bSulfato"
+  CARBON:
+    name: "&eCarbono"
+  COMPRESSED_CARBON:
+    name: "&cCarbono Comprimido"
+  CARBON_CHUNK:
+    name: "&4Pedaço de Carbono"
+  GOLD_24K:
+    name: "&fLingote de Ouro &7(24-Quilate)"
+  GOLD_22K:
+    name: "&fLingote de Ouro &7(22-Quilate)"
+  GOLD_20K:
+    name: "&fLingote de Ouro &7(20-Quilate)"
+  GOLD_18K:
+    name: "&fLingote de Ouro &7(18-Quilate)"
+  GOLD_16K:
+    name: "&fLingote de Ouro &7(16-Quilate)"
+  GOLD_14K:
+    name: "&fLingote de Ouro &7(14-Quilate)"
+  GOLD_12K:
+    name: "&fLingote de Ouro &7(12-Quilate)"
+  GOLD_10K:
+    name: "&fLingote de Ouro &7(10-Quilate)"
+  GOLD_8K:
+    name: "&fLingote de Ouro &7(8-Quilate)"
+  GOLD_6K:
+    name: "&fLingote de Ouro &7(6-Quilate)"
+  GOLD_4K:
+    name: "&fLingote de Ouro &7(4-Quilate)"
+  SILICON:
+    name: "&6Silicone"
+  GILDED_IRON:
+    name: "&6&lFerro Dourado"
+  SYNTHETIC_EMERALD:
+    name: "&bEsmeralda Sintética"
+    lore:
+      - ""
+      - "&fEste item pode ser usado para"
+      - "&fcomércio com Aldeões"
+  URANIUM:
+    conditions:
+      match-lore: true
+    name: "&4Urânio"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  REDSTONE_ALLOY:
+    name: "&cLingote de Liga de Redstone"
+  MAGNESIUM_SALT:
+    conditions:
+      match-lore: true
+    name: "&cSal de Magnésio"
+    lore:
+      - ""
+      - "&7Um tipo especial de combustível que pode ser"
+      - "&7usado em um Gerador alimentado por Magnésio"
+  BUCKET_OF_OIL:
+    name: "&fBalde de Óleo"
+  BUCKET_OF_FUEL:
+    name: "&fBalde de Combustível"
+  NETHER_ICE:
+    name: "&eGelo do Nether"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Moderate%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT:
+    name: "&6Lingote Abrasador &7(33%)"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT_2:
+    name: "&6Lingote Abrasador &7(66%)"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT_3:
+    name: "&6Lingote Abrasador"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  ENRICHED_NETHER_ICE:
+    name: "&eGelo do Nether Enriquecido"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  NEPTUNIUM:
+    conditions:
+      match-lore: true
+    name: "&aNeptúnio"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  PLUTONIUM:
+    conditions:
+      match-lore: true
+    name: "&7Plutônio"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BOOSTED_URANIUM:
+    conditions:
+      match-lore: true
+    name: "&2Urânio Potencializado"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"

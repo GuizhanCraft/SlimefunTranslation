@@ -1,0 +1,151 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Dispositivos Mágicos do Slimefun
+translations:
+  ENDER_BACKPACK:
+    name: "&6Mochila do Ender"
+    lore:
+      - "&a&oUm Baú do End portátil"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  MAGIC_EYE_OF_ENDER:
+    name: "&6&lOlho Mágico do Ender"
+    lore:
+      - "&4&lRequer armadura Ender completa"
+      - ""
+      - "&eClique com o botão direito &7para atirar uma Pérola do End"
+  STAFF_ELEMENTAL:
+    name: "&6Cajado Elemental"
+  STAFF_ELEMENTAL_WIND:
+    name: "&6Cajado Elemental &7- &b&oVento"
+    lore:
+      - ""
+      - "&7Elemento: &b&oVento"
+      - ""
+      - "&eClique com o botão direito &7para lançar-se para a frente"
+  STAFF_ELEMENTAL_WATER:
+    name: "&6Cajado Elemental &7- &1&oÁgua"
+    lore:
+      - ""
+      - "&7Elemento: &1&oÁgua"
+      - ""
+      - "&eClique com o botão direito &7para extinguir-se"
+  STAFF_ELEMENTAL_FIRE:
+    name: "&6Cajado Elemental &7- &c&oFire"
+    lore:
+      - ""
+      - "&7Elemento: &c&oFogo"
+  STAFF_ELEMENTAL_STORM:
+    name: "&6Cajado Elemental &7- &8&oTempestade"
+    lore-overrides:
+      2: "&7Elemento: &8&oTempestade"
+      4: "&eClique com o botão direito &7para invocar um raio"
+  MAGICAL_ZOMBIE_PILLS:
+    name: "&6Pílulas Zumbi Mágicas"
+    lore:
+      - "&eClique com o botão direito em &7um Aldeão Zumbi"
+      - "&eou &7um Piglin Zumbi para"
+      - "&7curá-lo instantaneamente da sua maldição"
+  INFUSED_MAGNET:
+    name: "&aÍmã Infundido"
+    lore:
+      - ""
+      - "&fÍmãs infundidos Mágicos"
+      - "&fatrairá itens próximos"
+      - "&fas desde que este item esteja em"
+      - "&fseu Inventário"
+      - ""
+      - "&7Segure &eAgachar &7para pegar Itens próximos"
+  BOUND_BACKPACK:
+    name: "&cMochila Ligada à Alma"
+    lore-overrides:
+      2: "&7Tamanho: &e36"
+      5: "%sftrlore_RightClickToOpen%"
+  REINFORCED_SPAWNER:
+    name: "&bSpawner Reforçado"
+  SCROLL_OF_DIMENSIONAL_TELEPOSITION:
+    name: "&6Pergaminho de Teleposição Dimensional"
+    lore:
+      - ""
+      - "&cEste Pergaminho é capaz de criar"
+      - "&cum buraco negro temporário que puxa"
+      - "&centidades próximas para dentro de si e envia"
+      - "&celas para outra Dimensão onde"
+      - "&ctudo está de ponta-cabeça"
+      - ""
+      - "&fEm outras palavras: Faz as Entidades virarem 180 Graus"
+  TOME_OF_KNOWLEDGE_SHARING:
+    name: "&6Tomo de Compartilhamento de Conhecimento"
+    lore-overrides:
+      3: "&eClique com o botão direito&7 para vincular este Tomo a si mesmo"
+      6: "&eClique com o botão direito&7 para obter todas as Pesquisas aprendidas pelo"
+      7: "&7Proprietário anteriormente designado"
+  FLASK_OF_KNOWLEDGE:
+    name: "&cFrasco do Conhecimento"
+    lore:
+      - ""
+      - "&fPermite que você armazene seus níveis"
+      - "&fde experiência em uma garrafa"
+      - "&7Custo: &a1 Nível"
+  FILLED_FLASK_OF_KNOWLEDGE:
+    name: "&aFrasco do Conhecimento Cheio"
+  ANCIENT_PEDESTAL:
+    name: "&dPedestal Ancião"
+    lore:
+      - ""
+      - "&5Parte do Altar Ancião"
+  ANCIENT_ALTAR:
+    name: "&dAltar Ancião"
+    lore:
+      - ""
+      - "&5Altar Multi-bloco para"
+      - "&5processos de Fabricação Mágica"
+  INFERNAL_BONEMEAL:
+    name: "&4Pó de Osso Infernal"
+    lore:
+      - ""
+      - "&cTambém acelera o Crescimento de"
+      - "&cFungo do Nether"
+  ELYTRA_SCALE:
+    name: "&bEscama de Élitros"
+  INFUSED_ELYTRA:
+    conditions:
+      match-name: true
+    name: "&5Élitros Infundido"
+  SOULBOUND_ELYTRA:
+    name: "&cÉlitros Ligada à Alma"
+  RAINBOW_WOOL:
+    name: "&5Lã Arco-íris"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS:
+    name: "&5Vidro Arco-Íris"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS_PANE:
+    name: "&5Painel de Vidro Arco-Íris"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CLAY:
+    name: "&5Argila Arco-íris"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CONCRETE:
+    name: "&5Concreto Arco-Íris"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLAZED_TERRACOTTA:
+    name: "&5Azulejo Arco-Íris"
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  INFUSED_HOPPER:
+    name: "&5Funil Infundido"
+    lore:
+      - ""
+      - "&fPega automaticamente Itens próximos em uma área de"
+      - "&f7x7x7 ao ser colocado."
