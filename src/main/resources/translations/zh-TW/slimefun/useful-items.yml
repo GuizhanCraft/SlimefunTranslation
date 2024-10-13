@@ -1,0 +1,110 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 實用工具
+translations:
+  PORTABLE_CRAFTER:
+    name: "&6隨身工作台"
+    lore:
+      - "&a&o一個隨身工作台"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  PORTABLE_DUSTBIN:
+    name: "&6隨身垃圾桶"
+    lore:
+      - "&f清理不要的物品"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  RAG:
+    name: "&c紗布"
+    lore:
+      - ""
+      - "&a一級醫療用品"
+      - ""
+      - "&f恢復2點血量"
+      - "&f可以熄滅身上的火"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  BANDAGE:
+    name: "&c繃帶"
+    lore:
+      - ""
+      - "&a二級醫療用品"
+      - ""
+      - "&f恢復4點血量"
+      - "&f可以熄滅身上的火"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SPLINT:
+    name: "&c夾板"
+    lore:
+      - ""
+      - "&a一級醫療用品"
+      - ""
+      - "&f恢復2點血量"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  VITAMINS:
+    name: "&c維生素"
+    lore:
+      - ""
+      - "&a三級醫療用品"
+      - ""
+      - "&f恢復4點血量"
+      - "&f可以熄滅身上的火"
+      - "&f治癒中毒/凋零/輻射的負面效果"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  MEDICINE:
+    name: "&c醫療品"
+    lore:
+      - ""
+      - "&a三級醫療用品"
+      - ""
+      - "&f恢復4點血量"
+      - "&f可以熄滅身上的火"
+      - "&f治癒中毒/凋零/輻射的負面效果"
+  SMALL_BACKPACK:
+    name: "&e小背包"
+    lore-overrides:
+      2: "&7大小：&e9"
+      5: "%sftrlore_RightClickToOpen%"
+  MEDIUM_BACKPACK:
+    conditions:
+      match-name: true
+    name: "&e背包"
+    lore-overrides:
+      2: "&7大小：&e18"
+      5: "%sftrlore_RightClickToOpen%"
+  LARGE_BACKPACK:
+    name: "&e大背包"
+    lore-overrides:
+      2: "&7大小：&e27"
+      5: "%sftrlore_RightClickToOpen%"
+  WOVEN_BACKPACK:
+    name: "&e編織背包"
+    lore-overrides:
+      2: "&7大小：&e36"
+      5: "%sftrlore_RightClickToOpen%"
+  GILDED_BACKPACK:
+    name: "&e鍍金背包"
+    lore-overrides:
+      2: "&7大小：&e45"
+      5: "%sftrlore_RightClickToOpen%"
+  RADIANT_BACKPACK:
+    name: "&e登山背包"
+    lore-overrides:
+      2: "&7大小：&e54（大箱子）"
+      5: "%sftrlore_RightClickToOpen%"
+  COOLER:
+    name: "&b冰箱"
+    lore-overrides:
+      1: "&f可以儲存果汁和冰沙"
+      2: "&f當冰箱在你的物品欄裡"
+      3: "&在你飢餓時將會自動消耗裡面的食物"
+      5: "&7大小：&e27"
+      8: "%sftrlore_RightClickToOpen%"
+  TAPE_MEASURE:
+    name: "&6卷尺"
+    lore:
+      - ""
+      - "&eShift+右鍵 &7設置測量起點"
+      - "&e右鍵 &7測量距離"
