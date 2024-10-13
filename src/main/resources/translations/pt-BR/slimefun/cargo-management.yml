@@ -1,0 +1,88 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Gerenciamento de Carga Slimefun
+translations:
+  CARGO_MOTOR:
+    name: "&3Motor de Carga"
+    lore:
+      - ""
+      - "&7Ingrediente importante para itens"
+      - "&7relacionados ao Gerenciamento de Carga"
+  CARGO_MANAGER:
+    conditions:
+      match-name: true
+    name: "&6Gerenciador de Carga"
+    lore:
+      - ""
+      - "&fComponente Central de uma Rede de Transporte de Itens"
+  CARGO_NODE:
+    name: "&7Nó de Carga &c(Conector)"
+    lore:
+      - ""
+      - "&fConector da Tubulação de Carga"
+  CARGO_NODE_INPUT:
+    name: "&7Nó de Carga &c(Entrada)"
+    lore:
+      - ""
+      - "&fTubo de Entrada de Carga"
+  CARGO_NODE_OUTPUT:
+    name: "&7Nó de Carga &c(Saída)"
+    lore:
+      - ""
+      - "&fTubo de Saída de Carga"
+  CARGO_NODE_OUTPUT_ADVANCED:
+    name: "&6Nó de Carga Avançado &c(Saída)"
+    lore:
+      - ""
+      - "&fTubo de Saída de Carga"
+  REACTOR_ACCESS_PORT:
+    name: "&2Porta de Acesso do Reator"
+    lore:
+      - ""
+      - "&fPermite que você interaja com um Reator"
+      - "&fvia Nós de Carga, também pode ser usado"
+      - "&fcomo intermédiario"
+      - ""
+      - "&8\u21E8 &eDeve ser colocado &a3 Blocos &eacima do Reator"
+  TRASH_CAN_BLOCK:
+    name: "&3Lata de Lixo"
+    lore:
+      - ""
+      - "&fIrá destruir todos os itens colocados nele"
+  CRAFTING_MOTOR:
+    name: "&6Motor de Fabricação"
+    lore:
+      - ""
+      - "&7Componente importante em máquinas de Auto-Fabricação"
+  VANILLA_AUTO_CRAFTER:
+    name: "&2Auto-Fabricador &8(Vanilla)"
+    lore:
+      - ""
+      - "&fColoque esta máquina em cima de um"
+      - "&fbaú ou similar e faça ele criar"
+      - "&fqualquer coisa que possa ser criada usando uma"
+      - "&eBancada de Trabalho &fnormal"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/Item%"
+  ENHANCED_AUTO_CRAFTER:
+    name: "&2Auto-Fabricador &8(Aprimorado)"
+    lore:
+      - ""
+      - "&fColoque esta máquina em cima de um"
+      - "&fbaú ou similar e faça ele criar"
+      - "&fqualquer coisa que pode ser criada usando uma"
+      - "&eBancada Aprimorada"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/Item%"
+  ARMOR_AUTO_CRAFTER:
+    name: "&2Auto-Fabricador &8(Forja de Armadura)"
+    lore:
+      - ""
+      - "&fColoque esta máquina em cima de um"
+      - "&fbaú ou similar e faça ele criar"
+      - "&fqualquer coisa que pode ser criada usando uma"
+      - "&eForja de Armadura"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_32_/Item%"

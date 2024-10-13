@@ -1,0 +1,178 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Dispositivos Técnicos do Slimefun
+translations:
+  DURALUMIN_JETPACK:
+    name: "&9Mochila a Jato Elétrica &7- &eI"
+    lore-overrides:
+      2: "%sftrlore_Material_Duralumin%"
+      4: "&8\u21E8 &7Impulso: &c0.35"
+      6: "%sftrlore_CrouchToUse%"
+  SOLDER_JETPACK:
+    name: "&9Mochila a Jato Elétrica &7- &eII"
+    lore-overrides:
+      2: "%sftrlore_Material_Solder%"
+      4: "&8\u21E8 &7Impulso: &c0.4"
+      6: "%sftrlore_CrouchToUse%"
+  BILLON_JETPACK:
+    name: "&9Mochila a Jato Elétrica &7- &eIII"
+    lore-overrides:
+      2: "%sftrlore_Material_Billon%"
+      4: "&8\u21E8 &7Impulso: &c0.45"
+      6: "%sftrlore_CrouchToUse%"
+  STEEL_JETPACK:
+    conditions:
+      match-name: true
+    name: "&9Mochila a Jato Elétrica &7- &eIV"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "&8\u21E8 &7Impulso: &c0.5"
+      6: "%sftrlore_CrouchToUse%"
+  DAMASCUS_STEEL_JETPACK:
+    name: "&9Mochila a Jato Elétrica &7- &eV"
+    lore-overrides:
+      2: "%sftrlore_Material_DamascusSteel%"
+      4: "&8\u21E8 &7Impulso: &c0.55"
+      6: "%sftrlore_CrouchToUse%"
+  REINFORCED_ALLOY_JETPACK:
+    name: "&9Mochila a Jato Elétrica &7- &eVI"
+    lore-overrides:
+      2: "%sftrlore_Material_ReinforcedAlloy%"
+      4: "&8\u21E8 &7Impulso: &c0.6"
+      6: "%sftrlore_CrouchToUse%"
+  CARBONADO_JETPACK:
+    name: "&9Mochila a Jato Elétrica &7- &eVII"
+    lore-overrides:
+      2: "%sftrlore_Material_Carbonado%"
+      4: "&8\u21E8 &7Impulso: &c0.7"
+      6: "%sftrlore_CrouchToUse%"
+  ARMORED_JETPACK:
+    name: "&9Mochila a Jato Blindada"
+    lore-overrides:
+      1: ""
+      2: "%sftrlore_Material_Steel%"
+      4: "&8\u21E8 &7Impulso: &c0.5"
+      6: "%sftrlore_CrouchToUse%"
+  PARACHUTE:
+    name: "&f&lParaquedas"
+    lore:
+      - ""
+      - "%sftrlore_CrouchToUse%"
+  HOLOGRAM_PROJECTOR:
+    name: "&bProjetor de Holograma"
+    lore:
+      - ""
+      - "&7Projeta um Holograma Editável"
+  DURALUMIN_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eI"
+    lore-overrides:
+      2: "%sftrlore_Material_Duralumin%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  SOLDER_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eII"
+    lore-overrides:
+      2: "%sftrlore_Material_Solder%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  BILLON_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eIII"
+    lore-overrides:
+      2: "%sftrlore_Material_Billon%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  STEEL_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eIV"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  DAMASCUS_STEEL_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eV"
+    lore-overrides:
+      2: "%sftrlore_Material_DamascusSteel%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  REINFORCED_ALLOY_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eVI"
+    lore-overrides:
+      2: "%sftrlore_Material_ReinforcedAlloy%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  CARBONADO_MULTI_TOOL:
+    name: "&9Ferramenta Múltipla &7- &eVII"
+    lore-overrides:
+      2: "%sftrlore_Material_Carbonado%"
+      4: "%sftrlore_RightClickToUse%"
+      5: "%sftrlore_MultiTool%"
+  SOLAR_HELMET:
+    name: "&bCapacete Solar"
+    lore:
+      - ""
+      - "&a&oRecarrega Itens segurados e Armaduras"
+  NIGHT_VISION_GOGGLES:
+    name: "&aÓculos de Visão Noturna"
+    lore:
+      - ""
+      - "&9+ Visão Noturna"
+  DURALUMIN_JETBOOTS:
+    name: "&9Botas a Jato &7- &eI"
+    lore-overrides:
+      2: "%sftrlore_Material_Duralumin%"
+      4: "%sftrlore_Speed_0.35%"
+      5: "&8\u21E8 &7Precisão: &c50%"
+      7: "%sftrlore_CrouchToUse%"
+  SOLDER_JETBOOTS:
+    name: "&9Botas a Jato &7- &eII"
+    lore-overrides:
+      2: "%sftrlore_Material_Solder%"
+      4: "%sftrlore_Speed_0.4%"
+      5: "&8\u21E8 &7Precisão: &660%"
+      7: "%sftrlore_CrouchToUse%"
+  BILLON_JETBOOTS:
+    name: "&9Botas a Jato &7- &eIII"
+    lore-overrides:
+      2: "%sftrlore_Material_Billon%"
+      4: "%sftrlore_Speed_0.45%"
+      5: "&8\u21E8 &7Precisão: &665%"
+      7: "%sftrlore_CrouchToUse%"
+  STEEL_JETBOOTS:
+    name: "&9Botas a Jato &7- &eIV"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "%sftrlore_Speed_0.5%"
+      5: "&8\u21E8 &7Precisão: &e70%"
+      7: "%sftrlore_CrouchToUse%"
+  DAMASCUS_STEEL_JETBOOTS:
+    name: "&9Botas a Jato &7- &eV"
+    lore-overrides:
+      2: "%sftrlore_Material_DamascusSteel%"
+      4: "%sftrlore_Speed_0.55%"
+      5: "&8\u21E8 &7Precisão: &a75%"
+      7: "%sftrlore_CrouchToUse%"
+  REINFORCED_ALLOY_JETBOOTS:
+    name: "&9Botas a Jato &7- &eVI"
+    lore-overrides:
+      2: "%sftrlore_Material_ReinforcedAlloy%"
+      4: "%sftrlore_Speed_0.6%"
+      5: "&8\u21E8 &7Precisão: &c80%"
+      7: "%sftrlore_CrouchToUse%"
+  CARBONADO_JETBOOTS:
+    name: "&9Botas a Jato &7- &eVII"
+    lore-overrides:
+      2: "%sftrlore_Material_Carbonado%"
+      4: "%sftrlore_Speed_0.7%"
+      5: "&8\u21E8 &7Precisão: &c99.9%"
+      7: "%sftrlore_CrouchToUse%"
+  ARMORED_JETBOOTS:
+    name: "&9Botas a Jato Blindadas"
+    lore-overrides:
+      2: "%sftrlore_Material_Steel%"
+      4: "%sftrlore_Speed_0.45%"
+      5: "&8\u21E8 &7Precisão: &e70%"
+      7: "%sftrlore_CrouchToUse%"
+  MULTIMETER:
+    name: "&eMultímetro"
+    lore:
+      - ""
+      - "&fMede a quantidade de energia"
+      - "&fArmazenada em um Bloco"

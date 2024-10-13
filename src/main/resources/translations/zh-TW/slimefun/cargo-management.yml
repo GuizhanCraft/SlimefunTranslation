@@ -1,0 +1,88 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 物流管理
+translations:
+  CARGO_MOTOR:
+    name: "&3物流馬達"
+    lore:
+      - ""
+      - "&7物流系統相關物品的"
+      - "&7重要材料"
+  CARGO_MANAGER:
+    conditions:
+      match-name: true
+    name: "&6物流管理器"
+    lore:
+      - ""
+      - "&f物流系統的核心組件"
+  CARGO_NODE:
+    name: "&7物流節點 &（中繼）"
+    lore:
+      - ""
+      - "&f物流連接管道"
+  CARGO_NODE_INPUT:
+    name: "&7物流節點 &c（輸入）"
+    lore:
+      - ""
+      - "&f物流輸入管道"
+  CARGO_NODE_OUTPUT:
+    name: "&7物流節點 &c（輸出）"
+    lore:
+      - ""
+      - "&f物流輸出管道"
+  CARGO_NODE_OUTPUT_ADVANCED:
+    name: "&6高級物流節點 &c（輸出）"
+    lore:
+      - ""
+      - "&f物流輸出管道"
+  REACTOR_ACCESS_PORT:
+    name: "&2反應爐訪問端口"
+    lore:
+      - ""
+      - "&f允許你通過物流節點"
+      - "&f來使用反應爐"
+      - "&f也可以用於儲存"
+      - ""
+      - "&8\u21E8 &e必須放置在反應器上方&a3格&e處"
+  TRASH_CAN_BLOCK:
+    name: "&3垃圾桶"
+    lore:
+      - ""
+      - "&f將銷毀其中的物品"
+  CRAFTING_MOTOR:
+    name: "&6合成器馬達"
+    lore:
+      - ""
+      - "&7自動合成器的重要零件"
+  VANILLA_AUTO_CRAFTER:
+    name: "&2自動合成器 &8（原版）"
+    lore:
+      - ""
+      - "&f將此機器放置於"
+      - "&f箱子或其他容器上"
+      - "&f可使其製作任何"
+      - "&e普通工作檯&f可合成的物品"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/物品%"
+  ENHANCED_AUTO_CRAFTER:
+    name: "&2自動合成器 &8（高級）"
+    lore:
+      - ""
+      - "&f將此機器放置於"
+      - "&f箱子或其他容器上"
+      - "&f可使其製作任何"
+      - "&e進階工作台"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_16_/物品%"
+  ARMOR_AUTO_CRAFTER:
+    name: "&2自動合成機 &8(盔甲)"
+    lore:
+      - ""
+      - "&f將此機器放置於"
+      - "&f箱子或其他容器上"
+      - "&f可使其製作任何"
+      - "&e盔甲鍛造台&f可合成的物品"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Power_32_/Item%"
