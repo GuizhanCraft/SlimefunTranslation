@@ -1,0 +1,608 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 电力机器
+translations:
+  ENERGY_REGULATOR:
+    name: "&6能源调节器"
+    lore:
+      - ""
+      - "&f能源网络的核心部件"
+  ENERGY_CONNECTOR:
+    name: "&e能源连接器"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "&f在机器与发电机之间"
+      - "&f放置可连接它们"
+      - "&f到能源调节器"
+  SMALL_CAPACITOR:
+    name: "&a小型电容"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Basic_Capacitor%"
+      - "%sftrlore_PowerCapacity_128%"
+  MEDIUM_CAPACITOR:
+    name: "&a中型电容"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Average_Capacitor%"
+      - "%sftrlore_PowerCapacity_512%"
+  BIG_CAPACITOR:
+    name: "&a大型电容"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Medium_Capacitor%"
+      - "%sftrlore_PowerCapacity_1024%"
+  LARGE_CAPACITOR:
+    name: "&a巨型电容"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_Good_Capacitor%"
+      - "%sftrlore_PowerCapacity_8192%"
+  CARBONADO_EDGED_CAPACITOR:
+    name: "&a黑金刚石电容"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_EndGame_Capacitor%"
+      - "%sftrlore_PowerCapacity_65536%"
+  ENERGIZED_CAPACITOR:
+    name: "&a充能电容"
+    lore:
+      - "%sftrlore_Range_6%"
+      - ""
+      - "%sftrlore_Machine_EndGame_Capacitor%"
+      - "%sftrlore_PowerCapacity_524288%"
+  SOLAR_GENERATOR:
+    name: "&b太阳能发电机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_4%"
+  SOLAR_GENERATOR_2:
+    name: "&c高级太阳能发电机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_16%"
+  SOLAR_GENERATOR_3:
+    name: "&4黑金刚石太阳能发电机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_64%"
+  SOLAR_GENERATOR_4:
+    name: "&e充能太阳能发电机"
+    lore:
+      - ""
+      - "&9可在夜间运行"
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_0%"
+      - "%sftrlore_PowerPerSecond_256% (日)"
+      - "%sftrlore_PowerPerSecond_128% (夜)"
+  CHARGING_BENCH:
+    name: "&6充电台"
+    lore:
+      - ""
+      - "&f为物品充电，例如喷气背包"
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_PowerBuffer_128%"
+      - "&8\u21E8 &e\u26A1 &7能量损失：&c50%"
+  ELECTRIC_FURNACE:
+    name: "&c电力熔炉"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_4%"
+  ELECTRIC_FURNACE_2:
+    name: "&c电力熔炉 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_6%"
+  ELECTRIC_FURNACE_3:
+    name: "&c电力熔炉 &7- &eIII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_4%"
+      - "%sftrlore_PowerPerSecond_10%"
+  ELECTRIC_GOLD_PAN:
+    name: "&6电力淘金盘"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_2%"
+  ELECTRIC_GOLD_PAN_2:
+    name: "&6电力淘金盘 &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_4%"
+  ELECTRIC_GOLD_PAN_3:
+    name: "&6电力淘金盘 &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerPerSecond_14%"
+  ELECTRIC_DUST_WASHER:
+    name: "&3电力洗矿机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_6%"
+  ELECTRIC_DUST_WASHER_2:
+    name: "&3电力洗矿机 &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_10%"
+  ELECTRIC_DUST_WASHER_3:
+    name: "&3电力洗矿机 &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerPerSecond_30%"
+  ELECTRIC_INGOT_FACTORY:
+    name: "&c电力铸锭机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_8%"
+  ELECTRIC_INGOT_FACTORY_2:
+    name: "&c电力铸锭机 &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Basic_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_14%"
+  ELECTRIC_INGOT_FACTORY_3:
+    name: "&c电力铸锭机 &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_8%"
+      - "%sftrlore_PowerPerSecond_40%"
+  ELECTRIFIED_CRUCIBLE:
+    name: "&c电力坩埚"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+  ELECTRIFIED_CRUCIBLE_2:
+    name: "&c电力坩埚 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerPerSecond_80%"
+  ELECTRIFIED_CRUCIBLE_3:
+    name: "&c电力坩埚 &7- &eIII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_4%"
+      - "%sftrlore_PowerPerSecond_120%"
+  ELECTRIC_ORE_GRINDER:
+    name: "&c电力碎矿机"
+    lore:
+      - ""
+      - "&f矿石粉碎机与磨石的完美结合"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_12%"
+  ELECTRIC_ORE_GRINDER_2:
+    name: "&c电力碎矿机 &7(&eII&7)"
+    lore:
+      - ""
+      - "&f矿石粉碎机与磨石的完美结合"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_4%"
+      - "%sftrlore_PowerPerSecond_30%"
+  ELECTRIC_ORE_GRINDER_3:
+    name: "&c电力碎矿机 &7(&eIII&7)"
+    lore:
+      - ""
+      - "&f矿石粉碎机与磨石的完美结合"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerPerSecond_90%"
+  HEATED_PRESSURE_CHAMBER:
+    name: "&a加热压力舱"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_10%"
+  HEATED_PRESSURE_CHAMBER_2:
+    name: "&c加热压力仓 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_5%"
+      - "%sftrlore_PowerPerSecond_44%"
+  ELECTRIC_INGOT_PULVERIZER:
+    name: "&c电力碎锭机"
+    lore:
+      - ""
+      - "&f可将锭粉碎成粉"
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_14%"
+  COAL_GENERATOR:
+    name: "&b煤炭发电机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Average_Generator%"
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_16%"
+  COAL_GENERATOR_2:
+    name: "&c煤炭发电机 &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Generator%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_30%"
+  BIO_REACTOR:
+    name: "&2生物反应堆"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Average_Generator%"
+      - "%sftrlore_PowerBuffer_128%"
+      - "%sftrlore_PowerPerSecond_8%"
+  AUTO_DRIER:
+    name: "&6自动烘干机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_10%"
+  AUTO_BREWER:
+    name: "&6自动酿造机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_12%"
+  ELECTRIC_PRESS:
+    name: "&e电力压缩机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_16%"
+  ELECTRIC_PRESS_2:
+    name: "&e电力压缩机 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_40%"
+  MAGNESIUM_GENERATOR:
+    name: "&c镁发电机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Generator%"
+      - "%sftrlore_PowerBuffer_128%"
+      - "%sftrlore_PowerPerSecond_36%"
+  AUTO_ENCHANTER:
+    name: "&5自动附魔机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_18%"
+  AUTO_ENCHANTER_2:
+    name: "&5自动附魔机 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_DISENCHANTER:
+    name: "&5自动祛魔机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_18%"
+  AUTO_DISENCHANTER_2:
+    name: "&5自动祛魔机 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_ANVIL:
+    name: "&7自动铁砧"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "&8\u21E8 &7每次可修复：10%"
+      - "%sftrlore_PowerPerSecond_24%"
+  AUTO_ANVIL_2:
+    name: "&7自动铁砧 Mk.II"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7每次可修复：25%"
+      - "%sftrlore_PowerPerSecond_32%"
+  BOOK_BINDER:
+    name: "&6附魔书合并机"
+    lore:
+      - ""
+      - "&f可将多个附魔书合并到一起"
+      - ""
+      - "%sftrlore_Machine_Medium_Machine%"
+      - "%sftrlore_PowerPerSecond_16%"
+  REFINERY:
+    name: "&c精炼机"
+    lore:
+      - ""
+      - "&f可将原油精炼为燃油"
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_64%"
+  LAVA_GENERATOR:
+    name: "&6岩浆发电机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Average_Generator%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_20%"
+  LAVA_GENERATOR_2:
+    name: "&6岩浆发电机 &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Generator%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_40%"
+  COMBUSTION_REACTOR:
+    name: "&c燃烧反应堆"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Generator%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_24%"
+  FOOD_FABRICATOR:
+    name: "&c食物制造机"
+    lore:
+      - ""
+      - "&f生产&a有机食物"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_14%"
+  FOOD_FABRICATOR_2:
+    name: "&c食物制造机 &7(&eII&7)"
+    lore:
+      - ""
+      - "&f生产&a有机食物"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_6%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_BREEDER:
+    name: "&e自动喂食机"
+    lore:
+      - ""
+      - "&f需要&a有机食物"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_Power_60_/动物%"
+  ANIMAL_GROWTH_ACCELERATOR:
+    name: "&b动物生长加速器"
+    lore:
+      - ""
+      - "&f需要&a有机食物"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_28%"
+  TREE_GROWTH_ACCELERATOR:
+    name: "&a树木生长加速器"
+    lore:
+      - ""
+      - "&f需要&a有机肥料"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7范围：9x9"
+      - "&8\u21E8 &7速度：&a4/次"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_48%"
+  XP_COLLECTOR:
+    name: "&a经验收集机"
+    lore:
+      - ""
+      - "&f收集附近的经验并存储起来"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_20%"
+  FOOD_COMPOSTER:
+    name: "&c食品堆肥机"
+    lore:
+      - ""
+      - "&f生产&a有机肥料"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_16%"
+  FOOD_COMPOSTER_2:
+    name: "&c食品堆肥机 &7(&eII&7)"
+    lore:
+      - ""
+      - "&f生产&a有机肥料"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_10%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_52%"
+  CROP_GROWTH_ACCELERATOR:
+    name: "&a作物生长加速器"
+    lore:
+      - ""
+      - "&f需要&a有机肥料"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7范围：7x7"
+      - "&8\u21E8 &7速度：&a3/次"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_50%"
+  CROP_GROWTH_ACCELERATOR_2:
+    name: "&a作物生长加速器 &7(&eII&7)"
+    lore:
+      - ""
+      - "&f需要&a有机肥料"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7范围：9x9"
+      - "&8\u21E8 &7速度：&a4/次"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_60%"
+  FREEZER:
+    name: "&b冰柜"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_18%"
+  FREEZER_2:
+    name: "&b冰柜 &7(&eII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_2%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_30%"
+  FREEZER_3:
+    name: "&b冰柜 &7(&eIII&7)"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_42%"
+  NUCLEAR_REACTOR:
+    conditions:
+      match-name: true
+    name: "&2核反应堆"
+    lore:
+      - ""
+      - "&f需要冷却剂！"
+      - "&8\u21E8 &b必须由水环绕"
+      - "&8\u21E8 &b必须提供反应堆冷却剂"
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_16384%"
+      - "%sftrlore_PowerPerSecond_500%"
+  NETHERSTAR_REACTOR:
+    name: "&f下界之星反应堆"
+    lore:
+      - ""
+      - "&f需要下界之星"
+      - "&8\u21E8 &b必须由水环绕"
+      - "&8\u21E8 &b必须提供下界冰冷却剂"
+      - ""
+      - "%sftrlore_Machine_EndGame_Generator%"
+      - "%sftrlore_PowerBuffer_32768%"
+      - "%sftrlore_PowerPerSecond_1024%"
+      - "&8\u21E8 &4使附近实体获得凋零效果"
+  FLUID_PUMP:
+    name: "&9流体泵"
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_PowerPerSecond_32%"
+  CARBON_PRESS:
+    name: "&c碳压缩机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_20%"
+  CARBON_PRESS_2:
+    name: "&c碳压缩机 &7- &eII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_50%"
+  CARBON_PRESS_3:
+    name: "&c碳压缩机 &7- &eIII"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_15%"
+      - "%sftrlore_PowerPerSecond_180%"
+  ELECTRIC_SMELTERY:
+    name: "&c电力冶炼炉"
+    lore:
+      - ""
+      - "&4仅用于冶炼合金，无法将矿粉冶炼成锭"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_20%"
+  ELECTRIC_SMELTERY_2:
+    name: "&c电力冶炼炉 &7- &eII"
+    lore:
+      - ""
+      - "&4仅用于冶炼合金，无法将矿粉冶炼成锭"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_40%"
+  IRON_GOLEM_ASSEMBLER:
+    name: "&6铁傀儡装配机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7冷却时间：&b30 秒"
+      - "%sftrlore_PowerBuffer_4096%"
+      - "%sftrlore_Power_2048_/铁傀儡%"
+  WITHER_ASSEMBLER:
+    name: "&5凋灵装配机"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7冷却时间：&b30 秒"
+      - "%sftrlore_PowerBuffer_4096%"
+      - "%sftrlore_Power_4096_/凋零%"
+  PRODUCE_COLLECTOR:
+    name: "&b产物收集机"
+    lore:
+      - ""
+      - "&f该机器允许你"
+      - "&f收集附近动物的产物"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_32%"
