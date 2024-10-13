@@ -1,0 +1,77 @@
+### These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Armadura Slimefun
+translations:
+  DAMASCUS_STEEL_HELMET:
+    name: "&7Capacete de Aço Damasco"
+  DAMASCUS_STEEL_CHESTPLATE:
+    conditions:
+      match-name: true
+    name: "&7Peitoral de Aço Damasco"
+  DAMASCUS_STEEL_LEGGINGS:
+    name: "&7Calças de Aço Damasco"
+  DAMASCUS_STEEL_BOOTS:
+    name: "&7Botas de Aço Damasco"
+  REINFORCED_ALLOY_HELMET:
+    name: "&bCapacete Reforçado"
+  REINFORCED_ALLOY_CHESTPLATE:
+    name: "&bPeitoral Reforçado"
+  REINFORCED_ALLOY_LEGGINGS:
+    name: "&bCalças Reforçadas"
+  REINFORCED_ALLOY_BOOTS:
+    name: "&bBotas Reforçadas"
+  CACTUS_HELMET:
+    name: "&2Capacete de Cacto"
+  CACTUS_CHESTPLATE:
+    name: "&2Peitoral de Cacto"
+  CACTUS_LEGGINGS:
+    name: "&2Calças de Cacto"
+  CACTUS_BOOTS:
+    name: "&2Botas de Cacto"
+  GILDED_IRON_HELMET:
+    name: "&6Capacete de Ferro Dourado"
+  GILDED_IRON_CHESTPLATE:
+    name: "&6Peitoral de Ferro Dourado"
+  GILDED_IRON_LEGGINGS:
+    name: "&6Calças de Ferro Dourado"
+  GILDED_IRON_BOOTS:
+    name: "&6Botas de Ferro Dourado"
+  SCUBA_HELMET:
+    name: "&cCapacete de Mergulho"
+    lore:
+      - ""
+      - "&7Permite que você respire debaixo d'água"
+      - ""
+      - "&6Efeitos do conjunto completo:"
+      - "&e- Imunidade de radiação"
+      - "&e- Proteção contra picada de abelha"
+  HAZMAT_CHESTPLATE:
+    name: "&cTraje Hazmat"
+    lore:
+      - ""
+      - "&7Permite que você caminhe através do fogo e da lava"
+      - ""
+      - "&6Efeitos do conjunto completo:"
+      - "&e- Imunidade de radiação"
+      - "&e- Proteção contra picada de abelha"
+  HAZMAT_LEGGINGS:
+    name: "&cCalças do Traje Hazmat"
+    lore:
+      - ""
+      - "&6Efeitos do conjunto completo:"
+      - "&e- Imunidade de radiação"
+      - "&e- Proteção contra picada de abelha"
+  RUBBER_BOOTS:
+    name: "&cBotas Hazmat"
+    lore:
+      - ""
+      - "&6Efeitos do conjunto completo:"
+      - "&e- Imunidade de radiação"
+      - "&e- Proteção contra picada de abelha"
+  GOLD_12K_HELMET:
+    name: "&6Capacete Dourado &7(12-Quilate)"
+  GOLD_12K_CHESTPLATE:
+    name: "&6Peitoral Dourado &7(12-Quilate)"
+  GOLD_12K_LEGGINGS:
+    name: "&6Calças Douradas &7(12-Quilate)"
+  GOLD_12K_BOOTS:
+    name: "&6Botas Douradas &7(12-Quilate)"
