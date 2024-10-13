@@ -1,0 +1,16 @@
+### These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Itens UI Slimefun
+translations:
+  _UI_SEARCH:
+    conditions:
+      force-load: true
+    name: "&7Pesquisar..."
+    lore:
+      - ""
+      - "&7\u21E8 &bClique para pesquisar por um item"
+      - ""
+      - "&cSeu servidor instalou SlimefunTranslation,"
+      - "&ca pesquisa não irá funcionar direito para itens traduzidos."
+      - ""
+      - "&7Use &e/sftr search <query> &7ao invés disso"
+      - "&7para pesquisar itens com nomes traduzidos."
