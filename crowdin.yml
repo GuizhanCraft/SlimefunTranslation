@@ -1,4 +1,4 @@
 files:
   - source: /src/main/resources/translations/en/**/*.yml
     translation: /src/main/resources/translations/%osx_locale%/**/%original_file_name%
-pull_request_title: "chore(i18n): update crowdin translations"
+pull_request_title: 'chore(i18n): update crowdin translations'
