@@ -129,12 +129,16 @@ public final class SlimefunTranslation extends AbstractAddon {
         } else if (getPluginVersion().startsWith("Build")) {
             try {
                 // use updater in lib plugin
-                Class<?> clazz = Class.forName("net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater");
+                char[] pluginPackage = {
+                    'n', 'e', 't', '.', 'g', 'u', 'i', 'z', 'h', 'a', 'n', 's', 's', '.',
+                    'g', 'u', 'i', 'z', 'h', 'a', 'n', 'l', 'i', 'b', 'p', 'l', 'u', 'g', 'i', 'n'
+                };
+                Class<?> clazz = Class.forName(new String(pluginPackage) + ".updater.GuizhanUpdater");
                 Method updaterStart = clazz.getDeclaredMethod("start", Plugin.class, File.class, String.class, String.class, String.class);
                 updaterStart.invoke(null, this, getFile(), getGithubUser(), getGithubRepo(), getGithubBranch());
             } catch (Exception ignored) {
                 // use updater in lib
-                new GuizhanBuildsUpdater(this, getFile(), getGithubUser(), getGithubRepo(), getGithubBranch()).start();
+                GuizhanBuildsUpdater.start(this, getFile(), getGithubUser(), getGithubRepo(), getGithubBranch());
             }
         }
     }
