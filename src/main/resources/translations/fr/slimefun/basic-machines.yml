@@ -1,0 +1,4 @@
+translations:
+  ENHANCED_CRAFTING_TABLE:
+    conditions:
+      match-name: true
