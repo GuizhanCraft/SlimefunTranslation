@@ -1,0 +1,4 @@
+translations:
+  HEATING_COIL:
+    conditions:
+      match-name: true
