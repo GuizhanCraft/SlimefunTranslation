@@ -1,0 +1,4 @@
+translations:
+  STEEL_JETPACK:
+    conditions:
+      match-name: true
