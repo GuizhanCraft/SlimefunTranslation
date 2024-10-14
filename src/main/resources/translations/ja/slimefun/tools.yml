@@ -1,0 +1,8 @@
+translations:
+  GRAPPLING_HOOK:
+    lore:
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SMELTERS_PICKAXE:
+    conditions:
+      match-name: true
