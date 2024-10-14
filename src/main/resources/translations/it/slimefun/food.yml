@@ -1,0 +1,4 @@
+translations:
+  FORTUNE_COOKIE:
+    conditions:
+      match-name: true
