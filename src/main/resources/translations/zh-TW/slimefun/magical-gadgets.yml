@@ -1,0 +1,13 @@
+translations:
+  ENDER_BACKPACK:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  BOUND_BACKPACK:
+    lore-overrides:
+      2: "&7大小：&e36"
+      5: "%sftrlore_RightClickToOpen%"
+  INFUSED_ELYTRA:
+    conditions:
+      match-name: true
