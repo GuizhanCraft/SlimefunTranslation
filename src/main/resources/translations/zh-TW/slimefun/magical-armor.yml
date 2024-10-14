@@ -1,0 +1,28 @@
+translations:
+  ENDER_HELMET:
+    conditions:
+      match-name: true
+  GLOWSTONE_HELMET:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&9+ 夜視"
+  GLOWSTONE_CHESTPLATE:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&9+ 夜視"
+  GLOWSTONE_LEGGINGS:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&9+ 夜視"
+  GLOWSTONE_BOOTS:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&9+ 夜視"

@@ -1,0 +1,37 @@
+translations:
+  ENDER_BACKPACK:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  BOUND_BACKPACK:
+    lore-overrides:
+      2: "&7大きさ：&e36"
+      5: "%sftrlore_RightClickToOpen%"
+  INFUSED_ELYTRA:
+    conditions:
+      match-name: true
+  RAINBOW_WOOL:
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS:
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLASS_PANE:
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CLAY:
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_CONCRETE:
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"
+  RAINBOW_GLAZED_TERRACOTTA:
+    lore:
+      - ""
+      - "%sftrlore_Rainbow%"

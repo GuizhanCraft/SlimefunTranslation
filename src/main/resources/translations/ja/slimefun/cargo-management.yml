@@ -1,0 +1,34 @@
+translations:
+  CARGO_MANAGER:
+    conditions:
+      match-name: true
+  VANILLA_AUTO_CRAFTER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - ""
+  ENHANCED_AUTO_CRAFTER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - ""
+  ARMOR_AUTO_CRAFTER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - ""

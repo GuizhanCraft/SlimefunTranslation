@@ -1,0 +1,394 @@
+translations:
+  ELECTRIC_FURNACE:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  ELECTRIC_FURNACE_2:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_PowerPerSecond_6%"
+  ELECTRIC_GOLD_PAN:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_2%"
+  ELECTRIC_GOLD_PAN_2:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_3%"
+      - ""
+  ELECTRIC_GOLD_PAN_3:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIC_DUST_WASHER:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_6%"
+  ELECTRIC_DUST_WASHER_3:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIC_INGOT_FACTORY:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  ELECTRIC_INGOT_FACTORY_3:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - "%sftrlore_PowerPerSecond_40%"
+  ELECTRIFIED_CRUCIBLE:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+  ELECTRIFIED_CRUCIBLE_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIFIED_CRUCIBLE_3:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIC_ORE_GRINDER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - ""
+  ELECTRIC_ORE_GRINDER_2:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIC_ORE_GRINDER_3:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  HEATED_PRESSURE_CHAMBER:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - ""
+  HEATED_PRESSURE_CHAMBER_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIC_INGOT_PULVERIZER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  COAL_GENERATOR:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_64%"
+      - ""
+  COAL_GENERATOR_2:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  AUTO_DRIER:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  AUTO_BREWER:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  ELECTRIC_PRESS:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  ELECTRIC_PRESS_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_40%"
+  AUTO_ENCHANTER:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  AUTO_ENCHANTER_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_DISENCHANTER:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_Speed_1%"
+      - ""
+  AUTO_DISENCHANTER_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_ANVIL:
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - ""
+      - ""
+  AUTO_ANVIL_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - "%sftrlore_PowerPerSecond_32%"
+  REFINERY:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  LAVA_GENERATOR:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_20%"
+  LAVA_GENERATOR_2:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_40%"
+  COMBUSTION_REACTOR:
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  FOOD_FABRICATOR:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  FOOD_FABRICATOR_2:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_48%"
+  AUTO_BREEDER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - ""
+  ANIMAL_GROWTH_ACCELERATOR:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - ""
+  TREE_GROWTH_ACCELERATOR:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_48%"
+  XP_COLLECTOR:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_20%"
+  FOOD_COMPOSTER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  FOOD_COMPOSTER_2:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - "%sftrlore_PowerBuffer_512%"
+      - ""
+  CROP_GROWTH_ACCELERATOR:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - ""
+  CROP_GROWTH_ACCELERATOR_2:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - ""
+  FREEZER:
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  FREEZER_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  FREEZER_3:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerBuffer_256%"
+      - ""
+  NUCLEAR_REACTOR:
+    conditions:
+      match-name: true
+  FLUID_PUMP:
+    lore:
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_PowerPerSecond_32%"
+  CARBON_PRESS:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_20%"
+  CARBON_PRESS_2:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - ""
+  CARBON_PRESS_3:
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - ""
+      - ""
+  ELECTRIC_SMELTERY:
+    lore:
+      - ""
+      - "&4僅用於冶煉合金，無法將礦粉冶煉成錠"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_20%"
+  ELECTRIC_SMELTERY_2:
+    name: "&c電動冶煉爐 &7- &eII"
+    lore:
+      - ""
+      - "&4僅用於冶煉合金，無法將礦粉冶煉成錠"
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "%sftrlore_Speed_3%"
+      - "%sftrlore_PowerPerSecond_40%"
+  IRON_GOLEM_ASSEMBLER:
+    name: "&6鐵巨人組裝機"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7冷卻時間：&b30 秒"
+      - "%sftrlore_PowerBuffer_4096%"
+      - "%sftrlore_Power_2048_/鐵巨人%"
+  WITHER_ASSEMBLER:
+    name: "&5凋零怪組裝機"
+    lore:
+      - ""
+      - "%sftrlore_Machine_EndGame_Machine%"
+      - "&8\u21E8 &7冷卻時間：&b30 秒"
+      - "%sftrlore_PowerBuffer_4096%"
+      - "%sftrlore_Power_4096_/凋零怪%"
+  PRODUCE_COLLECTOR:
+    name: "&b畜牧產物收集器"
+    lore:
+      - ""
+      - "&f該機器允許你"
+      - "&f收集附近動物的產物"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_PowerBuffer_512%"
+      - "%sftrlore_PowerPerSecond_32%"

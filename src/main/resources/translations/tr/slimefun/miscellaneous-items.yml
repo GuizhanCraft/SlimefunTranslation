@@ -1,0 +1,10 @@
+translations:
+  TINY_URANIUM:
+    conditions:
+      match-lore: true
+  SMALL_URANIUM:
+    conditions:
+      match-lore: true
+  CAN:
+    conditions:
+      match-name: true

@@ -1,0 +1,4 @@
+translations:
+  INFUSED_ELYTRA:
+    conditions:
+      match-name: true

@@ -1,0 +1,124 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Máquinas de GPS Slimefun
+translations:
+  GPS_TRANSMITTER:
+    conditions:
+      match-name: true
+    name: "&bTransmissor de GPS"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_16%"
+      - "%sftrlore_PowerPerSecond_2%"
+  GPS_TRANSMITTER_2:
+    name: "&cTransmissor de GPS Avançado"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_6%"
+  GPS_TRANSMITTER_3:
+    name: "&4Transmissor de GPS Carbonado"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_22%"
+  GPS_TRANSMITTER_4:
+    name: "&eTransmissor de GPS Energizado"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_92%"
+  GPS_CONTROL_PANEL:
+    name: "&bPainel de Controle do GPS"
+    lore:
+      - ""
+      - "&fPermite que você rastreie seus Satélites"
+      - "&fe gerencie seus Pontos de Passagem"
+  GPS_MARKER_TOOL:
+    name: "&bFerramenta de Marcação do GPS"
+    lore:
+      - ""
+      - "&fPermite que você defina um Ponto de Passagem no"
+      - "&fLocal que você colocar isso"
+  GPS_EMERGENCY_TRANSMITTER:
+    name: "&cTransmissor de Emergência do GPS"
+    lore:
+      - ""
+      - "&fCarregando isso em seu Inventário"
+      - "&fautomaticamente define um Ponto de Passagem"
+      - "&fem sua Localização quando você morre."
+  GPS_GEO_SCANNER:
+    name: "&bEscaneador Geográfico do GPS"
+    lore:
+      - ""
+      - "&fEscaneia um Pedaço por Recursos naturais"
+      - "&fcomo &8Petróleo"
+  PORTABLE_GEO_SCANNER:
+    name: "&bEscaneador Geográfico Portátil"
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&eBotão Direito&7 para escanear"
+  OIL_PUMP:
+    name: "&4Bomba de Petróleo"
+    lore:
+      - ""
+      - "&7Bombea Petróleo e o coloca em Baldes"
+      - ""
+      - "&c&l! &cCertifique-se de Escanear Geograficamente o Pedaço primeiro"
+  GEO_MINER:
+    name: "&6Minerador Geográfico"
+    lore:
+      - ""
+      - "&eMinera os recursos do Pedaço"
+      - "&eEsses Recursos não podem ser minerados com uma picareta"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+      - ""
+      - ""
+  GPS_TELEPORTER_PYLON:
+    name: "&5GPS Pilar de Teleporte"
+    lore:
+      - ""
+      - "&7Componente de Teleporte"
+  GPS_TELEPORTATION_MATRIX:
+    name: "&bGPS Matriz de Teleporte"
+    lore:
+      - ""
+      - "&fEste é o Principal Componente do Teleporte"
+      - "&fEssa Matriz permite que os Jogadores escolham entre todos os"
+      - "&fPontos de Passagem feitos pelo Jogador que colocou"
+      - "&feste Dispositivo."
+  PORTABLE_TELEPORTER:
+    name: "&bTeletransportador Portátil"
+    lore-overrides:
+      2: "&fEsse dispositivo permite que você se teleporte"
+      3: "&fpara seus Pontos de Passagem de qualquer lugar"
+      7: "%sftrlore_RightClickToUse%"
+  GPS_ACTIVATION_DEVICE_SHARED:
+    name: "&fDispositivo de Ativação de GPS &3(Compartilhado)"
+    lore:
+      - ""
+      - "&fColoque isso em uma Matriz de Teleporte"
+      - "&fe pise neste Placa para ativar"
+      - "&fo Processo de Teleporte"
+  GPS_ACTIVATION_DEVICE_PERSONAL:
+    name: "&fDispositivo de Ativação de GPS &a(Pessoal)"
+    lore:
+      - ""
+      - "&fColoque isso em uma Matriz de Teleporte"
+      - "&fe pise neste Placa para ativar"
+      - "&fo Processo de Teleporte"
+      - ""
+      - "&fEsta versão permite apenas a Pessoa que"
+      - "&fcolocou este Dispositivo para usá-lo"
+  ELEVATOR_PLATE:
+    name: "&bPlaca do Elevador"
+    lore:
+      - ""
+      - "&fColoque uma Placa de Elevador em cada andar"
+      - "&fe você será capaz de se teletransportar entre eles."
+      - ""
+      - "&eClique com o botão direito nesse Bloco &7para nomeá-lo"

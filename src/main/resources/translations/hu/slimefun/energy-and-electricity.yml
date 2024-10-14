@@ -1,0 +1,4 @@
+translations:
+  NUCLEAR_REACTOR:
+    conditions:
+      match-name: true

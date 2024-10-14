@@ -48,7 +48,6 @@ translations:
   ARMORED_JETPACK:
     name: "&9裝甲噴射背包"
     lore-overrides:
-      1: ""
       2: "%sftrlore_Material_Steel%"
       4: "&8\u21E8 &7推力：&c0.5"
       6: "%sftrlore_CrouchToUse%"

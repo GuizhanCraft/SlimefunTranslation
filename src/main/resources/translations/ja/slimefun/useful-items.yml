@@ -1,0 +1,107 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefunの便利なアイテム
+translations:
+  PORTABLE_CRAFTER:
+    name: "&6ポータブル作業台"
+    lore:
+      - "&a&oポータブルな作業台である"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  PORTABLE_DUSTBIN:
+    name: "&6ポータブルゴミ箱"
+    lore:
+      - "&fポータブルなアイテムデストロイヤー"
+      - ""
+      - "%sftrlore_RightClickToOpen%"
+  RAG:
+    name: "&c雑巾"
+    lore:
+      - ""
+      - "&aレベル I - 医薬品"
+      - ""
+      - "&fハートを2個回復"
+      - "&f火を消す"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  BANDAGE:
+    name: "&c包帯"
+    lore:
+      - ""
+      - "&aレベル II - 医薬品"
+      - ""
+      - "&fハートを4個回復"
+      - "&f火を消す"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  SPLINT:
+    name: "&c副木"
+    lore:
+      - ""
+      - "&aレベル I - 医薬品"
+      - ""
+      - "&fハートを2個回復"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  VITAMINS:
+    name: "&cビタミン"
+    lore:
+      - ""
+      - "&aレベル III - 医薬品"
+      - ""
+      - "&fハートを4個回復"
+      - "&f火を消す"
+      - "&f毒、衰弱、被ばくを治す"
+      - ""
+      - "%sftrlore_RightClickToUse%"
+  MEDICINE:
+    name: "&c薬"
+    lore:
+      - ""
+      - "&aレベル III - 医薬品"
+      - ""
+      - "&fハートを4個回復"
+      - "&f火を消す"
+      - "&f毒、衰弱、被ばくを治す"
+  SMALL_BACKPACK:
+    name: "&e小さなバックパック"
+    lore-overrides:
+      2: "&7大きさ：&e9"
+      5: "%sftrlore_RightClickToOpen%"
+  MEDIUM_BACKPACK:
+    conditions:
+      match-name: true
+    name: "&eバックパック"
+    lore-overrides:
+      2: "&7大きさ：&e18"
+      5: "%sftrlore_RightClickToOpen%"
+  LARGE_BACKPACK:
+    name: "&e大きなバックパック"
+    lore-overrides:
+      2: "&7大きさ：&e27"
+      5: "%sftrlore_RightClickToOpen%"
+  WOVEN_BACKPACK:
+    name: "&e布バックパック"
+    lore-overrides:
+      2: "&7大きさ：&e36"
+      5: "%sftrlore_RightClickToOpen%"
+  GILDED_BACKPACK:
+    name: "&e金メッキバックパック"
+    lore-overrides:
+      2: "&7大きさ：&e45"
+      5: "%sftrlore_RightClickToOpen%"
+  RADIANT_BACKPACK:
+    name: "&e発光バックパック"
+    lore-overrides:
+      2: "&7大きさ：&e54 (ラージチェスト)"
+      5: "%sftrlore_RightClickToOpen%"
+  COOLER:
+    name: "&bクーラー"
+    lore-overrides:
+      5: "&7大きさ：&e27"
+      8: "%sftrlore_RightClickToOpen%"
+  TAPE_MEASURE:
+    name: "&6巻尺"
+    lore:
+      - ""
+      - "&eShift + 右クリック&7して基点を定める"
+      - "&e右クリック&7して測る"

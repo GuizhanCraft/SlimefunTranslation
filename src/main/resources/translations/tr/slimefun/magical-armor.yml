@@ -1,0 +1,4 @@
+translations:
+  ENDER_HELMET:
+    conditions:
+      match-name: true

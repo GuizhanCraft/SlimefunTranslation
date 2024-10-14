@@ -1,0 +1,19 @@
+translations:
+  SYNTHETIC_SAPPHIRE:
+    conditions:
+      match-name: true
+  URANIUM:
+    conditions:
+      match-lore: true
+  MAGNESIUM_SALT:
+    conditions:
+      match-lore: true
+  NEPTUNIUM:
+    conditions:
+      match-lore: true
+  PLUTONIUM:
+    conditions:
+      match-lore: true
+  BOOSTED_URANIUM:
+    conditions:
+      match-lore: true

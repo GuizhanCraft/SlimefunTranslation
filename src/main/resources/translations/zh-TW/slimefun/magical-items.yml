@@ -1,0 +1,12 @@
+translations:
+  COMMON_TALISMAN:
+    conditions:
+      match-name: true
+  SYNTHETIC_SHULKER_SHELL:
+    lore:
+      - ""
+      - "&f此物品可在工作台中"
+      - ""
+  ANCIENT_RUNE_ENDER:
+    conditions:
+      match-name: true

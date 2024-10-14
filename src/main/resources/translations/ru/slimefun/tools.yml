@@ -1,0 +1,4 @@
+translations:
+  SMELTERS_PICKAXE:
+    conditions:
+      match-name: true

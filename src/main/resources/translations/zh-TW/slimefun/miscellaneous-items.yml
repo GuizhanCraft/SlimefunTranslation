@@ -1,0 +1,14 @@
+translations:
+  TINY_URANIUM:
+    conditions:
+      match-lore: true
+  SMALL_URANIUM:
+    conditions:
+      match-lore: true
+    lore:
+      - ""
+      - ""
+      - "%sftrlore_HazmatSuitRequired%"
+  CAN:
+    conditions:
+      match-name: true

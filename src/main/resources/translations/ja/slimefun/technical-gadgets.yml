@@ -1,0 +1,28 @@
+translations:
+  STEEL_JETPACK:
+    conditions:
+      match-name: true
+  ARMORED_JETPACK:
+    lore-overrides:
+      1: ""
+  DURALUMIN_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"
+  SOLDER_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"
+  BILLON_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"
+  STEEL_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"
+  DAMASCUS_STEEL_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"
+  REINFORCED_ALLOY_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"
+  CARBONADO_MULTI_TOOL:
+    lore-overrides:
+      4: "%sftrlore_RightClickToUse%"

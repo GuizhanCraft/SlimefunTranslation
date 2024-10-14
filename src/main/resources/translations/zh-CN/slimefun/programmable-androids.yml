@@ -1,0 +1,104 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun 可编程机器人
+conditions:
+  match-name: true
+translations:
+  ANDROID_INTERFACE_ITEMS:
+    name: "&7机器人接口 &9(物品)"
+    lore:
+      - ""
+      - "&f当机器人脚本告诉这样做时"
+      - "&f机器人将会把存储的物品"
+      - "&f送入到接口中"
+  ANDROID_INTERFACE_FUEL:
+    name: "&7机器人接口 &9(燃料)"
+    lore:
+      - ""
+      - "&f当机器人脚本告诉这样做时"
+      - "&f机器人将从接口"
+      - "&f抽取燃料到机器人中"
+  PROGRAMMABLE_ANDROID:
+    name: "&c可编程机器人 &7(普通)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：无"
+      - "&8\u21E8 &7燃料效率：1.0x"
+  PROGRAMMABLE_ANDROID_MINER:
+    name: "&c可编程机器人 &7(矿工)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：挖矿"
+      - "&8\u21E8 &7燃料效率：1.0x"
+  PROGRAMMABLE_ANDROID_FARMER:
+    name: "&c可编程机器人 &7(农夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：耕作"
+      - "&8\u21E8 &7燃料效率：1.0x"
+  PROGRAMMABLE_ANDROID_WOODCUTTER:
+    name: "&c可编程机器人 &7(樵夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：伐木"
+      - "&8\u21E8 &7燃料效率：1.0x"
+  PROGRAMMABLE_ANDROID_FISHERMAN:
+    name: "&c可编程机器人 &7(渔夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：钓鱼"
+      - "&8\u21E8 &7成功率：10%"
+      - "&8\u21E8 &7燃料效率：1.0x"
+  PROGRAMMABLE_ANDROID_BUTCHER:
+    name: "&c可编程机器人 &7(屠夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：屠宰"
+      - "&8\u21E8 &7伤害：4"
+      - "&8\u21E8 &7燃料效率：1.0x"
+  PROGRAMMABLE_ANDROID_2:
+    name: "&c高级可编程机器人 &7(普通)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：无"
+      - "&8\u21E8 &7燃料效率：1.5x"
+  PROGRAMMABLE_ANDROID_2_FISHERMAN:
+    name: "&c高级可编程机器人 &7(渔夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：钓鱼"
+      - "&8\u21E8 &7成功率：20%"
+      - "&8\u21E8 &7燃料效率：1.5x"
+  PROGRAMMABLE_ANDROID_2_BUTCHER:
+    name: "&c高级可编程机器人 &7(屠夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：屠宰"
+      - "&8\u21E8 &7伤害：8"
+      - "&8\u21E8 &7燃料效率：1.5x"
+  PROGRAMMABLE_ANDROID_2_FARMER:
+    name: "&c高级可编程机器人 &7(农夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：耕作"
+      - "&8\u21E8 &7燃料效率：1.5x"
+      - "&8\u21E8 &7也可以收集异域花园的植物"
+  PROGRAMMABLE_ANDROID_3:
+    name: "&c可授权式可编程机器人 &7(普通)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：无"
+      - "&8\u21E8 &7燃料效率：3.0x"
+  PROGRAMMABLE_ANDROID_3_FISHERMAN:
+    name: "&c可授权式可编程机器人 &7(渔夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：钓鱼"
+      - "&8\u21E8 &7成功率：30%"
+      - "&8\u21E8 &7燃料效率：8.0x"
+  PROGRAMMABLE_ANDROID_3_BUTCHER:
+    name: "&c可授权式可编程机器人 &7(屠夫)"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：屠宰"
+      - "&8\u21E8 &7伤害：20"
+      - "&8\u21E8 &7燃料效率：8.0x"

@@ -1,0 +1,90 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefun GPS儀器
+translations:
+  GPS_TRANSMITTER:
+    conditions:
+      match-name: true
+    name: "&bGPS 發射器"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_16%"
+      - "%sftrlore_PowerPerSecond_2%"
+  GPS_TRANSMITTER_2:
+    name: "&c高級 GPS 發射器"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_6%"
+  GPS_TRANSMITTER_3:
+    name: "&4黑鑽石 GPS 發射器"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_22%"
+  GPS_TRANSMITTER_4:
+    name: "&e充能 GPS 發射器"
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_92%"
+  GPS_CONTROL_PANEL:
+    name: "&bGPS 控制面板"
+    lore:
+      - ""
+      - "&f允許你追蹤你的衛星"
+      - "&f並管理你的傳送點"
+  GPS_MARKER_TOOL:
+    name: "&bGPS 標記工具"
+    lore:
+      - ""
+      - "&f允許你在目標地點"
+      - "&f設置傳送點"
+  GPS_EMERGENCY_TRANSMITTER:
+    name: "&cGPS 緊急發射器"
+    lore:
+      - ""
+      - "&f當你死亡時"
+      - "&f如果此物品在你的物品欄中"
+      - "&f會留下一個傳送點"
+  GPS_GEO_SCANNER:
+    name: "&bGPS 地理掃描器"
+    lore:
+      - ""
+      - "&f掃描區塊中的自然資源"
+      - "&f例如 &8原油"
+  PORTABLE_GEO_SCANNER:
+    name: "&b便攜式地理掃描器"
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&e右鍵點擊&7以掃描"
+  OIL_PUMP:
+    name: "&4原油泵"
+    lore:
+      - ""
+      - "&7泵出原油並把它裝進桶裡"
+      - ""
+      - "&c&l！&c需要先進行區塊掃描"
+  GEO_MINER:
+    name: "&6自然資源開採機"
+    lore:
+      - ""
+      - "&e從區塊中開採出資源"
+      - "&e可開採無法用礦鎬開採出的資源"
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+      - ""
+      - ""
+  PORTABLE_TELEPORTER:
+    lore-overrides:
+      7: "%sftrlore_RightClickToUse%"
+  ELEVATOR_PLATE:
+    lore:
+      - ""
+      - "&f在每一層放置一個電梯板"
+      - "&f你就可以在每一層之間傳送"
+      - ""
+      - "&e右鍵點擊電梯板&7進行命名"

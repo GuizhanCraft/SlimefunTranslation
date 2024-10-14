@@ -1,0 +1,200 @@
+## These files are used by Crowdin to translate them into other languages, and will be provided by default.
+name: Slimefunの資源
+translations:
+  REINFORCED_ALLOY_INGOT:
+    name: "&b&l強化合金インゴット"
+  HARDENED_METAL_INGOT:
+    name: "&b&l硬化金属"
+  DAMASCUS_STEEL_INGOT:
+    name: "&bダマスカス鋼インゴット"
+  STEEL_INGOT:
+    name: "&b鋼インゴット"
+  BRONZE_INGOT:
+    name: "&b青銅インゴット"
+  DURALUMIN_INGOT:
+    name: "&bジュラルミンインゴット"
+  BILLON_INGOT:
+    name: "&bビロンインゴット"
+  BRASS_INGOT:
+    name: "&b黄銅インゴット"
+  ALUMINUM_BRASS_INGOT:
+    name: "&bアルミニウム黄銅インゴット"
+  ALUMINUM_BRONZE_INGOT:
+    name: "&bアルミニウム青銅インゴット"
+  CORINTHIAN_BRONZE_INGOT:
+    name: "&bコリント青銅インゴット"
+  SOLDER_INGOT:
+    name: "&bはんだインゴット"
+  SYNTHETIC_SAPPHIRE:
+    conditions:
+      match-name: true
+    name: "&b合成サファイア"
+    lore:
+      - ""
+      - "&fこのアイテム、作業台では"
+      - "&fラピスラズリの代わりに使用できる"
+  SYNTHETIC_DIAMOND:
+    name: "&b合成ダイヤモンド"
+    lore:
+      - ""
+      - "&fこのアイテム、作業台では"
+      - "&fダイヤモンドの代わりに使用できる"
+  RAW_CARBONADO:
+    name: "&b生カーボナード"
+  NICKEL_INGOT:
+    name: "&bニッケルインゴット"
+  COBALT_INGOT:
+    name: "&9コバルトインゴット"
+  CARBONADO:
+    name: "&b&lカーボナード"
+    lore:
+      - ""
+      - "&7&o「ブラックダイヤモンド」"
+  FERROSILICON:
+    name: "&bフェロシリコン"
+  IRON_DUST:
+    name: "&6鉄粉"
+  GOLD_DUST:
+    name: "&6金粉"
+  COPPER_DUST:
+    name: "&6銅粉"
+  TIN_DUST:
+    name: "&6錫粉"
+  SILVER_DUST:
+    name: "&6銀粉"
+  LEAD_DUST:
+    name: "&6鉛粉"
+  ALUMINUM_DUST:
+    name: "&6アルミニウム粉"
+  ZINC_DUST:
+    name: "&6亜鉛粉"
+  MAGNESIUM_DUST:
+    name: "&6マグネシウム粉"
+  COPPER_INGOT:
+    name: "&b銅インゴット"
+  TIN_INGOT:
+    name: "&b錫インゴット"
+  SILVER_INGOT:
+    name: "&b銀インゴット"
+  LEAD_INGOT:
+    name: "&b鉛インゴット"
+  ALUMINUM_INGOT:
+    name: "&bアルミニウムインゴット"
+  ZINC_INGOT:
+    name: "&b亜鉛インゴット"
+  MAGNESIUM_INGOT:
+    name: "&bマグネシウムインゴット"
+  SULFATE:
+    name: "&b硫酸塩"
+  CARBON:
+    name: "&e炭素"
+  COMPRESSED_CARBON:
+    name: "&c圧縮炭素"
+  CARBON_CHUNK:
+    name: "&4炭素の塊"
+  GOLD_24K:
+    name: "&f金インゴット &7(24カラット)"
+  GOLD_22K:
+    name: "&f金インゴット &7(22カラット)"
+  GOLD_20K:
+    name: "&f金インゴット &7(20カラット)"
+  GOLD_18K:
+    name: "&f金インゴット &7(18カラット)"
+  GOLD_16K:
+    name: "&f金インゴット &7(16カラット)"
+  GOLD_14K:
+    name: "&f金インゴット &7(14カラット)"
+  GOLD_12K:
+    name: "&f金インゴット &7(12カラット)"
+  GOLD_10K:
+    name: "&f金インゴット &7(10カラット)"
+  GOLD_8K:
+    name: "&f金インゴット &7(8カラット)"
+  GOLD_6K:
+    name: "&f金インゴット &7(6カラット)"
+  GOLD_4K:
+    name: "&f金インゴット &7(4カラット)"
+  SILICON:
+    name: "&6シリコン"
+  GILDED_IRON:
+    name: "&6&l金メッキ鉄"
+  SYNTHETIC_EMERALD:
+    name: "&b合成エメラルド"
+    lore:
+      - ""
+      - "&fこのアイテムは村人との"
+      - "&f取引に使用できる"
+  URANIUM:
+    conditions:
+      match-lore: true
+    name: "&4ウラン"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  MAGNESIUM_SALT:
+    conditions:
+      match-lore: true
+    name: "&cマグネシウム塩"
+    lore:
+      - ""
+      - "&7マグネシウム発電機に"
+      - "&7使用できる、燃料の特別な一種"
+  BUCKET_OF_OIL:
+    name: "&f原油入りバケツ"
+  BUCKET_OF_FUEL:
+    name: "&f燃料入りバケツ"
+  NETHER_ICE:
+    name: "&eネザー氷"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_Moderate%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT:
+    name: "&6猛烈なインゴット &7(33%)"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT_2:
+    name: "&6猛烈なインゴット &7(66%)"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BLISTERING_INGOT_3:
+    name: "&6猛烈なインゴット"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  ENRICHED_NETHER_ICE:
+    name: "&e濃縮ネザー氷"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  NEPTUNIUM:
+    conditions:
+      match-lore: true
+    name: "&aネプツニウム"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_High%"
+      - "%sftrlore_HazmatSuitRequired%"
+  PLUTONIUM:
+    conditions:
+      match-lore: true
+    name: "&7プルトニウム"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"
+  BOOSTED_URANIUM:
+    conditions:
+      match-lore: true
+    name: "&2濃縮ウラン"
+    lore:
+      - ""
+      - "%sftrlore_Radioactive_VeryHigh%"
+      - "%sftrlore_HazmatSuitRequired%"

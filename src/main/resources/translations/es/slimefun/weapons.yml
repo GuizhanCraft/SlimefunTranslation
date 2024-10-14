@@ -1,0 +1,4 @@
+translations:
+  BLADE_OF_VAMPIRES:
+    conditions:
+      match-name: true

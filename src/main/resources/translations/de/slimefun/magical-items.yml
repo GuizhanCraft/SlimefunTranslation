@@ -1,0 +1,7 @@
+translations:
+  COMMON_TALISMAN:
+    conditions:
+      match-name: true
+  ANCIENT_RUNE_ENDER:
+    conditions:
+      match-name: true
