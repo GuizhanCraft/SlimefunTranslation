@@ -1,0 +1,4 @@
+translations:
+  DAMASCUS_STEEL_CHESTPLATE:
+    conditions:
+      match-name: true
