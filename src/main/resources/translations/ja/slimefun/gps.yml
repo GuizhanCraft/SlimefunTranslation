@@ -1,0 +1,37 @@
+translations:
+  GPS_TRANSMITTER:
+    conditions:
+      match-name: true
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_16%"
+      - "%sftrlore_PowerPerSecond_2%"
+  GPS_TRANSMITTER_2:
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_64%"
+      - "%sftrlore_PowerPerSecond_6%"
+  GPS_TRANSMITTER_3:
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_256%"
+      - "%sftrlore_PowerPerSecond_22%"
+  GPS_TRANSMITTER_4:
+    lore:
+      - ""
+      - "%sftrlore_PowerBuffer_1024%"
+      - "%sftrlore_PowerPerSecond_92%"
+  GEO_MINER:
+    lore:
+      - ""
+      - ""
+      - ""
+      - ""
+      - "%sftrlore_Machine_Advanced_Machine%"
+      - "%sftrlore_Speed_1%"
+      - "%sftrlore_PowerPerSecond_48%"
+      - ""
+      - ""
+  PORTABLE_TELEPORTER:
+    lore-overrides:
+      7: "%sftrlore_RightClickToUse%"
