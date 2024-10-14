@@ -1,0 +1,11 @@
+lore:
+  Machine:
+    TierColor:
+      Basic: "&e"
+      Average: "&6"
+      Medium: "&a"
+      Good: "&2"
+      Advanced: "&6"
+      EndGame: "&4"
+  MultiTool: "&e蹲下並右鍵點擊&7以切換模式"
+
