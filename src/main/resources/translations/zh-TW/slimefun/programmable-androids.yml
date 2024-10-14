@@ -1,0 +1,28 @@
+conditions:
+  match-name: true
+translations:
+  PROGRAMMABLE_ANDROID_BUTCHER:
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：屠宰"
+      - ""
+      - ""
+  PROGRAMMABLE_ANDROID_2_BUTCHER:
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：屠宰"
+      - ""
+      - ""
+  PROGRAMMABLE_ANDROID_3_FISHERMAN:
+    lore:
+      - ""
+      - ""
+      - ""
+      - "&8\u21E8 &7燃料效率：8.0x"
+  PROGRAMMABLE_ANDROID_3_BUTCHER:
+    name: "&c可授權式可程式機器人 &7（屠夫）"
+    lore:
+      - ""
+      - "&8\u21E8 &7功能：屠宰"
+      - "&8\u21E8 &7傷害：20"
+      - "&8\u21E8 &7燃料效率：8.0x"
