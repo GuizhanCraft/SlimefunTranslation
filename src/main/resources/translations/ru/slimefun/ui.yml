@@ -1,0 +1,4 @@
+translations:
+  _UI_SEARCH:
+    conditions:
+      force-load: true
