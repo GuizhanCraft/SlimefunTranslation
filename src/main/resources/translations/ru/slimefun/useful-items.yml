@@ -1,0 +1,4 @@
+translations:
+  MEDIUM_BACKPACK:
+    conditions:
+      match-name: true
