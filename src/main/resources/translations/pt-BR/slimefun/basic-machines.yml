@@ -32,7 +32,7 @@ translations:
       - ""
       - "&aTritura minérios para dobra-los"
   COMPRESSOR:
-    name: "&Compressor"
+    name: "&bCompressor"
     lore:
       - ""
       - "&aComprime itens"
