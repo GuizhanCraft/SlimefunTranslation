@@ -70,7 +70,7 @@ translations:
   ANCIENT_RUNE_FIRE:
     name: "&7Runa Antiga &8&l[&4&lFogo&8&l]"
   ANCIENT_RUNE_WATER:
-    name: "&7Runa Antiga &8&l[&1&lWater&8&l]"
+    name: "&7Runa Antiga &8&l[&1&lÁgua&8&l]"
   ANCIENT_RUNE_ENDER:
     conditions:
       match-name: true
@@ -107,7 +107,7 @@ translations:
     lore:
       - ""
       - "&fUma matéria biológica estranha que"
-      - "&fpode ser adquirido por"
+      - "&fpode ser adquirida por"
       - "&fnegociar com Piglins"
   RAINBOW_LEATHER:
     name: "&dCouro Arco-Íris"

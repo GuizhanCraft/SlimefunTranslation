@@ -528,7 +528,7 @@ translations:
     lore:
       - ""
       - "&fFunciona com Estrelas do Nether"
-      - "&8\u21E8 &bDeve estar cercado por &bÁgua"
+      - "&8\u21E8 &bDeve estar cercado por Água"
       - "&8\u21E8 &bDeve ser abastecido com Células de Resfriamento do Nether"
       - ""
       - "%sftrlore_Machine_EndGame_Generator%"
@@ -575,7 +575,7 @@ translations:
     name: "&cFundição Elétrica &7- &eII"
     lore:
       - ""
-      - "&4Apenas produz ligas, não funde o pó em lingotes"
+      - "&4Apenas produz ligas, não funde o Pó em Lingotes"
       - ""
       - "%sftrlore_Machine_EndGame_Machine%"
       - "%sftrlore_Speed_3%"

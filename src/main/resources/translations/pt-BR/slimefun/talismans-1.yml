@@ -47,7 +47,7 @@ translations:
       - "&fassim que você tocar em Lava"
       - "&fmas será então consumido"
   WATER_TALISMAN:
-    name: "&aTalisman do the Repirador Aquático"
+    name: "&aTalisman do Repirador Aquático"
     lore:
       - ""
       - "&fEnquanto você tiver este Talismã"
