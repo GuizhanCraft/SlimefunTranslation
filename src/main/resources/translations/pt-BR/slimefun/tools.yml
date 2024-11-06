@@ -11,7 +11,7 @@ translations:
     name: "&4Bateia de Ouro do Nether"
     lore:
       - ""
-      - "&Botão Direito&7 para coletar recursos"
+      - "&eBotão Direito&7 para coletar recursos"
       - "&7da Areia das Almas"
   GRAPPLING_HOOK:
     name: "&6Gancho Fixante"
