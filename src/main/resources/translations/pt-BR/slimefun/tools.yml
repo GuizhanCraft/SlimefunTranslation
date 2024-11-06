@@ -5,16 +5,16 @@ translations:
     name: "&6Bateia de Ouro"
     lore:
       - ""
-      - "&Botão Direito&7 para coletar recursos"
+      - "&eBotão Direito&7 para coletar recursos"
       - "&7do Cascalho"
   NETHER_GOLD_PAN:
     name: "&4Bateia de Ouro do Nether"
     lore:
       - ""
-      - "&Botão Direito&7 para coletar recursos"
+      - "&eBotão Direito&7 para coletar recursos"
       - "&7da Areia das Almas"
   GRAPPLING_HOOK:
-    name: "&6Gancho Fixante"
+    name: "&6Arpéu"
     lore:
       - ""
       - "%sftrlore_RightClickToUse%"
@@ -55,7 +55,7 @@ translations:
       - "&fSempre indicará você para o Minério mais próximo"
       - "&fmas pode se danificar enquanto faz isso"
       - ""
-      - "&7&eClique com o botão direito&7 para ser apontado para o Minério mais próximo"
+      - "&7&eBotão Direito&7 para ser apontado para o Minério mais próximo"
   COBALT_PICKAXE:
     name: "&9Picareta de Cobalto"
   PICKAXE_OF_VEIN_MINING:
